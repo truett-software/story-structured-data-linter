@@ -140,6 +140,10 @@ Structured Data Linter project
 
 /** @format */
 
+/* gist height*/
+.ht-590 {
+  height: 590px;
+}
 /* added from sphinx template */
 :root {
   --space-unit-v: 1rem;
@@ -2428,7 +2432,7 @@ amp-google-document-embed {
 
 .spr-4 {
   line-height: 4em;
-
+}
 .opacity2 {
   opacity: 0.6;
 
@@ -2469,9 +2473,10 @@ amp-google-document-embed {
   flex-flow: row wrap;
   border: solid #333;
   border-width: 1px 1px 0 0;
+  /* flex-wrap: nowrap; */
 }
 .g-dt {
-  flex-basis: 30%;
+  flex-basis: 25%;
   text-align: right;
 }
 .g-dd {
@@ -2497,6 +2502,13 @@ amp-google-document-embed {
   position: absolute;
   width: 0px;
   height: 0px;
+}
+
+.ht-590 {
+  height: 590px;
+}
+.accent-blue{
+  color: var(--on-1f64ff);
 }
 
 </style>
@@ -2544,7 +2556,6 @@ amp-google-document-embed {
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
-
     <amp-story-page id="item-12" data-item-label="Presentation Notes">
       <amp-story-grid-layer template="fill">
         <amp-img
@@ -2560,7 +2571,7 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2 class="Poppins-Bold-700 fs-70 hcolor-light stbl lh-34">
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">
           Presentation Notes
           </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
@@ -2603,7 +2614,7 @@ amp-google-document-embed {
         </div>
       </amp-story-grid-layer>
 
-<!-- Note: CSS variable on cta-accent-color -->
+  <!-- Note: CSS variable on cta-accent-color -->
       <amp-story-page-outlink
         layout="nodisplay"
         theme="custom"
@@ -2615,8 +2626,7 @@ amp-google-document-embed {
           Living Documents
         </a>
       </amp-story-page-outlink>
-    </amp-story-page>
-    
+    </amp-story-page>    
     <amp-story-page id="item-13" data-item-label="SDL Announcements">
       <amp-story-grid-layer template="fill" style="background-color:#ffffff;"></amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
@@ -2632,7 +2642,7 @@ amp-google-document-embed {
             animate-in-duration="4s"
             animate-in-delay="1s"
           >
-            <div style="width:50%;">
+            <div>
               <amp-img
                 src="./img/twitter-1-w1053-h398.png"
                 width="1053"
@@ -2646,7 +2656,7 @@ amp-google-document-embed {
             animate-in-duration="4s"
             animate-in-delay="4s"
           >
-            <div style="width:50%;">
+            <div>
               <amp-img
                 src="./img/twitter-2-w1050-h492.png"
                 width="1050"
@@ -2658,8 +2668,7 @@ amp-google-document-embed {
         </div>
 
       </amp-story-grid-layer>
-    </amp-story-page>
- 
+    </amp-story-page> 
     <amp-story-page id="item-14" data-item-label="SDL Agenda and Product Plan">
       <amp-story-grid-layer template="fill">
         <amp-img
@@ -2678,26 +2687,26 @@ amp-google-document-embed {
           <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">
           SDL Agenda and Product Plan
           </h2>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
             Release&#x2013;0.3.9&#x003A;&#x00A0;&#x00A0;SDL 3.9 baseline from
             Gregg Kellogg
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
             Release&#x2013;1.0&#x003A;&#x00A0;&#x00A0;SDL 3.9 running under
             AWS/Lambda
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
             Release&#x2013;2.0&#x003A;&#x00A0;&#x00A0;SDL running under AWS/EC2
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
             Release&#x2013;3.0&#x003A;&#x00A0;&#x00A0;SDL with new
             client&#x2010;side features and UX
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
             Release&#x2013;4.0&#x003A;&#x00A0;&#x00A0;SDL with new
             server&#x2010;side support for SHACL/ShEx
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-24 lh-34">
             Release&#x2013;5.0&#x003A;&#x00A0;&#x00A0;SDL with new
             server&#x2010;side support for ontologies
           </h4>
@@ -2719,26 +2728,26 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2>Release 1.0 Design Goals</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 1.0 Design Goals</h2>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" aspect-ratio="4:3">
         <p class="spr-4">&nbsp;</p>
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h4>Implement SDL on AWS/Lambda</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-30">Implement SDL on AWS/Lambda</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-20">
             Learn Lambda application limits to configure SDL as a Lambda
             application
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-20">
             Learn SDL/Lambda processing limits to determine graph size and
             complexity for SDL analysis
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-20">
             Test SDL/Lambda jobs that are too large/complex to run on SDL/Heroku
             (Gregg&#x2019;s native implemetation)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-20">
             Begin to prepare SDL customers for two platforms: one for simple
             jobs on AWS/Lambda; one for complex jobs (future release)
           </h4>
@@ -2764,22 +2773,16 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="1-21 Example: SMV Baseline"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-16/index.html"
-            title="Schema Markup Validator reading SDL example eg-0399-jsonld (local)"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+        <amp-img
+                id=""
+                data-item-role=""
+                data-item-type=""
+                data-item-label="schema"
+                src="https://truett-software.github.io/webp-images/schema-w1185-h852.webp"
+                width="1185"
+                height="852"
+                layout="responsive">
+        </amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -2789,22 +2792,22 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 1-21</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-21</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             Define a simple
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044;
             &#x0040;Graph
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             Test simple &#x0040;Graph on Schema.org Markup Validator (SMV)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             Use A/B Testing: compare SMV and SDL reports using identical
             &#x0040;Graph (SMV/Graph
             <em>sameAs</em>
             SDL/Graph)&#x0020;(&#x2261;)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             On SMV report, click an &#x0040;Type (PublicationIssue and/or
             ScholarlyArticle) to see report detail
           </h4>
@@ -2843,22 +2846,16 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="1-22 Example: SDL AWS/Lambda @Baseline"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-17/index.html"
-            title="JSON-LD test case on AWS/Lambda running SDL"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+          <amp-img
+          id=""
+          data-item-role=""
+          data-item-type=""
+          data-item-label="Structured-Data-Linter-testing"
+          src="https://truett-software.github.io/webp-images/Structured-Data-Linter-testing-w1467-h900.webp"
+          width="1467"
+          height="900"
+          layout="responsive"
+        ></amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -2868,23 +2865,25 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 1-22</h2>
-          <h4>
-            <span style="font-size: 0.9rem">begin A/B testing</span>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-22</h2>
+          <div>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-28">
+            <span>begin A/B testing</span>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; test on
             AWS/Lambda running SDL
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             SDL &#x201C;search results preview&#x201D; is same information
             embedded in SMV analysis but served in human-readable format
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             On SDL report, scroll down to see
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; graph
             processing and analysis
           </h4>
+        </div>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -2945,18 +2944,18 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 1-31</h2>
-          <h4>
-            <span style="font-size: 0.9rem">continuing A/B testing</span>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-31</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-24">
+            <span>continuing A/B testing</span>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-24">
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; graph
             defines Natural Languages used to present content to readers (and
             <em>intelligent devices</em>
             ) in language of their choice
           </h4>
-          <h4>&#x0040;Language graph is more complex than previous A/B test</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">&#x0040;Language graph is more complex than previous A/B test</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             Select SMV report about &#x0040;Types
             [&#x0065;&#x002E;&#x0067;&#x002E; Class (33 items)
             &#x0061;&#x006E;&#x0064;&#x002F;&#x006F;&#x0072;DefinedTerm (3
@@ -3022,21 +3021,21 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 1-32</h2>
-          <h4>
-            <span style="font-size: 0.9rem">continuing A/B testing</span>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-32</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-22">
+            <span>continuing A/B testing</span>
           </h4>
-          <h4>&#x0040;Language graph on AWS/Lambda</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">&#x0040;Language graph on AWS/Lambda</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             SDL &#x201C;search results preview&#x201D; is same information in
             SMV but served in human&#x2010;readable format
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             Scroll down to see
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; graph
             processing and analysis
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             When processed on AWS/Lambda, SDL generates report about 2,204
             &#x201C;triples&#x201D; defined in &#x0040;Language graph
           </h4>
@@ -3100,21 +3099,21 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 1-41</h2>
-          <h4>
-            <span style="font-size: 0.9rem">continuing A/B testing</span>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-41</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-22">
+            <span>continuing A/B testing</span>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             This &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; graph
             is the Ontomatica
             <em>Knowledge Graph</em>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             Knowledge Graph uses &#x301C; 20 &#x0040;Type objects such as
             &#x0040;Corporation, &#x0040;Product, &#x0040;Offer and
             &#x0040;Dataset
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             SMV intergrates (
             <em>links</em>
             ) valid &#x0040;Type and &#x0040;Property relationships to create a
@@ -3180,21 +3179,21 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 1-42</h2>
-          <h4>
-            <span style="font-size: 0.9rem">continuing A/B testing</span>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-42</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-28">
+            <span>continuing A/B testing</span>
           </h4>
-          <h4>&#x0040;Language graph on AWS/Lambda</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">&#x0040;Language graph on AWS/Lambda</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             SDL &#x201C;search results preview&#x201D; is same information in
             SMV but served in human&#x2010;readable format
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             Scroll down to see
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; graph
             processing and analysis
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             When processed on AWS/Lambda, SDL generates report about 2,204
             &#x201C;triples&#x201D; defined in &#x0040;Language graph
           </h4>
@@ -3228,7 +3227,7 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer
-        class="darken"
+        class="darken ht-590"
         template="vertical"
         position="landscape-half-left"
       >
@@ -3241,18 +3240,18 @@ amp-google-document-embed {
           ></amp-img>
         </div>
       </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" position="landscape-half-right">
+      <amp-story-grid-layer template="vertical" position="landscape-half-right"> 
         <div
           class="titles"
           animate-in="fade-in"
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 1-51</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-51</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             Force Directed Graph (FDG) of Ontomatica&#x2019;s Knowledge Graph
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             Facts (entities
             <small>&#x0026;</small>
             relationships) in FDG are
@@ -3262,12 +3261,12 @@ amp-google-document-embed {
             <small>&#x0026;</small>
             SDL reports
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             Rotate/zoom/move FDG to see specific entities
             <small>&#x0026;</small>
             relationships
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             Link highlighted in red features main entities on pages [
             <em>mainEntityOfPage</em>
             ]
@@ -3301,12 +3300,8 @@ amp-google-document-embed {
           layout="responsive"
         ></amp-img>
       </amp-story-grid-layer>
-      <amp-story-grid-layer
-        class="darken"
-        template="vertical"
-        position="landscape-half-left"
-      >
-        <div animate-in="fade-in" animate-in-duration="4s">
+      <amp-story-grid-layer class="darken ht-590" template="vertical" position="landscape-half-left">
+        <div animate-in="fade-in" animate-in-duration="4s" >
           <amp-gist
             data-gistid="17c33c63e803a01612088b1a5b87ce64"
             layout="fixed-height"
@@ -3321,21 +3316,21 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Release 1.0 Issues</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-60 lh-40 hcolor-light stbd">Release 1.0 Issues</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             AWS/Lambda &#x201C;duration window&#x201D; limits file size for SDL
             processing
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             AWS/Lambda &#x201C;size window&#x201D; limits integration of
             optional SDL features
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             SDL/AWS/Lambda will process larger
             <small>&#x0026;</small>
             more complex graphs than SDL/Heroku (Gregg&#x2019;s SDL platform)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             SDM server is faster than default AWS/Lambda server
             <small>&#x0026;</small>
             will process graphs files up to 2.5MB
@@ -3371,20 +3366,20 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2>Release 2.0 Design Goals</h2>
-          <h4>Use client&#x2013;side methods to add features to SDL reports</h4>
-          <h4>Use CSS grid to create cells for specific SDL features</h4>
-          <h4>Use CSS lightbox to preview &#x201C;cell + content&#x201D;</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 2.0 Design Goals</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Use client&#x2013;side methods to add features to SDL reports</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Use CSS grid to create cells for specific SDL features</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Use CSS lightbox to preview &#x201C;cell + content&#x201D;</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Upon cell selection, lightbox displays &#x201C;cell +
             content&#x201D; preview in full screen
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Build-out &#x201C;cell + content&#x201D; design with existing SDL
             features such as table analysis, error messages and reasoner
             messages
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Build-out &#x201C;cell + content&#x201D; design with new features
             such as graph visualization
           </h4>
@@ -3485,14 +3480,14 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Release 2.0 Design Notes</h2>
-          <h4>Jarno van Driel proposed new SDL features</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Release 2.0 Design Notes</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Jarno van Driel proposed new SDL features</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             New features are presented
             <small>&#x0026;</small>
             discussed on Google Docs
-          </h4>
-          <h4>Preview document using link below</h4>
+          </h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Preview document using link below</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -3553,22 +3548,22 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 2-21</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 2-21</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Feature SDL table (current example injects sample data from
             Wikidata)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Feature one or more visualized graphs using processors
             &#x0065;&#x002E;&#x0067;&#x002E; D3.JS
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Feature hierachical view of structured data&#x2014;similar to Schema
             Markup Validator
           </h4>
-          <h4>Feature parser statistics</h4>
-          <h4>Feature reasoner analysis (snippets)</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">Feature parser statistics</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">Feature reasoner analysis (snippets)</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Feature warnings
             <small>&#x0026;</small>
             errors (here preview shows ~50% of full page content)
@@ -3633,10 +3628,10 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 2-22</h2>
-          <h4>Production version of Jarno design</h4>
-          <h4>Sample uses simple case from SDL/AWS/Lambda Example 1-22</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 2-22</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">Production version of Jarno design</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">Sample uses simple case from SDL/AWS/Lambda Example 1-22</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             Cells feature:&nbsp;&nbsp;(1) search results preview&nbsp;&nbsp;(2)
             RDF&nbsp;&nbsp;(3) TTL&nbsp;&nbsp;(4) RDFa&nbsp;&nbsp;(5)
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044;
@@ -3644,7 +3639,7 @@ amp-google-document-embed {
             report&nbsp;&nbsp;(8) parser statistics&nbsp;&nbsp;(9) linter
             message from reasoner
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             Footer includes link to SDL Release 2.0 prototype running on
             AWS/Lambda
           </h4>
@@ -3665,18 +3660,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-28" data-item-label="Vis - Circle Packing">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-black"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -3708,15 +3692,15 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 2-31</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 ctx-black stbd">Example 2-31</h2>
+          <h4 class="ctx-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             On following pages are seven views of a
             <em>single</em>
             JSON data source
           </h4>
-          <h4>Example 2-31: Circle Packing</h4>
-          <h4>Example 2-32: Sunburst</h4>
-          <h4>
+          <h4 class="ctx-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Example 2-31: Circle Packing</h4>
+          <h4 class="ctx-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Example 2-32: Sunburst</h4>
+          <h4 class="ctx-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -3737,18 +3721,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-29" data-item-label="Vis - Sunburst">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-gray"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -3780,9 +3753,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 2-32</h2>
-          <h4>Example 2-32: Sunburst</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 cts-black stbd">Example 2-32</h2>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Example 2-32: Sunburst</h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -3803,18 +3776,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-30" data-item-label="Vis - Sunburst Zoom with Labels">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-black"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -3846,9 +3808,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 2-33</h2>
-          <h4>Sunburst Zoom with LabelsSunburst</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 cts-black tbd">Example 2-33</h2>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Sunburst Zoom with LabelsSunburst</h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -3869,18 +3831,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-31" data-item-label="Vis - Collapsible Boxes">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-gray"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -3912,9 +3863,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 2-34</h2>
-          <h4>Collapsible Boxes</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 cts-black stbd">Example 2-34</h2>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Collapsible Boxes</h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -3935,18 +3886,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-32" data-item-label="Vis - Node-Link Tree">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-black"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -3978,9 +3918,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 2-35</h2>
-          <h4>Node-Link Tree</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 cts-black stbd">Example 2-35</h2>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Node-Link Tree</h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -4001,18 +3941,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-33" data-item-label="Vis - Treemap">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-gray"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -4044,9 +3973,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 2-36</h2>
-          <h4>Treemap</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-64 lh-40 cts-black stbd">Example 2-36</h2>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">Treemap</h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -4067,18 +3996,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-34" data-item-label="Vis - schema.org as Directed Graph">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-black"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" class="bg-w"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken"
         template="vertical"
@@ -4110,19 +4028,19 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 2-41</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 cts-black stbd">Example 2-41</h2>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             A force directed graph (FDG) visualizes
             <em>schema.org</em>
             &#x0040;Type and &#x0040;Property specifications
             <small>&#x0026;</small>
             relationships
           </h4>
-          <h4>
+          <h4 class="cts-blackt recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             Source data conforms to subject&#x2013;predicate&#x2013;object
             (&#x003F;s &#x003F;p &#x003F;o) format
           </h4>
-          <h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             In contrast,
             <em>flare.json</em>
             structure (Examples 2-31
@@ -4130,7 +4048,7 @@ amp-google-document-embed {
             2-37) uses hierarchical structure based on
             <em>RDFS:subClassOf</em>
           </h4>
-          <h4>
+          <h4 class="cts-black recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             With server&#x2013;side assistance, a newly generated JSON data
             structure could be similarly visualized
           </h4>
@@ -4165,7 +4083,7 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer
-        class="darken"
+        class="darken ht-590"
         template="vertical"
         position="landscape-half-left"
       >
@@ -4184,18 +4102,18 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Item 2-51</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Item 2-51</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Develop consensus in SDL community
             <small>&#x0026;</small>
             among interested parties about final design for Release 2.0
             interface
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Will need SDL server&#x2013;side changes to generate JSON structure
             for D3.JS processing
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Will need SDL server&#x2013;side changes to generate JSON structure
             for Force Directed Graph processing
           </h4>
@@ -4231,7 +4149,7 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2>Release 3.0 Design Goals</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 3.0 Design Goals</h2>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" aspect-ratio="1:1">
@@ -4242,12 +4160,12 @@ amp-google-document-embed {
           animate-in-delay="1s"
         >
           <p class="spr-4">&nbsp;</p>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Create SDL preparation methods
             <small>&#x0026;</small>
             production platform to analyze large graphs
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             SDL processor
             <small>&#x0026;</small>
             reasoner objective:
@@ -4302,23 +4220,23 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 3-21</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 3-21</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             Refactored USDA National Agricultural Library Thesaurus (NALT) in
             <em>schema.org</em>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             NALT/&#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; size:
             6.84 MB
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             NALT/&#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044;
             exceeds SMV 2.5 MB limit (no A/B analysis)
           </h4>
-          <h4>Alternative: configured SDL on AWS/EC2 server</h4>
-          <h4>SDL/NALT report size: 31.6 MB</h4>
-          <h4>SDL/NALT/AWS/EC2 processing time: 5 hours</h4>
-          <h4>NALT &#x201C;triples&#x201D;: 515,530</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">Alternative: configured SDL on AWS/EC2 server</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">SDL/NALT report size: 31.6 MB</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">SDL/NALT/AWS/EC2 processing time: 5 hours</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">NALT &#x201C;triples&#x201D;: 515,530</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -4379,29 +4297,29 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 3-22</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 3-22</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Ontomatica&#x2019;s Web Enabled Directed Graph Engine
             (&#x0057;&#x0045;&#x0044;&#x0047;&#x0045;) Reference Library is an
             <em>application</em>
             of National Agriculture Library Thesaurus
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Research papers are mapped to
             <em>schema.org</em>
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; structure
             in SDL report
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Research papers are annotated using
             <em>schema.org</em>
             &#x0040;Type and &#x0040;Property grammar
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             &#x0057;&#x0045;&#x0044;&#x0047;&#x0045; Reference Library contains
             information about 200,000+ papers
           </h4>
-          <h4>NALT &#x201C;triples&#x201D;: 515,530</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">NALT &#x201C;triples&#x201D;: 515,530</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -4462,15 +4380,15 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 3-23</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 3-23</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Visualization
             <em>does not include</em>
             Taxa which
             <em>is included</em>
             in SDL report (Example 3-21)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Visualization uses same
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; structure
             as used in SDL Release 2.0 design and prototype
@@ -4535,20 +4453,20 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 3-31</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 3-31</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Refactored US NIH National Cancer Institute Thesaurus (NCIT) in
             <em>schema.org</em>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             NCIT/&#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044; size:
             13.7 MB
             <br />
             (no A/B analysis with Schema Markup Validator)
           </h4>
-          <h4>SDL/NCIT report size: 76.9 MB</h4>
-          <h4>SDL/NCIT/AWS/EC2 processing time: 9 hours</h4>
-          <h4>NCIT &#x201C;triples&#x201D;: 946,520</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">SDL/NCIT report size: 76.9 MB</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">SDL/NCIT/AWS/EC2 processing time: 9 hours</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">NCIT &#x201C;triples&#x201D;: 946,520</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -4581,7 +4499,7 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer
-        class="darken"
+        class="darken ht-590"
         template="vertical"
         position="landscape-half-left"
       >
@@ -4623,8 +4541,8 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 3-32</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 3-32</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             ChEMATIC (Chemical Entities with Medical Applications, Therapeutic
             Indications
             <small>&#x0026;</small>
@@ -4634,13 +4552,13 @@ amp-google-document-embed {
             <small>&#x0026;</small>
             NIH Medical Subject Headings (MeSH)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Several other ontologies complement NCIT
             <small>&#x0026;</small>
             MeSH JSON-LD structures
           </h4>
-          <h4>Biochemicals are mapped to hierarchical JSON-LD structures</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">Biochemicals are mapped to hierarchical JSON-LD structures</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Total ChEMATIC &#x201C;triples&#x201D; (structures and object maps):
             700+ million
           </h4>
@@ -4672,7 +4590,7 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer
-        class="darken"
+        class="darken ht-590"
         template="vertical"
         position="landscape-half-left"
       >
@@ -4691,17 +4609,17 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Release 3.0 Issues</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-60 lh-40 hcolor-light stbd">Release 3.0 Issues</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             SDL/AWS/ECS is configured as a Docker container but improved methods
             will be needed to install SDL on best&#x2013;available AWS/EC2
             server
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             To reduce processing duration, need methods to use multiple CPU
             cores
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             SDL/AWS/EC2 is expensive to run &#x2014; need to implement a
             business model to offset operating expenses
           </h4>
@@ -4735,7 +4653,7 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer
-        class="darken"
+        class="darken ht-590"
         template="vertical"
         position="landscape-half-left"
       >
@@ -4754,12 +4672,12 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Release 4.0 Design Goals</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-60 lh-40 hcolor-light stbd">Release 4.0 Design Goals</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Support Shapes Constraint Language (SHACL) &#x2014; a specification
             for validating graph&#x2013;based data against a set of conditions
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Support Shape Expressions (ShEx) &#x2014; an RDF language for
             identifying predicates and their associated cardinalities and
             datatypes
@@ -4826,21 +4744,21 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Item 4-21</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Item 4-21</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Tim Berners&#x2010;Lee on SHACL
             <small>&#x0026;</small>
             ShEx:
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Shapes explain to machines what data should look like, independently
             of how that data is displayed to a user
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Forms are a user interface allowing people to read and write data in
             a specific shape
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Footprints explain to machines where new data should be stored
           </h4>
         </div>
@@ -4903,22 +4821,22 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Item 4-22</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Item 4-22</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             Ruben Verborgh on Shapes
             <small>&#x0026;</small>
             Linked Data:
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             Apps should be coded against shapes [and] Linked Data so other apps
             can reuse them
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             [Where] vocabularies provide a list of possible attributes, shapes
             mandate a specific structure for data, combining attributes from
             vocabularies in a certain way
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             Footprints explain to machines where new data should be stored
           </h4>
         </div>
@@ -4981,13 +4899,13 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Item 4-23</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Item 4-23</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Key findings in the US PubMed/NCBI article &#x201C;Automatic
             Generation of SHACL Shapes from Ontologies&#x201D;
           </h4>
-          <h4>OWL and SHACL are not equivalent in their interpretation</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">OWL and SHACL are not equivalent in their interpretation</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             There are differences in how OWL interprets restrictions (for
             inferencing) and how SHACL interprets constraints (for validation)
           </h4>
@@ -5051,18 +4969,18 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Item 4-31</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Item 4-31</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-24">
             Glucosinolates are natural components of many pungent plants such as
             brocolli, mustard, cabbage, and horseradish
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-24">
             US NIH NCI review of links between cruciferous vegetable intake
             <small>&#x0026;</small>
             lung cancer risk concluded that high intake may decrease risk in a
             range of 17 &#x2010; 23 &#x0025;
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-24">
             Other studies report similar risk reductions for colorectal, breast,
             kidney, esophageal,
             <small>&#x0026;</small>
@@ -5130,8 +5048,8 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 4-32</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-32</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             &#x0041;&#x006d;&#x0065;&#x0072;&#x0069;&#x0063;&#x0061;&#x006e;&#x0020;&#x0046;&#x006f;&#x006f;&#x0064;&#x0020;&#x0044;&#x0061;&#x0074;&#x0061;&#x0020;&#x0053;&#x0079;&#x0073;&#x0074;&#x0065;&#x006d;&#x0073;&#x0020;&#x0049;&#x006e;&#x0073;&#x0074;&#x0069;&#x0074;&#x0075;&#x0074;&#x0065;
             (&#x0041;&#x0046;&#x0044;&#x0053;&#x0049;)
             <small>&#x0026;</small>
@@ -5140,12 +5058,12 @@ amp-google-document-embed {
             <small>&#x0026;</small>
             agriculture research projects
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             One &#x0057;&#x0045;&#x0044;&#x0047;&#x0045; project integrated
             <small>&#x0026;</small>
             synthesized glucosinolate data from many studies
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             &#x0057;&#x0045;&#x0044;&#x0047;&#x0045;&#x2013;Glucosinolates
             enables Principal Investigators
             <small>&#x0026;</small>
@@ -5205,25 +5123,25 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 4-33</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-33</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-22">
             With an objective of creating a Knowledge Graph, glucosinolate data
             was difficult to synthesize
             <small>&#x0026;</small>
             integrate
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-22">
             Observations
             <small>&#x0026;</small>
             measurement methods were irregular
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-22">
             Plant taxa
             <small>&#x0026;</small>
             genetic variety data was regular, but &#x2018;part of plant&#x2019;
             designations were irregular
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-22">
             Research process would have been easier
             <small>&#x0026;</small>
             more accurate if
@@ -5282,20 +5200,20 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 4-34</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-34</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Force Directed Graph represents integration of data specifications
             (from ontologies)
             <small>&#x0026;</small>
             data constraints (to ensure data quality)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             &#x201C;Ontology part&#x201D; of graph (taxa
             <small>&#x0026;</small>
             &#x2018;part of plant&#x2019;) is visable in
             &#x0057;&#x0045;&#x0044;&#x0047;&#x0045;&#x2013;Glucosinolates
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             &#x201C;Shape part&#x201D; of graph (represented as SHACL in TTL
             format) is in footer
           </h4>
@@ -5359,19 +5277,19 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Item 4-41</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Item 4-41</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Diabetes is a debilitating
             <small>&#x0026;</small>
             life threatening disease
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Research about
             <small>&#x0026;</small>
             remedies for diabetes depend on precise information where
             &#x201C;the devil is in the details&#x201D;
           </h4>
-          <h4>This NCBI article is an overview</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">This NCBI article is an overview</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -5402,7 +5320,7 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer
-        class="darken"
+        class="darken ht-590"
         template="vertical"
         position="landscape-half-left"
       >
@@ -5440,27 +5358,27 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 4-42</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-42</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             ChEMATIC is a WEDGE application to visualize relationships among
             biochemistry, factor inputs
             <small>&#x0026;</small>
             human conditions
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             ChEMATIC does not document opinions (something is good or bad); it
             only documents items
             <small>&#x0026;</small>
             their relationships
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             Medical
             <small>&#x0026;</small>
             nutrition experts use ChEMATIC information to express opinions
             <small>&#x0026;</small>
             advice
           </h4>
-          <h4>This graph visualizes data about Diabetes Mellitus, Type 2</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">This graph visualizes data about Diabetes Mellitus, Type 2</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -5521,24 +5439,24 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 4-43</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-43</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             Diabetes observation
             <small>&#x0026;</small>
             monitoring are key parts of a personalized remedy
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             First we need to specify the
             <em>shape of glucose observations</em>
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">
             Then we need to integrate observation shapes with
             <em>monitored glucose data</em>
           </h4>
-          <h4>Example 4-44 illustrates an observation graph for glucose</h4>
-          <h4>Example 4-45 integrates</h4>
-          <h4>Example 4-46 integrates</h4>
-          <h4>Example 4-47 integrates</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">Example 4-44 illustrates an observation graph for glucose</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">Example 4-45 integrates</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">Example 4-46 integrates</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-17 lh-20">Example 4-47 integrates</h4>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
@@ -5563,7 +5481,7 @@ amp-google-document-embed {
           animate-in-duration="1600ms"
           animate-in-delay="400ms"
         >
-          <span style="color: #1f64ff">
+          <span class="ZillaSlab-SemiBold-600 fs-35 lh-40 stbd accent-blue">
             Example 4-44: Graph of ShEx Observation for glucose
           </span>
         </h2>
@@ -5639,8 +5557,8 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 4-45</h2>
-          <h4>Visualizing Dexcom Observation Data - Hourly</h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-45</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Visualizing Dexcom Observation Data - Hourly</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -5701,8 +5619,8 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 4-46</h2>
-          <h4>Visualizing Dexcom Observation Data - Daily</h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-46</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Visualizing Dexcom Observation Data - Daily</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -5763,8 +5681,8 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 4-47</h2>
-          <h4>Visualizing Dexcom Observation Data - Histogram</h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 4-47</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Visualizing Dexcom Observation Data - Histogram</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -5786,7 +5704,7 @@ amp-google-document-embed {
 
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2>Twitter: ShEx SHACL Announcements</h2>
+          <h2 class="Poppins-Bold-700 fs-52 hcolor-dark stbd lh-32">Twitter: ShEx SHACL Announcements</h2>
         </div>
         <div class="parent">
           <div
@@ -5855,15 +5773,15 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Item 4-61</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Item 4-61</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Develop specification
             <small>&#x0026;</small>
             design for implementing SHACL
             <small>&#x0026;</small>
             ShEx in SDL
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Simplify workflow that involves at least 2 source files (ontology
             <small>&#x0026;</small>
             shape)
@@ -5872,13 +5790,13 @@ amp-google-document-embed {
             <small>&#x0026;</small>
             TTL)
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Explain at least three conditions: ontology messages, shape
             messages,
             <small>&#x0026;</small>
             ontology/shape integration messages
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Reconcile irregularity between ontology constraints
             <small>&#x0026;</small>
             shape constraints
@@ -5901,7 +5819,7 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2>Release 5.0 Design Goals</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 5.0 Design Goals</h2>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" aspect-ratio="1:1">
@@ -5912,17 +5830,19 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1s"
         >
-          <h4>Support other ontologies &#x2014; in addition to schema.org</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
+            Support other ontologies &#x2014; in addition to schema.org
+          </h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             In addition to &#x0040;Context registration of vocabulary terms,
             support reasoning about ontology&#x2013;specific grammar
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             Enable vocabulary
             <small>&#x0026;</small>
             reasoning for SKOS&#x2013;based datasets
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
             Enable vocabulary
             <small>&#x0026;</small>
             reasoning for OWL&#x2013;based datasets
@@ -5975,9 +5895,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 5-21</h2>
-          <h4>UN FAO AgroVoc is a SKOS&#x2013;based dataset</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 5-21</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">UN FAO AgroVoc is a SKOS&#x2013;based dataset</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             AgroVoc is a multilingual controlled vocabulary covering all areas
             of interest to the Food
             <small>&#x0026;</small>
@@ -6046,9 +5966,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 5-22</h2>
-          <h4>US Library of Congress is a SKOS&#x2013;based dataset</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 5-22</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">US Library of Congress is a SKOS&#x2013;based dataset</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             The Library of Congress Subject Headings (LCSH) comprise a thesaurus
             (controlled vocabulary) of subject headings, maintained by the
             United States Library of Congress, for use in bibliographic records
@@ -6111,9 +6031,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 5-31</h2>
-          <h4>Plant Ontology is an OWL&#x2013;based dataset</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 5-31</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Plant Ontology is an OWL&#x2013;based dataset</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             &#x201C;archegonium head&#x201D; is referenced in
             WEDGE&#x2013;Glucosinolates
           </h4>
@@ -6164,9 +6084,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 5-32</h2>
-          <h4>Avocado Ontology is an OWL&#x2013;based dataset</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 5-32</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Avocado Ontology is an OWL&#x2013;based dataset</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Avocado is a popular food
             <small>&#x0026;</small>
             popular ingredient in other foods
@@ -6220,19 +6140,19 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2>Example 5-41</h2>
-          <h4>US NIH PubChem is a multi&#x2013;ontology dataset</h4>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 5-41</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">US NIH PubChem is a multi&#x2013;ontology dataset</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             PubChem is a database of chemical molecules
             <small>&#x0026;</small>
             their activities against biological assays
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Author: National Center for Biotechnology Information (NCBI);
             <em>partOf</em>
             United States National Institutes of Health (NIH)
           </h4>
-          <h4>More than 80 database vendors contribute to PubChem</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">More than 80 database vendors contribute to PubChem</h4>
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink
@@ -6293,20 +6213,20 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2>Example 5-51</h2>
-          <h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 5-51</h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             Wedge&#x2013;FNDDS (Food
             <small>&#x0026;</small>
             Nutrient Database for Dietary Studies) is a multi&#x2013;ontology
             dataset
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             FNDDS includes foods
             <small>&#x0026;</small>
             beverages nutrition data reported in &#x201C;What We Eat in
             America&#x201D;
           </h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-26">
             FNDDS is an
             <em>application</em>
             of OWL&#x2013;based ontologies including AFDSI&#x2019;s Vocal
@@ -6344,7 +6264,7 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2>Release 5.0 Issues</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 5.0 Issues</h2>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" aspect-ratio="1:1">
@@ -6355,91 +6275,91 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1s"
         >
-          <h4>Production issues will be more complicated than Release 3.0</h4>
-          <h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Production issues will be more complicated than Release 3.0</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             May be difficult to load an SDL&#x2013;instance configured with
             schema.org&#x2013;based datasets &#x002B; SKOS&#x2013;based datasets
             &#x002B; OWL&#x2013;based datasets
           </h4>
-          <h4>Processing duration could be long (days!)</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Processing duration could be long (days!)</h4>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
     <amp-story-page id="item-68" data-item-label="Provenance and Version Notes">
-     <amp-story-grid-layer template="fill" style="background-color:#000000;"></amp-story-grid-layer>
+     <amp-story-grid-layer template="fill" class="bg-b"></amp-story-grid-layer>
      <amp-story-grid-layer template="vertical">
-        <div class="titles NotoSerif-Regular-400 hcolor-light" animate-in="fade-in" animate-in-duration="2s">
-          <h2 class="">
+        <div class="titles" animate-in="fade-in" animate-in-duration="2s">
+          <h2 class="ZillaSlab-SemiBold-600 fs-38 lh-32 hcolor-light stbd">
           Provenance and Document Properties
           </h2>
           <dl class="g-dl show-yes g-flexed">
-            <dt class="g-dt show-yes">author</dt>
-            <dd class="g-dd show-yes">Ankita Dhandha</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">author</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">Ankita Dhandha</dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">organization</dt>
-            <dd class="g-dd show-yes">Ontomatica</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">organization</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">Ontomatica</dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">date published</dt>
-            <dd class="g-dd show-yes">20-12-01</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">date published</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">20-12-01</dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">date modified</dt>
-            <dd class="g-dd show-yes">20-12-10</dd>
-            <dt class="g-dt show-yes">modification note</dt>
-            <dd class="g-dd show-yes">Added Section 4</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">date modified</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">20-12-10</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">modification note</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">Added Section 4</dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">date modified</dt>
-            <dd class="g-dd show-yes">20-12-16</dd>
-            <dt class="g-dt show-yes">modification note</dt>
-            <dd class="g-dd show-yes">Added Section 5</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">date modified</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">20-12-16</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">modification note</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">Added Section 5</dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">date modified</dt>
-            <dd class="g-dd show-yes">21-01-01</dd>
-            <dt class="g-dt show-yes">release note</dt>
-            <dd class="g-dd show-yes">
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">date modified</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">21-01-01</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">release note</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">
               Added information based on Gregg Kellogg email
             </dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">date modified</dt>
-            <dd class="g-dd show-yes">21-07-07</dd>
-            <dt class="g-dt show-yes">release note</dt>
-            <dd class="g-dd show-yes">
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">date modified</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12">21-07-07</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">release note</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">
               Updated to use Schema.org Markup Validator (SMV)
             </dd>
           </dl>
           <dl class="g-dl show-yes flexed">
-            <dt class="g-dt show-yes">date modified</dt>
-            <dd class="g-dd show-yes">22-08-12</dd>
-            <dt class="g-dt show-yes">release note</dt>
-            <dd class="g-dd show-yes">updated story format</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">date modified</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">22-08-12</dd>
+            <dt class="g-dt show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">release note</dt>
+            <dd class="g-dd show-yes hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">updated story format</dd>
           </dl>
           <dl class="g-dl show-no flexed">
-            <dt class="g-dt show-no">date modified</dt>
-            <dd class="g-dd show-no">21-01-11</dd>
-            <dt class="g-dt show-no">release note</dt>
-            <dd class="g-dd show-no">more future information</dd>
+            <dt class="g-dt show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">date modified</dt>
+            <dd class="g-dd show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">21-01-11</dd>
+            <dt class="g-dt show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">release note</dt>
+            <dd class="g-dd show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">more future information</dd>
           </dl>
           <dl class="g-dl show-no flexed">
-            <dt class="g-dt show-no">date modified</dt>
-            <dd class="g-dd show-no">21-01-11</dd>
-            <dt class="g-dt show-no">release note</dt>
-            <dd class="g-dd show-no">more future information</dd>
+            <dt class="g-dt show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">date modified</dt>
+            <dd class="g-dd show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">21-01-11</dd>
+            <dt class="g-dt show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">release note</dt>
+            <dd class="g-dd show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">more future information</dd>
           </dl>
           <dl class="g-dl show-no flexed">
-            <dt class="g-dt show-no">date modified</dt>
-            <dd class="g-dd show-no">21-01-11</dd>
-            <dt class="g-dt show-no">release note</dt>
-            <dd class="g-dd show-no">more future information</dd>
+            <dt class="g-dt show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">date modified</dt>
+            <dd class="g-dd show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">21-01-11</dd>
+            <dt class="g-dt show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">release note</dt>
+            <dd class="g-dd show-no hcolor-light recursive-sans-600-casual-semibold-regular fs-15 lh-12"">more future information</dd>
           </dl>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
+
   </amp-story>
 </body>
-
 </html>
