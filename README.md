@@ -1,1 +1,2 @@
-# story-sdl
+# Story - Structured Data Linter
+
