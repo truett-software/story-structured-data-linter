@@ -1,3 +1,0 @@
-
-outline-container-3 creates gutter right problem on mobile
-

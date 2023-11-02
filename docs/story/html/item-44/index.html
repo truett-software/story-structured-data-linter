@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html amp="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<link rel="canonical" href="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-44/index.html">
+<title>
+Linked Data Shapes, Forms and Footprints - Design Issues
+</title>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+
+html{
+padding-top:2em;
+padding-left:10vw;
+padding-right:10vw;
+}
+body {
+  font-family: opensans, sans-serif; /* serif */
+  background-color: white;    /* was for decades #f8fff8 */
+  line-height: 1.2em;
+  color: black;
+  margin: 2em 8% 2em 10%;   /* T R B L */
+}
+
+table {
+    background: #f3fff3; /* paler same axis */
+}
+
+th { background: white;
+     text-align: left;}
+
+h1, h2, h3 {
+  font-family: sans-serif;
+  margin: 1em 0 0.5em 0;  /* Was 1em 0 0.5em -5% */
+  break-after: avoid;
+  page-break-after: avoid;
+ column-break-after: avoid;
+-webkit-column-break-after: avoid;
+}
+
+h1 { font-size: 150% }
+h2 { font-size: 120% }
+h3 { font-size: 100%; font-style: italic;}
+h4 {   page-break-after: avoid;
+ column-break-after: avoid;
+-webkit-column-break-after: avoid;
+ }
+
+p { margin: 0  0 1em 0;
+  line-height: 1.4em;
+  font-family: sans-serif;
+    /* top right bottom left */
+/*  text-indent: 2em ;    first-line indent - nope not this style. */
+/*  line-height: 2.0;     only for double-space */
+/*  font-size: 12pt; */  /* use user's default */
+}
+
+a { font-weight: bold; color: #004423; text-decoration: none;}
+td, th{ padding: 1em; }
+li {padding: 0.6em; }
+.tbd {color: #888; }
+.ramble {font-size: 80%; font-weight: 80%; }
+
+.cols {
+  -webkit-column-width: 24em; /* Chrome, Safari, Opera */
+  -moz-column-width: 24em; /* Firefox */
+  column-width: 24em;
+
+  -webkit-column-gap: 1em; /* Chrome, Safari, Opera */
+  -moz-column-gap: 1em; /* Firefox */
+  column-gap: 1em;
+}
+
+pre { font-size: 80%; }
+
+.note { color: #485 }
+
+blockquote {
+    font-style: italic;
+    font-family: sanserif;
+}
+
+.abstract {
+    font-style: italic;
+    font-family: sans-serif;
+    margin: 0.5em 3em 0.5em 3em;
+}
+
+.number {font-family: monospace;}
+.detail {font-size: 80%; }
+.axiom  { margin: 1em; border: thin; background-color: white }
+
+</style>
+
+</head>
+<body>
+<address>
+Tim Berners-Lee<br>
+Date: 2019-04-26, last change: $Date: 2019/12/19 07:59:47 $<br>
+Status: personal view only. Editing status: second draft. Not finished.
+</address>
+<hr>
+<h1>
+Linked Data Shapes, Forms and Footprints
+</h1>
+<h2 id="introduction">Introduction</h2>
+<div class="introduction">
+<p>
+In a world of linked data, in which anyone can say anything about anything, how do we build systems in which users and apps are easily allowed to express useful, helpful things? What tools can we use which allow new systems to grow easily and work well together?
+</p>
+<h3 id="ontology-languages">Ontology languages</h3>
+<p>
+The RDF schema languages, RDF Schema and OWL, tell you implications one can draw from RDF Model data. They also tell you what things do not make logical sense. Therefore in a sense they indirectly have the function of constraining what RDF data one can write, though just by telling what would be nonsense (false). So they can in a rather weak way be used to guide a user interface. But that won't do what we need.
+</p>
+<p>
+Other schema systems, like that of <a href="https://schema.org/">schema.org</a>, give suggestions as to what predicates can be used to talk about objects of a given class. That is useful, but still is not enough.
+</p>
+<p>
+In this document, we will discuss three kinds of technologies to help with building apps on top of data:
+</p>
+<ol>
+<li>
+<a href="#shapes">Shapes</a> explain to machines what data should look like, independently of how that data is displayed to a user.
+</li>
+<li>
+<a href="#forms">Forms</a> are a user interface allowing people to read and write data in a specific shape.
+</li>
+<li>
+<a href="#footprints">Footprints</a> explain to machines where new data should be stored.
+</li>
+</ol>
+</div>
+
+<h2 id="shapes">Shape Languages</h2>
+<p>
+Shapes languages, such as <a href="https://www.w3.org/TR/shacl/">SHACL</a>, specifically address the need to constrain the data in a graph to a certain shape.  For every child, you must specify a parent, and for every parent you must specify a phone number, and so on.  Shapes languages can be used to validate existing data to make sure it will work before processing, to validate submitted data from an external source, and so on. They can be used in effect to define an Application Program Interface: The application program using this interface must provide data in this shape, and will get data in this shape.
+</p>
+<p>
+Let us take an example of a user's contact data laid out in an AddressBook, with Groups and Individuals.
+(These are roughly the shapes of the standard VCARD conversion to RDF).
+First of all here are the prefixes we will be using in all these examples.
+</p>
+
+<pre>
+@prefix rdf:   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;.
+@prefix rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+@prefix dct:   &lt;http://purl.org/dc/terms/&gt;.
+@prefix sh:    &lt;http://www.w3.org/ns/shacl#&gt;.
+@prefix xsd:   &lt;http://www.w3.org/2001/XMLSchema#&gt;.
+@prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt;.
+@prefix ui:    &lt;http://www.w3.org/ns/ui#&gt;.
+@prefix :      &lt;#&gt;.
+</pre>
+
+<h3 id="shape-constraints">Shape Constraints</h3>
+<p>Now here is a shape for the address book itself:</p>
+<h4><a href="https://www.w3.org/DesignIssues/FootprintsExamples/contact-shapes.ttl">contact-shapes.ttl</a></h4>
+
+<pre>
+# An address book has a name, and can have groups
+:AddressBookShape a sh:NodeShape;
+    sh:targetClass vcard:AddressBook;
+    sh:property
+      :AddressBook_fn,
+      :AddressBook_includesGroup.
+
+:AddressBook_fn
+    sh:path vcard:fn;
+    sh:datatype xsd:string;
+    sh:minCount 1.
+
+:AddressBook_includesGroup
+    sh:path vcard:includesGroup;
+    sh:mincount 0.
+</pre>
+
+<p>
+The last part of the above shape is a "property shape" which says that the book can have any number of links to groups.
+<br>
+Shapes can point to other shapes. Next, here is a (subset of a) shape for the actual contact data for a person:
+</p>
+
+<pre>
+# An individual has a long list of properties
+:IndividualShape a sh:NodeShape;
+  sh:targetClass vcard:Individual;
+  sh:property
+    :Individual_type,
+    :Individual_fn,
+    :Individual_hasUID,
+    :Individual_hasPhoto,
+    :Individual_hasAddress,
+    :Individual_hasEmail,
+    :Individual_hasTelephone,
+    :Individual_organization-name,
+    :Individual_inAddressBook.
+
+:Individual_type
+    sh:path rdf:type;
+    sh:value vcard:Individual;
+    sh:count 1.
+
+:Individual_fn
+    sh:path vcard:fn;
+    sh:datatype xsd:string;
+    sh:pattern ".* .*";
+    sh:severity sh:Warning;
+    sh:message "Full names without spaces are typically (not always) wrong.";
+    sh:maxLength 128;
+    sh:minCount 1;
+    sh:maxCount 1.
+
+:Individual_hasUID
+    sh:path vcard:hasUID;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:pattern "^urn:uuid:".
+
+:Individual_hasPhoto
+    sh:path vcard:hasPhoto.
+
+:Individual_hasAddress
+    sh:path vcard:hasAddress.
+
+:Individual_hasEmail
+    sh:path vcard:hasEmail.
+
+:Individual_hasTelephone
+    sh:path vcard:hasTelephone.
+
+:Individual_organization-name
+    sh:path vcard:organization-name;
+    sh:datatype xsd:string;
+    sh:maxCount 1.
+
+:Individual_inAddressBook
+    sh:path vcard:inAddressBook;
+    sh:maxCount 1;
+    sh:minCount 1.
+</pre>
+
+<h3 id="shex">Shape Expressions</h3>
+
+<p>
+The Shape Expressions language, <a href="http://shex.io/">ShEx</a>, is in fact quite different from the shape language above. It does more than constrain the shape of the graph: it also defines a canonical ordered traversal of the graph. It is in a way a kind of query language. If applied simply, it (like SPARQL) returns an array of bindings. "Yes, it matches a contact shape, and here are all the names and phone numbers". If it is applied recursively, it returns a tree of bindings. "Yes, it matches the shape, and here are all the contact points; and for each contact point here are the address and phone number; and for each address the number and street"
+</p>
+<p>
+Because it outputs tree structures, SheX can be used as a step in UI generation, generating for example HTML tables (simple case) or nested HTML tables (recursive case). Generate it using using vanilla JS or your favorite UI framework.
+</p>
+<p>
+Another use for this form of query is to map between ontologies, [@@ref] as potentially a shape can be used backwards -- instead of being used to parse the input it can be used to generate the output. (This is a little like the "Return" clause in an XQuery.)
+</p>
+
+<table>
+<tbody><tr><th>SHACL</th><th>ShEx</th></tr>
+<tr><td>Typically, just validates a graph.</td><td>Validates, and generates an array or tree of bindings</td></tr>
+<tr><td>SHACL is unordered</td><td>ShEx is ordered.</td></tr>
+
+<tr><td>SHACL is in RDF. SHACL files are .ttl files.</td><td>ShEx is a new language, but has an RDF syntax.</td></tr>
+<tr><td>Can be used to generate forms, but the designer has to add order.</td><td>Can be used to generate forms directly.</td></tr>
+</tbody>
+</table>
+
+<h3 id="shape-conformance">Shape Conformance</h3>
+<p>
+If a folder or document is known to conform to a shape, it is useful to explicitly indicate this.  That way, clients know exactly what kind of data to expect. Furthermore, the UI can then suggest relevant forms to view and edit the data. @@TODO: predicate to indicate conformance
+</p>
+
+<h2 id="forms">Form Languages</h2>
+<p>
+Form languages are used to define user interfaces for reading and writing Linked Data with a specific shape. A <em>form</em> can be thought of as a simple form (like Google forms etc.) which asks a series of questions, but a <em>form language</em> can define a user interface using all kinds of different types of controls -- fields, widgets and so on. The result of using the OSX Interface Builder, for example, can be considered as a form. Do not think boring bureaucratic forms, think exciting live user experience.
+</p>
+
+<p>
+There exists a one-to-many relationship between shapes and forms: a specific shape can be viewed and edited with many different forms.
+For instance, forms may contain more or less information at different levels. The principle of separation of form and content suggests that a high-level description is important. This allows the system and the user to customize it at run time. It is most accessible to people with disabilities. But also, the system need to be fed good design from the designer, grouping things well, arranging the flow through the form, adding tips, icons, and so on. It is reasonable also for a form to link to a shape.  A form can make use of type information (telephone number, date, email address etc) and also range information (max length of string, max value of integer, etc) which is typically part of the arc of a shape. The convention for extending a form field, or an arc in a shape, could
+ be the same when the shape is in SHACL, as both are in RDF.
+</p>
+
+<p>
+The <a href="https://www.w3.org/ns/ui">User Interface ontology</a> gives hints as to how data should be presented, and, more substantially, defines forms. A form is a sequence of related user interface questions or (abstract) widgets. The form language defines the direct relationship between the form fields and the shape elements, and, through the shape, connects user input
+to the triples of the RDF graph which is being constructed or edited.
+</p>
+
+<h3 id="recursive-forms">Recursive Forms</h3>
+
+<p>
+Like shapes, forms can refer to other forms. So a form for an event can include a nested form for each person involved and a form for a person can have a nested form for each of the events they are involved in. So forms can be recursive, possibly mutually recursive, really just as a function of what users need.
+</p>
+
+<h3 id="forms-v-shapes">Differences between forms and shapes</h3>
+
+<p>
+While shapes languages and form languages look similar, they are fundamentally different.
+</p>
+<table>
+<tbody>
+<tr>
+<th>Shapes</th>
+<th>Forms</th>
+</tr>
+<tr>
+<td>Completely unordered: RDF is unordered and so shapes of RDF do not express order</td>
+<td>Completely ordered: order is crucial in the UI</td>
+</tr>
+<tr>
+<td>Constrain the data stored: can be used for validation, and to define an API</td>
+<td>Define a user interface control template</td>
+</tr>
+<tr>
+<td>One or a small number of shapes defined</td>
+<td>Many forms can be defined over the same data.</td>
+</tr>
+<tr>
+<td>Shapes do not contain UI information</td>
+<td>Forms contain UI data on field type, control size, titles, grouping, colors, headings, labels, tips, accessibility information such
+ as alternative renderings</td>
+ </tr>
+<tr>
+<td>Shapes are edited by developers and API designers</td>
+<td>Forms are edited by designers and power users</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>
+Despite these differences, rumor has it that some folks who use SHACL have in fact used it as a form language.  One could imagine adding the ordering by adding a sequence numbers each fields, for example. However, keeping shapes and forms apart, separates the concern of machine interoperability from the graphical interface, and allow different (simple or complex) forms to be used with the same shape, as illustrated below.
+</p>
+
+<h3 id="example-extended-form">Example of an extended form: <a href="https://www.w3.org/DesignIssues/FootprintsExamples/contacts-form.ttl">contact-form.ttl</a></h3>
+
+<p>
+Here is an example of a form for filling in details of a new contact. The vcard class is Individual. The <a href="https://www.w3.org/DesignIssues/FootprintsExamples/contacts-form.ttl">full form</a> is linked. Below are some highlights. Note how the form refers back to arcs of the shape, such that the shape and its constraints do not have to be duplicated. @@TODO bring full form online
+</p>
+<pre>
+@prefix shape: &lt;contact-shapes.ttl#&gt;.
+
+:contactDetailsForm a ui:Form;
+    dct:title "Contact Details";
+    ui:parts (
+      :fullNameField
+      :organizationField
+      :addressesComment
+      :addresses
+      :emailComment
+      :emails
+      :telephoneComment
+      :telephones
+    ).
+
+:fullNameField a ui:SingleLineTextField;
+    ui:label "Name";
+    ui:arc shape:Individual_fn;
+    ui:size 40.
+
+:organizationField a ui:SingleLineTextField;
+    ui:arc shape:Individual_organization-name;
+    ui:size 40.
+
+
+##############################
+
+:addressesComment a ui:Comment;
+    ui:contents "Address".
+
+:addresses a ui:Multiple;
+    dct:title "Address details";
+    ui:parts (:address);
+    ui:arc shape:Individual_hasTelephone.
+
+:address a ui:Group;
+    ui:parts (
+      :streetField
+      :localityField
+      :postalCodeField
+      :regionField
+      :countryField
+      :addressTypeField
+    ).
+
+:streetField a ui:SingleLineTextField;
+    ui:arc shape:Address_street;
+    ui:size 40.
+
+:localityField a ui:SingleLineTextField;
+    ui:arc shape:Address_locality;
+    ui:size 40.
+
+:postalCodeField a ui:SingleLineTextField;
+    ui:arc shape:Address_postal-code;
+    ui:size 25.
+
+:regionField a ui:SingleLineTextField;
+    ui:arc shape:Address_region;
+    ui:size 40.
+
+:countryField a ui:SingleLineTextField;
+    ui:arc shape:Address_country-name;
+    ui:size 40.
+
+:addressTypeField a ui:Classifier;
+    ui:from vcard:Type;
+    ui:arc shape:Address_type.
+
+
+##############################
+
+:emailComment a ui:Comment;
+    ui:contents "Email".
+
+:emails a ui:Multiple;
+    ui:parts (:email);
+    ui:arc shape:Individual_hasEmail.
+
+:email a ui:Group;
+    ui:parts (:emailValue :emailType).
+
+:emailValue a ui:EmailField;
+    ui:label "email";
+    ui:arc shape:Email_value;
+    ui:size 50.
+
+:emailType a ui:Classifier;
+    ui:from vcard:Type;
+    ui:arc shape:Email_type.
+
+
+##############################
+
+:telephoneComment a ui:Comment;
+    ui:contents "Phones" .
+
+:telephones a ui:Multiple;
+    ui:parts (:telephone);
+    ui:arc shape:Individual_hasTelephone.
+
+:telephone a ui:Group;
+    ui:parts (:telephoneValue :telephoneType).
+
+:telephoneValue a ui:PhoneField;
+    ui:arc shape:Phone_value.
+
+:telephoneType a ui:Classifier;
+    ui:from vcard:Type;
+    ui:arc shape:Phone_type.
+</pre>
+
+<h3 id="example-simple-form">Example of a simple form: <a href="https://www.w3.org/DesignIssues/FootprintsExamples/person-form.ttl">person-form.ttl</a></h3>
+
+<p>
+The <em>same</em> shape can also be used by a different form. For instance, to simply view or edit a contact's name and their profile picture, we could use the following form:
+</p>
+
+<pre>
+@prefix shape: &lt;contact-shapes.ttl#&gt;.
+
+:personForm a ui:Form;
+    ui:parts (:nameField :photoField).
+
+:nameField a ui:SingleLineTextField;
+    ui:label "Name";
+    ui:arc shape:Individual_fn;
+    ui:size 20.
+
+:photoField a ui:ImageField; # @@ correct name?
+    ui:arc shape:Individual_hasPhoto.
+</pre>
+
+<p>
+These forms essentially provide different <em>views</em> of the same data (shape). Data created in one form can be edited in the other, and vice-versa.
+</p>
+
+<h3 id="shapes-to-forms">Diagram relating shapes to forms</h3>
+
+<p>
+Here is a diagram attempting to lay out the way the pieces, some existing and some to be made (2019-04), fit together.
+</p>
+<!-- <img alt="The form ecosystem allows forms to be generated from shapes." src="tbl_files/formEcosystem.svg"> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:p="http://www.evolus.vn/Namespace/Pencil" xmlns:pencil="http://www.evolus.vn/Namespace/Pencil" xmlns:xlink="http://www.w3.org/1999/xlink" width="872" height="815" pencil:version="1.2.2"><path fill="none" d="M0 0h872v815H0z"/><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(348 479)"><p:metadata><p:property name="box">100,80</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,40</p:property><p:property name="outputPin2">100,40</p:property><p:property name="outputPin3Origin">50,80</p:property><p:property name="outputPin3">50,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form editor</p:property><p:property name="textFont">Helvetica|normal|normal|15px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="100" height="80" rx="10" ry="10" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(8 45)" font-family="Helvetica" font-size="15" font-weight="400"><tspan x="4.164" y="0">Form editor</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(331 114)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="983e757f1cdc4b87a4ee79b83f6cb15f" ns9889235:connectedOutletId="top-center" ns9889235:viax="-252.5" ns9889235:viay="591">-252.5,601</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="3222ed4dee064f5bb03fc9ca7eefec84" ns9889235:connectedOutletId="middle-left" ns9889235:viax="203" ns9889235:viay="88">213,88</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">validates</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="e" d="M-252.5 601L206.28 95.406 213 88m-8 0h8v8" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#e" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#e" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#e" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">validates</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(311 69)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="3a4c37a173584de991dacefa7f231ed1" ns9889235:connectedOutletId="top-center" ns9889235:viax="-88.5" ns9889235:viay="565">-88.5,575</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="3222ed4dee064f5bb03fc9ca7eefec84" ns9889235:connectedOutletId="middle-left" ns9889235:viax="223" ns9889235:viay="133">233,133</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">validates</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="f" d="M-88.5 575l315.618-433.913L233 133m-8 1l8-1 1 8" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#f" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#f" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#f" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">validates</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(703 330)"><p:metadata><p:property name="box">99,80</p:property><p:property name="outputPin1Origin">49.5,0</p:property><p:property name="outputPin1">49.5,0</p:property><p:property name="outputPin2Origin">99,40</p:property><p:property name="outputPin2">99,40</p:property><p:property name="outputPin3Origin">49.5,80</p:property><p:property name="outputPin3">49.5,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form Renderer</p:property><p:property name="textFont">Helvetica|normal|normal|16px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="99" height="80" rx="10" ry="10" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(8 37)" font-family="Helvetica" font-size="16" font-weight="400"><tspan x="22.836" y="0">Form</tspan><tspan x="8.148" y="18.5">Renderer</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(686 314)"><p:metadata><p:property name="box">99,80</p:property><p:property name="outputPin1Origin">49.5,0</p:property><p:property name="outputPin1">49.5,0</p:property><p:property name="outputPin2Origin">99,40</p:property><p:property name="outputPin2">99,40</p:property><p:property name="outputPin3Origin">49.5,80</p:property><p:property name="outputPin3">49.5,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form Renderer</p:property><p:property name="textFont">Helvetica|normal|normal|16px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="99" height="80" rx="10" ry="10" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(8 37)" font-family="Helvetica" font-size="16" font-weight="400"><tspan x="22.836" y="0">Form</tspan><tspan x="8.148" y="18.5">Renderer</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(612 541)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-178" ns9889235:viax="-513" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="45288c35b5444fecb1d61e006009ff2b">-513,-188</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="b82f419ccce64959865d8c046f826580" ns9889235:connectedOutletId="top-center" ns9889235:viax="-520" ns9889235:viay="-14">-520,-4</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="o" d="M-513-188l-6.62 174.007L-520-4m6-5l-6 5-5-6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#o" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#o" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#o" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:MagneticDisk" transform="translate(176 419)"><p:metadata><p:property name="box">100,100</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,50</p:property><p:property name="outputPin2">100,50</p:property><p:property name="outputPin3Origin">50,100</p:property><p:property name="outputPin3">50,100</p:property><p:property name="outputPin4Origin">0,50</p:property><p:property name="outputPin4">0,50</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Public Form repository</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="fill" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 8.333 75 0 50 0S0 8.333 0 16.667z" fill="#ccf"/><path fill="none" p:name="path" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 25 75 33.333 50 33.333S0 25 0 16.667C0 8.333 25 0 50 0s50 8.333 50 16.667" stroke-linejoin="round" stroke="#666" stroke-width="2"/><text p:name="text" transform="translate(6 64)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="12" y="0">Public Form</tspan><tspan x="17.656" y="14">repository</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:MagneticDisk" transform="translate(176 253)"><p:metadata><p:property name="box">100,100</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,50</p:property><p:property name="outputPin2">100,50</p:property><p:property name="outputPin3Origin">50,100</p:property><p:property name="outputPin3">50,100</p:property><p:property name="outputPin4Origin">0,50</p:property><p:property name="outputPin4">0,50</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Project forms</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="fill" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 8.333 75 0 50 0S0 8.333 0 16.667z" fill="#ccf"/><path fill="none" p:name="path" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 25 75 33.333 50 33.333S0 25 0 16.667C0 8.333 25 0 50 0s50 8.333 50 16.667" stroke-linejoin="round" stroke="#666" stroke-width="2"/><text p:name="text" transform="translate(6 71)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="8.664" y="0">Project forms</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:Connector" transform="translate(289 344)"><p:metadata><p:property name="box">82,83</p:property><p:property name="outputPin1Origin">41,0</p:property><p:property name="outputPin1">41,0</p:property><p:property name="outputPin2Origin">82,41.5</p:property><p:property name="outputPin2">82,41.5</p:property><p:property name="outputPin3Origin">41,83</p:property><p:property name="outputPin3">41,83</p:property><p:property name="outputPin4Origin">0,41.5</p:property><p:property name="outputPin4">0,41.5</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form from Class query</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><ellipse p:name="path" cx="41" cy="41.5" rx="41" ry="41.5" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(6 39)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="7.336" y="0">Form from</tspan><tspan x="3.328" y="14">Class query</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(371 519)"><p:metadata><p:property name="box">100,80</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,40</p:property><p:property name="outputPin2">100,40</p:property><p:property name="outputPin3Origin">50,80</p:property><p:property name="outputPin3">50,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form editor</p:property><p:property name="textFont">Helvetica|normal|normal|15px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="100" height="80" rx="10" ry="10" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(8 45)" font-family="Helvetica" font-size="15" font-weight="400"><tspan x="4.164" y="0">Form editor</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(233 537)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form - editing form</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ccf" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(6 34)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="4.492" y="0">Form - editing</tspan><tspan x="29.5" y="14">form</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(456 300)"><p:metadata><p:property name="box">100,80</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,40</p:property><p:property name="outputPin2">100,40</p:property><p:property name="outputPin3Origin">50,80</p:property><p:property name="outputPin3">50,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#99FFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">User Interface manager</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="100" height="80" rx="10" ry="10" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#9ff"/><text p:name="text" transform="translate(6 37)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="6.32" y="0">User Interface</tspan><tspan x="20.32" y="14">manager</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Curvy Connector" transform="translate(377 183)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="202.5" ns9889235:viax="4" ns9889235:connectedOutletId="middle-right" ns9889235:connectedShapeId="dee95c853a9e45e99511059f6a628659">-6,202.5</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="157" ns9889235:viax="69" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="36ced6c88d064986b28337bad3fb1a6b">79,157</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">curvy</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="N" d="M-6 202.5C42 205 31 157 79 157m-6-6l6 6-6 6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#N" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#N" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#N" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Curvy Connector" transform="translate(691 492)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="f2280dc33c8e485ebb7d52e52cd08f0f" ns9889235:connectedOutletId="middle-right" ns9889235:viax="-353" ns9889235:viay="82">-363,82</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="721c6ec6114742afb88fb0ee80007d20" ns9889235:connectedOutletId="middle-left" ns9889235:viax="-330" ns9889235:viay="67">-320,67</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">curvy</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="O" d="M-363 82c30 0 13-15 43-15m-6-6l6 6-6 6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#O" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#O" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#O" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:Connector" transform="translate(364 52)"><p:metadata><p:property name="box">68,64</p:property><p:property name="outputPin1Origin">34,0</p:property><p:property name="outputPin1">34,0</p:property><p:property name="outputPin2Origin">68,32</p:property><p:property name="outputPin2">68,32</p:property><p:property name="outputPin3Origin">34,64</p:property><p:property name="outputPin3">34,64</p:property><p:property name="outputPin4Origin">0,32</p:property><p:property name="outputPin4">0,32</p:property><p:property name="fillColor">#FFFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Thing</p:property><p:property name="textFont">Helvetica|normal|normal|16px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><ellipse p:name="path" cx="34" cy="32" rx="34" ry="32" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#fff"/><text p:name="text" transform="translate(8 38)" font-family="Helvetica" font-size="16" font-weight="400"><tspan x="5.992" y="0">Thing</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(668 69)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#99FF99FF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Ontology</p:property><p:property name="textFont">Helvetica|normal|normal|16px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#9f9" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(8 43)" font-family="Helvetica" font-size="16" font-weight="400"><tspan x="7.484" y="0">Ontology</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(538 27)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="57" ns9889235:viax="-96" ns9889235:connectedOutletId="middle-right" ns9889235:connectedShapeId="3283c083b70f450ab2e4d9a1ffe8ac53">-106,57</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="aecffbe12ce24d4483e0dc11615336ac" ns9889235:connectedOutletId="middle-left" ns9889235:viax="120" ns9889235:viay="79">130,79</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Class</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="X" d="M-106 57l226.043 21.072L130 79m-5-6l5 6-6 5" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#X" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#X" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#X" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">Class</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(668 300)"><p:metadata><p:property name="box">99,80</p:property><p:property name="outputPin1Origin">49.5,0</p:property><p:property name="outputPin1">49.5,0</p:property><p:property name="outputPin2Origin">99,40</p:property><p:property name="outputPin2">99,40</p:property><p:property name="outputPin3Origin">49.5,80</p:property><p:property name="outputPin3">49.5,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form Renderer</p:property><p:property name="textFont">Helvetica|normal|normal|16px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="99" height="80" rx="10" ry="10" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(8 37)" font-family="Helvetica" font-size="16" font-weight="400"><tspan x="22.836" y="0">Form</tspan><tspan x="8.148" y="18.5">Renderer</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(675 168)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="aecffbe12ce24d4483e0dc11615336ac" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="40.5" ns9889235:viay="-15">40.5,-25</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="122" ns9889235:viax="42.5" ns9889235:connectedOutletId="top-center" ns9889235:connectedShapeId="0119e552698a43c69560f106e9df2a46">42.5,132</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Labels, Class Structure</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="ac" d="M40.5-25l1.873 147 .127 10m5.5-6l-5.5 6-5.5-6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#ac" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#ac" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#ac" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">Labels, Class Structure</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:Connector" transform="translate(58 98)"><p:metadata><p:property name="box">68,64</p:property><p:property name="outputPin1Origin">34,0</p:property><p:property name="outputPin1">34,0</p:property><p:property name="outputPin2Origin">68,32</p:property><p:property name="outputPin2">68,32</p:property><p:property name="outputPin3Origin">34,64</p:property><p:property name="outputPin3">34,64</p:property><p:property name="outputPin4Origin">0,32</p:property><p:property name="outputPin4">0,32</p:property><p:property name="fillColor">#FFFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">User</p:property><p:property name="textFont">Helvetica|normal|normal|14px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><ellipse p:name="path" cx="34" cy="32" rx="34" ry="32" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#fff"/><text p:name="text" transform="translate(7 37)" font-family="Helvetica" font-size="14" font-weight="400"><tspan x="12.227" y="0">User</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(155 150)"><p:metadata><p:property name="box">79,51</p:property><p:property name="outputPin1Origin">39.5,0</p:property><p:property name="outputPin1">39.5,0</p:property><p:property name="outputPin2Origin">79,25.5</p:property><p:property name="outputPin2">79,25.5</p:property><p:property name="outputPin3Origin">39.5,51</p:property><p:property name="outputPin3">39.5,51</p:property><p:property name="outputPin4Origin">0,25.5</p:property><p:property name="outputPin4">0,25.5</p:property><p:property name="fillColor">#CCCCCCFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Preferences</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ccc" d="M0 0h79v51H0z"/><text p:name="text" transform="translate(6 30)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="1.156" y="0">Preferences</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(292 65)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="94.481" ns9889235:viax="-168.676" ns9889235:connectedOutletId="bottom-right" ns9889235:connectedShapeId="2a80fc30b6d4449d9c55ce8525efeb8f">-175.9583694396574,87.62741699796952</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="b1fdd14af4e44bc6a88bc2e484824ee1" ns9889235:connectedOutletId="middle-left" ns9889235:viax="-147" ns9889235:viay="110.5">-137,111</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="al" d="M-175.958 87.627l30.383 18.228L-137 111m-2-8l2 8-8 2" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#al" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#al" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#al" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(537 516)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-153" ns9889235:viax="-311" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="063e10572632433aa0d7a94fe72dd5ce">-311,-163</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="-130.5" ns9889235:viax="-258" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="dee95c853a9e45e99511059f6a628659">-248,-130.5</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="am" d="M-311-163l54.113 27.915L-248-130.5m-2-7.5l2 7.5-8 2.5" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#am" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#am" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#am" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(486 512)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="6eb22a8ad6544528a2b69e2b60fe2f53" ns9889235:connectedOutletId="top-center" ns9889235:viax="-260" ns9889235:viay="-103">-260,-93</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="-126.5" ns9889235:viax="-207" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="dee95c853a9e45e99511059f6a628659">-197,-126.5</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="an" d="M-260-93l54.17-28.805 8.83-4.695m-8-2.5l8 2.5-2 7.5" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#an" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#an" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#an" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(307 105)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="b1fdd14af4e44bc6a88bc2e484824ee1" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="-112.5" ns9889235:viay="106">-112.5,96</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="138" ns9889235:viax="-81" ns9889235:connectedOutletId="top-center" ns9889235:connectedShapeId="063e10572632433aa0d7a94fe72dd5ce">-81,148</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="ao" d="M-112.5 96l26.319 43.447L-81 148m2-8l-2 8-8-2" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#ao" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#ao" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#ao" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(416 401)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-11" ns9889235:viax="90" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="36ced6c88d064986b28337bad3fb1a6b">90,-21</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="34" ns9889235:viax="186.5" ns9889235:connectedOutletId="top-center" ns9889235:connectedShapeId="395547e3c7054e68b33864aa2d8b7357">186.5,44</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">chooses</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="ap" d="M90-21l88.206 59.413L186.5 44m-1.5-8l1.5 8-7.5 2" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#ap" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#ap" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#ap" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">chooses</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(665 624)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-65" ns9889235:viax="-184" ns9889235:connectedOutletId="middle-right" ns9889235:connectedShapeId="721c6ec6114742afb88fb0ee80007d20">-194,-65</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="-142" ns9889235:viax="-120" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="395547e3c7054e68b33864aa2d8b7357">-110,-142</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">creates, edits</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="aq" d="M-194-65l76.628-70.243L-110-142m-8 0h8v8" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#aq" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#aq" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#aq" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">creates, edits</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(747 495)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-60" ns9889235:viax="-144.5" ns9889235:connectedOutletId="top-center" ns9889235:connectedShapeId="395547e3c7054e68b33864aa2d8b7357">-144.5,-50</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="0119e552698a43c69560f106e9df2a46" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="-29.5" ns9889235:viay="-105">-29.5,-115</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">ui, fields</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="ar" d="M-144.5-50l106.294-60.08L-29.5-115m-7.5-2l7.5 2-2.5 8" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#ar" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#ar" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#ar" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">ui, fields</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(724 541)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="36ced6c88d064986b28337bad3fb1a6b" ns9889235:connectedOutletId="middle-right" ns9889235:viax="-158" ns9889235:viay="-201">-168,-201</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="-201" ns9889235:viax="-66" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="0119e552698a43c69560f106e9df2a46">-56,-201</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">calls</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="as" d="M-168-201h112m-6-6l6 6-6 6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#as" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#as" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#as" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">calls</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(397 135)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="3283c083b70f450ab2e4d9a1ffe8ac53" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="1" ns9889235:viay="-9">1,-19</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="36ced6c88d064986b28337bad3fb1a6b" ns9889235:connectedOutletId="top-center" ns9889235:viax="109" ns9889235:viay="155">109,165</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="at" d="M1-19l102.938 175.376L109 165m2-8l-2 8-8-2" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#at" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#at" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#at" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(573 62)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="64" ns9889235:viax="-175" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="3283c083b70f450ab2e4d9a1ffe8ac53">-175,54</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="dee95c853a9e45e99511059f6a628659" ns9889235:connectedOutletId="top-right" ns9889235:viax="-206.981" ns9889235:viay="287.041">-214.00862197135154,294.15506858075827</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Class</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="au" d="M-175 54l-37.405 230.284-1.604 9.871M-208 289l-6.009 5.155L-219 288" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#au" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#au" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#au" startOffset="50%" text-anchor="middle" alignment-baseline="middle"> <tspan dy="-4" p:name="textSpan" dx="-16">Class</tspan> </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(627 503)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ccf" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(6 41)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="27.508" y="0">Form</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(587 469)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ccf" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(6 41)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="27.508" y="0">Form</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(555 445)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Form</p:property><p:property name="textFont">Helvetica|normal|normal|18px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ccf" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(9 43)" font-family="Helvetica" font-size="18" font-weight="400"><tspan x="17.508" y="0">Form</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(544 162)"><p:metadata><p:property name="box">100,80</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,40</p:property><p:property name="outputPin2">100,40</p:property><p:property name="outputPin3Origin">50,80</p:property><p:property name="outputPin3">50,80</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40</p:property><p:property name="fillColor">#FFFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Application data</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#fff" d="M0 0h100v80H0z"/><text p:name="text" transform="translate(6 44)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="1.305" y="0">Application data</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(766 207)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="0119e552698a43c69560f106e9df2a46" ns9889235:connectedOutletId="top-left" ns9889235:viax="-102.895" ns9889235:viay="89.701">-95.07106781,95.92893219</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="45" ns9889235:viax="-172" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="3222ed4dee064f5bb03fc9ca7eefec84">-172,35</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="aL" d="M-95.071 95.929l-69.09-54.72L-172 35m1 8l-1-8 8-1" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#aL" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#aL" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#aL" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(327 48)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="3222ed4dee064f5bb03fc9ca7eefec84" ns9889235:connectedOutletId="top-center" ns9889235:viax="267" ns9889235:viay="104">267,114</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="65.481" ns9889235:viax="102.324" ns9889235:connectedOutletId="bottom-right" ns9889235:connectedShapeId="3283c083b70f450ab2e4d9a1ffe8ac53">95.04163056034261,58.62741699796952</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="aM" d="M267 114L104.56 61.693l-9.518-3.066M99 66l-3.958-7.373L102 55" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#aM" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#aM" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#aM" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(308 434)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-12.041" ns9889235:viax="58.019" ns9889235:connectedOutletId="bottom-right" ns9889235:connectedShapeId="dee95c853a9e45e99511059f6a628659">50.991378028648455,-19.155068580758282</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="48" ns9889235:viax="237" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="395547e3c7054e68b33864aa2d8b7357">247,48</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="aN" d="M50.991-19.155L237.54 44.759 247 48m-4-7l4 7-7 4" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#aN" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#aN" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#aN" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(179 644)"><p:metadata><p:property name="box">87,80</p:property><p:property name="outputPin1Origin">43.5,0</p:property><p:property name="outputPin1">43.499999999999986,0</p:property><p:property name="outputPin2Origin">87,40</p:property><p:property name="outputPin2">86.99999999999997,40.00000000000001</p:property><p:property name="outputPin3Origin">43.5,80</p:property><p:property name="outputPin3">43.499999999999986,80.00000000000001</p:property><p:property name="outputPin4Origin">0,40</p:property><p:property name="outputPin4">0,40.00000000000001</p:property><p:property name="fillColor">#FFCCCCFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">SHACL shape</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#fcc" d="M0 0h87v80H0z"/><text p:name="text" transform="translate(6 37)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="17.5" y="0">SHACL</tspan><tspan x="21.156" y="14">shape</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(422 650)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#CCCCFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|5,5</p:property><p:property name="textContent">Form without order or UI data</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ccf" stroke-dasharray="5,5" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(6 27)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="6.828" y="0">Form without</tspan><tspan x="12.828" y="14">order or UI</tspan><tspan x="29.828" y="28">data</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(369 679)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="1c7d4e4aee944165bd03ce6b4da292b0" ns9889235:connectedOutletId="top-center" ns9889235:viax="100.5" ns9889235:viay="-39">101,-29</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="-70" ns9889235:viax="52" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="721c6ec6114742afb88fb0ee80007d20">52,-80</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="aW" d="M101-29L58.928-72.789 52-80m0 8v-8h8" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#aW" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#aW" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#aW" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(317 659)"><p:metadata><p:property name="box">54,57</p:property><p:property name="outputPin1Origin">27,0</p:property><p:property name="outputPin1">26.999999999999996,0</p:property><p:property name="outputPin2Origin">54,28.5</p:property><p:property name="outputPin2">53.99999999999999,28.5</p:property><p:property name="outputPin3Origin">27,57</p:property><p:property name="outputPin3">26.999999999999996,57</p:property><p:property name="outputPin4Origin">0,28.5</p:property><p:property name="outputPin4">0,28.5</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Convert</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="54" height="57" rx="6.75" ry="6.75" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(6 33)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="-.008" y="0">Convert</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(769 402)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="a8d0cf770b454240812606c60b99be65" ns9889235:connectedOutletId="middle-right" ns9889235:viax="-388" ns9889235:viay="285.5">-398,285.5</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="1c7d4e4aee944165bd03ce6b4da292b0" ns9889235:connectedOutletId="middle-left" ns9889235:viax="-357" ns9889235:viay="285">-347,285</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bb" d="M-398 285.5l41-.402 10-.098m-6-6l6 6-6 6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bb" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bb" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bb" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(780 432)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="a8d0cf770b454240812606c60b99be65" ns9889235:connectedOutletId="middle-right" ns9889235:viax="-399" ns9889235:viay="255.5">-409,255.5</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="1c7d4e4aee944165bd03ce6b4da292b0" ns9889235:connectedOutletId="middle-left" ns9889235:viax="-368" ns9889235:viay="255">-358,255</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bc" d="M-409 255.5l41-.402 10-.098m-6-6l6 6-6 6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bc" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bc" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bc" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(254 670)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="3a4c37a173584de991dacefa7f231ed1" ns9889235:connectedOutletId="middle-right" ns9889235:viax="22" ns9889235:viay="14">12,14</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="17.5" ns9889235:viax="53" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="a8d0cf770b454240812606c60b99be65">63,17.5</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bd" d="M12 14l41.023 2.815L63 17.5M58 11l5 6.5-6 5.5" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bd" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bd" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bd" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:MagneticDisk" transform="translate(49 253)"><p:metadata><p:property name="box">100,100</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,50</p:property><p:property name="outputPin2">100,50</p:property><p:property name="outputPin3Origin">50,100</p:property><p:property name="outputPin3">50,100</p:property><p:property name="outputPin4Origin">0,50</p:property><p:property name="outputPin4">0,50</p:property><p:property name="fillColor">#FFCCCCFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Project shapes</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="fill" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 8.333 75 0 50 0S0 8.333 0 16.667z" fill="#fcc"/><path fill="none" p:name="path" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 25 75 33.333 50 33.333S0 25 0 16.667C0 8.333 25 0 50 0s50 8.333 50 16.667" stroke-linejoin="round" stroke="#666" stroke-width="2"/><text p:name="text" transform="translate(6 71)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="4.313" y="0">Project shapes</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:MagneticDisk" transform="translate(42 400)"><p:metadata><p:property name="box">100,100</p:property><p:property name="outputPin1Origin">50,0</p:property><p:property name="outputPin1">50,0</p:property><p:property name="outputPin2Origin">100,50</p:property><p:property name="outputPin2">100,50</p:property><p:property name="outputPin3Origin">50,100</p:property><p:property name="outputPin3">50,100</p:property><p:property name="outputPin4Origin">0,50</p:property><p:property name="outputPin4">0,50</p:property><p:property name="fillColor">#FFCCCCFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Public Shape repository</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="fill" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 8.333 75 0 50 0S0 8.333 0 16.667z" fill="#fcc"/><path fill="none" p:name="path" d="M0 16.667v66.666C0 91.667 25 100 50 100s50-8.333 50-16.667V16.667C100 25 75 33.333 50 33.333S0 25 0 16.667C0 8.333 25 0 50 0s50 8.333 50 16.667" stroke-linejoin="round" stroke="#666" stroke-width="2"/><text p:name="text" transform="translate(6 64)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="8.648" y="0">Public Shape</tspan><tspan x="17.656" y="14">repository</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:Connector" transform="translate(51 537)"><p:metadata><p:property name="box">82,83</p:property><p:property name="outputPin1Origin">41,0</p:property><p:property name="outputPin1">41,0</p:property><p:property name="outputPin2Origin">82,41.5</p:property><p:property name="outputPin2">82,41.5</p:property><p:property name="outputPin3Origin">41,83</p:property><p:property name="outputPin3">41,83</p:property><p:property name="outputPin4Origin">0,41.5</p:property><p:property name="outputPin4">0,41.5</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Shape from Class query</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><ellipse p:name="path" cx="41" cy="41.5" rx="41" ry="41.5" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(6 39)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="3.984" y="0">Shape from</tspan><tspan x="3.328" y="14">Class query</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(582 531)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:viay="-21" ns9889235:viax="-490" ns9889235:connectedOutletId="bottom-center" ns9889235:connectedShapeId="eacd9252f82649c0af8de0a65bb991d1">-490,-31</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="b82f419ccce64959865d8c046f826580" ns9889235:connectedOutletId="top-center" ns9889235:viax="-490" ns9889235:viay="-4">-490,6</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bq" d="M-490-31V6m6-6l-6 6-6-6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bq" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bq" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bq" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(289 705)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="b82f419ccce64959865d8c046f826580" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="-197" ns9889235:viay="-75">-197,-85</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:viay="-21" ns9889235:viax="-120" ns9889235:connectedOutletId="middle-left" ns9889235:connectedShapeId="3a4c37a173584de991dacefa7f231ed1">-110,-21</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="br" d="M-197-85l78.945 58.074L-110-21m-1-8l1 8-8 1" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#br" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#br" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#br" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(317 130)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="b1fdd14af4e44bc6a88bc2e484824ee1" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="-122.5" ns9889235:viay="81">-122.5,71</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="45288c35b5444fecb1d61e006009ff2b" ns9889235:connectedOutletId="top-center" ns9889235:viax="-218" ns9889235:viay="113">-218,123</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bs" d="M-122.5 71l-86.718 47.218L-218 123m8 2l-8-2 2-8" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bs" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bs" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bs" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Flowchart:process" transform="translate(31 715)"><p:metadata><p:property name="box">95,74</p:property><p:property name="outputPin1Origin">47.5,0</p:property><p:property name="outputPin1">47.5,0</p:property><p:property name="outputPin2Origin">95,37</p:property><p:property name="outputPin2">95,37</p:property><p:property name="outputPin3Origin">47.5,74</p:property><p:property name="outputPin3">47.5,74</p:property><p:property name="outputPin4Origin">0,37</p:property><p:property name="outputPin4">0,37</p:property><p:property name="fillColor">#FFFF99FF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">SHEx shape expression</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><path p:name="path" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#ff9" d="M0 0h95v74H0z"/><text p:name="text" transform="translate(6 34)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="8.148" y="0">SHEx shape</tspan><tspan x="12.484" y="14">expression</tspan></text></g><g p:type="Shape" p:def="Evolus.Flowchart:AlternateProcess" transform="translate(598 724)"><p:metadata><p:property name="box">54,57</p:property><p:property name="outputPin1Origin">27,0</p:property><p:property name="outputPin1">26.999999999999996,0</p:property><p:property name="outputPin2Origin">54,28.5</p:property><p:property name="outputPin2">53.99999999999999,28.5</p:property><p:property name="outputPin3Origin">27,57</p:property><p:property name="outputPin3">26.999999999999996,57</p:property><p:property name="outputPin4Origin">0,28.5</p:property><p:property name="outputPin4">0,28.5</p:property><p:property name="fillColor">#CCFFFFFF</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent">Convert</p:property><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property><p:property name="optionText1"/><p:property name="optionText2"/><p:property name="optionText3"/><p:property name="optionText4"/><p:property name="optionTextFont">Helvetica|normal|normal|12px|none</p:property><p:property name="optionTextColor">#666666FF</p:property></p:metadata><rect p:name="path" width="54" height="57" rx="6.75" ry="6.75" stroke-linejoin="round" stroke="#666" stroke-width="2" fill="#cff"/><text p:name="text" transform="translate(6 33)" font-family="Helvetica" font-size="12" font-weight="400"><tspan x="-.008" y="0">Convert</tspan></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(374 684)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="267086cf2aa74744b3ae7796a81a5eb1" ns9889235:connectedOutletId="top-center" ns9889235:viax="251" ns9889235:viay="30">251,40</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="395547e3c7054e68b33864aa2d8b7357" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="228.5" ns9889235:viay="-155">229,-165</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bB" d="M251 40l-20.933-195.057L229-165m-5 6l5-6 6 5" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bB" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bB" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bB" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(264 685)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="983e757f1cdc4b87a4ee79b83f6cb15f" ns9889235:connectedOutletId="middle-right" ns9889235:viax="-128" ns9889235:viay="67">-138,67</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="267086cf2aa74744b3ae7796a81a5eb1" ns9889235:connectedOutletId="middle-left" ns9889235:viax="324" ns9889235:viay="67.5">334,68</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bC" d="M-138 67l462 .979L334 68m-6-6l6 6-6 6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bC" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bC" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bC" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g><g p:type="Shape" p:def="Evolus.Common:arrow" p:sc="Straight Connector" transform="translate(319 725)"><p:metadata><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="startPin" ns9889235:connectedShapeId="b82f419ccce64959865d8c046f826580" ns9889235:connectedOutletId="bottom-center" ns9889235:viax="-227" ns9889235:viay="-95">-227,-105</p:property><p:property xmlns:ns9889235="http://www.evolus.vn/Namespace/Pencil" name="endPin" ns9889235:connectedShapeId="983e757f1cdc4b87a4ee79b83f6cb15f" ns9889235:connectedOutletId="top-center" ns9889235:viax="-240.5" ns9889235:viay="-20">-240,-10</p:property><p:property name="withStartArrow">false</p:property><p:property name="withEndArrow">true</p:property><p:property name="mode">straight</p:property><p:property name="detached">false</p:property><p:property name="strokeColor">#666666FF</p:property><p:property name="strokeStyle">2|</p:property><p:property name="textContent"/><p:property name="textFont">Helvetica|normal|normal|12px|none</p:property><p:property name="textColor">#000000FF</p:property><p:property name="textAlign">1,1</p:property></p:metadata><defs><path p:name="path" id="bD" d="M-227-105l-11.644 85.092L-240-10m6-5l-6 5-5-6" stroke-linejoin="round" fill="none"/></defs><use xlink:href="#bD" stroke-width="10" stroke-opacity="0" stroke="red"/><use xlink:href="#bD" p:name="outArrow1" stroke="#666" stroke-width="2"/><text p:name="text" font-family="Helvetica" font-size="12" font-weight="400"><textPath xlink:href="#bD" startOffset="50%" text-anchor="middle" alignment-baseline="middle">  </textPath></text></g></svg>
+
+<p>
+We imagine here that there are shared and project-wide repositories of shapes and of forms. Shapes, remember, are use by developers, and forms may be made not only by developers and designers but also by power users. In addition to a form being created from scratch by a designer, a basic version of it could be autogenerated from a shape, after which it can be refined manually.
+</p>
+
+<h2 id="footprints">Footprint Languages</h2>
+<h4>The problem of where to store new data</h4>
+
+<p>
+For all these languages above, to get real interoperability in a <i>read-write</i> linked data world, we need something more.   In a read-only world, the Linked Data rules gives us the possibility of picking some data and following the links to find related data.  When for example, we find an address book, we can follow links to find the parts of it, and hence the groups and the people it describes.  For we may need to know a certain protocol about how to find things, such as finding a <a href="http://xmlns.com/foaf/spec/#term_publications"><tt>foaf:publications</tt></a> link to find a graph which contains data about what someone has foaf:made, or the very general rdfs:seeAlso relation which takes to other graphs about the same thing. But when we want (and we should always want!) to write stuff as well as read it, our generic data editors don't currently have a way of agreeing on <b>where</b> to store the new information.
+</p>
+<p>
+In a linked data world, triples are stored at the document of the subject, or of the object, or both. In this world, the critical things are then
+</p>
+
+<ul>
+<li>How to we generate the URI for a new node?</li>
+<li>Is a given triple forward or backward linked, or both?</li>
+<li>What kind of indexes have to be updated?</li>
+</ul>
+
+<p>
+(Many of the generic apps I have written and seen so far tend to store all the data just in the same place as the data it already found, or in a single file pointed to form a configuration file which is set up specifically by the application code by hand.)
+</p>
+
+<p>
+The RDF form language in the UI ontology defines not just the UI elements in a vacuum, but defines them in relation to the graph of linked data. For every UI widget displayed, there is a link to the part of the data shape it corresponds to. In addition, it can also specify
+<b>where</b>
+it should store its data by linking to a footprint. In a linked data world, that means having information with which to construct the URIs of new objects, and also as to whether the link is traditionally stored with the home document of the subject, of the object, or both.
+</p>
+
+<p>
+Because URIs in the web of linked data are primary, footprints should <em>only</em> be used to create a new link where old data does not exist.
+<b>Once a linked data link exists, systems must follow that and <em>never</em> use the footprint information to guess that an object exists at URI given by the footpath function.</b>
+(They might, however, use <em>shape</em> information about how information is linked, if <a href="#shape-conformance">conformance</a> to a shape is explicitly indicated.)
+</p>
+
+<p>
+Like between shapes and forms, a many-to-many relation exists between shapes and footprints: data conforming to a shape can be stored using different kinds of footprints. Again, this does <em>not</em> make a difference for reading data (for which we only rely on the shape), but only for creating new data (which requires a footprint to tell where things should go).
+</p>
+
+<h4 id="examples">Examples</h4>
+
+<p>
+Here are some examples (These may not be correct!) imagining footprints for a few data browser things.
+</p>
+<ul>
+<li>When a new person is added top a group whose URI is <var>g</var>, if the UUID of the person is <var>u</var>, then the URI of the person is
+<br>
+<tt>dir(g) + 'Person/' + u + '/index.ttl#this'</tt>
+</li>
+<li>
+When a new group whose name is <var>n</var> is added to an address book whose URI is <var>u</var>, then group's URI is <br>
+<tt>dir(u) + 'Group/' + munge(n) + '/index.ttl#this'</tt>
+</li>
+<li>
+When a new chat is added to an meeting whose URI is <var>u</var>, then the URI of the chat is <br>
+<tt> dir(u)  + 'Chat/index.ttl#this'</tt>
+</li>
+<li>
+and so on
+</li>
+</ul>
+<p>
+Here we imagine that <tt>dir()</tt> is a function which trims off a path segment and <tt>munge()</tt> a function which sanitizes a string to remove or encode strange characters.
+</p>
+<p>
+How can we add that information in? As several different footprints of the same shape can still interoperate at the read level, <b>it makes sense for footprint then to link to the shape</b>. You might have contacts information from different system using different footprints but the same shape. When you validate data using a footprint, you can validate the URIs too, as well as validating the shape.
+</p>
+<p>
+Just like folders and documents can indicate conformance with a shape, they could also indicate their preference for a certain footprint. A suggested footprint can be linked to by a form, as the form has to create the nodes as the user generates more data. If no footprint is indicated then for the resource to which a new resource is to be appended, the form's suggested footprint can be used instead.
+</p>
+<p>
+(There is a design choice here as to whether to use some microsyntax like the JS expressions in the example, or to express their structure in RDF.)
+</p>
+
+<h4 id="example-contact-footprint">
+Example: <a href="https://www.w3.org/DesignIssues/FootprintsExamples/contact-footprint.ttl">contact-footprint.ttl</a>
+</h4>
+
+@@TODO add contact-footprint.ttl
+<pre>
+@prefix fp:    &lt;http://www.w3.org/ns/footprints#&gt;.
+@prefix fun:   &lt;http://www.w3.org/ns/function#&gt;.
+@prefix shape: &lt;contact-shapes.ttl#&gt;.
+
+:groupFootprint a fp:Footprint;
+    fp:arc shape:AddressBook_includesGroup;
+    fp:base fp:Source; # provides the base URI for the relative URL below
+    fp:uriTemplate "Group/{name}/index.ttl#this";
+    fp:binding [
+      fp:variable "name";
+      fp:value [ fp:SanitizeOf [ fp:objectOfArc shape:Group_fn ] ]
+    ].
+</pre>
+
+<h2 id="discovery">Discovery</h2>
+
+<p>
+This is the process, for a given user, of finding where they keep their stuff. In this context, discovery is about the system finding shapes and forms. And hence, where new stuff should be kept.  Not yet discussed in this article. Places to look:
+</p>
+<ol>
+<li>A public index directly linked from the WebID</li>
+<li>A private index linked from the preferences file, which is linked from the WebID</li>
+<li>A index for a any group, project, team, etc, which the user is active in. Linked from the list of groups in which user is active</li>
+</ol>
+<p>
+The last path, the path through a project or group, is an important one for the vision of a read-write web and a collaborative world. Much collaboration will be within projects which are not public, and even if they are public in the sense of being publicly readable, there will be a limited number of people actively involved.  W3C working groups and GitHub organizations are examples, as are committees and boards and project teams all over the world.
+</p>
+<p>
+Within a limited group, things scale better technically and socially. You can have annotation servers which allow people to share their comments without being flooded by input from the general public, or wasted on people who are not really interested.  The systems which end up maximizing the effectiveness of communication when people take social actions, like liking, objecting, endorsing, and so on, are important. The read-write web gives us the ability to create all kinds of architectures here, and we must pick ones which are simple but deliver a great value.  We must allow users to construct social and data structures as they need, and support a web becomes more and more <a href="https://www.w3.org/DesignIssues/Fractal.html">fractal</a>.
+</p>
+<p>
+<b>Whenever there is a path to find public things related to a user, and a similar path to find private things related to a user, then the same path should be made for groups in which the user is active.
+</b>
+</p>
+<p>
+That is a small simple start.
+</p>
+<hr>
+<!-- <p> -->
+<!-- <a href="https://www.w3.org/DesignIssues/Overview.html">Up to Design Issues</a> -->
+<!-- </p> -->
+<p>
+<a href="https://www.w3.org/People/Berners-Lee">Tim BL</a>
+</p>
+
+</body>
+</html>
