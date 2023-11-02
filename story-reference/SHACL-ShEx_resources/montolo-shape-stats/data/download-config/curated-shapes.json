@@ -1,0 +1,166 @@
+  [{
+    "url": "https://github.com/alexiskeely/SchemaFiles.git",
+    "title": "SchemaFiles",
+    "description": "ShEx and SHACL files for University of Washington Libraries Semantic Web data validation",
+    "type": "git",
+    "folder": ["SHACL"],
+    "file-type": ["turtle"],
+    "prefix": "uwl"
+  },
+  {
+    "url": "https://github.com/steveraysteveray/fsgim-shacl.git",
+    "title": "fsgim-shacl",
+    "description": "This is a SHACL implementation of the ANSI/ASHRAE/NEMA Standard 201-2016, commonly known as FSGIM (Facility Smart Grid Information Model)",
+    "type": "git",
+    "folder": ["explicit-nodes"],
+    "file-type": ["turtle"],
+    "prefix": "fsgim"
+  },
+  {
+    "url": "https://github.com/ternaustralia/shacl_tern-org.git",
+    "title": "TERN SHACL Shapes",
+    "description": "This repository contains the SHACL shape files to validate data based on the vocabulary defined in https://w3id.org/tern/ontologies/org/",
+    "type": "git",
+    "folder": ["docs"],
+    "file-type": ["turtle"],
+    "prefix": "tern"
+  },
+  {
+    "url": "https://github.com/FAIRDataTeam/fair-semantic-model.git", 
+    "title": "fair-semantic-model",
+    "description": "Semantic model for the FAIR metadata in a SHACL serialization",
+    "type": "git", 
+    "folder": ["shacl"],
+    "file-type": ["turtle"],
+    "prefix": "fair"
+  },
+  {
+    "url": "https://github.com/semantifyit/actions-spec.git",
+    "title": "Actions-spec",
+    "description": "The WASA language sees Web APIs as a collection of actions that can be taken on a graph resources. These actions can be linked explicitly, allowing clients to achieve certain goals without hardcoding the orchestration of these actions (i.e. order of action invocation). As a domain model to describe input and output parameters, we use domain-specific patterns that restrict and extend the schema.org vocabulary. An API publisher can define constraints over the input and output of an action via these pattern that are defined with SHACL shapes",
+    "type": "git",
+    "folder": ["vocab/ds"],
+    "file-type": ["turtle"],
+    "prefix": "wasa"
+  },
+  {
+    "url": "https://github.com/CSIRO-enviro-informatics/eudm-profile.git",
+    "title": "EUDM profile",
+    "description": "Profile of metadata standards for EUDM datasets. This ontology contains a range of resources describing a profile of well-known metadata standards to be used to characterise datasets within the EUDM project.",
+    "type": "git",
+    "folder": ["model"],
+    "file-type": ["turtle"],
+    "prefix": "eudm"
+    
+  },
+  {
+    "url": "https://github.com/geoschemas-org/geoshapes.git",
+    "title": "GeoShapes",
+    "description": "This is a test. We are using the puSHACL ( https://github.com/RDFLib/pySHACL ) library and wrapping it in Flask and exposing it via Google Cloud Run to provide an online SHACL validation that can be part of an automated work flow.",
+    "type": "git",
+    "folder": ["shapegraphs"],
+    "file-type": ["turtle"],
+    "prefix": "geo"
+  },
+  {
+    "url": "https://github.com/SEMICeu/dcat-ap_shacl.git",
+    "title": "DCAT-AP SHACL constraints definition",
+    "description": "The Application Profiles (AP) offered here represent a set of integrity constraints used to check the physical and logical correctness or rationality of a certain dataset. The SHACL specifications for DCAT Application Profile.",
+    "type": "git",
+    "folder": ["shacl"],
+    "file-type": ["turtle"],
+    "prefix": "dcat-ap"
+  },
+  {
+    "url": "https://www.w3.org/ns/shacl-shacl",
+    "title": "SHACL of SHACL",
+    "description": "SHACL constraints of the SHACL vocabulary",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "shsh"
+  },
+  {
+    "url": "https://webgate.ec.europa.eu/eli-validator/shapes/eli-1.2-shapes.ttl",
+    "title": "ELI SHACL shapes",
+    "description": "SHACL shapes for the European Legislation Identifier ontology",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "eli-sh"
+  },
+  {
+    "url": "http://openarchaeo.huma-num.fr/federation/resources/shapes/OpenArchaeo-Shapes.ttl",
+    "title": "OpenArcheo shapes",
+    "description": "SHACL shapes for archaeology from the MASA consortium",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "oash"
+  },
+  {
+    "url": "https://gist.githubusercontent.com/tfrancart/cd7af66ba629352f353bec49b76efb98/raw/ScoLOMFR-V6-AP-SHACL.ttl",
+    "title": "ScoLOMFR shapes",
+    "description": "SHACL shapes for ScoLOMFR",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "scolomfr-sh"
+  },
+  {
+    "url": "https://github.com/AKSW/shacl-shapes.git",
+    "title": "AKSW SHACL shape repository",
+    "description": "Shapes and shape groups of SHACL shapes",
+    "type": "git",
+    "folder": ["shape-groups"],
+    "file-type": ["turtle"],
+    "prefix": "aksw-sh"
+  },
+  {
+    "path": "dcat-de-download.ttl",
+    "title": "DCAT-AP.de SHACL-Validation (BETA)",
+    "description": "fixed copy of https://raw.githubusercontent.com/GovDataOfficial/DCAT-AP.de-SHACL-Validation/master/validator/resources/v1.0.2/shapes/dcat-ap-de-shapes-specification.ttl",
+    "type": "file-local",
+    "file-type": "turtle",
+    "prefix": "dcat-de"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl",
+    "title": "DCAT-AP CH",
+    "description": "SHACL Shapes for the DCAT Application Profile for Data Portals in Switzerland",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "dcat-ech"
+  },
+  {
+    "url": "https://github.com/buda-base/editor-templates.git",
+    "title": "SHACL Shapes Templates for the BUDA editor",
+    "description": "The shacl shapes express validation and UI information for the various Entities that are the focus of the BUDA platform.",
+    "type": "git",
+    "folder": ["templates"],
+    "file-type": ["turtle"],
+    "prefix": "bds"
+  },
+  {
+    "url": "https://data.perio.do/v.ttl",
+    "title": "Periodo shapes",
+    "description": "PeriodO is a public domain gazetteer of scholarly definitions of historical, art-historical, and archaeological periods",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "periodo"
+  },
+  {
+    "url": "https://github.com/lreis2415/geovalidator.git",
+    "title": "GeoValidator",
+    "description": "Translate input (geospatial/non-geospatial) data of a geoprocessing functionality parameter into RDF graphs and validate it against predefined SHACL shape graph.",
+    "type": "git",
+    "folder": ["shapes"],
+    "file-type": ["turtle"],
+    "prefix": "geovalidator"
+  },
+  {
+    "path": "hiphop-download.ttl",
+    "title": "HipHop",
+    "description": "fixed copy from GitHub: https://github.com/LD4P/HipHop/tree/master/application-profiles",
+    "type": "file-local",
+    "file-type": "turtle",
+    "prefix": "hiphop"
+  }
+]
+

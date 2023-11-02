@@ -1,0 +1,220 @@
+<svg id="ontology" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 1561 1028" xml:space="preserve">
+<defs>
+<style type="text/css">
+
+svg {
+    background: gray;
+}
+
+@font-face {
+    font-family: RobotoFlex;
+    src: url("https://pixelambacht.nl/remote/RobotoFlex[slnt,wdth,wght,opsz].woff2");
+    font-display:swap;
+    text-align: initial;
+    font-variation-settings: "wght" 400, "wdth" 100, "opsz" 14, "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+.rfr-16 {
+    font-family: RobotoFlex;
+    font-size: 16px;
+}
+
+.rfr-15 {
+    font-family: RobotoFlex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fff {
+    fill: #fff;
+}
+
+path {
+    stroke: #fff;
+}
+
+</style>
+</defs>
+
+<g transform="translate(-106.2 -89.5)">
+
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m594.6 1053 151.4 2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m750.6 1055-6.3 3.1 1.6-3.1-1.5-3.1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M504 1018.7 373.1 905.1"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m369.6 902 6.8 1.8-3.2 1.3-.9 3.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M491.4 1052.5H383.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m379.2 1052.5 6.3-3.1-1.6 3.1 1.6 3.1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m850.2 1035.6 169.2-71.6"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1023.7 962.1-4.5 5.3.2-3.5-2.7-2.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1068.5 878.9-.6-129.4"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1067.9 744.8 3.2 6.2-3.1-1.5-3.1 1.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1119.1 920 225.5-46.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1349.2 872.2-5.5 4.3.9-3.4-2.2-2.8z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1114.5 716.2 232.3 118.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1351 836.7-7-.1 2.8-2.1V831Z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1117.7 676.9 1549.5 538"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1553.9 536.6-5 4.9.5-3.5-2.4-2.5z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1017.2 697.8-414.3 52.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m598.2 750.8 5.8-3.9-1.2 3.3 1.9 2.9z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1068.5 641.2-.6-132.6"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1068 503.9 3.2 6.2-3.2-1.5-3.1 1.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1091.4 646.5 99-200.1"/>
+<path pointer-events="all" stroke-miterlimit="10" d="M1192.5 442.2v7l-2.1-2.8h-3.5z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1018.7 679.2-446-121.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m568.1 556.3 6.9-1.4-2.3 2.6.7 3.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1021.3 671.9 342.5 372.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m338.2 370.4 7-.3-2.7 2.3.2 3.5z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1017.1 688.5-264.3-22.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m748.1 665.7 6.5-2.6-1.8 3 1.3 3.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1026.6 662.7 583.4 344.6"/>
+<path pointer-events="all" stroke-width="2" stroke-miterlimit="10" d="m581.5 343.2 3.4.6-1.5.8-.3 1.7z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m365 829.7 427.5-471.2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m795.6 355-1.9 6.8-1.3-3.3-3.3-.9z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M810.6 372.3 578.5 705.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m575.8 709.5 1-6.9 1.7 3.1 3.5.5z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M506.6 719 333 572.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m329.4 569.8 6.8 1.6-3.2 1.4-.8 3.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m288.8 484.8-1.3-72.4"/>
+<path pointer-events="all" stroke-width="2" stroke-miterlimit="10" d="m287.4 410.1 1.6 3.1-1.6-.8-1.6.8z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M286.5 307v-86.2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m286.5 216.1 3.1 6.3-3.1-1.6-3.1 1.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m722.6 895.1-138.8 117.5"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m580.2 1015.6 2.8-6.4.8 3.4 3.2 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m715.9 838.4-119.2-60.6"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m592.5 775.7 7 .1-2.8 2.1v3.5z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m811.8 875.1 197.2 53.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1013.5 929.6-6.9 1.4 2.3-2.6-.7-3.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m808.3 839 218.6-107.2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1031.1 729.7-4.3 5.6v-3.5l-2.8-2.1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1021.4 430.9-137.2-61.2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m879.9 367.8 7-.3-2.7 2.2.2 3.5z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1164.7 386.8 896 339.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m891.4 338.9 6.7-2-2.1 2.8 1 3.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M477.1 511.1 329.5 396.4"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m325.8 393.6 6.9 1.4-3.1 1.5-.7 3.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1358.9 312.6 875.6 168.4"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m871 167 6.9-1.2-2.4 2.5.6 3.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1443.8 368.6 118.7 113"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1565.8 484.8-6.7-2 3.3-1.2 1-3.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1372.9 372.1-253.3 296.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1116.6 672.5 1.7-6.8 1.4 3.2 3.4.8z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1369.2 297.3-94-90.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1271.8 203.3 6.7 2.1-3.3 1.2-1.1 3.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1355.4 325 346.2 165.4"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m341.6 164.7 6.7-2.1-2 2.8 1 3.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m1441.5 295.3 85.4-91.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m1530.1 200.1-2 6.7-1.2-3.3-3.3-1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M799.3 198.3 563 697.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m561 701.6-.2-7 2.2 2.8 3.5-.1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M1182.7 165.3 878 153.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m873.4 153.6 6.4-2.9-1.7 3.1 1.4 3.2z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M494.5 285.9 338.9 193"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m334.8 190.6 7 .5-2.9 1.9-.3 3.5z"/>
+
+<circle pointer-events="all" fill="#fcee21" stroke="#000" cx="1068.5" cy="930.5" r="51.6"/>
+<circle pointer-events="all" fill="#b3b3b3" stroke="#000" stroke-miterlimit="10" cx="1068.5" cy="692.8" r="51.6"/>
+<circle pointer-events="all" fill="#c7b299" stroke="#000" cx="1399.1" cy="857.7" r="51.6"/>
+<circle pointer-events="all" fill="#8cc63f" stroke="#000" cx="543" cy="1052.5" r="51.6"/>
+<circle pointer-events="all" fill="#8cc63f" stroke="#000" cx="327.2" cy="1052.5" r="51.6"/>
+<circle pointer-events="all" fill="#8cc63f" stroke="#000" cx="802.6" cy="1055.6" r="51.6"/>
+<circle pointer-events="all" fill="#8cc63f" stroke="#000" cx="330.3" cy="867.9" r="51.6"/>
+<circle pointer-events="all" fill="#8cc63f" stroke="#000" cx="762" cy="861.7" r="51.6"/>
+<circle pointer-events="all" fill="#ff7bac" stroke="#000" stroke-miterlimit="10" cx="1068.5" cy="451.9" r="51.6"/>
+<circle pointer-events="all" fill="#ff7bac" stroke="#000" stroke-miterlimit="10" cx="1215.5" cy="395.6" r="51.6"/>
+<circle pointer-events="all" fill="#0ff" stroke="#000" cx="1406.4" cy="333" r="51.6"/>
+<circle pointer-events="all" fill="#0ff" stroke="#000" cx="1567" cy="163" r="51.6"/>
+<circle pointer-events="all" fill="#0ff" stroke="#000" cx="1603.4" cy="520.7" r="51.6"/>
+<circle pointer-events="all" fill="#0ff" stroke="#000" cx="1234.3" cy="167.3" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="546.1" cy="752.2" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="289.6" cy="536.4" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="289.5" cy="356.9" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="289.5" cy="165.1" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="518" cy="542.6" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="696.3" cy="661.5" r="51.6"/>
+<circle pointer-events="all" fill="#fbb03b" stroke="#000" cx="537.7" cy="314.1" r="51.6"/>
+<circle pointer-events="all" fill="#3fa9f5" stroke="#000" stroke-miterlimit="10" cx="821.4" cy="151.6" r="51.6"/>
+<circle pointer-events="all" fill="#3fa9f5" stroke="#000" stroke-miterlimit="10" cx="841.2" cy="332.9" r="51.6"/>
+
+<text class="rfr-16 fff" transform="translate(221.143 270)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="translate(223.81 460.667)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="translate(613.44 1050.333)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(40.887 -1034.297 1005.593)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(-39.977 1659.53 -337.093)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(26.785 -1329.578 1662.668)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(-47.46 1108.032 -28.869)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(-26.099 2184.534 -1410.871)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(15.334 -2841.637 3631.958)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(-22.913 2949.097 -1644.129)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(-11.421 5091.521 -5465.42)">associatedWith</text>
+<text class="rfr-16 fff" transform="rotate(-64.55 653.156 -371.03)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="rotate(24.584 -398.619 2241.378)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="rotate(-55.103 839.048 -435.965)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="rotate(37.561 -422.842 727.765)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="rotate(33.283 -150.426 717.531)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="rotate(40.445 -615.303 784.334)">containedlnPlace</text>
+<text class="rfr-16 fff" transform="rotate(25.96 -632.977 1003.072)">isSeenlnState</text>
+<text class="rfr-16 fff" transform="translate(395.742 1046)">deliveredBy</text>
+<text class="rfr-16 fff" transform="rotate(-89.18 852.89 -219.389)">isSeenlnZone</text>
+<text class="rfr-16 fff" transform="rotate(-7.765 5728.905 -5295.262)">isSeenln</text>
+<text class="rfr-16 fff" transform="matrix(.9962 .08761 -.08761 .9962 812.144 665.488)">isSeenln</text>
+<text class="rfr-16 fff" transform="rotate(15.408 -1847.664 3127.542)">isSeenInDistrict</text>
+<text class="rfr-16 fff" transform="rotate(36.031 -369.52 1519.939)">isSeenlnPostalCode</text>
+<text class="rfr-16 fff" transform="rotate(-90 967.327 -93.5)">islnstalledOn</text>
+<text class="rfr-16 fff" transform="rotate(11.029 -1310.793 5296.337)">islnstalledln</text>
+<text class="rfr-16 fff" transform="rotate(26.719 -984.767 2897.9)">belongsTo</text>
+<text class="rfr-16 fff" transform="rotate(8.885 -1133.417 5874.784)">bornln / nationalOf / residentOf</text>
+<text class="rfr-16 fff" transform="translate(1006.645 151.613)">residesAt</text>
+<text class="rfr-16 fff" transform="rotate(15.564 -281.083 4077.363)">residesAt</text>
+<text class="rfr-16 fff" transform="rotate(45.001 384.568 1684.317)">memberOf</text>
+<text class="rfr-16 fff" transform="rotate(-46.56 1055.32 -1526.91)">holdsAccount</text>
+<text class="rfr-16 fff" transform="rotate(-63.73 1042.866 -581.777)">isConnectedTo</text>
+<text class="rfr-16 fff" transform="rotate(-47.233 1244.183 -1085.443)">owns</text>
+<text class="rfr-16 fff" transform="rotate(-17.787 2601.542 -3867.959)">languageSetTo</text>
+<text class="rfr-16 fff" transform="rotate(43.656 266.903 2001.143)">knowsLanguage</text>
+
+<path fill="#fbb03b" stroke-miterlimit="10" d="M116.7 1248.7h97.7v26h-97.7z"/>
+<path fill="#7ac943" stroke-miterlimit="10" d="M116.7 875h97.7v26h-97.7z"/>
+<path fill="#ff7bac" stroke-miterlimit="10" d="M116.7 901.3h97.7v26h-97.7z"/>
+<path fill="#fcee21" stroke-miterlimit="10" d="M116.7 927.6h97.7v26h-97.7z"/>
+<path fill="#0ff"    stroke-miterlimit="10" d="M116.7 953.9h97.7v26h-97.7z"/>
+<path fill="#3fa9f5" stroke-miterlimit="10" d="M116.7 980.2h97.7v26h-97.7z"/>
+<path fill="#b3b3b3" stroke-miterlimit="10" d="M116.7 1006.5h97.7v26h-97.7z"/>
+<path fill="#c7b299" stroke-miterlimit="10" d="M116.7 1032.8h97.7v26h-97.7z"/>
+
+<text class="rfr-15" transform="translate(126 868)">Geography</text>
+<text class="rfr-15" transform="translate(146 894)">Media</text>
+<text class="rfr-15" transform="translate(152 945)">App</text>
+<text class="rfr-15" transform="translate(139 921)">Network</text>
+<text class="rfr-15" transform="translate(144 972)">People</text>
+<text class="rfr-15" transform="translate(149 998)">Place</text>
+<text class="rfr-15" transform="translate(145 1025)">Device</text>
+<text class="rfr-15" transform="translate(137 1050)">Segment</text>
+</g>
+
+<text class="rfr-16" transform="translate(204 787)">Brand</text>
+<text class="rfr-16" transform="translate(406 670)">GeoHash</text>
+<text class="rfr-16" transform="translate(553 578)">GeoCircle</text>
+<text class="rfr-16" transform="translate(714 247)">Place</text>
+<text class="rfr-16" transform="translate(678 68)">Residence</text>
+<text class="rfr-16" transform="translate(944 370)">Zone</text>
+<text class="rfr-16" transform="translate(1276 248)">Person</text>
+<text class="rfr-16" transform="translate(1430 78)">Account</text>
+<text class="rfr-16" transform="translate(1088 82)">Household</text>
+<text class="rfr-16" transform="translate(1460 436)">Language</text>
+<text class="rfr-16" transform="translate(1258 772)">Segment</text>
+<text class="rfr-16" transform="translate(154 81)">Country</text>
+<text class="rfr-16" transform="translate(164 274)">State</text>
+<text class="rfr-16" transform="translate(170 450)">City</text>
+<text class="rfr-16" transform="translate(387 458)">District</text>
+<text class="rfr-16" transform="translate(392 226)">PostalCode</text>
+<text class="rfr-16" transform="translate(195 960)"><tspan x="0" y="-4">Media</tspan><tspan x="-8.4" y="14">Channel</tspan></text>
+<text class="rfr-16" transform="translate(410 966)">Media</text>
+<text class="rfr-16" transform="translate(633 774)"><tspan x="0" y="-4">Media</tspan><tspan x="-13.4" y="14">Summary</tspan></text>
+<text class="rfr-16" transform="translate(935 835)"><tspan x="4" y="-4">Mobile</tspan><tspan x="-12" y="14">Application</tspan></text>
+<text class="rfr-16" transform="translate(935 599)"><tspan x="0" y="-4">Mobile</tspan><tspan x=".6" y="14">Device</tspan></text>
+<text class="rfr-16" transform="translate(1068 307)"><tspan x="0" y="-4">WifiAccess</tspan><tspan x="26" y="14">Point</tspan></text>
+<text class="rfr-16" transform="translate(681 969)">Org</text>
+
+</svg>

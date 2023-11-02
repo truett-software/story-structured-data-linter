@@ -1,0 +1,15 @@
+
+valid on JSON-LD Playground
+  NALT_S-O_2016
+
+larger than 2.5 MB
+  fails SDTT
+
+
+SDL parser
+_subset_.html
+Statements	63590
+
+index-taxonomic-classification.html
+Statements	515,530
+has been copied to sdl-test area

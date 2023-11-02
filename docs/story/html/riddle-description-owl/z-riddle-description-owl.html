@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html amp lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<link rel="icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+
+<title>
+Einstein&#x2019;s Riddle in OWL
+</title>
+<link rel="canonical" href="https://ontomatica.io/canonical.html"/>
+
+<link rel="preload" href="https://cdn.ampproject.org/v0.js" as="script">
+
+<script  async src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+<script  async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+/**
+  *  Font: Recursive Variable
+  *  where is woff2 version?
+  *  does woff2 support OpenType declarations?
+  */
+
+@font-face {
+    font-family: Recursive-2019;
+    text-align: initial;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display:swap;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+}
+
+@font-face {font-family:system; font-style:normal; font-weight:300; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:300; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:normal; font-weight:400; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:400; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:normal; font-weight:500; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:500; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:normal; font-weight:700; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:700; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+
+:root {
+    /* Start with axis defaults. Exclude weight, which is better controlled via the usual font-weight CSS property */
+    --MONO: 0;   /* Monospace    */
+    --CASL: 0;   /* Casual       */
+    --slnt: 0;   /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-variation-settings: 
+        "MONO" var(--MONO),
+        "CASL" var(--CASL),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
+
+html {
+  font-family: Recursive-2019, sans-serif;
+  font-size: 12pt;
+}
+.done {
+  color: green;
+}
+.right {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+.left {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+pre {
+  font-family: Recursive-2019, monospace;
+  --MONO: 1;
+  border: 1pt solid #aebdcc;
+  background-color: #f3f5f7;
+  padding: 5pt;
+  font-size: 90%;
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+}
+div.figure {
+  padding: 0.5em;
+}
+div.figure p {
+  text-align: center;
+}
+.linenr {
+  font-size: smaller;
+}
+
+
+#logo {
+    padding-top: 5px;
+    display: inline-block;
+}
+
+header {
+    position: relative;
+    min-height: 55px;
+    padding: 0 5px;
+    background: #fff;
+}
+
+article header {
+    background: linear-gradient(to right, #1f64ff, #0389ff, #0dd3ff);
+    text-align: left;
+    color: #fff;
+}
+
+.ontology-name {
+    font-family: Recursive-2019;
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
+body {
+    font-family: Recursive-2019;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #48525c;
+    display: block;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: Recursive-2019;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: Recursive-2019;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1f64ff;
+    margin-top: 40px;
+}
+
+/* position-observer */
+.scrollToTop {
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 18px;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  outline: 0;
+  background: #1F64FF;
+  z-index: 9999;
+  bottom: 10px;
+  right: 30px;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+}
+#marker {
+  position: absolute;
+  top: 100px;
+  width: 0;
+  height: 0;
+}
+
+.uline {
+    text-decoration: none;
+    position: relative;
+}
+
+.uline::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #e6e6e6;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.uline:hover::before {
+    width: 70%;
+    background: #1F64FF;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    width: 100%;
+}
+#content {
+    padding-top: 0.4rem;
+    max-width: 900px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="content" class="container">
+
+<div id="top-page"></div>
+
+<a id="logo" href="/">
+<amp-img
+    src="https://ontomatica.io/static/image/logo/onto-logo-text-blue-w325-h60.svg"
+  width="205"
+ height="45"
+></amp-img>
+</a>
+
+<main>
+<article>
+
+<header>
+<h1 class="ontology-name">
+A <i>reasoned</i> solution to Einstein&#x2019;s Riddle using OWL and HermiT</h1>
+</header>
+
+<div class="article-body">
+
+<div id="table-of-contents">
+<h2>
+Table of Contents
+</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a class="uline" href="#sec-1">1 Introduction </a></li>
+<li><a class="uline" href="#sec-2">2 The Zebra Puzzle </a></li>
+<li><a class="uline" href="#sec-3">3 The Ontology </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction </h2>
+<div class="outline-text-2" id="text-1">
+<p>
+According to Albert Einstein only 2 % of us are able to solve the Zebra Puzzle. Well, with a little help of OWL, it is not so difficult.
+</p>
+<p>
+This document is a walk-through of how to encode the puzzle in OWL and then "decode" the answer using a reasoner.
+</p>
+</div>
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">
+<span class="section-number-2">2</span>
+The Zebra Puzzle
+</h2>
+
+<div class="outline-text-2" id="text-2">
+
+<p>
+The puzzle is made up of 15 statements, plus some additional clarifying facts at the end. This is how the puzzle goes:
+</p>
+
+<blockquote>
+<ol>
+<li>
+There are five houses.
+</li>
+<li>
+The Englishman lives in the red house.
+</li>
+<li>
+The Spaniard owns the dog.
+</li>
+<li>
+Coffee is drunk in the green house.
+</li>
+<li>
+The Ukrainian drinks tea.
+</li>
+<li>
+The green house is immediately to the right of the ivory house.
+</li>
+<li>
+The Old Gold smoker owns snails.
+</li>
+<li>
+Kools are smoked in the yellow house.
+</li>
+<li>
+Milk is drunk in the middle house.
+</li>
+<li>
+The Norwegian lives in the first house.
+</li>
+<li>
+The man who smokes Chesterfields lives in the house next to the man with the fox.
+</li>
+<li>
+Kools are smoked in a house next to the house where the horse is kept.
+</li>
+<li>
+The Lucky Strike smoker drinks orange juice.
+</li>
+<li>
+The Japanese smokes Parliaments.
+</li>
+<li>
+The Norwegian lives next to the blue house.
+</li>
+</ol>
+
+<p>
+Now, who drinks water? Who owns the zebra? In the interest of clarity, it must be added that each of the five houses is painted a different color, and their inhabitants are of different national extractions, own different pets, drink different beverages and smoke different brands of American cigarettes. One other thing: in statement 6, right means your right.
+</p>
+</blockquote>
+</div>
+</div>
+
+<!-- outline-container-3 creates gutter right problem on mobile -->
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">
+<span class="section-number-2">3</span>
+The Ontology
+</h2>
+
+<div class="outline-text-2" id="text-3">
+<div>
+<p>
+The exercise is to encode the Zebra Puzzle in an OWL ontology, so that the answer (<i>Now, who drinks water? Who owns the zebra?</i>) is computed by the reasoner.
+</p>
+<p>
+The perhaps most difficult to do in this exercise is to express all the implicit information in the puzzle, e.g., that there are five houses on a row&mdash;where some houses are next to each other and some are not, that there are exactly five persons and that each person has exactly one favorite drink, and that the five drinks mentioned are the only ones considered. Remember that OWL ontologies and reasoning with them must abide by the open world assumption (OWA) and the none unique name assumption (NUNA).
+</p>
+<p>
+Note that there are more than one way to model this, and that this solution might not be the "optimal". This may is meant to show some of the capabilities of OWL in a clear and educational manner.
+</p>
+<p>
+The high-level model of my ontology is that a <i>person</i> (nationality) (N in the figure) has exactly one <i>drink</i> (D), one <i>pet</i> (P), one <i>smoke</i> (cigarette brand) (S) and lives in one <i>house</i> (H). A house has exactly one <i>color</i> (C).
+</p>
+</div>
+
+<div class="figure">
+<p>
+<img src="model.png"  alt="model.png" />
+</p>
+<p>High-level model</p>
+</div>
+
+<p>
+The file starts with the regular namespace declarations and stating that it is an ontology.
+</p>
+
+<div>
+<pre class="example"><span class="linenr">1:  </span>@prefix : &lt;http://folk.uio.no/martige/what/2012/04/22/zebra#&gt; .
+<span class="linenr">2:  </span>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+<span class="linenr">3:  </span>@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+<span class="linenr">4:  </span>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+<span class="linenr">5:  </span>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+<span class="linenr">6:  </span>
+<span class="linenr">7:  </span>&lt;http://folk.uio.no/martige/what/2012/04/22/zebra&gt; rdf:type owl:Ontology .
+</pre>
+</div>
+
+<p>
+All classes are set as pairwise disjoint.
+</p>
+
+<div>
+<pre class="example"><span class="linenr">8:  </span>[ rdf:type owl:AllDisjointClasses ;
+<span class="linenr">9:  </span>  owl:members ( :Color :Drink :House :Person :Pet :Smoke ) ] .
+</pre>
+</div>
+
+<p>
+Each class is defined as equivalent to the set of its members (this is called a closed class). This is done to ensure that they cannot have other members (remember the OWA).
+</p>
+
+<div>
+<pre class="example"><span class="linenr">10:  </span>:Color rdf:type owl:Class ;
+<span class="linenr">11:  </span>       owl:equivalentClass [ 
+<span class="linenr">12:  </span>           rdf:type owl:Class ;
+<span class="linenr">13:  </span>           owl:oneOf ( :Blue :Yellow :Ivory :Green :Red ) ] .
+<span class="linenr">14:  </span>:Drink rdf:type owl:Class ;
+<span class="linenr">15:  </span>       owl:equivalentClass [ 
+<span class="linenr">16:  </span>           rdf:type owl:Class ;
+<span class="linenr">17:  </span>           owl:oneOf ( :OrangeJuice :Water :Tea :Milk :Coffee ) ] .
+<span class="linenr">18:  </span>:Pet rdf:type owl:Class ;
+<span class="linenr">19:  </span>     owl:equivalentClass [ 
+<span class="linenr">20:  </span>         rdf:type owl:Class ;
+<span class="linenr">21:  </span>         owl:oneOf ( :Horse :Zebra :Fox :Dog :Snails ) ] .
+<span class="linenr">22:  </span>:Smoke rdf:type owl:Class ;
+<span class="linenr">23:  </span>       owl:equivalentClass [ 
+<span class="linenr">24:  </span>           rdf:type owl:Class ;
+<span class="linenr">25:  </span>           owl:oneOf ( :Kools :Chesterfield :LuckyStrike :OldGold :Parliament ) ] .
+<span class="linenr">26:  </span>:House rdf:type owl:Class ;
+<span class="linenr">27:  </span>       owl:equivalentClass [ 
+<span class="linenr">28:  </span>           rdf:type owl:Class ;
+<span class="linenr">29:  </span>           owl:oneOf ( :House5 :House4 :House2 :House3 :House1 ) ] .
+<span class="linenr">30:  </span>:Person rdf:type owl:Class ;
+<span class="linenr">31:  </span>        owl:equivalentClass [
+<span class="linenr">32:  </span>            rdf:type owl:Class ;
+<span class="linenr">33:  </span>            owl:oneOf ( :Norwegian :Spaniard :Ukrainian :Japanese :Englishman ) ] .
+</pre>
+</div>
+
+<p>
+The relationships between <code>Person</code> and <code>Drink</code>, <code>Pet</code>, <code>Smoke</code> and <code>House</code>, and between <code>House</code> and <code>Color</code> are defined by setting the correct domain and range. Additionally, all these <code>ObjectProperties</code> are defined as functional and inverse functional. This is to ensure that, e.g., a person drinks at most one drink and that a drink is drunk by at most one person.
+</p>
+
+<div>
+<pre class="example">
+<span class="linenr">34:  </span>:drinks rdf:type owl:FunctionalProperty ,
+<span class="linenr">35:  </span>                 owl:InverseFunctionalProperty ,
+<span class="linenr">36:  </span>                 owl:ObjectProperty ;
+<span class="linenr">37:  </span>        rdfs:range :Drink ;
+<span class="linenr">38:  </span>        rdfs:domain :Person .
+<span class="linenr">39:  </span>
+<span class="linenr">40:  </span>:hasColor rdf:type owl:FunctionalProperty ,
+<span class="linenr">41:  </span>                   owl:InverseFunctionalProperty ,
+<span class="linenr">42:  </span>                   owl:ObjectProperty ;
+<span class="linenr">43:  </span>          rdfs:range :Color ;
+<span class="linenr">44:  </span>          rdfs:domain :House .
+<span class="linenr">45:  </span>
+<span class="linenr">46:  </span>:hasPet rdf:type owl:FunctionalProperty ,
+<span class="linenr">47:  </span>                 owl:InverseFunctionalProperty ,
+<span class="linenr">48:  </span>                 owl:ObjectProperty ;
+<span class="linenr">49:  </span>        rdfs:domain :Person ;
+<span class="linenr">50:  </span>        rdfs:range :Pet .
+<span class="linenr">51:  </span>
+<span class="linenr">52:  </span>:livesIn rdf:type owl:FunctionalProperty ,
+<span class="linenr">53:  </span>                  owl:InverseFunctionalProperty ,
+<span class="linenr">54:  </span>                  owl:ObjectProperty ;
+<span class="linenr">55:  </span>         rdfs:range :House ;
+<span class="linenr">56:  </span>         rdfs:domain :Person .
+<span class="linenr">57:  </span>
+<span class="linenr">58:  </span>:smokes rdf:type owl:FunctionalProperty ,
+<span class="linenr">59:  </span>                 owl:InverseFunctionalProperty ,
+<span class="linenr">60:  </span>                 owl:ObjectProperty ;
+<span class="linenr">61:  </span>        rdfs:domain :Person ;
+<span class="linenr">62:  </span>        rdfs:range :Smoke .
+</pre>
+</div>
+
+<p>
+So far we have stated that a person drinks at most one drink. To make sure that a person does not drink zero drinks, we state that the class <code>Person</code> is subclass of the class that has one drinks relationship&mdash;and repeat an equivalent approach to the other classes that a person is related to. Similarly, we do the same for houses; a house has a color.
+</p>
+
+<div>
+<pre class="example">
+<span class="linenr">63:  </span>:Person rdf:type owl:Class ;
+<span class="linenr">64:  </span>        rdfs:subClassOf 
+<span class="linenr">65:  </span>           [ rdf:type owl:Class ;
+<span class="linenr">66:  </span>             owl:intersectionOf ( 
+<span class="linenr">67:  </span>                 [ rdf:type owl:Restriction ;
+<span class="linenr">68:  </span>                   owl:onProperty :drinks ;
+<span class="linenr">69:  </span>                   owl:someValuesFrom owl:Thing ]
+<span class="linenr">70:  </span>                 [ rdf:type owl:Restriction ;
+<span class="linenr">71:  </span>                   owl:onProperty :hasPet ;
+<span class="linenr">72:  </span>                   owl:someValuesFrom owl:Thing ]
+<span class="linenr">73:  </span>                 [ rdf:type owl:Restriction ;
+<span class="linenr">74:  </span>                   owl:onProperty :livesIn ;
+<span class="linenr">75:  </span>                   owl:someValuesFrom owl:Thing ]
+<span class="linenr">76:  </span>                 [ rdf:type owl:Restriction ;
+<span class="linenr">77:  </span>                   owl:onProperty :smokes ;
+<span class="linenr">78:  </span>                   owl:someValuesFrom owl:Thing ]
+<span class="linenr">79:  </span>             )
+<span class="linenr">80:  </span>        ] .
+<span class="linenr">81:  </span>
+<span class="linenr">82:  </span>:House rdf:type owl:Class ;
+<span class="linenr">83:  </span>       rdfs:subClassOf [ rdf:type owl:Restriction ;
+<span class="linenr">84:  </span>                         owl:onProperty :hasColor ;
+<span class="linenr">85:  </span>                         owl:someValuesFrom owl:Thing ] .
+</pre>
+</div>
+
+<p>
+To say that there are five houses on a row is a statement with lots of implicit facts and can be broken down to the following statements, including some necessary vocabulary and a translation to OWL in mind:
+</p>
+<ol>
+<li>
+There are five houses. 
+</li>
+<li>
+They are all different. 
+</li>
+<li>
+The second house lies to the right of the first house, the third to the right of the second house, and so on, but no house lies to the right of the fifth house and no house is left of the first house.
+</li>
+<li>
+If a house A lies right of a house B, then B is left of A&mdash;and vice versa.
+</li>
+<li>
+If a house A is to the right or to the left of a house B, then A is also next to B.
+</li>
+<li>
+If a house A is next to a house B, then B is also next to the A. 
+</li>
+<li>
+No house is next to more than two houses.
+</li>
+<li>
+No house is next to itself. 
+</li>
+</ol>
+
+</div>
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<p>
+Now to OWL syntax. Each code block below is introduced with a reference to which of the statements above the block expresses.
+</p>
+<p>
+Statement 6 is stated by declaring <code>isNextTo</code> as a symmetric property.
+</p>
+<p>
+Statement 8 is stated by declaring <code>isNextTo</code> as an irreflexive property.
+</p>
+<p>
+Statement 5: <code>isRightTo</code> and <code>isLeftTo</code> are subPropertiesOf <code>isNextTo</code>.
+</p>
+<p>
+Statement 4: <code>isRightTo</code> (is the) inverseOf <code>isLeftTo</code>, by which it follows that <code>isLeftTo</code> is the inverseOf <code>isRightTo</code>.
+</p>
+
+<pre class="example"><span class="linenr">86:  </span>:isNextTo rdf:type owl:IrreflexiveProperty ,
+<span class="linenr">87:  </span>                   owl:ObjectProperty ,
+<span class="linenr">88:  </span>                   owl:SymmetricProperty ;
+<span class="linenr">89:  </span>          rdfs:domain :House ;
+<span class="linenr">90:  </span>          rdfs:range :House .
+<span class="linenr">91:  </span>
+<span class="linenr">92:  </span>:isRightTo rdf:type owl:FunctionalProperty ,
+<span class="linenr">93:  </span>                    owl:InverseFunctionalProperty ,
+<span class="linenr">94:  </span>                    owl:ObjectProperty ;
+<span class="linenr">95:  </span>           owl:inverseOf :isLeftTo ;
+<span class="linenr">96:  </span>           rdfs:subPropertyOf :isNextTo .
+<span class="linenr">97:  </span>
+<span class="linenr">98:  </span>:isLeftTo rdf:type owl:ObjectProperty ;
+<span class="linenr">99:  </span>          rdfs:subPropertyOf :isNextTo .
+</pre>
+
+<p>
+Statement 7: adding a cardinality restriction of <code>max 2 isNextTo</code> relations to the <code>House</code>.
+</p>
+
+<pre class="example"><span class="linenr">100:  </span>:House rdf:type owl:Class ;
+<span class="linenr">101:  </span>       rdfs:subClassOf 
+<span class="linenr">102:  </span>           [ rdf:type owl:Restriction ;
+<span class="linenr">103:  </span>             owl:onProperty :isNextTo ;
+<span class="linenr">104:  </span>             owl:onClass :House ;
+<span class="linenr">105:  </span>             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ] ,
+<span class="linenr">106:  </span>           [ rdf:type owl:Restriction ;
+<span class="linenr">107:  </span>             owl:onProperty :hasColor ;
+<span class="linenr">108:  </span>             owl:someValuesFrom owl:Thing ] .
+</pre>
+
+<p>
+Statements 1 and 2:
+</p>
+
+<pre class="example"><span class="linenr">109:  </span>[ rdf:type owl:AllDifferent ;
+<span class="linenr">110:  </span>  owl:distinctMembers ( :House2 :House1 :House4 :House3 :House5 ) ] .
+</pre>
+
+<p>
+Statement 3. To ensure that our five houses may not be placed in a circle, we state that the two houses on each end of the row, <code>House1</code> and <code>House5</code>, are not next to each other. This is done with a <code>NegativePropertyAssertion</code>.
+</p>
+
+<pre class="example"><span class="linenr">111:  </span>:House1 :isLeftTo :House2 .
+<span class="linenr">112:  </span>:House2 :isLeftTo :House3 .
+<span class="linenr">113:  </span>:House3 :isLeftTo :House4 .
+<span class="linenr">114:  </span>:House4 :isLeftTo :House5 .
+<span class="linenr">115:  </span>
+<span class="linenr">116:  </span>[ rdf:type owl:NegativePropertyAssertion ;
+<span class="linenr">117:  </span>  owl:assertionProperty :isNextTo ;
+<span class="linenr">118:  </span>  owl:targetIndividual :House1 ;
+<span class="linenr">119:  </span>  owl:sourceIndividual :House5  ] .
+</pre>
+
+<p>
+Finally, we set all the members of each class as distinct individuals. Note that we only state the members of each class as different, e.g., we need not state that <code>Coffee</code> is different from <code>Blue</code> since they are declared as members of classes which are are disjoint.
+</p>
+
+<pre class="example"><span class="linenr">120:  </span>[ rdf:type owl:AllDifferent ;
+<span class="linenr">121:  </span>  owl:distinctMembers ( :Green :Ivory :Red :Yellow :Blue ) ] .
+<span class="linenr">122:  </span>
+<span class="linenr">123:  </span>[ rdf:type owl:AllDifferent ;
+<span class="linenr">124:  </span>  owl:distinctMembers ( :Spaniard :Norwegian :Englishman :Ukrainian :Japanese ) ] .
+<span class="linenr">125:  </span>
+<span class="linenr">126:  </span>[ rdf:type owl:AllDifferent ;
+<span class="linenr">127:  </span>  owl:distinctMembers ( :Tea :OrangeJuice :Water :Coffee :Milk ) ] .
+<span class="linenr">128:  </span>
+<span class="linenr">129:  </span>[ rdf:type owl:AllDifferent ;
+<span class="linenr">130:  </span>  owl:distinctMembers ( :Dog :Zebra :Fox :Snails :Horse ) ] .
+</pre>
+
+<p>
+Next we state the fifteen statements listed in the puzzle text. Actually we only need fourteen, The first statement, "There are five houses", is left out since it is already expressed above. All statements are marked below. They are quite straight-forward, using blank nodes when a person or a house is not identified in the statement.
+</p>
+
+<pre class="example"><span class="linenr">131:  </span>### statement 2
+<span class="linenr">132:  </span>:Englishman :livesIn [ :hasColor :Red ] .
+<span class="linenr">133:  </span>
+<span class="linenr">134:  </span>### statement 3
+<span class="linenr">135:  </span>:Spaniard :hasPet :Dog .
+<span class="linenr">136:  </span>
+<span class="linenr">137:  </span>### statement 4
+<span class="linenr">138:  </span>[] :drinks :Coffee ;
+<span class="linenr">139:  </span>   :livesIn [ :hasColor :Green ] .
+<span class="linenr">140:  </span>
+<span class="linenr">141:  </span>### statement 5
+<span class="linenr">142:  </span>:Ukrainian :drinks :Tea .
+<span class="linenr">143:  </span>
+<span class="linenr">144:  </span>### statement 6
+<span class="linenr">145:  </span>[] :hasColor :Green ; 
+<span class="linenr">146:  </span>   :isRightTo [ :hasColor :Ivory ] .
+<span class="linenr">147:  </span>
+<span class="linenr">148:  </span>### statement 7
+<span class="linenr">149:  </span>[] :smokes :OldGold ;
+<span class="linenr">150:  </span>   :hasPet :Snails .
+<span class="linenr">151:  </span>
+<span class="linenr">152:  </span>### statement 8
+<span class="linenr">153:  </span>[] :smokes :Kools ;
+<span class="linenr">154:  </span>   :livesIn [ :hasColor :Yellow ] .
+<span class="linenr">155:  </span>
+<span class="linenr">156:  </span>### statement 9
+<span class="linenr">157:  </span>[] :drinks :Milk ;
+<span class="linenr">158:  </span>   :livesIn :House3 .
+<span class="linenr">159:  </span>
+<span class="linenr">160:  </span>### statement 10
+<span class="linenr">161:  </span>:Norwegian :livesIn :House1 .
+<span class="linenr">162:  </span>
+<span class="linenr">163:  </span>### statement 11
+<span class="linenr">164:  </span>[] :smokes :Chesterfield ;
+<span class="linenr">165:  </span>   :livesIn [ :isNextTo _:x11 ] .
+<span class="linenr">166:  </span>[] :livesIn _:x11 ;
+<span class="linenr">167:  </span>   :hasPet :Fox .
+<span class="linenr">168:  </span>
+<span class="linenr">169:  </span>### statement 12
+<span class="linenr">170:  </span>[] :smokes :Kools;
+<span class="linenr">171:  </span>   :livesIn [ :isNextTo _:x12 ] .
+<span class="linenr">172:  </span>[] :livesIn _:x12 ;
+<span class="linenr">173:  </span>   :hasPet :Horse .
+<span class="linenr">174:  </span>
+<span class="linenr">175:  </span>### statement 13
+<span class="linenr">176:  </span>[] :smokes :LuckyStrike ;
+<span class="linenr">177:  </span>   :drinks :OrangeJuice .
+<span class="linenr">178:  </span>
+<span class="linenr">179:  </span>### statement 14
+<span class="linenr">180:  </span>:Japanese :smokes :Parliament .
+<span class="linenr">181:  </span>
+<span class="linenr">182:  </span>### statement 15
+<span class="linenr">183:  </span>:Norwegian :livesIn [ :isNextTo [ :hasColor :Blue ] ] .
+</pre>
+
+<!-- <p> -->
+<!-- UPDATE:  -->
+<!-- <br> -->
+<!-- The complete OWL file is found at <a href="">re-host</a>. -->
+<!-- </p> -->
+<!-- <p> -->
+<!-- Open the ontology in an ontology editor/viewer like <a href="http://protege.stanford.edu/">Protégé</a>, apply reasoning, and discover that the implicit knowledge is computed by the reasoner.  -->
+<!-- </p> -->
+
+</div>
+
+</div>
+
+</article>
+
+<amp-animation
+     id="showAnim"
+ layout="nodisplay"
+>
+<script type="application/json">
+{"duration": "200ms",
+    "fill": "both",
+    "iterations": "1",
+    "direction": "alternate",
+    "animations": [{"selector": "#scrollToTopButton",
+        "keyframes": [{"opacity": "1",
+          "visibility": "visible"
+        }]
+    }]}
+</script>
+</amp-animation>
+
+<amp-animation
+     id="hideAnim"
+ layout="nodisplay"
+>
+<script type="application/json">
+{"duration": "200ms",
+    "fill": "both",
+    "iterations": "1",
+    "direction": "alternate",
+    "animations": [{"selector": "#scrollToTopButton",
+        "keyframes": [{"opacity": "0",
+          "visibility": "hidden"
+        }]
+    }]}
+</script>
+</amp-animation>
+
+<div id="marker">
+<amp-position-observer
+     on="enter:hideAnim.start; exit:showAnim.start"
+ layout="nodisplay"
+></amp-position-observer>
+</div>
+
+<button
+     id="scrollToTopButton"
+     on="tap:top-page.scrollTo(duration=200)"
+  class="scrollToTop"
+>
+<svg viewBox="-4 -8 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 11L11 2L2 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+</main>
+</div>
+
+</body>
+</html>

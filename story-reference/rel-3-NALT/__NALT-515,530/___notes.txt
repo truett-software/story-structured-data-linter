@@ -1,0 +1,19 @@
+
+16:01 8/19/2022
+moved to
+E:\content\________migration\benetta-net-s3\story\structured-data-linter\item-37
+
+
+data.json
+	have removed domain
+	#identier only
+
+however, HTML has full IRI
+
+
+uses original AFDSI logo
+uses ontomatica shortcut icon
+
+triples
+515,530
+

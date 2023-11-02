@@ -1,0 +1,1727 @@
+<!--
+11/01/2023
+-->
+<!DOCTYPE html>
+<html amp lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"
+  href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+
+<title>
+Einstein&#x2019;s Riddle
+</title>
+<link rel="canonical"
+  href="https://ontomatica.io/canonical.html"/>
+
+<link rel="preload"
+  href="https://cdn.ampproject.org/v0.js" as="script">
+
+<script async
+  src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-animation"
+  src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+<script async custom-element="amp-position-observer"
+  src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+/** @format */
+
+@font-face {
+  font-family: NotoSans-Regular-400;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Regular.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: NotoSans-Bold-700;
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Bold.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+.NotoSans-Regular-400 {
+  font-family: NotoSans-Regular-400, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.NotoSans-Bold-700 {
+  font-family: NotoSans-Bold-700, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  display: block;
+  font-family: NotoSans-Regular-400;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #48525c;
+  margin-top: 1.1em;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: NotoSans-Bold-700;
+  margin: 0 auto;
+}
+h2 {
+  font-family: NotoSans-Bold-700;
+  padding-left: 10px;
+  font-weight: 700;
+  color: #1f64ff;
+}
+h3 {
+  font-family: NotoSans-Regular-400;
+  padding-left: 10px;
+  font-weight: 400;
+  color: #1f64ff;
+  font-size: 18px;
+  margin-top: 3px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid navy;
+}
+h4 {
+  font-family: NotoSans-Regular-400;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+header {
+  position: relative;
+  min-height: 55px;
+  padding: 0 5px;
+  background: #fff;
+}
+
+article header {
+  background: linear-gradient(to right, #1f64ff, #0389ff, #0dd3ff);
+  text-align: left;
+  color: #ffffff;
+}
+
+#logo {
+  padding-top: 5px;
+  padding-left: 14px;
+  height: 45px;
+  line-height: 61px;
+  display: inline-block;
+}
+
+.ontology-name {
+  font-family: NotoSans-Bold-700;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  padding-left: 14px;
+}
+
+:link {
+  text-decoration: none;
+  position: relative;
+}
+
+:link::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -1px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: #e6e6e6;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+:link:hover::before {
+  width: 70%;
+  background: #1F64FF;
+}
+
+:visited {
+  color: #609;
+  background: transparent;
+}
+
+/* position-observer */
+.scrollToTop {
+  color: #fafafa;
+  font-size: 1.4em;
+  box-shadow:
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.12),
+    0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #005af0;
+  z-index: 9999;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#marker {
+  position: absolute;
+  top: 100px;
+  width: 0px;
+  height: 0px;
+}
+
+/* LODE specific */
+
+.date {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  color: #484848;
+}
+.article-body {
+  padding: 0px 0px 30px 10px;
+}
+
+dl {
+  background: white;
+  width: 100%;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 120%;
+}
+dt {
+  font-weight: bold;
+  font-color: #383838;
+  margin-top: 5px;
+}
+dt,
+dd {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.hlist {
+  border: 1px solid navy;
+  padding: 5px;
+  background-color: #f4ffff;
+  line-height: 130%;
+}
+.hlist li {
+  display: inline;
+  display: inline-table;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.entity {
+  border: 1px solid navy;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+}
+.type-c {
+  cursor: help;
+  color: orange;
+}
+.type-op {
+  cursor: help;
+  color: navy;
+}
+.type-dp {
+  cursor: help;
+  color: green;
+}
+.type-ap {
+  cursor: help;
+  color: maroon;
+}
+.type-ni {
+  cursor: help;
+  color: brown;
+}
+
+.dotted {
+  border-bottom: 1px dotted gray;
+}
+.description {
+  border-top: 1px dashed gray;
+  border-bottom: 1px dashed gray;
+  background-color: rgb(242, 243, 244);
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.description dl {
+  background-color: rgb(242, 243, 244);
+}
+.description ul {
+  padding-left: 12px;
+  margin-top: 0px;
+}
+.backlink {
+  font-size: 10pt;
+  text-align: right;
+  float: right;
+  color: black;
+  padding: 2px;
+  border: 1px dotted navy;
+  background-color: #f4ffff;
+}
+.literal {
+  color: green;
+  font-style: italic;
+}
+
+/* margins */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  width: 100%;
+}
+
+#content {
+  padding-top: 0.4rem;
+  max-width: 900px;
+}
+</style>
+</head>
+
+<!-- @format -->
+<body>
+  <div id="content" class="container">
+    <div id="top-page"></div>
+
+    <amp-img
+      src="https://ontomatica.io/static/image/logo/onto-logo-text-blue-w325-h60.svg"
+      width="205"
+      height="45"
+    ></amp-img>
+
+    <main>
+      <article>
+        <header>
+          <h1 class="ontology-name">Einstein&#x2019;s Riddle</h1>
+        </header>
+
+        <div id="toc">
+          <h2>Table of Content</h2>
+          <ol>
+            <li>
+              <a class="uline" href="#introduction">Introduction</a>
+            </li>
+            <li>
+              <a class="uline" href="#classes">Classes</a>
+            </li>
+            <li>
+              <a class="uline" href="#objectproperties">Object Properties</a>
+            </li>
+            <li>
+              <a class="uline" href="#annotationproperties">
+                Annotation Properties
+              </a>
+            </li>
+            <li>
+              <a class="uline" href="#namespacedeclarations">
+                Namespace Declarations
+              </a>
+            </li>
+          </ol>
+        </div>
+        <h2 id="introduction">Introduction</h2>
+
+        <p>1. There are five houses.</p>
+        <p>2. The Englishman lives in the red house.</p>
+        <p>3. The Spaniard owns the dog.</p>
+        <p>4. Coffee is drunk in the green house.</p>
+        <p>5. The Ukrainian drinks tea.</p>
+        <p>
+          6. The green house is immediately to the right of the ivory house.
+        </p>
+        <p>7. The Old Gold smoker owns snails.</p>
+        <p>8. Kools are smoked in the yellow house.</p>
+        <p>9. Milk is drunk in the middle house.</p>
+        <p>10. The Norwegian lives in the first house.</p>
+        <p>
+          11. The man who smokes Chesterfields lives in the house next to the
+          man with the fox.
+        </p>
+        <p>
+          12. Kools are smoked in a house next to the house where the horse is
+          kept.
+        </p>
+        <p>13. The Lucky Strike smoker drinks orange juice.</p>
+        <p>14. The Japanese smokes Parliaments.</p>
+        <p>15. The Norwegian lives next to the blue house.</p>
+
+        <p>
+          Now,
+          <b>who drinks water</b>
+          ?
+          <b>Who owns the zebra</b>
+          ?
+        </p>
+
+        <p>
+          In the interest of clarity, it must be added that each of the five
+          houses is painted a different color, has a single inhabitant, and the
+          inhabitants are of different national extractions, own different pets,
+          drink different beverages and smoke different brands of American
+          cigarettes. In statement 6, right refers to the reader"s right.
+        </p>
+
+        <div id="classes">
+          <h2>Classes</h2>
+          <ul class="hlist">
+            <li>
+              <a
+                class="uline"
+                href="#d4e142"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Beverage"
+              >
+                <span>beverage</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e183"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Cigarette"
+              >
+                <span>cigarette</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e223"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Color"
+              >
+                <span>color</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e263"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+              >
+                <span>house</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e317"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+              >
+                <span>man</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e378"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Pet"
+              >
+                <span>pet</span>
+              </a>
+            </li>
+          </ul>
+          <div id="d4e142" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Beverage"
+            ></a>
+            <h3>
+              beverage
+              <sup title="class" class="type-c">c</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Beverage
+            </p>
+            <dl class="description">
+              <dt>is equivalent to</dt>
+              <dd>
+                {
+                <a
+                  class="uline"
+                  href="#d4e1342"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#coffee"
+                >
+                  coffee
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1708"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#water"
+                >
+                  water
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1679"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#orange_juice"
+                >
+                  orange juice
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1610"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#milk"
+                >
+                  milk
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1701"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#tea"
+                >
+                  tea
+                </a>
+                }
+              </dd>
+              <dt>has super-classes</dt>
+              <dd>
+                <span class="logic">inverse</span>
+                <a
+                  class="uline"
+                  href="#d4e34"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks"
+                >
+                  drinks
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e317"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                >
+                  man
+                </a>
+                <sup title="class" class="type-c">c</sup>
+              </dd>
+              <dt>is in range of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e34"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks"
+                >
+                  drinks
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+            </dl>
+          </div>
+          <div id="d4e183" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Cigarette"
+            ></a>
+            <h3>
+              cigarette
+              <sup title="class" class="type-c">c</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Cigarette
+            </p>
+            <dl class="description">
+              <dt>is equivalent to</dt>
+              <dd>
+                {
+                <a
+                  class="uline"
+                  href="#d4e1278"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Parliaments"
+                >
+                  parliaments
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e716"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Kools"
+                >
+                  kools
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e425"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Chesterfields"
+                >
+                  chesterfields
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1001"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Lucky_Strike"
+                >
+                  lucky strike
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1210"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Old_Gold"
+                >
+                  old gold
+                </a>
+                }
+              </dd>
+              <dt>has super-classes</dt>
+              <dd>
+                <span class="logic">inverse</span>
+                <a
+                  class="uline"
+                  href="#d4e122"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes"
+                >
+                  smokes
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e317"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                >
+                  man
+                </a>
+                <sup title="class" class="type-c">c</sup>
+              </dd>
+              <dt>is in range of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e122"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes"
+                >
+                  smokes
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+            </dl>
+          </div>
+          <div id="d4e223" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Color"
+            ></a>
+            <h3>
+              color
+              <sup title="class" class="type-c">c</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Color
+            </p>
+            <dl class="description">
+              <dt>is equivalent to</dt>
+              <dd>
+                {
+                <a
+                  class="uline"
+                  href="#d4e1441"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#green"
+                >
+                  green
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1686"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#red"
+                >
+                  red
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1715"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#yellow"
+                >
+                  yellow
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1603"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#ivory"
+                >
+                  ivory
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1334"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#blue"
+                >
+                  blue
+                </a>
+                }
+              </dd>
+              <dt>has super-classes</dt>
+              <dd>
+                <span class="logic">inverse</span>
+                <a
+                  class="uline"
+                  href="#d4e53"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color"
+                >
+                  has color
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e263"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+                >
+                  house
+                </a>
+                <sup title="class" class="type-c">c</sup>
+              </dd>
+              <dt>is in range of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e53"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color"
+                >
+                  has color
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+            </dl>
+          </div>
+          <div id="d4e263" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+            ></a>
+            <h3>
+              house
+              <sup title="class" class="type-c">c</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House
+            </p>
+            <dl class="description">
+              <dt>is equivalent to</dt>
+              <dd>
+                {
+                <a
+                  class="uline"
+                  href="#d4e1532"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#house-1"
+                >
+                  house 1
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1559"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#house-3"
+                >
+                  house 3
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1550"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#house-2"
+                >
+                  house 2
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1568"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#house-4"
+                >
+                  house 4
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1578"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#house-5"
+                >
+                  house 5
+                </a>
+                }
+              </dd>
+              <dt>has super-classes</dt>
+              <dd>
+                (
+                <a
+                  class="uline"
+                  href="#d4e53"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color"
+                >
+                  has color
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e223"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Color"
+                >
+                  color
+                </a>
+                <sup title="class" class="type-c">c</sup>
+                )
+                <span class="logic">and</span>
+                (
+                <span class="logic">inverse</span>
+                <a
+                  class="uline"
+                  href="#d4e71"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in"
+                >
+                  lives in
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e317"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                >
+                  man
+                </a>
+                <sup title="class" class="type-c">c</sup>
+                )
+              </dd>
+              <dt>is in domain of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e53"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color"
+                >
+                  has color
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e103"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#right_to"
+                >
+                  right to
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+              <dt>is in range of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e71"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in"
+                >
+                  lives in
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e103"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#right_to"
+                >
+                  right to
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+            </dl>
+          </div>
+          <div id="d4e317" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+            ></a>
+            <h3>
+              man
+              <sup title="class" class="type-c">c</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man
+            </p>
+            <dl class="description">
+              <dt>is equivalent to</dt>
+              <dd>
+                {
+                <a
+                  class="uline"
+                  href="#d4e692"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Japanese"
+                >
+                  japanese
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1310"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Ukrainian"
+                >
+                  ukrainian
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1285"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Spaniard"
+                >
+                  spaniard
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1069"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Norwegian"
+                >
+                  norwegian
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e635"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Englishman"
+                >
+                  englishman
+                </a>
+                }
+              </dd>
+              <dt>has super-classes</dt>
+              <dd>
+                (
+                <a
+                  class="uline"
+                  href="#d4e34"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks"
+                >
+                  drinks
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e142"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Beverage"
+                >
+                  beverage
+                </a>
+                <sup title="class" class="type-c">c</sup>
+                )
+                <span class="logic">and</span>
+                (
+                <a
+                  class="uline"
+                  href="#d4e71"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in"
+                >
+                  lives in
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e263"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+                >
+                  house
+                </a>
+                <sup title="class" class="type-c">c</sup>
+                )
+                <span class="logic">and</span>
+                (
+                <a
+                  class="uline"
+                  href="#d4e90"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns"
+                >
+                  owns
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e378"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Pet"
+                >
+                  pet
+                </a>
+                <sup title="class" class="type-c">c</sup>
+                )
+                <span class="logic">and</span>
+                (
+                <a
+                  class="uline"
+                  href="#d4e122"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes"
+                >
+                  smokes
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e183"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Cigarette"
+                >
+                  cigarette
+                </a>
+                <sup title="class" class="type-c">c</sup>
+                )
+              </dd>
+              <dt>is in domain of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e34"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks"
+                >
+                  drinks
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e71"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in"
+                >
+                  lives in
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e90"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns"
+                >
+                  owns
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e122"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes"
+                >
+                  smokes
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+            </dl>
+          </div>
+          <div id="d4e378" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Pet"
+            ></a>
+            <h3>
+              pet
+              <sup title="class" class="type-c">c</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#classes">Class ToC</a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Pet
+            </p>
+            <dl class="description">
+              <dt>is equivalent to</dt>
+              <dd>
+                {
+                <a
+                  class="uline"
+                  href="#d4e1525"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#horse"
+                >
+                  horse
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1433"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#fox"
+                >
+                  fox
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1723"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#zebra"
+                >
+                  zebra
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1693"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#snails"
+                >
+                  snails
+                </a>
+                ,
+                <a
+                  class="uline"
+                  href="#d4e1426"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#dog"
+                >
+                  dog
+                </a>
+                }
+              </dd>
+              <dt>has super-classes</dt>
+              <dd>
+                <span class="logic">inverse</span>
+                <a
+                  class="uline"
+                  href="#d4e90"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns"
+                >
+                  owns
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+                <span class="logic">some</span>
+                <a
+                  class="uline"
+                  href="#d4e317"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                >
+                  man
+                </a>
+                <sup title="class" class="type-c">c</sup>
+              </dd>
+              <dt>is in range of</dt>
+              <dd>
+                <a
+                  class="uline"
+                  href="#d4e90"
+                  title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns"
+                >
+                  owns
+                </a>
+                <sup title="object property" class="type-op">op</sup>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div id="objectproperties">
+          <h2>Object Properties</h2>
+          <ul class="hlist">
+            <li>
+              <a
+                class="uline"
+                href="#d4e34"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks"
+              >
+                <span>drinks</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e53"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color"
+              >
+                <span>has color</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e71"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in"
+              >
+                <span>lives in</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e90"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns"
+              >
+                <span>owns</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e103"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#right_to"
+              >
+                <span>right to</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e122"
+                title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes"
+              >
+                <span>smokes</span>
+              </a>
+            </li>
+          </ul>
+          <div id="d4e34" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks"
+            ></a>
+            <h3>
+              drinks
+              <sup title="object property" class="type-op">op</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#objectproperties">
+                  Object Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#drinks
+            </p>
+            <div class="description">
+              <p>
+                <strong>has characteristics:</strong>
+                functional, inverse functional
+              </p>
+              <dl>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e317"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                  >
+                    man
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+                <dt>has range</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e142"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Beverage"
+                  >
+                    beverage
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="d4e53" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color"
+            ></a>
+            <h3>
+              has color
+              <sup title="object property" class="type-op">op</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#objectproperties">
+                  Object Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#has_color
+            </p>
+            <div class="description">
+              <p>
+                <strong>has characteristics:</strong>
+                functional, inverse functional
+              </p>
+              <dl>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e263"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+                  >
+                    house
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+                <dt>has range</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e223"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Color"
+                  >
+                    color
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="d4e71" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in"
+            ></a>
+            <h3>
+              lives in
+              <sup title="object property" class="type-op">op</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#objectproperties">
+                  Object Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#lives_in
+            </p>
+            <div class="description">
+              <p>
+                <strong>has characteristics:</strong>
+                functional, inverse functional
+              </p>
+              <dl>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e317"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                  >
+                    man
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+                <dt>has range</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e263"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+                  >
+                    house
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="d4e90" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns"
+            ></a>
+            <h3>
+              owns
+              <sup title="object property" class="type-op">op</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#objectproperties">
+                  Object Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#owns
+            </p>
+            <div class="description">
+              <p>
+                <strong>has characteristics:</strong>
+                functional, inverse functional
+              </p>
+              <dl>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e317"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                  >
+                    man
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+                <dt>has range</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e378"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Pet"
+                  >
+                    pet
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="d4e103" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#right_to"
+            ></a>
+            <h3>
+              right to
+              <sup title="object property" class="type-op">op</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#objectproperties">
+                  Object Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#right_to
+            </p>
+            <div class="description">
+              <p>
+                <strong>has characteristics:</strong>
+                functional, inverse functional
+              </p>
+              <dl>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e263"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+                  >
+                    house
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+                <dt>has range</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e263"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#House"
+                  >
+                    house
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="d4e122" class="entity">
+            <a
+              name="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes"
+            ></a>
+            <h3>
+              smokes
+              <sup title="object property" class="type-op">op</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#objectproperties">
+                  Object Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#smokes
+            </p>
+            <div class="description">
+              <p>
+                <strong>has characteristics:</strong>
+                functional, inverse functional
+              </p>
+              <dl>
+                <dt>has domain</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e317"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Man"
+                  >
+                    man
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+                <dt>has range</dt>
+                <dd>
+                  <a
+                    class="uline"
+                    href="#d4e183"
+                    title="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#Cigarette"
+                  >
+                    cigarette
+                  </a>
+                  <sup title="class" class="type-c">c</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="annotationproperties">
+          <h2>Annotation Properties</h2>
+          <ul class="hlist">
+            <li>
+              <a
+                class="uline"
+                href="#d4e19"
+                title="http://purl.org/dc/elements/1.1/creator"
+              >
+                <span>creator</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e24"
+                title="http://purl.org/dc/elements/1.1/date"
+              >
+                <span>date</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="uline"
+                href="#d4e28"
+                title="http://purl.org/dc/elements/1.1/description"
+              >
+                <span>description</span>
+              </a>
+            </li>
+          </ul>
+          <div id="d4e19" class="entity">
+            <a name="http://purl.org/dc/elements/1.1/creator"></a>
+            <h3>
+              creator
+              <sup title="annotation property" class="type-ap">ap</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#annotationproperties">
+                  Annotation Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://purl.org/dc/elements/1.1/creator
+            </p>
+          </div>
+          <div id="d4e24" class="entity">
+            <a name="http://purl.org/dc/elements/1.1/date"></a>
+            <h3>
+              date
+              <sup title="annotation property" class="type-ap">ap</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#annotationproperties">
+                  Annotation Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://purl.org/dc/elements/1.1/date
+            </p>
+          </div>
+          <div id="d4e28" class="entity">
+            <a name="http://purl.org/dc/elements/1.1/description"></a>
+            <h3>
+              description
+              <sup title="annotation property" class="type-ap">ap</sup>
+              <span class="backlink">
+                back to
+                <a class="uline" href="#toc">ToC</a>
+                or
+                <a class="uline" href="#annotationproperties">
+                  Annotation Property ToC
+                </a>
+              </span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+              http://purl.org/dc/elements/1.1/description
+            </p>
+          </div>
+        </div>
+        <div id="namespacedeclarations">
+          <h2>
+            Namespace Declarations
+            <span class="backlink">
+              back to
+              <a class="uline" href="#toc">ToC</a>
+            </span>
+          </h2>
+          <dl>
+            <dt>
+              <em>default namespace</em>
+            </dt>
+            <dd>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#
+            </dd>
+            <dt>dc</dt>
+            <dd>http://purl.org/dc/elements/1.1/</dd>
+            <dt>einsteins_riddle</dt>
+            <dd>
+              http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#
+            </dd>
+            <dt>owl</dt>
+            <dd>http://www.w3.org/2002/07/owl#</dd>
+            <dt>pages</dt>
+            <dd>http://persons.iis.nsk.su/files/persons/pages/</dd>
+            <dt>rdf</dt>
+            <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+            <dt>rdfs</dt>
+            <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+            <dt>xsd</dt>
+            <dd>http://www.w3.org/2001/XMLSchema#</dd>
+          </dl>
+        </div>
+      </article>
+      <amp-animation id="showAnim" layout="nodisplay">
+        <script type="application/json">
+          {
+            "duration": "200ms",
+            "fill": "both",
+            "iterations": "1",
+            "direction": "alternate",
+            "animations": [
+              {
+                "selector": "#scrollToTopButton",
+                "keyframes": [{ "opacity": "1", "visibility": "visible" }]
+              }
+            ]
+          }
+        </script>
+      </amp-animation>
+
+      <amp-animation id="hideAnim" layout="nodisplay">
+        <script type="application/json">
+          {
+            "duration": "200ms",
+            "fill": "both",
+            "iterations": "1",
+            "direction": "alternate",
+            "animations": [
+              {
+                "selector": "#scrollToTopButton",
+                "keyframes": [{ "opacity": "0", "visibility": "hidden" }]
+              }
+            ]
+          }
+        </script>
+      </amp-animation>
+
+      <div id="marker">
+        <amp-position-observer
+          on="enter:hideAnim.start; exit:showAnim.start"
+          layout="nodisplay"
+        ></amp-position-observer>
+      </div>
+
+      <button
+        id="scrollToTopButton"
+        on="tap:top-page.scrollTo(duration=200)"
+        class="scrollToTop"
+      >
+        <svg
+          viewBox="-4 -8 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 11L11 2L2 11"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </main>
+  </div>
+  <br />
+  <br />
+</body>
+
+</html>

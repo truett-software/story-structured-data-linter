@@ -1,0 +1,342 @@
+- iri: 'https://w3id.org/yet/undefined/einstein-zebra-puzzle-ontology#'
+- annotation: >-
+    This file ist strongly based on the work of Denis Ponomaryov, see
+    https://persons.iis.nsk.su/en/ponom/ontologies
+- annotation: 'source1: https://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl'
+- annotation: >-
+    source2:
+    https://github.com/RDFLib/OWL-RL/files/1533408/einsteins_riddle.owl.txt
+- owl_individual:
+    dog:
+      types:
+        - 'owl:Thing'
+- owl_individual:
+    zebra:
+      types:
+        - 'owl:Thing'
+- owl_multiple_individuals:
+    names:
+      - fox
+      - horse
+      - snails
+    types:
+      - 'owl:Thing'
+- owl_class:
+    Pet:
+      EquivalentTo:
+        OneOf:
+          - dog
+          - zebra
+          - snails
+          - fox
+          - horse
+- owl_multiple_individuals:
+    names:
+      - Englishman
+      - Japanese
+      - Norwegian
+      - Spaniard
+      - Ukrainian
+    types:
+      - 'owl:Thing'
+- owl_class:
+    Man:
+      EquivalentTo:
+        OneOf:
+          - Englishman
+          - Japanese
+          - Norwegian
+          - Spaniard
+          - Ukrainian
+- owl_multiple_individuals:
+    names:
+      - house_1
+      - house_2
+      - house_3
+      - house_4
+      - house_5
+    types:
+      - 'owl:Thing'
+- owl_class:
+    House:
+      EquivalentTo:
+        OneOf:
+          - house_1
+          - house_2
+          - house_3
+          - house_4
+          - house_5
+- owl_multiple_individuals:
+    names:
+      - blue
+      - green
+      - ivory
+      - red
+      - yellow
+    types:
+      - 'owl:Thing'
+- owl_class:
+    Color:
+      EquivalentTo:
+        OneOf:
+          - blue
+          - green
+          - ivory
+          - red
+          - yellow
+- owl_multiple_individuals:
+    names:
+      - coffee
+      - milk
+      - orange_juice
+      - tea
+      - water
+    types:
+      - 'owl:Thing'
+- owl_class:
+    Beverage:
+      EquivalentTo:
+        OneOf:
+          - coffee
+          - milk
+          - orange_juice
+          - tea
+          - water
+- owl_multiple_individuals:
+    names:
+      - Chesterfields
+      - Kools
+      - Lucky_Strike
+      - Old_Gold
+      - Parliaments
+    types:
+      - 'owl:Thing'
+- owl_class:
+    Cigarette:
+      EquivalentTo:
+        OneOf:
+          - Chesterfields
+          - Kools
+          - Lucky_Strike
+          - Old_Gold
+          - Parliaments
+- owl_object_property:
+    right_to:
+      Characteristics:
+        - Functional
+        - InverseFunctional
+      Domain:
+        - 'owl:Thing'
+      Range:
+        - 'owl:Thing'
+- owl_inverse_property:
+    left_to:
+      Inverse: right_to
+- owl_object_property:
+    has_color:
+      Characteristics:
+        - Functional
+        - InverseFunctional
+      Domain:
+        - House
+      Range:
+        - Color
+- owl_inverse_property:
+    inv_has_color:
+      Inverse: has_color
+- owl_object_property:
+    drinks:
+      Characteristics:
+        - Functional
+        - InverseFunctional
+      Domain:
+        - Man
+      Range:
+        - Beverage
+- owl_inverse_property:
+    inv_drinks:
+      Inverse: drinks
+- owl_object_property:
+    lives_in:
+      Characteristics:
+        - Functional
+        - InverseFunctional
+      Domain:
+        - Man
+      Range:
+        - House
+- owl_inverse_property:
+    inv_lives_in:
+      Inverse: lives_in
+- owl_object_property:
+    owns:
+      Characteristics:
+        - Functional
+        - InverseFunctional
+      Domain:
+        - Man
+      Range:
+        - Pet
+- owl_inverse_property:
+    inv_owns:
+      Inverse: owns
+- owl_object_property:
+    smokes:
+      Characteristics:
+        - Functional
+        - InverseFunctional
+      Domain:
+        - Man
+      Range:
+        - Cigarette
+- owl_inverse_property:
+    inv_smokes:
+      Inverse: smokes
+- property_facts:
+    right_to:
+      Facts:
+        - house_1: 'owl:Nothing'
+        - house_2: house_1
+        - house_3: house_2
+        - house_4: house_3
+        - house_5: house_4
+    left_to:
+      Facts:
+        - house_5: 'owl:Nothing'
+- restriction:
+    Subject: Man
+    Body:
+      owns:
+        some: Pet
+- restriction:
+    Subject: Man
+    Body:
+      drinks:
+        some: Beverage
+- restriction:
+    Subject: Man
+    Body:
+      lives_in:
+        some: House
+- restriction:
+    Subject: House
+    Body:
+      has_color:
+        some: Color
+- restriction:
+    Subject: Spaniard
+    Body:
+      owns:
+        value: dog
+- restriction:
+    Subject: Englishman
+    Body:
+      lives_in:
+        some:
+          has_color:
+            value: red
+- restriction:
+    Subject: coffee
+    Body:
+      Inverse:
+        drinks:
+          some:
+            lives_in:
+              some:
+                has_color:
+                  value: green
+- property_facts:
+    drinks:
+      Facts:
+        - Ukrainian: tea
+    lives_in:
+      Facts:
+        - Norwegian: house_1
+    smokes:
+      Facts:
+        - Japanese: Parliaments
+- restriction:
+    Subject: green
+    Body:
+      Inverse:
+        has_color:
+          some:
+            right_to:
+              some:
+                has_color:
+                  value: ivory
+- restriction:
+    Subject: Old_Gold
+    Body:
+      Inverse:
+        smokes:
+          some:
+            owns:
+              value: snails
+- restriction:
+    Subject: Kools
+    Body:
+      Inverse:
+        smokes:
+          some:
+            lives_in:
+              some:
+                has_color:
+                  value: yellow
+- restriction:
+    Subject: milk
+    Body:
+      Inverse:
+        drinks:
+          some:
+            lives_in:
+              value: house_3
+- restriction:
+    Subject: Chesterfields
+    Body:
+      Inverse:
+        smokes:
+          some:
+            lives_in:
+              some:
+                right_to:
+                  some:
+                    Inverse:
+                      lives_in:
+                        some:
+                          owns:
+                            value: fox
+- restriction:
+    Subject: Kools
+    Body:
+      Inverse:
+        smokes:
+          some:
+            lives_in:
+              some:
+                left_to:
+                  some:
+                    Inverse:
+                      lives_in:
+                        some:
+                          owns:
+                            value: horse
+- restriction:
+    Subject: Lucky_Strike
+    Body:
+      Inverse:
+        smokes:
+          some:
+            drinks:
+              value: orange_juice
+- restriction:
+    Subject: Norwegian
+    Body:
+      lives_in:
+        some:
+          left_to:
+            some:
+              has_color:
+                value: blue
+- different_individuals:
+    - __all__

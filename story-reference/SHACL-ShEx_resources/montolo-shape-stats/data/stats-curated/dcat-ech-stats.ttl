@@ -1,0 +1,475 @@
+@prefix lovc: <https://w3id.org/montolo/ns/montolo-voc#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rls: <https://w3id.org/montolo/ns/montolo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueTypeDatatypeSHACLDatatype ;
+    rls:detectorVersionDimension rls:valueTypeDatatypeLODStatsDetectorSHACLDatatype-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueTypeDatatype ;
+    rls:restrictionTypeOccurrence 3 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:stringPatternLODStatsDetectorSHACLPattern ;
+    rls:detectorVersionDimension rls:stringPatternLODStatsDetectorSHACLPattern-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:stringPattern ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueTypeNodeKindSHACLNodeKind ;
+    rls:detectorVersionDimension rls:valueTypeNodeKindLODStatsDetectorSHACLNodeKind-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueTypeNodeKind ;
+    rls:restrictionTypeOccurrence 9 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:otherHasValueLODStatsDetectorSHACLHasValue ;
+    rls:detectorVersionDimension rls:otherHasValueLODStatsDetectorSHACLHasValue-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:otherHasValue ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:stringMinLengthLODStatsDetectorSHACLMinLength ;
+    rls:detectorVersionDimension rls:stringMinLengthLODStatsDetectorSHACLMinLength-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:stringMinLength ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:targetClassTargetLODStatsDetectorSHACLTargetClass ;
+    rls:detectorVersionDimension rls:targetClassTargetLODStatsDetectorSHACLTargetClass-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:targetClassTarget ;
+    rls:restrictionTypeOccurrence 3 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueRangeMinExclusiveLODStatsDetectorSHACLMinExclusive ;
+    rls:detectorVersionDimension rls:valueRangeMinExclusiveLODStatsDetectorSHACLMinExclusive-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueRangeMinExclusive ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:logicalExclusiveDisjunctionLODStatsDetectorSHACLXone ;
+    rls:detectorVersionDimension rls:logicalExclusiveDisjunctionLODStatsDetectorSHACLXone-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:logicalExclusiveDisjunction ;
+    rls:restrictionTypeOccurrence 2 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:otherIgnoredPropertiesLODStatsDetectorSHACLIgnoredProperties ;
+    rls:detectorVersionDimension rls:otherIgnoredPropertiesLODStatsDetectorSHACLIgnoredProperties-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:otherIgnoredProperties ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueRangeMaxInclusiveLODStatsDetectorSHACLMaxInclusive ;
+    rls:detectorVersionDimension rls:valueRangeMaxInclusiveLODStatsDetectorSHACLMaxInclusive-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueRangeMaxInclusive ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:targetSubjectsOfTargetLODStatsDetectorSHACLTargetSubjectsOf ;
+    rls:detectorVersionDimension rls:targetSubjectsOfTargetLODStatsDetectorSHACLTargetSubjectsOf-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:targetSubjectsOfTarget ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:shapeNodeLODStatsDetectorSHACLNode ;
+    rls:detectorVersionDimension rls:shapeNodeLODStatsDetectorSHACLNode-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:shapeNode ;
+    rls:restrictionTypeOccurrence 6 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:shapePropertyLODStatsDetectorSHACLProperty ;
+    rls:detectorVersionDimension rls:shapePropertyLODStatsDetectorSHACLProperty-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:shapeProperty ;
+    rls:restrictionTypeOccurrence 55 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:cardinalityMinCountLODStatsDetectorSHACLMinCount ;
+    rls:detectorVersionDimension rls:cardinalityMinCountLODStatsDetectorSHACLMinCount-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:cardinalityMinCount ;
+    rls:restrictionTypeOccurrence 20 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:propertyPairLessThanLODStatsDetectorSHACLLessThan ;
+    rls:detectorVersionDimension rls:propertyPairLessThanLODStatsDetectorSHACLLessThan-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:propertyPairLessThan ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:shapeQualifiedValueLODStatsDetectorSHACLQualifiedValue ;
+    rls:detectorVersionDimension rls:shapeQualifiedValueLODStatsDetectorSHACLQualifiedValue-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:shapeQualifiedValue ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:otherClosedLODStatsDetectorSHACLClosed ;
+    rls:detectorVersionDimension rls:otherClosedLODStatsDetectorSHACLClosed-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:otherClosed ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:propertyPairDisjointLODStatsDetectorSHACLDisjoint ;
+    rls:detectorVersionDimension rls:propertyPairDisjointLODstatsDetectorSHACLDisjoint-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:propertyPairDisjoint ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:logicalNegationLODStatsDetectorSHACLNot ;
+    rls:detectorVersionDimension rls:logicalNegationLODStatsDetectorSHACLNot-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:logicalNegation ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueRangeMinInclusiveLODStatsDetectorSHACLMinInclusive ;
+    rls:detectorVersionDimension rls:valueRangeMinInclusiveLODStatsDetectorSHACLMinInclusive-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueRangeMinInclusive ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:logicalDisjunctionLODStatsDetectorSHACLOr ;
+    rls:detectorVersionDimension rls:logicalDisjunctionLODStatsDetectorSHACLOr-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:logicalDisjunction ;
+    rls:restrictionTypeOccurrence 3 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueTypeClassSHACLClass ;
+    rls:detectorVersionDimension rls:valueTypeClassLODStatsDetectorSHACLClass-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueTypeClass ;
+    rls:restrictionTypeOccurrence 33 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:targetObjectsOfTargetLODStatsDetectorSHACLTargetObjectsOf ;
+    rls:detectorVersionDimension rls:targetObjectsOfTargetLODStatsDetectorSHACLTargetObjectsOf-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:targetObjectsOfTarget ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:shapeQualifiedMinCountLODStatsDetectorSHACLQualifiedMinCount ;
+    rls:detectorVersionDimension rls:shapeQualifiedMinCountLODStatsDetectorSHACLQualifiedMinCount-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:shapeQualifiedMinCount ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:cardinalityMaxCountLODStatsDetectorSHACLMaxCount ;
+    rls:detectorVersionDimension rls:cardinalityMaxCountLODStatsDetectorSHACLMaxCount-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:cardinalityMaxCount ;
+    rls:restrictionTypeOccurrence 27 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:valueRangeMaxExclusiveLODStatsDetectorSHACLMaxExclusive ;
+    rls:detectorVersionDimension rls:valueRangeMaxExclusiveLODStatsDetectorSHACLMaxExclusive-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:valueRangeMaxExclusive ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:propertyPairEqualsLODStatsDetectorSHACLEquals ;
+    rls:detectorVersionDimension rls:propertyPairEqualsLODStatsDetectorSHACLEquals-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:propertyPairEquals ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:shapeQualifiedMaxCountLODStatsDetectorSHACLQualifiedMaxCount ;
+    rls:detectorVersionDimension rls:shapeQualifiedMaxCountLODStatsDetectorSHACLQualifiedMaxCount-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:shapeQualifiedMaxCount ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:propertyPairLessThanOrEqualsLODStatsDetectorSHACLLessThanOrEquals ;
+    rls:detectorVersionDimension rls:propertyPairLessThanOrEqualsLODStatsDetectorSHACLLessThanOrEquals-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:propertyPairLessThanOrEquals ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:stringLanguageInLODStatsDetectorSHACLLanguageIn ;
+    rls:detectorVersionDimension rls:stringLanguageInLODStatsDetectorSHACLLanguageIn-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:stringLanguageIn ;
+    rls:restrictionTypeOccurrence 2 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:otherValueInLODStatsDetectorSHACLValueIn ;
+    rls:detectorVersionDimension rls:otherValueInLODStatsDetectorSHACLValueIn-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:otherValueIn ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:stringMaxLengthLODStatsDetectorSHACLMaxLength ;
+    rls:detectorVersionDimension rls:stringMaxLengthLODStatsDetectorSHACLMaxLength-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:stringMaxLength ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:targetNodeTargetLODStatsDetectorSHACLTargetNode ;
+    rls:detectorVersionDimension rls:targetNodeTargetLODStatsDetectorSHACLTargetNode-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:targetNodeTarget ;
+    rls:restrictionTypeOccurrence 1 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:stringUniqueLangLODStatsDetectorSHACLUniqueLang ;
+    rls:detectorVersionDimension rls:stringUniqueLangLODStatsDetectorSHACLUniqueLang-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:stringUniqueLang ;
+    rls:restrictionTypeOccurrence 0 .
+
+[] a qb:Observation,
+        prov:Entity,
+        lovc:RestrictionTypeStatistic ;
+    qb:dataSet _:N2a2a8729d1db45839cdc44075e8e190b ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    rls:detectorDimension rls:logicalConjunctionLODStatsDetectorSHACLAnd ;
+    rls:detectorVersionDimension rls:logicalConjunctionLODStatsDetectorSHACLAnd-v1 ;
+    rls:executionTimeDimension "2020-10-19T22:01:46.102154"^^xsd:dateTime ;
+    rls:ontologyRepositoryDimension rls:noRepo ;
+    rls:ontologyVersionDimension <https://raw.githubusercontent.com/factsmission/dcat-ap-ch-shacl/master/ech-0200.shacl.ttl#> ;
+    rls:restrictionTypeDimension rls:logicalConjunction ;
+    rls:restrictionTypeOccurrence 0 .
+
+_:Na4d43e842e46475aa5ffd749bf2138a7 a prov:Activity .
+
+_:N2a2a8729d1db45839cdc44075e8e190b a qb:DataSet,
+        prov:Entity,
+        lovc:Dataset ;
+    qb:structure rls:restrictionTypesAmount ;
+    prov:qualifiedGeneration _:Nc365c95312d746ab84b2ee8127b9a63e ;
+    prov:wasGeneratedBy _:Na4d43e842e46475aa5ffd749bf2138a7 .
+
+_:Nc365c95312d746ab84b2ee8127b9a63e a prov:Generation,
+        prov:InstantaneousEvent ;
+    prov:activity _:Na4d43e842e46475aa5ffd749bf2138a7 ;
+    prov:atTime "2020-10-19T22:01:46.102154"^^xsd:dateTime .
+

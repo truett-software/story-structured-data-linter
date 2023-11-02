@@ -1,0 +1,194 @@
+<https://www.reseau-canope.fr/scolomfr/shapes/ScoLOMFR-V6-AP.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est OBLIGATOIRE que les instances de skos:ConceptScheme soient des IRIs"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "SKOS ConceptScheme (ScoLOMFR ou un Vocabulaire du ScoLOMFR)"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P12> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P13> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P14> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P15> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P16> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P17> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P18> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P19> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#ConceptScheme> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Les instances de skos:Concept DOIVENT être des IRI de la forme http://data.education.fr/voc/scolomfr/concept/"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "SKOS Concept (un Concept du ScoLOMFR)"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#pattern> "^http://data.education.fr/voc/scolomfr/concept/(.*)" .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P21> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P22> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P23> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P24> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P25> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P26> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P27> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P28> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P29> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P30> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P31> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P32> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P33> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P34> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P35> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P36> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P37> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P38> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P39> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P40> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#property> <https://www.reseau-canope.fr/scolomfr/shapes#P41> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#Concept> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#description> "Les ConceptSchme DOIVENT avoir au moins un skos:prefLabel, et au maximum un par langue"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#equals> <http://purl.org/dc/terms/title> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P12> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#description> "Les ConceptSchme DOIVENT avoir au moins un dct:title, et au maximum un par langue"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#equals> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#name> "Contraintes de dct:title sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P13> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P14> <http://www.w3.org/ns/shacl#hasValue> <http://www.reseau-canope.fr> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P14> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P14> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P14> <http://www.w3.org/ns/shacl#name> "Contraintes de dct:creator sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P14> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P14> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P15> <http://www.w3.org/ns/shacl#hasValue> <http://www.lom-fr.fr/scolomfr> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P15> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P15> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P15> <http://www.w3.org/ns/shacl#name> "Contraintes de dct:source sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P15> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/source> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P15> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#description> "Les ConceptScheme DOIVENT avoir une et une seule date de publication dct:issued qui doit avoir le datatype xsd:dateTime."@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#name> "Contraintes de dct:issued sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P16> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P17> <http://www.w3.org/ns/shacl#hasValue> "fr" .
+<https://www.reseau-canope.fr/scolomfr/shapes#P17> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P17> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P17> <http://www.w3.org/ns/shacl#name> "Contraintes de dct:language sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P17> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P17> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P18> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P18> <http://www.w3.org/ns/shacl#name> "Contraintes de dct:identifier sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P18> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/identifier> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P18> <http://www.w3.org/ns/shacl#pattern> "[0-9][0-9]" .
+<https://www.reseau-canope.fr/scolomfr/shapes#P18> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P19> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P19> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P19> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:hasTopConcept sur un ConceptScheme"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P19> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#hasTopConcept> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P19> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/2004/02/skos/core#altLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/2004/02/skos/core#hiddenLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P21> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P22> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P22> <http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/2004/02/skos/core#hiddenLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P22> <http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P22> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:altLabel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P22> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#altLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P22> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P23> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P23> <http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/2004/02/skos/core#altLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P23> <http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P23> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:hiddenLabel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P23> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#hiddenLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P23> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P24> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P24> <http://www.w3.org/ns/shacl#name> "Contraintes de scolomfr:labelEquivalentExact sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P24> <http://www.w3.org/ns/shacl#path> <https://www.reseau-canope.fr/scolomfr/ontologie#labelEquivalentExact> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P24> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P25> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P25> <http://www.w3.org/ns/shacl#name> "Contraintes de scolomfr:labelEquivalentPartiel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P25> <http://www.w3.org/ns/shacl#path> <https://www.reseau-canope.fr/scolomfr/ontologie#labelEquivalentPartiel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P25> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#hasValue> <http://data.education.fr/voc/scolomfr> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#maxCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#minCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:inScheme sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P26> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P27> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P27> <http://www.w3.org/ns/shacl#maxCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P27> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P27> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:topConceptOf sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P27> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#topConceptOf> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P27> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P28> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P28> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:scopeNote sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P28> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#scopeNote> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P28> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P29> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P29> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:historyNote sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P29> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#historyNote> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P29> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P30> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P30> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:editorialNote sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P30> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#editorialNote> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P30> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P31> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P31> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:definition sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P31> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#definition> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P31> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P32> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P32> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:broader sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P32> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#broader> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P32> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P33> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P33> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:narrower sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P33> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#narrower> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P33> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P34> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P34> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:related sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P34> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#related> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P34> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P35> <http://www.w3.org/ns/shacl#class> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P35> <http://www.w3.org/ns/shacl#name> "Contraintes de isothes:subordinateArray sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P35> <http://www.w3.org/ns/shacl#path> <http://purl.org/iso25964/skos-thes#subordinateArray> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P35> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P36> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P36> <http://www.w3.org/ns/shacl#name> "Contraintes de scolomfr:ordre sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P36> <http://www.w3.org/ns/shacl#path> <https://www.reseau-canope.fr/scolomfr/ontologie#ordre> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P36> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P37> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2008/05/skos-xl#Label> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P37> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P37> <http://www.w3.org/ns/shacl#name> "Contraintes de skosxl:prefLabel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P37> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2008/05/skos-xl#prefLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P37> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P38> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2008/05/skos-xl#Label> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P38> <http://www.w3.org/ns/shacl#name> "Contraintes de skosxl:altLabel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P38> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2008/05/skos-xl#altLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P38> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P39> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2008/05/skos-xl#Label> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P39> <http://www.w3.org/ns/shacl#name> "Contraintes de skosxl:hiddenLabel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P39> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2008/05/skos-xl#hiddenLabel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P39> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P40> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2008/05/skos-xl#Label> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P40> <http://www.w3.org/ns/shacl#name> "Contraintes de scolomfr:termeEquivalentExact sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P40> <http://www.w3.org/ns/shacl#path> <https://www.reseau-canope.fr/scolomfr/ontologie#termeEquivalentExact> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P40> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P41> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2008/05/skos-xl#Label> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P41> <http://www.w3.org/ns/shacl#name> "Contraintes de scolomfr:termeEquivalentPartiel sur un Concept"@fr .
+<https://www.reseau-canope.fr/scolomfr/shapes#P41> <http://www.w3.org/ns/shacl#path> <https://www.reseau-canope.fr/scolomfr/ontologie#termeEquivalentPartiel> .
+<https://www.reseau-canope.fr/scolomfr/shapes#P41> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .

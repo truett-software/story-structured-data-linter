@@ -1,0 +1,131 @@
+<svg id="ide-ontology-reasoner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1325 923" xml:space="preserve">
+<defs>
+<style type="text/css">
+svg {background: gray;}
+</style>
+</defs>
+<!-- reasoner -->
+<path fill="#ffffbf" d="m1245.2 782.8 25.4-8-2.7-21-26.6-1.1c-4.4-15.3-12.2-29.2-22.5-40.7l13.3-23-16.2-13.7-20.5 17.2c-11.7-7.2-24.9-12.1-39.1-14.2l-4.5-26.2-21.2-.2-4.8 26.3c-14.2 2-27.4 6.9-39.2 14l-20.2-17.3-16.4 13.4 13.1 23.3c-9.3 10.3-16.6 22.4-21.2 35.8l-26.6-.4-4.1 20.8 25 9.5c-.1 1.4-.1 2.9-.1 4.4 0 12.9 2.4 25.3 6.6 36.7l-20.7 16.7 10.1 18.6 25.3-8.6c8.5 11.1 19.1 20.5 31.3 27.4l-5.3 26 19.7 7.8 14-22.7c7.6 1.7 15.5 2.7 23.6 2.7 6.1 0 12.2-.5 18-1.6l12.6 23.4 20.2-6.6-3.8-26.4c12.6-6.3 23.7-15.1 32.7-25.7l24.6 10 11.3-17.9-19.8-17.9c5.4-12.6 8.5-26.4 8.7-40.8z"/>
+<path fill="#fc8d59" d="M1123.1 550.6c-.2-12-3.7-23.1-9.5-32.6l15.9-24.9-16.2-14.9-22.8 17.5c-9.4-5.4-20.3-8.4-31.8-8.4h-1.1l-13.4-26.3-21 6.4 3.5 28.5c-10 5.7-18.3 14.1-24 24.1l-29.5-1.9-5.3 21.3 26.3 11.5v.8c0 13.1 3.9 25.3 10.6 35.5l-15.1 25.4 16.6 14.4 22.2-18.2c9 4.8 19.2 7.5 30.1 7.5 1 0 2 0 3.1-.1l14.2 25.9 20.8-7-4.3-28.4c9.8-6 17.8-14.6 23.2-24.8l29.5 1 4.6-21.5z"/>
+<path fill="#99d594" d="m1036 724.9-21.5-19.1c3.8-11.3 4.3-23 2-33.9l23.3-18.1-10.2-19.4-27.3 8.8c-7.1-8.2-16.2-14.7-27.2-18.6-.3-.1-.7-.2-1.1-.3l-3.8-29.3-21.9-1.1-6.3 28c-11.3 2-21.9 7.1-30.7 14.7l-27.1-11.7-12.1 18.3 20.9 19.7c-.1.3-.2.5-.3.8-4.4 12.3-4.8 25.1-1.9 36.9l-22.7 18.9 10.8 19.1L906 729c6.9 7.5 15.6 13.5 25.9 17.1 1 .3 1.9.7 2.9.9l4.7 29.2 22 .4 5.5-28.2c11.2-2.4 21.7-7.8 30.2-15.6l27.4 10.8z"/>
+<path fill="#fc8d59" d="M948.2 557.8h-15.8s-8.4-44.2 31.7-89.4l-7.6-8.4 21.1 4.6 2.8 21.8-6.1-6.6c.1-.1-29 26.1-26.1 78z"/>
+<path fill="#99d594" d="m902.7 566.8 6.1 14.2s-58.5 23-57.4 95.4l9.9-2-15.7 16.7-19.5-9.1 10.1-2c-.1-.1-12.8-72.6 66.5-113.2z"/>
+<path fill="#ffffbf" d="M1315.2 787.4c0-92.5-77.1-164.1-172.6-165.5v15.6c86.7 1.3 156.5 65.9 156.5 149.9 0 33.5-17.8 59.5-36.9 84.6l-7.1-7.5 3.6 22.7 21.1 3.5-6.5-6.9c22.1-28.1 41.9-58.3 41.9-96.4z"/>
+
+<!-- editor -->
+<!-- <g transform="translate(-327 -199.7)" stroke="#231f20" stroke-width="2" stroke-miterlimit="10"> -->
+<g transform="translate(-227 -199.7)" stroke="#231f20" stroke-width="2" stroke-miterlimit="10">
+<circle fill="#4992ff" cx="919.6" cy="411.8" r="68.3"/>
+<circle fill="#92b655" cx="1065.7" cy="364.1" r="48.2"/>
+<circle fill="#db4955" cx="918.4" cy="258.9" r="48.2"/>
+<circle fill="#ff9200" cx="772.9" cy="364.1" r="48.2"/>
+<circle fill="#49b6ff" cx="829.7" cy="535.2" r="48.2"/>
+<circle fill="#6d49aa" cx="1009" cy="535.2" r="48.2"/>
+<path fill="#92b655" d="M1061.4 417.1c-1.1 27-9.6 52.1-23.7 73.3 3.6 2.3 6.9 5 9.8 8.1 16.3-24.1 25.5-52.2 26.4-81.8-2.7.4-5.5.6-8.3.6-1.3 0-2.8-.1-4.2-.2z"/>
+<path fill="#ff9200" d="M868.4 277.4c-1.5-4-2.4-8.1-2.9-12.3-21.2 7.6-40.7 20-57.1 36.4-4.6 4.6-8.8 9.4-12.8 14.4 3.9 1.8 7.5 4.1 10.7 6.8 16.1-20.3 37.5-36.1 62.1-45.3z"/>
+<path fill="#49b6ff" d="M799.6 491.2c-14.3-21.3-23.1-46.7-24.2-74-.8.1-1.7.1-2.6.1-3.4 0-6.8-.3-10-.9.9 30.1 10.4 58.8 27.2 83.2 2.9-3.2 6.1-6 9.6-8.4z"/>
+<path fill="#6d49aa" d="M962.3 560.9c-2-3.7-3.6-7.6-4.7-11.7-12.5 3.6-25.6 5.5-39.2 5.5-13 0-25.5-1.8-37.5-5-1.1 4.1-2.8 8.1-4.8 11.7 13.6 3.8 27.8 5.8 42.4 5.8 15-.1 29.7-2.2 43.8-6.3z"/>
+<path fill="#db4955" d="M1028.4 301.5c-16.4-16.4-35.9-28.8-57.1-36.4-.5 4.3-1.5 8.5-2.9 12.3 25 9.3 46.7 25.4 62.8 46.1 3.2-2.8 6.7-5.1 10.5-7-4.1-5.2-8.5-10.2-13.3-15z"/>
+</g>
+
+<!-- ontology -->
+<!-- <g transform="translate(-433.2 -289.2)" stroke="#fff"> -->
+<g transform="translate(-290 -289.2)" stroke="#fff">
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m586.6 1180.3 60.7.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m649.2 1181.1-2.5 1.2.6-1.2-.6-1.2z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m550.3 1166.5-52.5-45.5"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m496.5 1119.8 2.7.7-1.3.5-.4 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M545.3 1180.1h-43.1"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m500.3 1180.1 2.5-1.2-.6 1.2.6 1.2z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m689.1 1173.3 67.8-28.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m758.6 1143.9-1.8 2.1.1-1.4-1.1-.9z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m776.6 1110.5-.2-51.9"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m776.3 1056.8 1.3 2.5-1.2-.6-1.2.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m796.8 1127 90.4-18.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m889 1107.8-2.2 1.7.4-1.4-.9-1.1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m795 1045.3 93.1 47.4"/>
+<path pointer-events="all" stroke-miterlimit="10" d="M889.8 1093.6H887l1.1-.8v-1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m796.3 1029.6 173-55.7"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m971.1 973.3-2 2 .2-1.4-1-1z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m756 1037.9-166 21"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m588.1 1059.2 2.3-1.6-.5 1.3.8 1.2z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m776.6 1015.3-.2-53.1"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m776.4 960.2 1.3 2.5-1.3-.6-1.2.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m785.7 1017.4 39.7-80.2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="M826.2 935.5v2.8l-.8-1.1H824Z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m756.6 1030.5-178.7-48.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m576 981.2 2.8-.6-.9 1 .3 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m757.6 1027.6-272-120.1"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m483.9 906.7 2.8-.1-1.1.9.1 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m756 1034.2-105.9-8.9"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m648.2 1025.1 2.6-1-.7 1.2.5 1.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M759.8 1023.9 582.1 896.4"/>
+<path pointer-events="all" stroke-width="2" stroke-miterlimit="10" d="m581.4 895.8 1.4.2-.6.3-.1.7z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M494.6 1090.8 665.9 902"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m667.2 900.6-.8 2.7-.5-1.3-1.3-.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m673.2 907.5-93 133.6"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m579.1 1042.6.4-2.8.7 1.2 1.4.2z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m551.4 1046.4-69.6-58.6"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m480.4 986.6 2.7.6-1.3.6-.3 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m464.1 952.6-.5-29"/>
+<path pointer-events="all" stroke-width="2" stroke-miterlimit="10" d="m463.5 922.6.6 1.2-.6-.3-.6.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="M463.2 881.3v-34.5"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m463.2 844.9 1.2 2.5-1.2-.6-1.2.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m637.9 1117-55.6 47.1"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m580.9 1165.3 1.1-2.6.3 1.4 1.3.6z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m635.2 1094.3-47.8-24.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="M585.8 1069.2h2.8l-1.1.8v1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m673.7 1109 79 21.4"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m754.5 1130.8-2.8.6.9-1-.3-1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m672.3 1094.5 87.6-43"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m761.6 1050.7-1.7 2.2v-1.4l-1.1-.8z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m757.7 931-55-24.5"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m701 905.7 2.8-.1-1.1.9.1 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m815.1 913.3-107.7-18.9"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m705.6 894.1 2.7-.8-.8 1.1.4 1.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m539.5 963.1-59.2-46"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m478.9 916 2.8.6-1.2.6-.3 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m892.9 883.6-193.7-57.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m697.4 825.2 2.8-.5-1 1 .2 1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m927 906 47.6 45.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m975.8 952.6-2.7-.8 1.3-.5.4-1.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m898.5 907.4-101.5 119"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m795.8 1027.8.7-2.7.6 1.3 1.4.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m897.1 877.4-37.7-36.3"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m858 839.8 2.7.8-1.3.5-.4 1.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m891.5 888.5-404.4-64"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m485.2 824.3 2.7-.8-.8 1.1.4 1.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m926 876.6 34.2-36.8"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m961.5 838.5-.8 2.7-.5-1.3-1.3-.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m668.7 837.8-94.7 200"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m573.2 1039.5-.1-2.8.9 1.1h1.4z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m822.3 824.5-122.1-4.6"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m698.4 819.8 2.6-1.2-.7 1.2.6 1.3z"/>
+<path pointer-events="stroke" fill="none" stroke-miterlimit="10" d="m546.5 872.9-62.4-37.2"/>
+<path pointer-events="all" stroke-miterlimit="10" d="m482.5 834.7 2.8.2-1.2.8-.1 1.3z"/>
+<circle pointer-events="all" fill="#fcee21" cx="776.6" cy="1131.2" r="20.7"/>
+<circle pointer-events="all" fill="#b3b3b3" stroke-miterlimit="10" cx="776.6" cy="1035.9" r="20.7"/>
+<circle pointer-events="all" fill="#c7b299" cx="909" cy="1102" r="20.7"/>
+<circle pointer-events="all" fill="#8cc63f" cx="566" cy="1180.1" r="20.7"/>
+<circle pointer-events="all" fill="#8cc63f" cx="479.5" cy="1180.1" r="20.7"/>
+<circle pointer-events="all" fill="#8cc63f" cx="670" cy="1181.3" r="20.7"/>
+<circle pointer-events="all" fill="#8cc63f" cx="480.7" cy="1106.1" r="20.7"/>
+<circle pointer-events="all" fill="#8cc63f" cx="653.7" cy="1103.6" r="20.7"/>
+<circle pointer-events="all" fill="#ff7bac" stroke-miterlimit="10" cx="776.6" cy="939.4" r="20.7"/>
+<circle pointer-events="all" fill="#ff7bac" stroke-miterlimit="10" cx="835.5" cy="916.8" r="20.7"/>
+<circle pointer-events="all" fill="#0ff" cx="912" cy="891.7" r="20.7"/>
+<circle pointer-events="all" fill="#0ff" cx="976.3" cy="823.6" r="20.7"/>
+<circle pointer-events="all" fill="#0ff" cx="990.9" cy="967" r="20.7"/>
+<circle pointer-events="all" fill="#0ff" cx="843" cy="825.3" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="567.2" cy="1059.7" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="464.4" cy="973.3" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="464.4" cy="901.3" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="464.4" cy="824.5" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="555.9" cy="975.7" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="627.4" cy="1023.4" r="20.7"/>
+<circle pointer-events="all" fill="#fbb03b" cx="563.8" cy="884.2" r="20.7"/>
+<circle pointer-events="all" fill="#3fa9f5" stroke-miterlimit="10" cx="677.5" cy="819" r="20.7"/>
+<circle pointer-events="all" fill="#3fa9f5" stroke-miterlimit="10" cx="685.5" cy="891.7" r="20.7"/>
+</g>
+
+</svg>

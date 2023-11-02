@@ -1,0 +1,20 @@
+
+https://phuse-org.github.io/SENDConform/
+This project is a proof of concept investigating the use of Linked Data for validation and submission of non-clinical study data submitted to the FDA.
+
+
+separate color specifications for
+    nodes
+    edges (links)
+
+<!--
+        .jsonUrl('https://phuse-org.github.io/SENDConform/visualization/datasets/PamAndRayAllTriples.json')
+        .jsonUrl('data.json')
+-->
+
+source:
+https://phuse-org.github.io/SENDConform/visualization/DRSI/PamAndRayAllTriples.html
+
+https://www.phuse.eu/phuse-working-groups
+
+

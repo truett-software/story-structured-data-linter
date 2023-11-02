@@ -6,3 +6,5 @@
 
 new directory structure
 
+![Visualization of the codebase](./diagram.svg)
+

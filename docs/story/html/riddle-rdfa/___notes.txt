@@ -1,0 +1,7 @@
+
+RDFa
+
+
+valid AMP
+
+reset links to local file, not file in russia

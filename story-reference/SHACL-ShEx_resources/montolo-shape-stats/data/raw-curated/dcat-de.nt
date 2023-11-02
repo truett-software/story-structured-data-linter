@@ -1,0 +1,284 @@
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/ns/shacl#name> "Shape contributorID - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die contributorID nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/contributorID> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Es wird empfohlen, den Datenbereitsteller mittels dcatde:contributerID anzugeben. Eine Liste existierender Datenbereitsteller finden Sie unter: https://www.dcat-ap.de/def/contributors/"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> <http://www.w3.org/ns/shacl#name> "Shape contributorID - IRI"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die contributorID eine IRI ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/contributorID> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:contributerID ist keine IRI! Der Datenbereitsteller muss mittels dcatde:contributerID als IRI angegeben werden!"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> <http://www.w3.org/ns/shacl#name> "Shape contributorID - Gelistet"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die contributorID in der :contributors_List ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/contributorID> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#contributors_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> <http://www.w3.org/ns/shacl#message> "Optional: Angegebene IRI ist unbekannt! dcatde:contributerID sollte auf die IRI eines unter https://www.dcat-ap.de/def/contributors/ gelisteten Datenbereitsteller verweisen. Neue Datenbereitsteller können Sie hinzufügen lassen (siehe Konventionenhandbuch)."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> <http://www.w3.org/ns/shacl#name> "Shape qualityProcessURI - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die qualityProcessURI nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/qualityProcessURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Sie könnten mittels dcatde:qualityProcessURI die Rechtsgrundlage für den Zugang zu den Informationen als Freitext angeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> <http://www.w3.org/ns/shacl#name> "Shape qualityProcessURI - Maximalzahl"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> <http://www.w3.org/ns/shacl#description> "Es darf nur maximal eine qualityProcessURI geben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/qualityProcessURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> <http://www.w3.org/ns/shacl#message> "Pflicht: Gemäß DCAT-AP.de Spezifikation 1.0.2 darf ein Dataset nicht über mehrere qualityProcessURIs verfügen."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> <http://www.w3.org/ns/shacl#name> "Shape qualityProcessURI - IRI"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die qualityProcessURI eine IRI ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/qualityProcessURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:qualityProcessURI ist keine IRI! Es wird empfohlen, auf eine Webseite, die den Prozess zur Qualitätssicherung des Datasets beschreibt, zu verweisen."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> <http://www.w3.org/ns/shacl#name> "Shape originator - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> <http://www.w3.org/ns/shacl#description> "Wenn kein dcatde:originator vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/originator> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Mittels dcatde:originator können Sie auf die Personen als foaf:Agent zu verweisen, die Urheberrechte am Dataset haben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> <http://www.w3.org/ns/shacl#name> "Shape originator - foaf:Agent"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> <http://www.w3.org/ns/shacl#description> "Prüfe, ob der dcatde:originator auf einen foaf:Agent verweist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/originator> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:originator ist kein foaf:Agent! Sollten Sie z.B. foaf:Person nutzen, deklarieren Sie den Knoten bitte noch explizit als foaf:Agent, da Shacl keine Klassenvererbungen beherrscht."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> <http://www.w3.org/ns/shacl#name> "Shape maintainer - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> <http://www.w3.org/ns/shacl#description> "Wenn kein dcatde:maintainer vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/maintainer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Mittels dcatde:maintainer können sie als foaf:Agent auf Stellen oder Personen verweisen, die Verantwortung und Rechenschaftspflicht für die Daten und ihre angemessene Pflege übernehmen."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> <http://www.w3.org/ns/shacl#name> "Shape maintainer - foaf:Agent"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> <http://www.w3.org/ns/shacl#description> "Prüfe, ob der dcatde:maintainer auf einen foaf:Agent verweist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/maintainer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:maintainer ist kein foaf:Agent! Sollten Sie z.B. foaf:Person nutzen, deklarieren Sie den Knoten bitte noch explizit als foaf:Agent, da Shacl keine Klassenvererbungen beherrscht."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> <http://www.w3.org/ns/shacl#name> "Shape contributor - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> <http://www.w3.org/ns/shacl#description> "Wenn kein dct:contributor vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/contributor> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Mittels dct:contributor  können Sie als foaf:Agent auf die Stellen oder Personen verweisen, die die Daten bearbeitet haben (z.B. durch Formatierung derselben)."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> <http://www.w3.org/ns/shacl#name> "Shape contributor - foaf:Agent"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> <http://www.w3.org/ns/shacl#description> "Prüfe, ob der dct:contributor auf einen foaf:Agent verweist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/contributor> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> <http://www.w3.org/ns/shacl#message> "Pflicht: dct:contributor ist kein foaf:Agent! Sollten Sie z.B. foaf:Person nutzen, deklarieren Sie den Knoten bitte noch explizit als foaf:Agent, da Shacl keine Klassenvererbungen beherrscht."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> <http://www.w3.org/ns/shacl#name> "Shape creator - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> <http://www.w3.org/ns/shacl#description> "Wenn kein dct:creator vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Mittels dct:creator können Sie auf die Stellen oder Personen als foaf:Agent zu verweisen, die die Daten erstellt haben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> <http://www.w3.org/ns/shacl#name> "Shape creator - foaf:Agent"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> <http://www.w3.org/ns/shacl#description> "Prüfe, ob der dct:creator auf einen foaf:Agent verweist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> <http://www.w3.org/ns/shacl#message> "Pflicht: dct:creator ist kein foaf:Agent! Sollten Sie z.B. foaf:Person nutzen, deklarieren Sie den Knoten bitte noch explizit als foaf:Agent, da Shacl keine Klassenvererbungen beherrscht."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> <http://www.w3.org/ns/shacl#name> "Shape granularity - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> <http://www.w3.org/ns/shacl#description> "Wenn kein dcat:granularity vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#granularity> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Sie könnten die zeitliche Granularität mittels dcat:granularity mit Verweis auf einen Eintrag in http://publications.europa.eu/resource/authority/frequency angeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> <http://www.w3.org/ns/shacl#name> "Shape granularity - Maximalzahl"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> <http://www.w3.org/ns/shacl#description> "Es darf nur maximal eine dcat:granularity geben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#granularity> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> <http://www.w3.org/ns/shacl#message> "Pflicht: Gemäß DCAT-AP.de Spezifikation 1.0.2 darf ein Dataset nicht über mehrere dcat:granularity-Eigenschaften verfügen."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> <http://www.w3.org/ns/shacl#name> "Shape granularity - Gelistet"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die dcat:granularity auf einen gültigen Eintrag in der :frequency_List verweist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#granularity> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#frequency_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> <http://www.w3.org/ns/shacl#message> "Pflicht: dcat:granularity muss eine IRI sein, die in der Liste http://publications.europa.eu/resource/authority/frequency eingetragen ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/ns/shacl#name> "Shape politicalGeocodingLevelURI - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die politicalGeocodingLevelURI nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/politicalGeocodingLevelURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> <http://www.w3.org/ns/shacl#message> "Empfohlen: Es wird empfohlen, mittels dcatde:politicalGeocodingLevelURI die prinzipielle Verwaltungsebene, von der das Dataset erhoben und eingestellt wurde, anzugeben. Es wird empfohlen, folgende Liste zu verwenden: https://www.dcat-ap.de/def/politicalGeocoding/Level/"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> <http://www.w3.org/ns/shacl#name> "Shape politicalGeocodingLevelURI - IRI"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die politicalGeocodingLevelURI eine IRI ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/politicalGeocodingLevelURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:politicalGeocodingLevelURI ist keine IRI! Es wird empfohlen, eine IRI aus der folgendne Liste zu verwenden: https://www.dcat-ap.de/def/politicalGeocoding/Level/"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> <http://www.w3.org/ns/shacl#name> "Shape politicalGeocodingLevelURI - Gelistet"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die politicalGeocodingLevelURI in der :politicalGeocoding_Levels_List ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/politicalGeocodingLevelURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#politicalGeocoding_Levels_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> <http://www.w3.org/ns/shacl#message> "Empfohlen: dcatde:politicalGeocodingLevelURI ist unbekannt! Die prinzipielle Verwaltungsebene, von der das Dataset erhoben und eingestellt wurde, sollte auf https://www.dcat-ap.de/def/politicalGeocoding/Level/ gelistetet sein."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/ns/shacl#name> "Shape politicalGeocodingURI - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die politicalGeocodingURI nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/politicalGeocodingURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> <http://www.w3.org/ns/shacl#message> "Empfohlen: Es wird empfohlen, mittels dcatde:politicalGeocodingURI das Dataset mit dem von ihr abgedeckten administrativen Gebiet der Bundesrepublik Deutschland, zu verknüpfen. Es wird empfohlen, folgend Listen zu verwenden: https://www.dcat-ap.de/def/politicalGeocoding/stateKey/, https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/, https://www.dcat-ap.de/def/politicalGeocoding/districtKey/"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> <http://www.w3.org/ns/shacl#name> "Shape politicalGeocodingURI - IRI"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die politicalGeocodingURI eine IRI ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/politicalGeocodingURI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:politicalGeocodingURI ist keine IRI! Es wird empfohlen, mittels dcatde:politicalGeocodingURI das Dataset mit dem von ihr abgedeckten administrativen Gebiet der Bundesrepublik Deutschland, zu verknüpfen. Es wird empfohlen, folgend Listen zu verwenden: https://www.dcat-ap.de/def/politicalGeocoding/stateKey/, https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/, https://www.dcat-ap.de/def/politicalGeocoding/districtKey/"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> <http://www.w3.org/ns/shacl#name> "Shape politicalGeocodingURI - Gelistet"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die politicalGeocodingURI in einer der Listen ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/politicalGeocodingURI> .
+_:n3-168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-169 .
+_:n3-169 <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#politicalGeocoding_regionalKeys_List> .
+_:n3-168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-170 .
+_:n3-170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-171 .
+_:n3-171 <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#politicalGeocoding_districtKeys_List> .
+_:n3-170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-172 .
+_:n3-172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-173 .
+_:n3-173 <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#politicalGeocoding_stateKeys_List> .
+_:n3-172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> <http://www.w3.org/ns/shacl#or> _:n3-168 .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> <http://www.w3.org/ns/shacl#message> "Empfohlen: dcatde:politicalGeocodingURI ist unbekannt! Es wird empfohlen, folgend Listen zu verwenden: https://www.dcat-ap.de/def/politicalGeocoding/stateKey/, https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/, https://www.dcat-ap.de/def/politicalGeocoding/districtKey/."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> <http://www.w3.org/ns/shacl#name> "Shape geocodingDescription - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die geocodingDescription nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/geocodingDescription> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Sie könnten die geografische Abdeckung des Datasets als Freitext angeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> <http://www.w3.org/ns/shacl#name> "Shape geocodingDescription - Literal"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die geocodingDescription ein Literal ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/geocodingDescription> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:geocodingDescription ist keine Literal! Geben Sie die geografische Abdeckung des Datasets als Freitext an."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> <http://www.w3.org/ns/shacl#name> "Shape legalBasis - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die legalBasis nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/legalBasis> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Mittels dcatde:legalbasis könnten sie die Rechtsgrundlage für den Zugang zu den Informationen als Freitext angeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> <http://www.w3.org/ns/shacl#name> "Shape legalBasis - Literal"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die legalBasis ein Literal ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/legalBasis> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:legalBasis ist keine Literal! Geben Sie die Rechtsgrundlage für den Zugang zu den Informationen des Datasets als Freitext an."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Dataset> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#name> "Dateset gemäß Spezifikation 1.0.2"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#description> "Enthält Shapes, um ein dcat-ap.de-Dateset auf seine Konformität mit der Spezifikation 1.0.2 zu überprüfen. "@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#deactivated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributorID_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_Max> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_qualityProcessURI_IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_originator_foafAgent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_maintainer_foafAgent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_contributor_foafAgent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_creator_foafAgent> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_Max> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_granularity_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingLevelURI_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_politicalGeocodingURI_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_geocodingDescription_Literal> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Dataset_Spec_legalBasis_Literal> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> <http://www.w3.org/ns/shacl#name> "Shape licenseAttributionByText - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die licenseAttributionByText nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/licenseAttributionByText> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Sie könnten mittels dcatde:licenseAttributionByText zur Lizenz gehörende Namensnennungen als Freitext angeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> <http://www.w3.org/ns/shacl#name> "Shape licenseAttributionByText - Literal"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die licenseAttributionByText ein Literal ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/licenseAttributionByText> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:licenseAttributionByText ist keine Literal! Geben Sie zur Lizenz gehörende Namensnennungen als Freitext an."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> <http://www.w3.org/ns/shacl#name> "Shape plannedAvailability - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> <http://www.w3.org/ns/shacl#description> "Wenn die plannedAvailability nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/plannedAvailability> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> <http://www.w3.org/ns/shacl#message> "Empfohlen: Es wird empfohlen, mittels dcatde:plannedAvailability die Verfügbarkeit der Distribution über einer IRI aus der Liste https://www.dcat-ap.de/def/plannedAvailability/ anzugeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> <http://www.w3.org/ns/shacl#name> "Shape plannedAvailability - Maximalzahl"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> <http://www.w3.org/ns/shacl#description> "Es darf nur maximal eine plannedAvailability geben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/plannedAvailability> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> <http://www.w3.org/ns/shacl#message> "Pflicht: Gemäß DCAT-AP.de Spezifikation 1.0.2 darf eine Distribution nicht über mehrere plannedAvailabilities verfügen."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> <http://www.w3.org/ns/shacl#name> "Shape plannedAvailability - IRI"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die plannedAvailability ein IRI ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/plannedAvailability> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> <http://www.w3.org/ns/shacl#message> "Pflicht: dcatde:plannedAvailability ist keine IRI! Es wird empfohlen, die Verfügbarkeit der Distribution über einer IRI aus der Liste https://www.dcat-ap.de/def/plannedAvailability/ anzugeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> <http://www.w3.org/ns/shacl#name> "Shape plannedAvailability - Gelistet"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> <http://www.w3.org/ns/shacl#description> "Prüfe, ob die plannedAvailability in der :plannedAvailabilities_List ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> <http://www.w3.org/ns/shacl#path> <http://dcat-ap.de/def/dcatde/plannedAvailability> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#plannedAvailabilities_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> <http://www.w3.org/ns/shacl#message> "Optional: dcatde:plannedAvailability ist unbekannt! Die Eigenschaft plannedAvailability sollte auf eine einer IRI aus der Liste https://www.dcat-ap.de/def/plannedAvailability/ verweisen."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> <http://www.w3.org/ns/shacl#name> "Shape dct:description - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> <http://www.w3.org/ns/shacl#description> "Wenn dct:description nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> <http://www.w3.org/ns/shacl#message> "Optional: Sie könnten mittels dct:description die Beschreibung der Distribution als Freitext angeben. DCAT-AP.de hat im Vergleich zu DCAT-AP die Verbindlichkeit dieser Eigenschaft auf 'optional' gesenkt."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> <http://www.w3.org/ns/shacl#name> "Shape dct:title - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> <http://www.w3.org/ns/shacl#description> "Wenn dct:title nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> <http://www.w3.org/ns/shacl#message> "Empfohlen: Sie sollten mittels dct:title den Titel der Distribution als Freitext angeben. DCAT-AP.de hat im Vergleich zu DCAT-AP die Verbindlichkeit dieser Eigenschaft auf 'empfohlen' erhöht."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> <http://www.w3.org/ns/shacl#name> "Shape dct:modified - Existenz"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> <http://www.w3.org/ns/shacl#description> "Wenn dct:modified nicht vorhanden ist, empfehle Verwendung."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/modified> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> <http://www.w3.org/ns/shacl#message> "Empfohlen: Sie sollten mittels dct:modified den Zeitpunkt der letzten Änderung der Distribution als xsd:date oder xsd:dateTime angeben. DCAT-AP.de hat im Vergleich zu DCAT-AP die Verbindlichkeit dieser Eigenschaft auf 'empfohlen' erhöht."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> <http://www.w3.org/ns/shacl#name> "Shape spdx:Checksum -> algorithm - Gelistet"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> <http://www.w3.org/ns/shacl#description> "Prüfe, ob der in der Checksum angegebene Algorithmus in der :hashAlgorithms_List ist."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> <http://www.w3.org/ns/shacl#path> <http://spdx.org/rdf/terms#checksum> .
+_:n3-175 <http://www.w3.org/ns/shacl#path> <http://spdx.org/rdf/terms#algorithm> .
+_:n3-175 <http://www.w3.org/ns/shacl#in> <http://dcat-ap.de/def/dcatde/1.0.2/#hashAlgorithms_List> .
+_:n3-174 <http://www.w3.org/ns/shacl#property> _:n3-175 .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> <http://www.w3.org/ns/shacl#node> _:n3-174 .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> <http://www.w3.org/ns/shacl#message> "Optional: Der Algorithmus ist unbekannt! Sie können den verwendeten Hash-Algorithmus mittels der Liste https://www.dcat-ap.de/def/hashAlgorithms/ angeben."@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Distribution> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#name> "Distribution gemäß Spezifikation 1.0.2"@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#description> "Enthält Shapes, um eine dcat-ap.de-Distribution auf seine Konformität mit der Spezifikation 1.0.2 zu überprüfen. "@de .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#deactivated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_licenseAttributionByText_Literal> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_Max> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_IRI> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_plannedAvailability_List> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_description_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_title_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_dct_modified_Ex> .
+<http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_Shape> <http://www.w3.org/ns/shacl#property> <http://dcat-ap.de/def/dcatde/1.0.2/#Distribution_Spec_spdx_Checksum_Algo_List> .

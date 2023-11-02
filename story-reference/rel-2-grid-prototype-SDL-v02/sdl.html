@@ -1,0 +1,651 @@
+<html ng-app="linterApp" class="ng-scope guudnsywjr idc0_321" lang="en">
+<head>
+<style type="text/css">
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structured Data Linter</title>
+<link rel="stylesheet" href="sdl_files/application.css">
+<link rel="stylesheet" href="sdl_files/bootstrap.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="sdl_files/bootstrap-theme.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script async="" src="sdl_files/analytics.js"></script><script src="sdl_files/jquery-3.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script src="sdl_files/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="sdl_files/angular.js"></script>
+<script src="sdl_files/angular-route.js"></script>
+<script src="sdl_files/angular-sanitize.js"></script>
+<link rel="stylesheet" href="sdl_files/snippet.css">
+<script src="sdl_files/angular-file-upload.js"></script>
+<script src="sdl_files/application.js"></script>
+</head>
+<body class="linter" about="/" typeof="schema:SoftwareApplication cc:Work">
+<nav class="navbar">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="http://54.197.75.187:5000/">Structured Data Linter</a>
+</div>
+<!-- <ul class="nav navbar-nav navbar-right"> -->
+<!-- <li><a href="http://54.197.75.187:5000/examples/" target="_self">Examples</a></li> -->
+<!-- <li class="dropdown"> -->
+<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a> -->
+<!-- <ul class="dropdown-menu" role="menu"> -->
+<!-- <li><a href="http://54.197.75.187:5000/snippets/" target="_self">Snippet Definitions</a></li> -->
+<!-- <li><a resource="/about/" href="http://54.197.75.187:5000/about/" target="_self" property="schema:softwareHelp">About</a></li> -->
+<!-- <li><a href="https://github.com/structured-data/linter/releases/tag/3.9.0" target="_blank">Release Notes</a></li> -->
+<!-- <li><a href="https://github.com/structured-data/linter/issues" target="_blank">Issue Tracker</a></li> -->
+<!-- </ul> -->
+<!-- </li> -->
+<!-- <li><span class="vers" about="http://linter.strctured-data.org/" property="softwareVersion">3.9.0</span></li> -->
+<!-- </ul> -->
+</div>
+</nav>
+<div class="container-fluid" role="main">
+
+<div ng-controller="LinterController" class="ng-scope">
+<div class="lighter">
+<p>
+Enter a URL below to see what structured data your page contains. 
+You can alternatively upload a local file or paste some markup.
+</p>
+<ul class="nav nav-tabs linter">
+<li><a href="" class="url active" ng-class="getClass('url')" ng-click="fieldset = 'url'">Lint by URL</a></li>
+<li><a href="" class="upload" ng-class="getClass('upload')" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
+<li><a href="" class="input" ng-class="getClass('input')" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
+</ul>
+
+<!--
+<form id="linter_input" class="ng-pristine ng-valid">
+<fieldset class="input-group" ng-show="fieldset === 'url'">
+<legend>Page URL</legend>
+<input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" type="text" size="80" ng-model="url" value="http://54.197.75.187:5000/examples/schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-275-jsonld.html">
+<input type="submit" ng-click="lintUrl(url)" value="Submit" ng-disabled="fieldset !== 'url'">
+<fieldset>
+<legend>Options</legend>
+<label for="verify-ssl">Verify SSL</label>
+<input id="verify-ssl" type="checkbox" ng-model="verifySSL" class="ng-pristine ng-untouched ng-valid ng-not-empty" checked="checked">
+</fieldset>
+<br>
+<span class="form-examples">Examples:
+          Review (
+)
+          Person (
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-1-rdfa.html')" title="Show Person snippet in RDFa">RDFa</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-1-jsonld.html')" title="Show Person snippet in JSON-LD">JSON-LD</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-1-microdata.html')" title="Show Person snippet in MD">MD</a>
+          )
+          Event (
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-9-rdfa.html')" title="Show Event snippet in RDFa">RDFa</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-9-jsonld.html')" title="Show Event snippet in JSON-LD">JSON-LD</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-9-microdata.html')" title="Show Event snippet in MD">MD</a>
+          )
+          Recipe (
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-13-rdfa.html')" title="Show Recipe snippet in RDFa">RDFa</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-13-jsonld.html')" title="Show Recipe snippet in JSON-LD">JSON-LD</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-13-microdata.html')" title="Show Recipe snippet in MD">MD</a>
+          )
+          Product (
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-10-rdfa.html')" title="Show Product snippet in RDFa">RDFa</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-10-jsonld.html')" title="Show Product snippet in JSON-LD">JSON-LD</a>
+<a href="" ng-click="lintUrl('http://54.197.75.187:5000/examples/schema.org/eg-10-microdata.html')" title="Show Product snippet in MD">MD</a>
+          )
+</span>
+</fieldset>
+
+<fieldset class="input-group ng-hide" ng-show="fieldset === 'upload'">
+<legend>File Upload</legend>
+<table class="table">
+<thead>
+<tr>
+<th style="width='50%'">Name</th>
+<th>Size</th>
+<th>Progress</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<input type="file" nv-file-select="" uploader="uploader">
+</fieldset>
+
+<fieldset class="input-group ng-hide" ng-show="fieldset === 'input'">
+<legend>Markup</legend>
+<textarea class="input form-control ng-pristine ng-untouched ng-valid ng-empty" cols="120" rows="15" ng-model="input"></textarea>
+<input type="submit" ng-click="lintInput(input)" value="Submit" ng-disabled="fieldset !== 'input'" disabled="disabled">
+</fieldset>
+</form>
+-->
+</div>
+
+<div ng-show="loading" class="ng-hide">
+    Loading results...
+</div>
+
+<div class="snippet" ng-show="result">
+<h2>Enhanced search result preview</h2>
+<p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
+<!-- <p ng-show="!result.snippet" class="ng-hide">The data did not match any templates on file. -->
+      <!-- Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a> -->
+      <!-- to request support for additional templates.</p> -->
+<div ng-bind-html="result.snippet" class="ng-binding">
+<div class="results-content">
+<div class="snippet-content">
+<h3 class="r">
+<a class="fakelink">
+<span>Rouge et le noir</span>
+</a>
+</h3>
+<div class="s">
+<div class="f">
+<cite>54.197.75.187:5000/examples/schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-275-jsonld.html</cite>
+</div>
+</div>
+<div class="s primary_content">
+<div class="f">
+
+</div>
+<div>
+an <strong>actual</strong> search result <strong>may</strong> display other content <strong>relating</strong> to your search terms here.
+</div>
+<br>
+
+</div>
+<div class="other">
+<p>Content not used in snippet generation:</p>
+<span>Rouge et le noir</span>
+<span></span>
+<span>fr</span>
+<span>
+<span>Red and Black : A New Translation, Backgrounds and Sources, Criticism</span>
+
+</span>
+<span class="other">
+</span>
+
+</div>
+</div>
+
+<div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="grid-container">
+<div ng-show="result" class="grid-item">
+<h2>RDFa output</h2>
+<p ng-show="!result.rdfa" class="ng-hide">No RDFa fund.</p>
+<div ng-bind-html="result.rdfa" class="ng-binding">&lt;?xml 
+version='1.0' encoding='utf-8' ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html prefix='rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: 
+http://www.w3.org/2000/01/rdf-schema# schema: http://schema.org/' 
+xmlns='http://www.w3.org/1999/xhtml'&gt;
+&lt;head&gt;
+&lt;base 
+href='http://54.197.75.187:5000/examples/schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-275-jsonld.html'
+ /&gt;
+&lt;title&gt;Rouge et le noir&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div resource='schema:Book' typeof='rdfs:Class'&gt;
+&lt;span class='type'&gt;rdfs:Class&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div resource='http://worldcat.org/entity/work/id/2292573321' 
+typeof='schema:Thing schema:CreativeWork schema:Book rdfs:Resource'&gt;
+&lt;span class='type'&gt;schema:Thing schema:CreativeWork schema:Book 
+rdfs:Resource&lt;/span&gt;
+&lt;h1 property='rdfs:label'&gt;Rouge et le noir&lt;/h1&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:author
+&lt;/span&gt;
+&lt;a href='http://viaf.org/viaf/17823' 
+property='schema:author'&gt;http://viaf.org/viaf/17823&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:inLanguage
+&lt;/span&gt;
+&lt;span property='schema:inLanguage'&gt;fr&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:name
+&lt;/span&gt;
+&lt;span property='schema:name'&gt;Rouge et le noir&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:workTranslation
+&lt;/span&gt;
+&lt;div rel='schema:workTranslation' 
+resource='http://worldcat.org/entity/work/id/460647' 
+typeof='schema:Thing schema:CreativeWork schema:Book rdfs:Resource'&gt;
+&lt;span class='type'&gt;schema:Thing schema:CreativeWork schema:Book 
+rdfs:Resource&lt;/span&gt;
+&lt;h1 property='rdfs:label'&gt;Red and Black : A New Translation, 
+Backgrounds and Sources, Criticism&lt;/h1&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:about
+&lt;/span&gt;
+&lt;span property='schema:about'&gt;Psychological fiction, 
+French&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:author
+&lt;/span&gt;
+&lt;a href='http://viaf.org/viaf/17823' 
+property='schema:author'&gt;http://viaf.org/viaf/17823&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:inLanguage
+&lt;/span&gt;
+&lt;span property='schema:inLanguage'&gt;en&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:name
+&lt;/span&gt;
+&lt;span property='schema:name'&gt;Red and Black : A New Translation, 
+Backgrounds and Sources, Criticism&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class='property'&gt;
+&lt;span class='label'&gt;
+schema:translationOfWork
+&lt;/span&gt;
+&lt;a href='http://worldcat.org/entity/work/id/2292573321' 
+property='schema:translationOfWork'&gt;http://worldcat.org/entity/work/id/2292573321&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div
+ class='property'&gt;
+&lt;span class='label'&gt;
+schema:translator
+&lt;/span&gt;
+&lt;a href='http://viaf.org/viaf/8453420' 
+property='schema:translator'&gt;http://viaf.org/viaf/8453420&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+</div>
+
+ <div ng-show="result" class="grid-item">
+<h2>ttl output</h2>
+<p ng-show="!result.ttl" class="ng-hide">No ttl found.</p>
+<div ng-bind-html="result.ttl" class="ng-binding">@base 
+&lt;http://54.197.75.187:5000/examples/schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-275-jsonld.html&gt;
+ .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+schema:Book a rdfs:Class .
+
+&lt;http://worldcat.org/entity/work/id/2292573321&gt; a schema:Thing,
+    schema:CreativeWork,
+    schema:Book,
+    rdfs:Resource;
+  rdfs:label "Rouge et le noir";
+  schema:author &lt;http://viaf.org/viaf/17823&gt;;
+  schema:inLanguage "fr";
+  schema:name "Rouge et le noir";
+  schema:workTranslation 
+&lt;http://worldcat.org/entity/work/id/460647&gt; .
+
+&lt;http://worldcat.org/entity/work/id/460647&gt; a schema:Thing,
+    schema:CreativeWork,
+    schema:Book,
+    rdfs:Resource;
+  rdfs:label "Red and Black : A New Translation, Backgrounds and 
+Sources, Criticism";
+  schema:about "Psychological fiction, French";
+  schema:author &lt;http://viaf.org/viaf/17823&gt;;
+  schema:inLanguage "en";
+  schema:name "Red and Black : A New Translation, Backgrounds and 
+Sources, Criticism";
+  schema:translationOfWork 
+&lt;http://worldcat.org/entity/work/id/2292573321&gt;;
+  schema:translator &lt;http://viaf.org/viaf/8453420&gt; .
+</div>
+ </div>
+
+ <div ng-show="result" class="grid-item">
+ <h2>RDF output</h2>
+ <p ng-show="!result.rdf" class="ng-hide">No RDF found.</p>
+ <div ng-bind-html="result.rdf" class="ng-binding">&lt;?xml 
+version='1.0' encoding='utf-8' ?&gt;
+&lt;rdf:RDF 
+xml:base='http://54.197.75.187:5000/examples/schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-275-jsonld.html'
+ xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#' 
+xmlns:schema='http://schema.org/' 
+xmlns:xml='http://www.w3.org/XML/1998/namespace'&gt;
+&lt;rdfs:Class rdf:about='http://schema.org/Book'&gt;
+&lt;/rdfs:Class&gt;
+
+&lt;schema:Thing 
+rdf:about='http://worldcat.org/entity/work/id/2292573321'&gt;
+  &lt;rdf:type 
+rdf:resource='http://schema.org/CreativeWork'&gt;&lt;/rdf:type&gt;
+  &lt;rdf:type 
+rdf:resource='http://schema.org/Book'&gt;&lt;/rdf:type&gt;
+  &lt;rdf:type 
+rdf:resource='http://www.w3.org/2000/01/rdf-schema#Resource'&gt;&lt;/rdf:type&gt;
+&lt;rdfs:label&gt;Rouge
+ et le noir&lt;/rdfs:label&gt;
+
+&lt;schema:author rdf:resource='http://viaf.org/viaf/17823' /&gt;
+
+&lt;schema:inLanguage&gt;fr&lt;/schema:inLanguage&gt;
+
+&lt;schema:name&gt;Rouge et le noir&lt;/schema:name&gt;
+
+&lt;schema:workTranslation&gt;
+&lt;schema:Thing 
+rdf:about='http://worldcat.org/entity/work/id/460647'&gt;
+  &lt;rdf:type 
+rdf:resource='http://schema.org/CreativeWork'&gt;&lt;/rdf:type&gt;
+  &lt;rdf:type 
+rdf:resource='http://schema.org/Book'&gt;&lt;/rdf:type&gt;
+  &lt;rdf:type 
+rdf:resource='http://www.w3.org/2000/01/rdf-schema#Resource'&gt;&lt;/rdf:type&gt;
+&lt;rdfs:label&gt;Red
+ and Black : A New Translation, Backgrounds and Sources, 
+Criticism&lt;/rdfs:label&gt;
+
+&lt;schema:about&gt;Psychological fiction, French&lt;/schema:about&gt;
+
+&lt;schema:author rdf:resource='http://viaf.org/viaf/17823' /&gt;
+
+&lt;schema:inLanguage&gt;en&lt;/schema:inLanguage&gt;
+
+&lt;schema:name&gt;Red and Black : A New Translation, Backgrounds and 
+Sources, Criticism&lt;/schema:name&gt;
+
+&lt;schema:translationOfWork 
+rdf:resource='http://worldcat.org/entity/work/id/2292573321' /&gt;
+
+&lt;schema:translator rdf:resource='http://viaf.org/viaf/8453420' /&gt;
+
+&lt;/schema:Thing&gt;
+
+&lt;/schema:workTranslation&gt;
+
+&lt;/schema:Thing&gt;
+
+&lt;/rdf:RDF&gt;
+</div>
+</div>
+
+<div ng-show="result" class="grid-item">
+ <h2>JSON+LD output</h2>
+<p ng-show="!result.jsonld" class="ng-hide">No json ld found.</p>
+<div ng-bind-html="result.jsonld" class="ng-binding">{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://worldcat.org/entity/work/id/2292573321",
+      "rdfs:label": "Rouge et le noir",
+      "schema:name": "Rouge et le noir",
+      "schema:inLanguage": "fr",
+      "schema:author": {
+        "@id": "http://viaf.org/viaf/17823"
+      },
+      "@type": [
+        "schema:Thing",
+        "schema:CreativeWork",
+        "schema:Book",
+        "rdfs:Resource"
+      ],
+      "schema:workTranslation": {
+        "@id": "http://worldcat.org/entity/work/id/460647"
+      }
+    },
+    {
+      "@id": "schema:Book",
+      "@type": "rdfs:Class"
+    },
+    {
+      "@id": "http://worldcat.org/entity/work/id/460647",
+      "rdfs:label": "Red and Black : A New Translation, Backgrounds and Sources, Criticism",
+      "schema:name": "Red and Black : A New Translation, Backgrounds and Sources, Criticism",
+      "schema:inLanguage": "en",
+      "schema:about": "Psychological fiction, French",
+      "schema:author": {
+        "@id": "http://viaf.org/viaf/17823"
+      },
+      "@type": [
+        "schema:Thing",
+        "schema:CreativeWork",
+        "schema:Book",
+        "rdfs:Resource"
+      ],
+      "schema:translationOfWork": {
+        "@id": "http://worldcat.org/entity/work/id/2292573321"
+      },
+      "schema:translator": {
+        "@id": "http://viaf.org/viaf/8453420"
+      }
+    }
+  ]
+}</div>
+</div>
+
+<div ng-show="result" class="grid-item">
+<h2>Graph:</h2>
+<p ng-show="!result.graph" class="ng-hide"> No Graph Found. </p>
+<div ng-bind-html="result.graph" class="ng-binding"><img src="sdl_files/graphsvg.svg" alt="svg"></div>
+</div>
+
+<div ng-show="result" class="grid-item">
+<h2>Raw structured data extracted from the page:</h2>
+<p ng-show="!result.html" class="ng-hide">No structured data detected.</p>
+<div ng-bind-html="result.html" class="ng-binding"><div class="extracted-content">
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/Book(2)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://worldcat.org/entity/work/id/2292573321(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:CreativeWork schema:Book rdfs:Resource</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Rouge et le noir</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:author
+</td>
+<td>
+<a href="http://viaf.org/viaf/17823">http://viaf.org/viaf/17823</a>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:inLanguage
+</td>
+<td>fr</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Rouge et le noir</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:workTranslation
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://worldcat.org/entity/work/id/460647(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:CreativeWork schema:Book rdfs:Resource</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Red and Black : A New Translation, Backgrounds and Sources, Criticism</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:about
+</td>
+<td>Psychological fiction, French</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:author
+</td>
+<td>
+<a href="http://viaf.org/viaf/17823">http://viaf.org/viaf/17823</a>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:inLanguage
+</td>
+<td>en</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Red and Black : A New Translation, Backgrounds and Sources, Criticism</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:translationOfWork
+</td>
+<td>
+<a href="http://worldcat.org/entity/work/id/2292573321">http://worldcat.org/entity/work/id/2292573321</a>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:translator
+</td>
+<td>
+<a href="http://viaf.org/viaf/8453420">http://viaf.org/viaf/8453420</a>
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+</tbody></table>
+</div>
+
+</div>
+</div>
+</div>
+
+<div ng-show="result.statistics" class="grid-item">
+<h2>Parser statistics</h2>
+<table class="stats table table-condensed">
+<tbody>
+<tr><td>Reader</td><td class="ng-binding">RDF::RDFa::Reader</td></tr>
+<tr><td>Statements</td><td class="ng-binding">21</td></tr>
+<tr>
+<td>Templates</td>
+<td><!-- ngRepeat: template in result.statistics.templates --><div ng-repeat="template in result.statistics.templates" class="ng-binding ng-scope">schema:CreativeWork</div><!-- end ngRepeat: template in result.statistics.templates --></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div ng-show="result.messages" class="grid-item">
+<h2>Linter Messages</h2>
+<!-- ngRepeat: message in result.messages -->
+</div>
+
+<div ng-show="result.debug" class="ng-hide">
+<h2>Debug Information</h2>
+<textarea rows="20" cols="120" class="ng-binding">    
+</textarea>
+</div>
+</div>
+
+</div>
+
+<!-- <footer id="footer"> -->
+<!-- <p class="content"> -->
+       <!-- Website content released under a <a rel="cc:license license schema:license" href="http://creativecommons.org/licenses/by-sa/3.0/"> -->
+       <!-- Creative Commons Attribution Share-Alike license</a> except where an -->
+       <!-- alternate is specified. -->
+ <!-- </p> -->
+<!-- </footer> -->
+
+</div>
+
+</body></html>

@@ -1,0 +1,16 @@
+
+09:46 8/20/2022
+copied to
+E:\content\________migration\benetta-net-s3\story\structured-data-linter\item-40
+
+data.json
+uses #identifier
+does not use IRI
+
+triples
+946,520
+
+uses AFDSI, like NALT
+
+uses ontomatica shortcut icon
+

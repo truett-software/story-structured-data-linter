@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html
+ lang="en"
+ prefix="
+schema: http://schema.org/ 
+og: http://ogp.me/ns# 
+fb: http://ogp.me/ns/fb# 
+article: http://ogp.me/ns/article# 
+bibo: http://purl.org/ontology/bibo/ 
+sioc: http://rdfs.org/sioc/ns# 
+bio: http://purl.org/vocab/bio/0.1/ 
+time: http://www.w3.org/2006/time#
+" 
+resource="/blog/2019/06/17/shaping-linked-data-apps/" 
+typeof="schema:WebPage"
+>
+<head>
+<meta charset="utf-8">
+<title>Shaping Linked Data apps | Ruben Verborgh</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=.5">
+<link rel="stylesheet" href="https://ruben.verborgh.org/styles/main.css">
+
+</head>
+<body>
+<main>
+<article typeof="schema:BlogPosting" resource="/blog/2019/06/17/shaping-linked-data-apps/">
+<header>
+<h1 property="schema:name schema:headline">
+<a href="/blog/2019/06/17/shaping-linked-data-apps/">Shaping Linked <span class=nobr>Data apps</span>
+</a>
+</h1>
+<h2 property="schema:alternativeHeadline">Decentralized apps will need <span class=nobr>a lot</span> of flexibility, which they will gain through data shapes.</h2>
+</header>
+<div property="schema:articleBody">
+<p id=summary property="schema:abstract">
+<a class=id href="#summary">
+</a>Ever since <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target=_blank>Ed Sheeran’s 2017 hit</a>, <span class=nobr>I just</span> can’t stop thinking about shapes. It’s more than the earworm though: 2017 is the year in which <span class=nobr>I got</span> deeply involved with <a href="/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/">Solid</a>, and also when the <a href="https://www.w3.org/TR/shacl/" target=_blank>
+<abbr class=caps>SHACL</abbr>
+</a> recommendation for shapes was published. The problem is <span class=nobr>a very</span> fundamental one: Solid promises the separation of data <span class=nobr>and apps</span>, so we can choose our apps independently of where we store our data. <span class=nobr>The apps</span>
+<em>you</em> choose will likely be different from <em>mine</em>, yet we want to be able to interact with each other’s data. Building such decentralized Linked Data apps necessitates <span class=nobr>a high</span> level of interoperability, where data written by one app needs to be picked up by another. Rather than relying on the more heavy Semantic Web machinery of ontologies, <span class=nobr>I believe</span> that <em>shapes</em> are the right way forward—<wbr>without throwing the added value of links and semantics out of the window. In this post, <span class=nobr>I will</span> expand on the thinking that emerged from working with Tim Berners-Lee <span class=nobr>on the</span>
+<a href="https://www.w3.org/DesignIssues/Footprints.html" target=_blank>Design Issue on Linked Data shapes</a>, and sketch the vast potential of shapes for tackling crucial problems in <span class=nobr>flexible ways</span>.</p>
+<p id=date>
+<time property="schema:datePublished" datetime="2019-06-17T13:00:00+02:00">17 June 2019</time>
+</p>
+<p id=top-p-1>
+<a class=id href="#top-p-1">
+</a>Solid brings a <a href="/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/#apps-become-views">new way of building apps</a>: rather than storing data inside apps that <span class=nobr>request it</span>, people store their data in their own <strong>personal data pod</strong>. This puts an end to the vendor <span class=nobr>lock-in</span> of current apps, where people use <span class=nobr>a certain</span> app not because they like it, but because their data or that of their friends or colleagues is on there. <span class=nobr>In essence</span>, Solid aims to do for the Web what we have been doing on our desktops <span class=nobr>for ages</span>: you create <span class=nobr>a <abbr class=caps>JPEG</abbr>
+</span> image in one app, view it with another, and <span class=nobr>send it</span> to your friends who pick their own apps. The difference is that Solid aims to do this not just with <em>documents</em>, but also <strong>for elementary data attributes</strong>
+<em>inside</em> of those documents. <span class=nobr>So applications</span> that you give permission will be able to reuse data fields such as <span class=nobr>your name</span>, list of friends, favorite songs, calendar appointments, etc.</p>
+<p id=linked-data>
+<a class=id href="#linked-data">
+</a>In order to achieve such <strong>unprecedented granular interoperability</strong>, Solid uses <a href="https://www.w3.org/DesignIssues/LinkedData.html" target=_blank>
+<span class=nobr>Linked Data</span>
+</a> from the Semantic Web family of technologies. This focus on inter­opera­bility is what sets Solid apart from other projects. By using Linked Data, we <span class=nobr>ensure that</span>:</p>
+<ul>
+<li>
+<strong>Anyone can say anything about anything</strong>, by reusing existing <abbr class=caps>URL</abbr>s from the Web.</li>
+<li>
+<strong>No central agreement on data models is required</strong>, because vocabularies can be linked afterwards.</li>
+<li>
+<strong>Data can easily be remodeled later</strong>, because data and semantics are intertwined.</li>
+</ul>
+<p id=top-p-2>
+<a class=id href="#top-p-2">
+</a>Unfortunately, there is <span class=nobr>a significant</span>
+<a href="/articles/the-semantic-web-identity-crisis/">difference between theory and practice</a>. <span class=nobr>Linked Data</span> allows many degrees of freedom, so the mere fact that two apps use an <span class=nobr>
+<abbr class=caps>RDF</abbr> format</span> does not guarantee interoperability <span class=nobr>in and</span> of itself. In theory, <strong>data modeled with one vocabulary can be accessed seamlessly <span class=nobr>using another</span>
+</strong> through mechanisms such as <em>reasoning</em>. <span class=nobr>In practice</span>, <a href="/articles/the-semantic-web-identity-crisis/#semantics-p-6">reasoning is seldom available</a> on the client or server, so <strong>data access patterns would need to match storage patterns exactly</strong>. But then we’d quickly lose two of the three above benefits of Linked Data, and might as well have agreed on <span class=nobr>a shared</span> rigid <abbr class=caps>JSON</abbr> structure from the <span class=nobr>get-go</span>.</p>
+<p id=top-p-3>
+<a class=id href="#top-p-3">
+</a>
+<strong>Decentralized <span class=nobr>Linked Data</span> applications</strong> as envisioned within the Solid ecosystem are too flexible to rely on hard-coded data access patterns. Instead, such as apps should be coded against <em>shapes</em>, which can be published on the Web as Linked Data so other apps can reuse them. Whereas <em>vocabularies</em> provide <span class=nobr>a list</span> of possible attributes, <em>shapes</em> mandate <span class=nobr>a specific</span> structure for data, combining attributes from vocabularies in <span class=nobr>a certain</span> way. In the short term, we expect apps to <strong>reuse common shapes</strong> for classes such as people, photos, songs, comments, etc. In the longer term, we should strive to <strong>
+<em>re</em>shape data <span class=nobr>on the fly</span>
+</strong>, such that apps can work with data in <span class=nobr>different shapes</span>.</p>
+<figure id=top-figure-1>
+<a class=id href="#top-figure-1">
+</a>
+<img src="/images/blog/cookie-cutter.jpg" alt="[photograph of a cookie cutter on dough]"/>
+<figcaption> Shapes allow applications to see data through specific lenses, regardless of what <span class=nobr>the underlying</span> structure of the data <span class=nobr>might be.</span>
+<span class=copyright>&copy;2017 <a href="https://www.flickr.com/photos/30478819@N08/38001846255/" target=_blank>Marco Verch </a>
+</span>
+</figcaption>
+</figure>
+<p id=top-p-4>
+<a class=id href="#top-p-4">
+</a>However, existing shape languages such as <a href="https://www.w3.org/TR/shacl/" target=_blank>
+<abbr class=caps>SHACL</abbr>
+</a> or <a href="http://shex.io/shex-semantics/" target=_blank>ShEx</a> are only part of what we need. Apps let people <strong>
+<em>edit</em> or <em>create</em> data with <span class=nobr>a specific</span> shape</strong>, so we need <span class=nobr>a portable</span> way of <span class=nobr>doing so.</span> Furthermore, different <span class=nobr>data pods</span> might store data in different places, so we need to <strong>model rules about storage locations</strong> instead of leaving that up to individual apps. To address these needs, the <a href="https://www.w3.org/DesignIssues/Footprints.html" target=_blank>Design Issue</a> on this topic introduces <span class=nobr>3 concepts</span>:</p>
+<dl>
+<dt id=top-dt-1>
+<a class=id href="#top-dt-1">
+</a>
+<a href="#shapes">Shapes</a>
+</dt>
+<dd>A <dfn>shape</dfn> defines the <strong>fields and structure</strong> that client and apps can expect to find in <span class=nobr>a view</span> over <span class=nobr>a piece</span> of data. <span class=details>Technologies: <a href="https://www.w3.org/TR/shacl/" target=_blank>
+<abbr class=caps>SHACL</abbr>
+</a> or <a href="http://shex.io/shex-semantics/" target=_blank>ShEx</a>
+</span>
+</dd>
+<dt id=top-dt-2>
+<a class=id href="#top-dt-2">
+</a>
+<a href="#forms">Forms</a>
+</dt>
+<dd>A <dfn>form</dfn> is a <strong>part of <span class=nobr>a user</span> interface</strong> that allows people to easily <em>view</em>, <em>edit</em>, and <em>create</em> data in <span class=nobr>a given</span> shape. <span class=details>Technologies: <a href="https://www.w3.org/ns/ui" target=_blank>
+<abbr class=caps>UI</abbr> ontology</a>
+</span>
+</dd>
+<dt id=top-dt-3>
+<a class=id href="#top-dt-3">
+</a>
+<a href="#footprints">Footprints</a>
+</dt>
+<dd>A <dfn>footprint</dfn> explains to an app <strong>where to store <em>new</em> data</strong> corresponding to <span class=nobr>a shape</span>, and how it should be <strong>
+<span class=nobr>wired up</span>
+</strong> within existing data. <span class=details>Technologies: <a href="https://www.w3.org/ns/footprints" target=_blank>footprints ontology</a>
+</span>
+</dd>
+</dl>
+<figure id=top-figure-2>
+<a class=id href="#top-figure-2">
+</a>
+<img src="/images/blog/shapes-forms-footprints.svg" alt=""/>
+<figcaption>
+<span class=nobr>A shape</span> can have associated forms so people can easily view and edit data, and footprints for determining how new data should be stored. </figcaption>
+</figure>
+<p id=top-p-5>
+<a class=id href="#top-p-5">
+</a>This blog post explains those three technologies in detail, and discusses where they might take us in <span class=nobr>the future</span>.</p>
+<h2 id=shapes>
+<a class=id href="#shapes">
+</a>
+<em>Shapes</em> for machine-readable and -writable data</h2>
+<h3 id=need-for-shapes>
+<a class=id href="#need-for-shapes">
+</a>The necessity of shapes for decentralized applications</h3>
+<p id=need-for-shapes-p-1>
+<a class=id href="#need-for-shapes-p-1">
+</a>Nearly all Web applications make <strong>assumptions about the underlying structure of data</strong> they retrieve from their backend. In many cases, <a href="/articles/fine-grained-content-negotiation/#where-mime-types-fall-short">those assumptions are unwarranted</a>, strictly speaking: if <span class=nobr>a server</span> only indicates that <span class=nobr>a document</span> is <abbr class=caps>JSON</abbr>, then clients should not assume anything beyond <span class=nobr>a syntactically</span> valid <abbr class=caps>JSON</abbr> document. In practice, Web apps rely on (often implicit) contracts that certain fields with certain structures will be there. This is probably acceptable when you are the only client relying on such assumptions, but quickly becomes <strong>problematic when <a href="/blog/2018/12/28/designing-a-linked-data-developer-experience/#multiple-backends">
+<em>multiple</em> apps access the <em>same</em> data</a>
+</strong>, as is the case with decentralized applications.</p>
+<p id=need-for-shapes-p-2>
+<a class=id href="#need-for-shapes-p-2">
+</a>One way to achieve interoperability among multiple parties is by <strong>mandating specific data models</strong> through <span class=nobr>a centralized</span> process. This route is followed by initiatives such as the <a href="https://datatransferproject.dev/dtp-overview.pdf#page=9" target=_blank>Data Transfer Project</a> and <a href="https://indieweb.org/microformats" target=_blank>IndieWeb</a>, and comes with clear advantages: once the data model has been decided upon, apps <span class=nobr>be can</span> coded using its agreed assumptions. However, this presumes that prior central agreement is <span class=nobr>a viable</span> option, and that data models <span class=nobr>do not</span> evolve (or at least not in <span class=nobr>a backward</span>-incompatible way). While these conditions might be met when the number of stakeholders is small, this becomes <strong>problematic <span class=nobr>in the</span> presence of many parties</strong>, especially if they are inventing in parallel or disagreeing. In such one-size-<span class=nobr>fits-all</span> environments, the ability to introduce new models or extend existing ones is limited, since either multiple parties will create different extensions for the same purpose, or another centralized iteration will <span class=nobr>be needed</span>.</p>
+<p id=need-for-shapes-p-3>
+<a class=id href="#need-for-shapes-p-3">
+</a>For instance, we could settle on the <span class=nobr>following structure</span>:</p>
+<pre>
+<code>{
+  "fullName": "Ruben Verborgh",
+  "email": "ruben@verborgh.org"
+}
+</code>
+</pre>
+<p id=need-for-shapes-p-4>
+<a class=id href="#need-for-shapes-p-4">
+</a>But what happens when we need to extend it with <span class=nobr>a birthday</span>? The chance that we each will come up with compatible alternatives is <span class=nobr>very slim</span>.</p>
+<p id=need-for-shapes-p-5>
+<a class=id href="#need-for-shapes-p-5">
+</a>As <a href="#linked-data">argued above</a>, <strong>Linked Data introduces much more flexibility</strong>, since data can have arbitrary shapes and extensions that can carry <span class=nobr>a universal</span> meaning, without requiring centralized agreement. Some would call this <a href="https://indieweb.org/RDF" target=_blank>unnecessary complexity</a>, but we should not ignore that Solid deals with <a href="https://book.validatingrdf.com/bookHtml005.html" target=_blank>
+<q>complicated real-world data and problems</q>
+</a>, wherein it is simply unfeasible to assume that any centralized authority could determine <em>all</em> data models that will ever be needed. So we put the <strong>power in individual developers’ hands</strong> to decide on the data models <span class=nobr>they need</span>.</p>
+<p id=need-for-shapes-p-6>
+<a class=id href="#need-for-shapes-p-6">
+</a>Hence, we need <span class=nobr>a uniform</span> way of <strong>expressing the assumptions about <span class=nobr>a piece</span> of data</strong>
+<span class=nobr>with regard</span> to what fields and what structure apps can expect. These assumptions are captured by a <strong>data shape</strong>. Such shapes can be published decentrally as Linked Data at public locations, so developers can <em>reuse</em>, <em>compose</em>, <em>adapt</em>, or <em>extend</em> existing shapes when building apps that create and/<wbr>or <span class=nobr>consume data</span>.</p>
+<p id=need-for-shapes-p-7>
+<a class=id href="#need-for-shapes-p-7">
+</a>Crucially, data can be <em>stored</em> or <em>created</em> in one shape but <strong>
+<em>retrieved</em> in another shape</strong>. <span class=nobr>So unlike</span> some other technologies, shapes primarily matter dynamically during interactions and exchanges, instead of acting <span class=nobr>as permanent</span>
+<span class=nobr>upfront contracts</span>.</p>
+<figure id=need-for-shapes-figure-1>
+<a class=id href="#need-for-shapes-figure-1">
+</a>
+<img src="/images/blog/shapes-apps.svg" alt=""/>
+<figcaption> Different apps can interact with the same resources through different data shapes. </figcaption>
+</figure>
+<p id=need-for-shapes-p-8>
+<a class=id href="#need-for-shapes-p-8">
+</a>For instance, suppose <span class=nobr>a pod</span> internally stores <span class=nobr>data as</span>:</p>
+<pre>
+<code>&lt;#me&gt; a schema:Person;
+      schema:name "Ruben Verborgh"@en;
+      foaf:mbox &lt;mailto:ruben@verborgh.org&gt;;
+      dbo:birthDate "1987-02-28"^^xsd:date.
+</code>
+</pre>
+<p id=need-for-shapes-p-9>
+<a class=id href="#need-for-shapes-p-9">
+</a>Then an app should be able to request that data as <span class=nobr>this shape</span>:</p>
+<pre>
+<code>&lt;#me&gt; vcard:fn "Ruben Verborgh"@en;
+      vcard:hasEmail [
+        vcard:value &lt;mailto:ruben@verborgh.org&gt;
+      ];
+      vcard:bday "1987"^^xsd:gYear.
+</code>
+</pre>
+<p id=need-for-shapes-p-10>
+<a class=id href="#need-for-shapes-p-10">
+</a>Note how the structure and field names are different, while the information contained in the second is <span class=nobr>a subset</span> of <span class=nobr>the first</span>.</p>
+<h3 id=existing-shapes>
+<a class=id href="#existing-shapes">
+</a>Existing shape technologies</h3>
+<p id=existing-shapes-p-1>
+<a class=id href="#existing-shapes-p-1">
+</a>Two main technologies for capturing data shapes exist: <strong>
+<a href="https://www.w3.org/TR/shacl/" target=_blank>
+<abbr class=caps>SHACL</abbr>
+</a> and <a href="http://shex.io/shex-semantics/" target=_blank>ShEx</a>
+</strong>. Both are discussed at length in <span class=nobr>a book</span> called <a href="https://book.validatingrdf.com/" target=_blank>
+<cite>Validating <abbr class=caps>RDF</abbr> Data</cite>
+</a>. Personally, <span class=nobr>I consider</span>
+<em>validation</em> to be one of the least interesting uses for shapes; <span class=nobr>I see</span> so much more potential in <strong>shapes as points of convergence</strong> between apps and decentralized <span class=nobr>data sources.</span>
+<span class=nobr>I envision</span> apps stating what shape they expect, and pods declaring <span class=nobr>what shapes</span> they have or can <span class=nobr>make available</span>.</p>
+<p id=existing-shapes-p-2>
+<a class=id href="#existing-shapes-p-2">
+</a>The choice of <abbr class=caps>SHACL</abbr> versus ShEx is <span class=nobr>a topic</span> in itself that <span class=nobr>I will</span> not tackle here. Both have their merits: <abbr class=caps>SHACL</abbr> is <abbr class=caps>W3C</abbr>-standardized, and ShEx has many use cases and good tooling available. Fortunately, they share <span class=nobr>a large</span> common functional subset wherein one can be translated into the other. The most important thing is ensuring that <strong>Linked Data apps are coded using shapes</strong>—whatever the format. So what should <em>not</em> happen is that <span class=nobr>a Linked Data</span> app presents users with <span class=nobr>a hard</span>-coded <abbr class=caps>UI</abbr> in which certainly fields are assumed to be there. Such <a href="/blog/2018/12/28/designing-a-linked-data-developer-experience/#ldflex-feeling">closed object-oriented assumptions</a> do not match well with <span class=nobr>Linked Data</span>’s flexibility. Instead, apps should be built by pointing to shapes. When the shape changes, the app should co-evolve to the extent possible. For example, when editing <span class=nobr>a user</span> profile, <span class=nobr>a shape</span> will tell what fields should be there (assisted by a <a href="#forms">form</a>).</p>
+<p id=existing-shapes-p-3>
+<a class=id href="#existing-shapes-p-3">
+</a>In that sense, <strong>shapes are views</strong> over <span class=nobr>a chunk</span> of data, not unlike how <a href="/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/#apps-become-views">decentralized apps act as views over data pods</a>. Shapes are views with <span class=nobr>a specific</span> structure that can be relied upon, abstracting away the flexibility of the <abbr class=caps>RDF</abbr> model at <span class=nobr>a moment</span> when it is easier without, while still maintaining the semantics and links inside of the data. The latter is an important difference from rigid <abbr class=caps>JSON</abbr> trees or even <abbr class=caps>XML</abbr> data conforming to <span class=nobr>a strict</span>
+<abbr class=caps>XML</abbr> Schema: the data remains more than only structure. It is still Linked Data that can be processed further. <strong>
+<span class=nobr>A shape</span> is not an <span class=nobr>end point</span>, but <span class=nobr>a connection</span> point.</strong>
+</p>
+<h3 id=future-shapes>
+<a class=id href="#future-shapes">
+</a>Future shape technologies</h3>
+<p id=reshaping>
+<a class=id href="#reshaping">
+</a>We will need ways to <strong>easily reshape data</strong> from one structure into another. While this might sound like <abbr class=caps>XSLT</abbr> transformations on <abbr class=caps>XML</abbr> documents, Linked Data has the important advantage that each single piece of data is intertwined with its semantics. With <abbr class=caps>XSLT</abbr>, we need transformation pathways from every possible source shape to every possible destination shape. Shapes instead only define those states at each end. <span class=nobr>When semantics</span> are present, transformations for reshaping can be (at least partially) autogenerated through ontological knowledge and reasoning. Those semantics are also (at least partially) preserved after transforming, so data flows can be reshaped along the way <span class=nobr>as needed</span>.</p>
+<p id=future-shapes-p-1>
+<a class=id href="#future-shapes-p-1">
+</a>Clients should be able to <strong>request data in different shapes</strong>. For my own public <span class=nobr>Linked Data</span>, <span class=nobr>I have</span>
+<a href="/articles/queryable-research-data/#reason">done this by applying reasoning</a>, so my data can be <a href="http://query.verborgh.org/" target=_blank>queried using multiple vocabularies</a> and even combinations thereof, despite being authored using <span class=nobr>a much</span> smaller number of vocabularies. However, this results in more data than strictly needed, and perhaps not all possible shapes are compatible with each other. Through <a href="/articles/fine-grained-content-negotiation/#toward-more-fine-grained-content-negotiation">
+<strong>profile-based content negotiation</strong>
+</a> (on which I’m currently <a href="https://profilenegotiation.github.io/I-D-Profile-Negotiation/I-D-Profile-Negotiation.html" target=_blank>working</a>), clients could indicate their preference for specific vocabularies, shapes, or even <a href="https://www.w3.org/2018/jsonld-cg-reports/json-ld-framing/" target=_blank>
+<span class=nobr>
+<abbr class=caps>JSON-LD</abbr>
+</span> frames</a> such that apps know exactly what structure <span class=nobr>to expect</span>.</p>
+<p id=shapes-validation>
+<a class=id href="#shapes-validation">
+</a>Finally, the traditional usage of <strong>shapes for validation</strong> also has its merits. For instance, <em>servers</em> could restrict write access to resources by requiring conformance to <span class=nobr>a shape.</span> On <span class=nobr>a more</span> granular level, <span class=nobr>a server</span> could validate whether an individual <em>patch</em> to <span class=nobr>a resource</span> conforms to <span class=nobr>a shape.</span> For instance, current public chats typically allow <em>append-only</em> access, such that people can only <em>add</em> messages but not modify or delete <span class=nobr>old ones.</span> However, appending still enables people to annotate old messages with conflicting information, or to post new messages with an old timestamp or with <span class=nobr>a different</span> WebID as author. Rather than relying on honest apps, the authorizations document could specify that the <em>author</em> field must be the posting user’s WebID, and that the <em>timestamp</em> should be sufficiently close to the <span class=nobr>current time</span>.</p>
+<h2 id=forms>
+<a class=id href="#forms">
+</a>
+<em>Forms</em> for viewing and editing by people</h2>
+<p id=forms-p-1>
+<a class=id href="#forms-p-1">
+</a>Clearly, shapes are for data exchanges between machines, but <span class=nobr>a lot</span> of <strong>human–machine interactions</strong> will need to happen as well. <span class=nobr>A shape</span> that is useful for an app is not necessarily the most user-friendly shape for viewing or editing. So while shapes are for machines, <strong>
+<em>forms</em> are for people</strong>. In practice, these terms are often used less strictly, and people (including myself) have written about hypermedia forms for automated clients. For clarity, “forms” in this article will always refer to “<abbr class=caps>UI</abbr> forms”.</p>
+<p id=forms-p-2>
+<a class=id href="#forms-p-2">
+</a>It might not be obvious at first that there is <span class=nobr>a distinction</span> between the <abbr class=caps>UI</abbr> and the underlying shape, but the difference becomes clearer when we <a href="https://www.w3.org/DesignIssues/Footprints.html#forms" target=_blank>compare some properties of both</a>. First of all, shapes are inherently <em>unordered</em>: they constrain the structure of data, but not the processing order. <strong>Forms are ordered</strong>: they display information such that it is easy for <span class=nobr>a person</span> to read or change. They can also be sectioned or otherwise organized in ways that facilitate human interaction, but which are not reflected in the underlying data. <strong>Forms suggest <abbr class=caps>UI</abbr> elements</strong> that make it easy to edit <span class=nobr>a given</span> field: depending on the type of data, <span class=nobr>a text</span> field, dropdown list, or autocompletion control might provide the best <span class=nobr>user experience</span>.</p>
+<p id=forms-p-3>
+<a class=id href="#forms-p-3">
+</a>Crucially, a <em>
+<span class=nobr>one-to</span>-many</em> relationship exists between shapes and forms: <strong>the <em>same</em> shape can be manipulated through <em>multiple</em> forms</strong>. Not every view of <span class=nobr>a user</span> profile needs to include all of its shape’s fields, and making <span class=nobr>a quick</span> edit such as changing <span class=nobr>a profile</span> picture shouldn’t involve <span class=nobr>a complex</span> form. <span class=nobr>A form</span> itself always corresponds to one shape, but users can be given <span class=nobr>a choice</span> of forms to interact with data in a <span class=nobr>given shape</span>.</p>
+<figure id=forms-figure-1>
+<a class=id href="#forms-figure-1">
+</a>
+<img src="/images/blog/shapes-forms.svg" alt=""/>
+<figcaption> People can use different forms to read or write data in <span class=nobr>a certain</span> shape. </figcaption>
+</figure>
+<p id=forms-p-4>
+<a class=id href="#forms-p-4">
+</a>Like shapes, <strong>forms are composable</strong>: smaller subforms can serve as building blocks for larger ones. For instance, <span class=nobr>a small</span> form for entering <span class=nobr>a postal</span> address can subsequently be used for home addresses and business addresses alike. Forms, like shapes, can even be <strong>recursive</strong>: <span class=nobr>a person</span> can have contacts, which can have contacts of themselves. And, as is usual with Linked Data, it’s <em>turtles all the way down</em>: we can imagine <span class=nobr>a form</span> to edit forms and/<span class=nobr>or shapes</span>.</p>
+<p id=forms-p-5>
+<a class=id href="#forms-p-5">
+</a>While shapes and forms are thus clearly distinct concepts, there nonetheless exists <span class=nobr>a strong</span> relationship between them, which can be exploited for (partially) <strong>automated generation</strong> of one from the other. Starting from <span class=nobr>a shape</span>, we could automatically generate <span class=nobr>a form</span> from its structure, which then is further refined by <span class=nobr>a designer</span> by adding <span class=nobr>a logical</span> order and picking the right <span class=nobr>
+<abbr class=caps>UI</abbr> elements.</span> Conversely, starting from <span class=nobr>a form</span>, we could try to determine an appropriate <abbr class=caps>RDF</abbr> shape. Since no exact match exists, both cases will likely require <span class=nobr>human input</span>.</p>
+<p id=forms-p-6>
+<a class=id href="#forms-p-6">
+</a>Current technologies for representing forms include the <a href="https://www.w3.org/ns/ui" target=_blank>
+<strong>
+<abbr class=caps>UI</abbr> ontology</strong>
+</a>, which is <span class=nobr>a work</span> in progress. Despite their terminology, initiatives such as <a href="http://www.markbaker.ca/2003/05/RDF-Forms/" target=_blank>
+<span class=nobr>
+<abbr class=caps>RDF</abbr> forms</span>
+</a> and the <a href="https://www.hydra-cg.com/spec/latest/core/" target=_blank>Hydra core vocabulary</a> actually more closely resemble shapes than forms, as they target machine clients rather <span class=nobr>than people</span>.</p>
+<h2 id=footprints>
+<a class=id href="#footprints">
+</a>
+<em>Footprints</em> for creating and wiring up data</h2>
+<p id=footprints-p-1>
+<a class=id href="#footprints-p-1">
+</a>What you have read so far provides answers to the question of how to read and edit existing data. Indeed, if you are only reading or editing, then you do not need anything in addition to shapes and forms. However, <em>(only)</em> when <strong>creating <em>new</em> data</strong>, clients need something that tells them where to store what you create. This includes the parent folder of the new document, as well as the desired <abbr class=caps>URL</abbr>, but also other documents such as indexes that will need to point to the newly <span class=nobr>created document</span>.</p>
+<p id=footprints-p-2>
+<a class=id href="#footprints-p-2">
+</a>
+<strong>A <em>footprint</em> complements <span class=nobr>a specific</span> shape</strong> with answers to questions <span class=nobr>such as</span>:</p>
+<ul>
+<li>In <strong>what document</strong> should new data for the shape be stored?</li>
+<li>What <strong>updates to other documents</strong> are required?</li>
+<li>What <strong>notifications</strong> should be sent to where?</li>
+</ul>
+<p id=footprints-p-3>
+<a class=id href="#footprints-p-3">
+</a>Like with forms, a <em>
+<span class=nobr>many-to</span>-many</em> relationship exists between shapes and footprints: <strong>
+<em>different</em> footprints can be used for the <em>same</em> shape</strong>. The way <em>you</em> structure documents might be different from mine, even though our data might conform to the same shape. This re-emphasizes the importance of <strong>
+<em>not</em> using footprints for <em>reading</em> data</strong>: <span class=nobr>read operations</span> solely depend on <em>links</em> between different parts of the data, regardless of the actual folder or document structure through which the data happens to be exposed. When <em>writing</em> data, footprints explain the <span class=nobr>desired structure</span>.</p>
+<figure id=footprints-figure-1>
+<a class=id href="#footprints-figure-1">
+</a>
+<img src="/images/blog/shapes-footprints.svg" alt=""/>
+<figcaption> New data corresponding to <span class=nobr>a specific</span> shape can be written to different documents, depending on the footprint that is used. </figcaption>
+</figure>
+<p id=footprints-p-4>
+<a class=id href="#footprints-p-4">
+</a>
+<strong>
+<span class=nobr>A folder</span> might mandate <span class=nobr>a certain</span> footprint.</strong> If no footprint is present, the shape or form might point to <span class=nobr>a suggestion.</span> For example, <span class=nobr>I might</span> want to store my contacts <span class=nobr>as follows</span>:</p>
+<pre>
+<code>contacts/
+    family/
+      {firstname}_{lastname}.ttl
+    friends/
+    colleagues/
+    professional/
+        {company}_{lastname}.ttl
+    lastnames.ttl
+    events.ttl
+</code>
+</pre>
+<p id=footprints-p-5>
+<a class=id href="#footprints-p-5">
+</a>In my address book, contacts are thus grouped based on their role, and <abbr class=caps>URL</abbr>s are based on other attributes. The document <code>lastnames.ttl</code> serves as <span class=nobr>a searchable</span> index of all contacts based on their last name. The document <code>events.ttl</code> indexes my contacts based on event dates, such as their birthday or anniversary, such that they can easily be displayed in <span class=nobr>a calendar.</span> Your contacts footprint might be <span class=nobr>more simple</span>:</p>
+<pre>
+<code>people/
+    {lastname}_{firstname}.ttl
+</code>
+</pre>
+<p id=footprints-p-6>
+<a class=id href="#footprints-p-6">
+</a>Yet our shapes for representing people can be exactly the same. In both cases, <strong>footprints are used only to create new data</strong>. Reading happens by navigating to the parent folder (<code>contacts</code> or <code>people</code>) and following links. In your folder, only one level of links needs to be followed; my folder requires two levels of link-following, unless indexes are considered. In no circumstance should the footprint be used for looking up contacts, since the footprints and used attributes might have changed since <span class=nobr>creation time</span>.</p>
+<p id=footprints-p-7>
+<a class=id href="#footprints-p-7">
+</a>We could argue that <strong>certain types of edits might also require footprints</strong>. For instance, if birthday information becomes available for <span class=nobr>a contact</span>, or if <span class=nobr>a friend</span> gets married, then <code>events.ttl</code> needs updating. More complicated changes involve <span class=nobr>a colleague</span> becoming <span class=nobr>a friend</span> or moving to <span class=nobr>a different</span> company. Those <em>could</em> mean minting new <abbr class=caps>URL</abbr>s—<wbr>or maybe not. <em>(If that were to happen, <span class=nobr>a redirect</span> and <code>owl:sameAs</code> link would be necessary!)</em> These mechanisms still mandate some careful <span class=nobr>thought though</span>.</p>
+<p id=footprints-p-8>
+<a class=id href="#footprints-p-8">
+</a>Footprints are still in an <strong>early stage of development</strong>. A <a href="https://www.w3.org/ns/footprints" target=_blank>draft footprints ontology</a> exists, but still requires some more iterations. Mechanisms to declaratively describe transformations, such as perhaps <a href="https://fno.io/" target=_blank>the Function ontology</a>, will be needed to capture how attributes of <span class=nobr>a shape</span> translate <span class=nobr>into <abbr class=caps>URL</abbr>s</span>.</p>
+<h2 id=future>
+<a class=id href="#future">
+</a>Shaping the future</h2>
+<p id=future-p-1>
+<a class=id href="#future-p-1">
+</a>The triad of shapes, forms, and footprints will help developers contribute to an <strong>ecosystem of decentralized Linked Data apps</strong>, as they offer answers for dealing with the flexibility of the <abbr class=caps>RDF</abbr> data model. The <a href="/articles/redecentralizing-the-web/#power-to-the-people">permissionless innovation</a> promised by the Solid ecosystem can only truly happen when app developers do not depend on slow centralized consensus processes, so the ability to handle that flexibility <span class=nobr>is crucial</span>.</p>
+<p id=future-p-2>
+<a class=id href="#future-p-2">
+</a>Beyond these three components, <span class=nobr>I see</span>
+<span class=nobr>a lot</span> of potential for <strong>shape-based thinking</strong>. Below, I’m suggesting some new directions about which I’m particularly curious, <span class=nobr>on how shapes</span> can affect Linked Data apps and their underlying <span class=nobr>query mechanisms</span>.</p>
+<h3 id=shapes-apps>
+<a class=id href="#shapes-apps">
+</a>Shape-aware apps</h3>
+<p id=shapes-apps-p-1>
+<a class=id href="#shapes-apps-p-1">
+</a>An essential change for apps is that <strong>knowledge about data structure or storage should <span class=nobr>
+<em>not</em> be</span> expressed in program code</strong> anymore. Current apps often contain JavaScript code that expects specific <span class=nobr>
+<abbr class=caps>RDF</abbr> properties</span>, or writes new documents to specific locations. Just like well-behaved desktop apps will <em>ask</em> you where to store files instead of assuming, Linked Data apps shouldn’t make assumptions about where you want your documents to reside. There’s <strong>
+<span class=nobr>no such</span> thing as <em>the</em>
+<span class=nobr>data pod</span> layout that works for everyone</strong>. Instead, apps should be built around declarative shapes as provided by <abbr class=caps>SHACL</abbr> or ShEx, augmented with footprints. By doing so, you can <strong>
+<em>safely</em> make assumptions about <abbr class=caps>RDF</abbr> properties</strong> as described in the shape—<wbr>at least presuming the data is available in the shape you want. The plan is that <a href="#reshaping">reshaping</a> will lift <span class=nobr>this constraint</span>, allowing for truly independent evolution of storage and apps <span class=nobr>without requiring</span> central agreement. <span class=nobr>Initial incarnations</span> of shape-based thinking are already present in client-side Solid toolkits built <span class=nobr>by Inrupt</span>, <span class=nobr>such as</span> their <a href="https://github.com/inrupt/solid-react-components/tree/0.4.2#shexformbuilder" target=_blank>Solid React Components</a>.</p>
+<p id=shapes-apps-p-2>
+<a class=id href="#shapes-apps-p-2">
+</a>I’ve previously explained how <strong>
+<a href="/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/#interfaces-become-queries">building Linked Data apps using <em>queries</em>
+</a>
+</strong> eliminates the dependency on concrete <abbr class=caps>HTTP</abbr> requests. With shapes, the same query-based architecture can <strong>make apps independent of the shapes provided by the server</strong>. For instance, the below three queries all <em>semantically</em> express the same idea, namely to obtain the names of <span class=nobr>my friends</span>:</p>
+<pre>
+<code># Query 1: <a href="http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fdata.verborgh.org%2Fruben&amp;query=PREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0ASELECT%20*%20WHERE%20%7B%0A%20%20%3Fperson%20foaf%3Aname%20%22Ruben%20Verborgh%22%40en%3B%0A%20%20%20%20%20%20%20%20%20%20foaf%3Aknows%20%3Ffriend.%0A%20%20%3Ffriend%20foaf%3Aname%20%3Fname.%0A%7D" target="_blank">
+<abbr class="caps">SPARQL</abbr> query expressed with <abbr class="caps">FOAF</abbr>
+</a>
+<abbr class="caps">SELECT</abbr> * <abbr class="caps">WHERE</abbr> {
+  ?person foaf:name "Ruben Verborgh"@en;
+          foaf:knows ?friend.
+  ?friend foaf:name ?name.
+}</code>
+</pre>
+<pre>
+<code># Query 2: <a href="http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fdata.verborgh.org%2Fruben&amp;query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0ACONSTRUCT%20WHERE%20%7B%0A%20%20%3Fperson%20schema%3Aname%20%22Ruben%20Verborgh%22%40en%3B%0A%20%20%20%20%20%20%20%20%20%20schema%3Aknows%20%3Ffriend.%0A%20%20%3Ffriend%20schema%3Aname%20%3Fname.%0A%7D" target="_blank">
+<abbr class="caps">SPARQL</abbr> query expressed with Schema.org</a>
+<abbr class="caps">CONSTRUCT</abbr>
+<abbr class="caps">WHERE</abbr> {
+  ?person schema:name "Ruben Verborgh"@en;
+          schema:knows ?friend.
+  ?friend schema:name ?name.
+}</code>
+</pre>
+<pre>
+<code># Query 3: <a href="http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fdata.verborgh.org%2Fruben&amp;query=%7B%0A%20%20name(_%3A%20%22Ruben%20Verborgh%22)%0A%20%20friends%20%7B%0A%20%20%20%20name%0A%20%20%7D%0A%7D&amp;queryContext=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%7B%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%22%2C%20%22%40language%22%3A%20%22en%22%20%7D%2C%0A%20%20%20%20%22friends%22%3A%20%7B%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%20%7D%0A%20%20%7D%0A%7D&amp;resultsToTree=false&amp;queryFormat=graphql" target="_blank">GraphQL query (with an appropriate context)</a>
+{
+    name(_: "Ruben Verborgh")
+    friends {
+      name
+    }
+}</code>
+</pre>
+<p id=shapes-apps-p-3>
+<a class=id href="#shapes-apps-p-3">
+</a>In order to populate the <span class=nobr>result set</span>, the query engine evaluating the query could either ask the server to provide the data in the needed shape, or the reshaping could be done <span class=nobr>on-the</span>-fly by the client. The important thing is that <strong>the app itself doesn’t have to care</strong>: it can assume the presence of either <code>foaf:name</code>, <code>schema:name</code>, or <code>friends.name</code>, depending on the query form that was chosen. The <strong>relationship between queries <span class=nobr>and shapes</span>
+</strong> is an interesting one, since queries indeed convey an expectation of what the data is shaped like. Reshaping allows us to unconditionally make <span class=nobr>that assumption</span>.</p>
+<p id=shapes-apps-p-4>
+<a class=id href="#shapes-apps-p-4">
+</a>Higher-level tools such as <a href="/blog/2018/12/28/designing-a-linked-data-developer-experience/#ldflex">
+<abbr class=caps>LD</abbr>flex</a> will also need to be <strong>shape-aware</strong>. In fact, as soon as data is more complex than <span class=nobr>a single</span> triple relationship, shapes come into play. <span class=nobr>For example</span>, social interactions such as <em>likes</em> are expressed by multiple triples, so unsurprisingly, the current <abbr class=caps>LD</abbr>flex code uses <span class=nobr>a preliminary</span> kind of shapes for <a href="https://github.com/solid/query-ldflex/blob/v2.5.1/src/activity.sparql" target=_blank>reading</a> and <a href="https://github.com/solid/query-ldflex/blob/v2.5.1/src/activity.ttl" target=_blank>writing</a>. In <span class=nobr>a future</span> version, such shapes should be expressed in <abbr class=caps>SHACL</abbr> or ShEx and perhaps even be external to the code. Wiring up <span class=nobr>a shape</span> should be as easy as <a href="https://github.com/solid/query-ldflex/blob/v2.5.1/src/context.json" target=_blank>wiring up <span class=nobr>a single</span> property using <span class=nobr>
+<abbr class=caps>JSON-LD</abbr>
+</span>
+</a>.</p>
+<h3 id=shapes-queries>
+<a class=id href="#shapes-queries">
+</a>Shape-aware queries</h3>
+<p id=shapes-queries-p-1>
+<a class=id href="#shapes-queries-p-1">
+</a>Solid rightly grants <span class=nobr>a great</span> amount of freedom to individual data pod owners to <strong>decide how they will structure documents in their pods</strong>. Currently, traversing pods and folders to list <em>all</em> photos requires following literally every link. This is because we have no clue about the structure of the data: <span class=nobr>I could</span> store my photos in albums per year and location, you could store them per project or per person. So photo apps might need to follow <em>year</em>, <em>location</em>, <em>project</em>, or <em>person</em> links, in addition to anything that anyone else <em>might</em> use for organizing their photo library. Solid is thereby similar to a <strong>(virtual) <span class=nobr>hard drive</span>
+</strong>: people can place their photos anywhere on their device or online storage. <span class=nobr>In such</span> systems, it is typically the user’s responsibility to tell apps what file to open. However, since Solid works on <span class=nobr>a much</span> more granular data level, it would quickly become <span class=nobr>a nuisance</span> to always have to tell apps <em>where</em> exactly they can find <em>what</em>—especially given the promise that Solid allows for easy <span class=nobr>app switching</span>.</p>
+<p id=shapes-queries-p-2>
+<a class=id href="#shapes-queries-p-2">
+</a>If <strong>folders explicitly indicate their conformance to <span class=nobr>a certain</span> shape</strong>, we can rely on that structure to traverse and query data more efficiently. Of course, we would also need the means to <em>validate</em> such conformance, which can be performed by existing <abbr class=caps>SHACL</abbr> or ShEx validators (although the data might be spread across different documents). Although they should not be used for <em>reading</em> directly, and in particular not for guessing the <abbr class=caps>URL</abbr> of documents, <strong>footprint conformance might also be checked</strong>, as they can guarantee that certain <em>indexes</em> are present and <span class=nobr>up-to</span>-date.</p>
+<p id=shapes-queries-p-3>
+<a class=id href="#shapes-queries-p-3">
+</a>For instance, if <span class=nobr>I describe</span> my photo folder’s shape as <span class=nobr>a structure</span> of <em>years</em> and <em>locations</em>, then an app looking for photos will only have to follow <em>year</em> links from the root, and <em>location</em> links within those years. This <strong>saves <span class=nobr>a lot</span> of time and bandwidth</strong>, since <em>months</em>, <em>media</em>, <em>messages</em>, <em>contacts</em>, and other folders and their descendants do not need to be checked. Similarly, in your pod, <em>projects</em> or <em>people</em> links could be the only ones that <span class=nobr>need following</span>.</p>
+<p id=shapes-queries-p-4>
+<a class=id href="#shapes-queries-p-4">
+</a>In addition to traversing, <em>querying</em> can also be simplified considerably. Solid folders and networks can be searched through <a href="http://olafhartig.de/files/HartigEtAl_QueryTheWeb_ISWC09_Preprint.pdf" target=_blank>
+<strong>link-traversal-based query evaluation</strong>
+</a>, wherein <span class=nobr>a query</span> engine executes <span class=nobr>a <abbr class=caps>SPARQL</abbr>
+</span> query by following links. An issue is that such engines cannot know <em>which</em> links to follow, and hence have to follow every single link (within <span class=nobr>a scope</span>) to exhaustively search for anything they can reach. Given knowledge about the shape of <span class=nobr>a pod</span> and/<wbr>or network, <strong>
+<em>guided</em> link-traversal-based query evaluation</strong> becomes possible, wherein query engines only follow <em>relevant</em> links that can lead to <span class=nobr>an answer</span>.</p>
+<p id=shapes-queries-p-5>
+<a class=id href="#shapes-queries-p-5">
+</a>Certain shapes might even allow for <strong>highly specific optimizations</strong> in some queries. Consider the following <abbr class=caps>SPARQL</abbr> query for photos <span class=nobr>from 2018</span>:</p>
+<pre>
+<code>SELECT ?photo ?date {
+  ?photo a schema:Photograph;
+         schema:dateCreated ?date.
+  FILTER(YEAR(?date) = 2018)
+}
+</code>
+</pre>
+<p id=shapes-queries-p-6>
+<a class=id href="#shapes-queries-p-6">
+</a>If indeed photos in my pod are linked in folders per year, then the engine can decide not to follow links in the <code>2017/</code> or <code>2019/</code> folders. From a <em>shape</em> perspective, this requires <span class=nobr>a triple</span> expressing that the folder for the year 2018 is indeed <code>2018/</code> (<span class=nobr>as opposed</span> to <code>18/</code> or <code>last_year/</code>). If we want to rely on the knowledge that the full year is always used as the folder name, we need <em>footprint</em> conformance <span class=nobr>as well</span>.</p>
+<p id=shapes-queries-p-7>
+<a class=id href="#shapes-queries-p-7">
+</a>This reaffirms how <strong>all query performance is strongly affected by the underlying storage structure</strong>, and traversal-based querying is no exception to that. For instance, the above query will be much slower when your folder is organized by project (unless the project shape has an associated date range). At the same time, finding photos for <span class=nobr>a specific</span> project would be <span class=nobr>super fast.</span> This opens possibilities for <strong>multiple linking structures</strong>, where data is connected in many more ways than just the typical hierarchical folder structure. <span class=nobr>A pod</span> could have <em>virtual</em> folders for projects, or <em>index</em> documents for specific types, dates, or people—<wbr>all maintained <span class=nobr>through footprints</span>.</p>
+<h3 id=shapes-trust>
+<a class=id href="#shapes-trust">
+</a>Shapes of trust</h3>
+<p id=shapes-trust-p-1>
+<a class=id href="#shapes-trust-p-1">
+</a>Since Linked Data is connected across the Web and thus across <span class=nobr>data pods</span>, <span class=nobr>a question</span> arises about the <strong>scope of queries</strong>. Do we want only data with respect to one pod, or do we want to follow external links, and if so, how many levels deep? This is not only <span class=nobr>a question</span> of <em>performance</em>, but also about <em>trust</em>: <strong>are results found outside of <span class=nobr>a pod</span> equally trustworthy?</strong> For instance, people have asked why the Solid <abbr class=caps>LD</abbr>flex expression <code>data.user.friends.firstName</code> will by default <em>only</em> give first names of friends stored in the user’s profile document. Often, those names are not there, only the WebIDs of <span class=nobr>those friends</span>, so few or no results for names will be returned. We could easily extend the <span class=nobr>result set</span> by <em>following</em> the WebIDs of those friends and reading their first name from their own profiles. This latter behavior occurs only when you explicitly iterate over <code>data.user.friends</code>
+<em>(path query from the user’s WebID document)</em> and then ask for <code>friend.firstName</code>
+<em>(path query from the friend’s WebID document)</em>.</p>
+<p id=shapes-trust-p-2>
+<a class=id href="#shapes-trust-p-2">
+</a>People can <strong>express trust boundaries in shapes</strong> such that apps and query engines receive boundaries of <em>which</em> sources to trust for <em>what</em> information. By default, this might just be the user’s pod. Others’ pods might be consulted for <em>their</em> personal information, such as name, location, <span class=nobr>birth date</span>, but not for things such as preferences, annotations, etc. Such limits will affect both performance and trust positively, at the cost of perhaps missing some results that might still be trustworthy, but were not part of the shape. In any case, documenting the <strong>provenance</strong> of query results and their individual components remains important in <span class=nobr>decentralized networks</span>.</p>
+<h3 id=shapes-APIs>
+<a class=id href="#shapes-APIs">
+</a>Shaped-based Web <abbr class=caps>API</abbr>s</h3>
+<p id=shapes-APIs-p-1>
+<a class=id href="#shapes-APIs-p-1">
+</a>We so far have assumed the absence of more specific query interfaces, so we had to resort to traversal-based querying. While this technique will always work with Solid pods and Linked Data networks in general, certain types of queries will <span class=nobr>be slow</span>.</p>
+<p id=shapes-APIs-p-2>
+<a class=id href="#shapes-APIs-p-2">
+</a>Of course, <strong>more advanced query interfaces</strong> for Solid have been discussed, including <a href="https://github.com/solid/solid-spec/blob/d9eb0455906788b76516c73f8ecec42e1d3ed269/api-rest.md#alternative-using-sparql" target=_blank>
+<span class=nobr>a suggestion</span> for <span class=nobr>a <abbr class=caps>SPARQL</abbr>
+</span>-like interface</a>, and <span class=nobr>a more</span> lightweight <a href="https://github.com/solid/solid-tpf" target=_blank>Triple Pattern Fragments interface</a>. From <a href="/blog/2014/03/11/towards-web-scale-web-querying/">earlier research</a>, we know that certain <span class=nobr>Web <abbr class=caps>API</abbr>s</span> can become prohibitively expensive, and that <a href="/2015/06/09/federated-sparql-queries-in-your-browser/">queries over federations</a> can actually be cheaper with lighter interfaces. An important direction is thus to explore what optional Linked Data <abbr class=caps>API</abbr>s should be exposed by Solid pods to optimize querying—<wbr>in other words, what types of <a href="http://linkeddatafragments.org/" target=_blank>Linked Data Fragments</a> are useful for pods <span class=nobr>to publish</span>.</p>
+<p id=shapes-APIs-p-3>
+<a class=id href="#shapes-APIs-p-3">
+</a>Up until now, Solid pods have always exposed <strong>
+<em>generic</em> Web <abbr class=caps>API</abbr>s</strong> instead of the <em>domain-specific <abbr class=caps>API</abbr>s</em> exposed by most other projects (such as <abbr class=caps>API</abbr>s for people, photos, comments, etc.). Solid exposes Linked Data within <abbr class=caps>RDF</abbr> documents, which people and apps can structure as they <span class=nobr>see fit.</span> With the advent of shapes and footprints, such structural decisions are made explicit, so apps and clients can find their way. However, from an optimization perspective, shapes <em>could</em> define <strong>custom, <em>shape-specific</em>
+<span class=nobr>Web <abbr class=caps>API</abbr>s</span>
+</strong> that <em>are</em> based on <span class=nobr>domain concepts</span>.</p>
+<p id=shapes-APIs-p-4>
+<a class=id href="#shapes-APIs-p-4">
+</a>For example, <span class=nobr>a shape</span> for <span class=nobr>a person</span> could give rise to an <abbr class=caps>API</abbr> where you can look up people based on last name. Or photos based on year or location. Those <abbr class=caps>API</abbr>s could be driven by <span class=nobr>a physical</span> document structure (as <a href="#shapes-queries">suggested for traversal</a>), or by an internal query endpoint. Smart query engines such as <a href="http://comunica.linkeddatafragments.org/" target=_blank>Comunica</a> would then determine that <span class=nobr>a certain</span>
+<abbr class=caps>SPARQL</abbr> query directly <strong>translates to <span class=nobr>a domain</span>-specific <abbr class=caps>API</abbr> request</strong>, or that it can be decomposed into multiple such requests. Such fragment-based query strategies have always been my long-term plan for Linked Data Fragments, and <span class=nobr>I believe</span> Solid creates the right ecosystem <span class=nobr>for this</span>.</p>
+<p id=shapes-APIs-p-5>
+<a class=id href="#shapes-APIs-p-5">
+</a>However, <span class=nobr>I cannot</span> emphasize enough that <strong>such optimizations are <em>optional</em>
+</strong>. Solid clients can only assume the Linked Data Platform interface and additional structures made explicit by shapes. By <a href="/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/#interfaces-become-queries">writing all data accesses as queries</a>, apps can transparently rely on the query engine using more specific interfaces when present, yet continue working when they’re not—<wbr>albeit with different performance characteristics.</p>
+<h2 id=conclusion>
+<a class=id href="#conclusion">
+</a>Shapes are everywhere</h2>
+<p id=conclusion-p-1>
+<a class=id href="#conclusion-p-1">
+</a>Since <span class=nobr>I started</span> thinking about shapes in <abbr class=caps>RDF</abbr>, I’m seeing many opportunities for them in both old and new problems I’ve come across. True to the statement <a href="/blog/2013/07/30/one-hammer-for-a-thousand-nails/">
+<q>When all you have is <span class=nobr>a hammer</span>, every problem starts to look like <span class=nobr>a nail</span>
+</q>
+</a>, they’ve become <span class=nobr>a new</span> lens <span class=nobr>on reality.</span> With shapes, the question becomes: can we <em>reshape</em> the problem into <span class=nobr>a nail</span>? Or more accurately, can we transform it into <strong>a <em>shape</em>-shaped problem</strong>?</p>
+<p id=conclusion-p-2>
+<a class=id href="#conclusion-p-2">
+</a>One of their attractive properties is that not only programmers, but also <strong>
+<span class=nobr>power users</span> can create and tweak shapes</strong>. We can even use shapes to validate shapes, and forms to edit shapes <span class=nobr>or forms</span>.</p>
+<p id=conclusion-p-3>
+<a class=id href="#conclusion-p-3">
+</a>One recent example is someone describing the problem of historians collecting data about specific domains during <span class=nobr>a certain</span> era. Think list of people, buildings, books, etc. Different historians enter these independently, and afterwards, they aim for that data to become connected. Today, many <strong>customized systems</strong> to support such processes exist, and tech-savvy people have created their own databases. The most advanced of such systems even support Linked Data. But the biggest challenge is how to <strong>make data entry easy</strong>. This is <span class=nobr>a problem</span> screaming for shapes and forms, where Linked Data actually makes it <em>easier</em> to enter data if <span class=nobr>done right</span>.</p>
+<p id=conclusion-p-4>
+<a class=id href="#conclusion-p-4">
+</a>
+<strong>
+<em>Shapes</em> should be Linked Data’s answer</strong> to the developer-friendly demand for predictable structures, while at the same time keeping flexibility and connectedness. Shapes should not become the new <abbr class=caps>XSLT</abbr>, where every interoperability problem is solved by crafting yet another <span class=nobr>point-to</span>-point solution. Instead, those points themselves are shapes, and conversions should happen nearly automatically, because of the semantics contained in Linked Data documents and the ontologies they point to. When used right, <strong>shapes <em>amplify</em> instead of reduce the power of Linked Data</strong>, by exposing predictability without pretending reality to be shaped <span class=nobr>that way</span>.</p>
+</div>
+<p id=signature>
+<a class=id href="#signature">
+</a>
+<span class=author property="schema:author schema:publisher" typeof="schema:Person" resource="https://ruben.verborgh.org/profile/#me">
+<a property="schema:url" href="/">
+<span property="schema:givenName">Ruben</span>
+<span class=spacing>
+</span>
+<span property="schema:familyName">Verborgh</span>
+</a>
+</span>
+<br>
+</p>
+</article>
+</main>
+</body>
+</html>

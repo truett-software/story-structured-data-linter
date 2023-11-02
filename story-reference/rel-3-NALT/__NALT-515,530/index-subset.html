@@ -1,0 +1,1177 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<title>
+Agriculture Thesaurus subset
+</title>
+<link rel="canonical" href="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-37/index.html"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<style amp-custom>
+@font-face{font-family:"Noto Sans";font-style:normal;font-weight:400;font-display:swap;src:local("Noto Sans"),local("NotoSans"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff) format("woff")}
+@font-face{font-family:"Noto Sans";font-style:normal;font-weight:700;font-display:swap;src:local("Noto Sans Bold"),local("NotoSans-Bold"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff) format("woff")}
+@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:local("Poppins Bold"),local("Poppins-Bold"),url(https://amp.dev/static/fonts/poppins-v5-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/poppins-v5-latin-700.woff) format("woff")}
+@font-face{font-family:"Fira Mono";font-style:normal;font-weight:400;font-display:swap;src:local("Fira Mono"),local("FiraMono"),url(https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff2) format("woff2"),url(https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff) format("woff")}
+
+@font-face {
+    font-family: 'Carter One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/carter-one/carter-one-v12-latin-regular.woff2")
+        format("woff2");
+}
+
+/* Chrome and Safari; no -moz support */
+::-webkit-scrollbar {width:12px}
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3)}
+::-webkit-scrollbar-thumb {background:#BCC9F4; -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5)}
+::-webkit-scrollbar-thumb:window-inactive {background:#F9B361}
+
+/* .onto-logo {background-image:url("https://afdsi.com/static/logo/afdsi-w570-h97.svg"); width:570px; height:97px; background-repeat:no-repeat;background-size:80%;} */
+
+.onto-logo {background-image:url("https://s3.amazonaws.com/benetta.net/media/logo/afdsi/logo-letters-w570-h97.svg"); width:570px; height:97px; background-repeat:no-repeat;background-size:80%;}
+body {margin:0; padding:0; line-height:1.8}
+header {text-align: left; padding:10px 0px 10px 10px}
+article header {background:linear-gradient(to right, #1c79c0, #0389ff, #0dd3ff); text-align:left; color:#fff}
+.article-body {padding:0px 0px 20px 10px}
+
+h1 {max-width:98%; margin:0 auto;font-family:"Noto Sans",sans-serif;font-size: 1.5em;}
+h2 {padding-left:10px; font-weight:700; color:#0379C4;font-family:"Noto Sans",sans-serif;font-size: 1.5em;}
+h3 {padding-left:10px; font-weight:400; font-size:14px; padding-bottom:10px;}
+h4 {padding-left:10px; font-weight:normal; font-size:18px;}
+
+p{
+  font-family: Poppins, sans-serif;
+  font-size: 0.9em;
+}
+.extracted-content .label {
+  font-size: 0.9em;
+  color: black;
+  text-align: left;
+}
+.extracted-content table {
+  border-collapse:collapse;
+  overflow-x:auto;
+  display:block;
+  font-size: 0.9em;
+  font-family: "Fira Mono";
+}
+.extracted-content table td {
+  vertical-align: baseline;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+table.ts td {
+  font-size: 0.8em;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+.custom-loader .amp-active {
+  max-width: 10%;
+  max-height: 50%;
+  width: 2em;
+  height: 2em;
+  background-color: #333;
+  margin: -1em auto;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@keyframes sk-rotateplane {
+  0% { transform: perspective(120px); }
+  50% { transform: perspective(120px) rotateX(-180deg); }
+  100% { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+}
+
+  /* Hide the three default dots */
+.custom-loader .amp-active > div {
+  display: none;
+}
+</style>
+</head>
+
+<body class="custom-loader">
+
+<header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 97" width="314" height="49">
+<style>
+@font-face {
+    font-family: 'Carter One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/carter-one/carter-one-v12-latin-regular.woff2")
+        format("woff2");
+}
+</style>
+<text y="460.847" x="187.654" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="187.654"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#cd00cd" dy="0" dx="0">i</tspan></tspan></text>
+<text y="460.847" x="158.479" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="158.479"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:red" dy="0" dx="0">s</tspan></tspan></text>
+<text y="460.847" x="43.669" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="43.669"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#0087ff" dy="0" dx="0">a</tspan></tspan></text>
+<text y="460.847" x="85.492" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="85.492"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#00ad66" dy="0" dx="0">f</tspan></tspan></text>
+<text y="460.847" x="110.839" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="110.839"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#ffc800" dy="0" dx="0">d</tspan></tspan></text>
+<text y="426.729" x="228.829" style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;line-height:125%;font-family:Cambria;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="426.729" x="228.829"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;font-family:Cambria;fill:#000" dy="0" dx="0">American Food Data </tspan></tspan></text>
+<text y="460.847" x="228.829" style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;line-height:125%;font-family:Cambria;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="228.829"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;font-family:Cambria;fill:#000" dy="0" dx="0">Systems Institute</tspan></tspan></text>
+</svg>
+</header>
+
+<main>
+<article>
+
+<header>
+<h1 itemprop="headline">
+Agriculture Thesaurus defined by <em>&nbsp;schema.org&nbsp;&nbsp;</em>ontology
+</h1>
+</header>
+
+<div class="article-body" itemprop="articleBody">
+
+<h2>
+Generated by Structured Data Linter
+</h2>
+
+<div class="">
+<p>Parser statistics</p>
+<table class="">
+<tbody>
+<tr><td>Reader</td><td class="">RDF::RDFa::Reader</td></tr>
+<tr><td>Statements&nbsp;&nbsp;</td><td class="">515,530</td></tr>
+</tbody>
+</table>
+</div>
+<br>
+
+<div class="extracted-content">
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/Class(63,079)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/127293(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Taxonomic Classification of Organisms</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Taxonomic Classification of Organisms</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Archaea, Cyanobacteria and Bacteria</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Archaea, Cyanobacteria and Bacteria</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Eubacteria</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Eubacteria</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Coprothermobacter</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Coprothermobacter</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Coprothermobacter proteolyticus</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Coprothermobacter proteolyticus</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/28975</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Coprothermobacter platensis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Coprothermobacter platensis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/28975</td>
+</tr>
+
+</tbody></table>
+</li>
+
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/73</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydiales</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydiales</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Parachlamydiaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Parachlamydiaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Parachlamydia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Parachlamydia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/56775(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Parachlamydia acanthamoebae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Parachlamydia acanthamoebae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/56774</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25244</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Neochlamydia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Neochlamydia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/54563(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Neochlamydia harmannellae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Neochlamydia harmannellae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/54562</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25244</td>
+</tr>
+
+</tbody></table>
+</li>
+
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25242</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Simkaniaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Simkaniaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/63122(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Simkania</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Simkania</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/63123(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Simkania negevensis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Simkania negevensis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/63122</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25245</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25242</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydiaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydiaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila pecorum</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila pecorum</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25243</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila felis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila felis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25243</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila abortus</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila abortus</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25243</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila pneumoniae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila pneumoniae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25243</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila psittaci</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila psittaci</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25243</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydophila caviae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydophila caviae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25243</td>
+</tr>
+
+</tbody></table>
+</li>
+
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25225</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<ul>
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydia suis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydia suis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25224</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydia trachomatis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydia trachomatis</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25224</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Chlamydia muridarum</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:description
+</td>
+<td>A species of bacteria that causes mouse pneumonitis.</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Chlamydia muridarum</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25224</td>
+</tr>
+
+</tbody></table>
+</li>
+
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25225</td>
+</tr>
+
+</tbody></table>
+</li>
+
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25242</td>
+</tr>
+
+</tbody></table>
+</li>
+
+<li>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Waddliaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Waddliaceae</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/67210(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Waddlia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Waddlia</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://usda.gov/nalt/67211(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing rdfs:Resource schema:Class schema:Intangible</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Waddlia chondrophila</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Waddlia chondrophila</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/67210</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25246</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>http://usda.gov/nalt/25242</td>
+</tr>
+
+</tbody></table>
+</li>
+
+</ul>
+</td>
+</tr>
+</article>
+</main>
+
+</body>
+</html>
