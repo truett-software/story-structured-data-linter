@@ -1,8 +1,6 @@
 # Story - Structured Data Linter
 
-## Updated
-
-2023-11-02
+## Updated 2023-11-02
 
 new directory structure
 
