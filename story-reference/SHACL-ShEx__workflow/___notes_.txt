@@ -1,0 +1,24 @@
+
+Brickley
+https://github.com/schemaorg/schemaorg/pull/2771#event-4046605331
+
+Gregg
+https://github.com/structured-data/linter/issues/58
+
+Brickley
+https://github.com/google/schemarama/issues/9
+
+
+
+Ruby-ShEx
+https://github.com/ruby-rdf/shex
+
+
+ShEx Semantic Actions
+http://shex.io/shex-semantics/#semantic-actions
+
+
+INSTRUCTIONS
+https://github.com/ruby-rdf/shex#contributing
+
+

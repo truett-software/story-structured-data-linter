@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html amp="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<link rel="canonical" href="index.html">
+<title>
+Grid for SDL
+</title>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+
+<script  async src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script  async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script  async custom-element="amp-date-display" src="https://cdn.ampproject.org/v0/amp-date-display-0.1.js"></script>
+<script  async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+<script  async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script  async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One|Libre+Baskerville:700|Bungee+Shade">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700,300">
+
+<style amp-custom>
+
+@supports (display: grid) {
+  .support {
+    background: #058a6e;
+    right: 40px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: right 0.5s ease-in-out,
+      -webkit-transform 0.5s ease-in-out;
+    transition: right 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    transition: right 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: right 0.5s ease-in-out, transform 0.5s ease-in-out,
+      -webkit-transform 0.5s ease-in-out;
+  }
+  .support:hover {
+    right: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@supports (display: grid) {
+  .unsupported {
+    display: none;
+  }
+}
+@supports (display: grid) {
+  .supported {
+    display: block;
+  }
+}
+main {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(21vh, 1fr);
+}
+@media (min-width: 34em) {
+  main {
+    grid-template-columns: minmax(30%, 70ch) minmax(30%, 70ch) minmax(30%, 70ch);
+  }
+}
+main div:nth-of-type(1) {
+  background-color: #800f8a;
+  grid-column: 1;
+  grid-row: 1;
+}
+main div:nth-of-type(2) {
+  background-color: #750f8a;
+  grid-column: 2;
+}
+@media (min-width: 34em) {
+  main div:nth-of-type(2) {
+    grid-row: 1;
+  }
+}
+main div:nth-of-type(3) {
+  background-color: rgba(107, 15, 138, 0.6);
+}
+@media (min-width: 34em) {
+  main div:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+main div:nth-of-type(4) {
+  background-color: #610f8a;
+}
+main div:nth-of-type(5) {
+  background-color: #570f8a;
+}
+main div:nth-of-type(6) {
+  background-color: #4d0f8a;
+}
+body {
+  background-color: #fff;
+  color: #5e5c66;
+  font-family: "Nixie One", sans-serif;
+  line-height: 1;
+}
+main {
+  margin: 2vw 0;
+}
+main div {
+  color: #fff;
+  padding: 1rem;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h1 {
+  font-family: "Libre Baskerville";
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+h2 {
+  color: #595b5a;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+header {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+.slide > .inner-image-wrap > amp-img > img {
+  object-fit: contain;
+}
+img {
+  border-style: none;
+}
+button {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+[hidden],
+template {
+  display: none;
+}
+.h1 {
+  font-size: 3rem;
+}
+.h2 {
+  font-size: 2rem;
+}
+.h3 {
+  font-size: 1.5rem;
+}
+.h4 {
+  font-size: 1.125rem;
+}
+.h5 {
+  font-size: 0.875rem;
+}
+.h6 {
+  font-size: 0.75rem;
+}
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.m0 {
+  margin: 0;
+}
+.m1 {
+  margin: 0.5rem;
+}
+.m3 {
+  margin: 1.5rem;
+}
+.m4 {
+  margin: 2rem;
+}
+.p0 {
+  padding: 0;
+}
+.p1 {
+  padding: 0.5rem;
+}
+.p2 {
+  padding: 1rem;
+}
+.p3 {
+  padding: 1.5rem;
+}
+.p4 {
+  padding: 2rem;
+}
+.fixed {
+  position: fixed;
+}
+amp-image-lightbox {
+  background: #fff;
+}
+.m2 {
+  margin: 1.5rem;
+}
+.close-gallery-button {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
+.ampstart-btn {
+  white-space: nowrap;
+}
+.ampstart-btn,
+.ampstart-btn:visited {
+  color: #b60845;
+}
+.ampstart-btn {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  padding: 0.7em 0.8em;
+  text-decoration: none;
+  word-wrap: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #b60845;
+}
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+dt {
+  float: left;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+}
+dd {
+  line-height: 1.6rem;
+  float: left;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+[class*="fa-"]:before {
+  font-family: FontAwesome, sans-serif;
+}
+input {
+  display: none;
+}
+.pure-tree {
+  text-align: left;
+  display: block;
+}
+.pure-tree:not(.main-tree) {
+  padding-left: 1.2em;
+}
+.pure-tree:not(.main-tree) li {
+  overflow: hidden;
+  height: 0;
+  display: block;
+}
+.pure-tree label {
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px dashed #b0b9c5;
+  padding: 1.125em 1.125em 1.125em 0;
+}
+.pure-tree label:before {
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  display: inline-block;
+  font-family: FontAwesome, sans-serif;
+  content: "\f114";
+  padding-right: 0.75em;
+}
+.pure-tree label:hover {
+  border-bottom-color: #434a58;
+}
+.pure-tree .pure-tree_link a {
+  padding: 1.5em 1.125em 0.75em 0;
+  display: block;
+  border-radius: 0.2em;
+  color: #fff;
+  text-decoration: none;
+}
+.pure-tree [type="checkbox"] {
+  display: none;
+}
+.pure-tree [type="checkbox"]:checked + label {
+  border-bottom-color: #434a58;
+}
+.pure-tree [type="checkbox"]:checked ~ ul > li {
+  height: auto;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<h1>Structured Data Linter</h1>
+<h2>Rel-2.0 Design: CSS-grid with lightbox</h2>
+</header>
+
+<div>
+<p>
+<amp-date-display class="amp-Date" template="mst-Date-en-US" datetime="now" locale="en-US" layout="fixed" width="420" height="32"></amp-date-display>
+<template id="mst-Date-en-US" type="amp-mustache">
+{{dayName}}, {{monthName}} {{day}}, {{year}}: version-02
+</template>
+</p>
+</div>
+
+<main>
+
+<div id="upper-left">
+
+<button
+	on="tap:lightbox-1"
+	role="button"
+	tabindex="0"
+>
+HTML elements that contain structured data
+</button>
+
+<amp-image-lightbox
+	id="image-lightbox-1"
+	layout="nodisplay"
+>
+<button
+	class="ampstart-btn caps m2 close-gallery-button"
+	on="tap:image-lightbox-1.close"
+	role="button"
+	tabindex="0"
+>
+Close
+</button>
+</amp-image-lightbox>
+
+<amp-list
+	width="6"
+	height="9"
+	layout="responsive"
+	src="https://www.wikidata.org/wiki/Special:EntityData/Q161426.json"
+	class="m1"
+	items="entities.Q161426.claims.P18"
+>
+
+<template type="amp-mustache">
+
+<div class="slide">
+<span class="inner-image-wrap">
+
+<figure>
+
+<amp-img
+	src="https://upload.wikimedia.org/wikipedia/commons/e/ed/{{mainsnak.datavalue.value}}"
+	layout="responsive"
+	width="384"
+	height="512"
+	on="tap:image-lightbox-1"
+	role="button"
+	tabindex="0"
+	alt=""
+	title="Wikidata image"
+></amp-img>
+<br>
+<figcaption>Wheat from Wikidata</figcaption>
+</figure>
+</span>
+</div>
+
+</template>
+</amp-list>
+
+</div>
+
+<div id="upper-center">
+<button
+  on="tap:lightbox-2"
+  role="button"
+  tabindex="0"
+>
+d3.js Force Directed Graph
+</button>
+<p>
+for testing purposes, iFrame Web VOWL
+</p>
+</div>
+
+
+<div id="upper-right">
+<button
+  on="tap:lightbox-3"
+  role="button"
+  tabindex="0"
+>
+Hierarchical display of extracted data
+</button>
+
+<!-- scrollable -->
+<amp-lightbox
+	id="lightbox-3"
+	layout="nodisplay"
+  animate-in="fade-in"
+>
+<button
+	class="ampstart-btn caps m2 close-gallery-button"
+	on="tap:lightbox-3.close"
+	role="button"
+	tabindex="0"
+>
+Close
+</button>
+
+<ul id="compositions-list" class="pure-tree main-tree">
+<li>
+<input type="checkbox" id="trigger-views" checked="checked">
+<label for="trigger-views">views</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+<li>
+<input type="checkbox" id="trigger-layout">
+<label for="trigger-layout">layout</label>
+<ul class="pure-tree">
+<li>
+<input type="checkbox" id="trigger-base">
+<label for="trigger-base">base</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-footer">
+<label for="trigger-footer">footer</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-partials">
+<label for="trigger-partials">partials</label>
+<ul class="pure-tree">
+<li>
+<input type="checkbox" id="trigger-header">
+<label for="trigger-header">header</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-list">
+<label for="trigger-list">list</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-message">
+<label for="trigger-message">message</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-panel">
+<label for="trigger-panel">panel</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-prompt">
+<label for="trigger-prompt">prompt</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-sub-header">
+<label for="trigger-sub-header">sub-header</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-ui">
+<label for="trigger-ui">ui</label>
+<ul class="pure-tree">
+<li>
+<input type="checkbox" id="trigger-box-color">
+<label for="trigger-box-color">box-color</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-button">
+<label for="trigger-button">button</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-charts">
+<label for="trigger-charts">charts</label>
+<ul class="pure-tree">
+<li>
+<input type="checkbox" id="trigger-border">
+<label for="trigger-border">border</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-progress">
+<label for="trigger-progress">progress</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-check">
+<label for="trigger-check">check</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-dropdown">
+<label for="trigger-dropdown">dropdown</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-input">
+<label for="trigger-input">input</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-radio">
+<label for="trigger-radio">radio</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-rating-stars">
+<label for="trigger-rating-stars">rating-stars</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-textarea">
+<label for="trigger-textarea">textarea</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-toggle">
+<label for="trigger-toggle">toggle</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</amp-lightbox>
+
+<ul id="compositions-list" class="pure-tree main-tree">
+<li>
+<input type="checkbox" id="trigger-views" checked="checked">
+<label for="trigger-views">views</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+<li>
+<input type="checkbox" id="trigger-layout">
+<label for="trigger-layout">layout</label>
+<ul class="pure-tree">
+<li>
+<input type="checkbox" id="trigger-base">
+<label for="trigger-base">base</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+<li>
+<input type="checkbox" id="trigger-footer">
+<label for="trigger-footer">footer</label>
+<ul class="pure-tree">
+<li class="pure-tree_link"><a href="" title="index.jade" target="_blank">index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<div id="lower-left">
+<button
+  on="tap:lightbox-4"
+  role="button"
+  tabindex="0"
+>
+Parser statistics
+</button>
+</div>
+
+<div id="lower-center">
+<button
+  on="tap:lightbox-5"
+  role="button"
+  tabindex="0"
+>
+Snippets
+</button>
+</div>
+
+<div id="lower-right">
+
+<button
+  on="tap:lightbox-6"
+  role="button"
+  tabindex="0"
+>
+Warnings and errors
+</button>
+
+<amp-lightbox
+	id="lightbox-6"
+	layout="nodisplay"
+  animate-in="fade-in"
+>
+<button
+	class="ampstart-btn caps m2 close-gallery-button"
+	on="tap:lightbox-6.close"
+	role="button"
+	tabindex="0"
+>
+Close
+</button>
+<dl>
+  <dt>Mercury</dt>
+  <dd>Mercury (0.4 AU from the Sun) is the closest planet to the Sun and the smallest planet.</dd>
+  <dt>Venus</dt>
+  <dd>Venus (0.7 AU) is close in size to Earth, (0.815 Earth masses) and like Earth, has a thick silicate mantle around an iron core.</dd>
+  <dt>Earth</dt>
+  <dd>Earth (1 AU) is the largest and densest of the inner planets, the only one known to have current geological activity.</dd>
+  <dt>Mars</dt>
+  <dd>Mars details.</dd>
+  <dt>Jupiter</dt>
+  <dd>Jupiter details.</dd>
+  <dt>Saturn</dt>
+  <dd>Saturn details.</dd>
+  <dt>Neptune</dt>
+  <dd>Neptune details.</dd>
+  <dt>Uranus</dt>
+  <dd>Uranus details.</dd>
+</dl>
+</amp-lightbox>
+<dl>
+  <dt>Mercury</dt>
+  <dd>Mercury (0.4 AU from the Sun) is the closest planet to the Sun and the smallest planet.</dd>
+  <dt>Venus</dt>
+  <dd>Venus (0.7 AU) is close in size to Earth, (0.815 Earth masses) and like Earth, has a thick silicate mantle around an iron core.</dd>
+  <dt>Earth</dt>
+  <dd>Earth (1 AU) is the largest and densest of the inner planets, the only one known to have current geological activity.</dd>
+</dl>
+</div>
+
+</main>
+
+</body>
+</html>

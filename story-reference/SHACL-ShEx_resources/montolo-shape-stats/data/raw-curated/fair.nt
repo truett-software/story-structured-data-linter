@@ -1,0 +1,217 @@
+<http://example.com/metadata#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/metadata#Catalog> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Catalog> .
+_:n3-78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.com/metadata#Metadata> .
+_:n3-78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-79 .
+_:n3-79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-80 .
+_:n3-80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-80 <http://www.w3.org/ns/shacl#name> "Theme taxonomy" .
+_:n3-80 <http://www.w3.org/ns/shacl#description> "Resource for the dataset themes" .
+_:n3-80 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#themeTaxonomy> .
+_:n3-80 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-80 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-80 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-80 <http://www.w3.org/ns/shacl#order> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-80 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#CatalogGroup> .
+_:n3-79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-81 .
+_:n3-81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-82 .
+_:n3-82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-82 <http://www.w3.org/ns/shacl#name> "Dataset" .
+_:n3-82 <http://www.w3.org/ns/shacl#description> "Dataset metadata contained by the catalog" .
+_:n3-82 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#dataset> .
+_:n3-82 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-82 <http://www.w3.org/ns/shacl#order> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-82 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#CatalogGroup> .
+_:n3-81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://example.com/metadata#Catalog> <http://www.w3.org/ns/shacl#and> _:n3-78 .
+<http://example.com/metadata#CatalogGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://example.com/metadata#CatalogGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Catalog metadata" .
+<http://example.com/metadata#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/metadata#Dataset> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Dataset> .
+_:n3-681 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.com/metadata#Metadata> .
+_:n3-681 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-682 .
+_:n3-682 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-683 .
+_:n3-683 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-683 <http://www.w3.org/ns/shacl#name> "Theme" .
+_:n3-683 <http://www.w3.org/ns/shacl#description> "Machine readable concepts that describe the metadata" .
+_:n3-683 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#theme> .
+_:n3-683 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-683 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-683 <http://www.w3.org/ns/shacl#order> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-683 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DatasetGroup> .
+_:n3-682 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-684 .
+_:n3-684 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-685 .
+_:n3-685 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-685 <http://www.w3.org/ns/shacl#name> "Keyword" .
+_:n3-685 <http://www.w3.org/ns/shacl#description> "Human readable keywords that describe the metadata" .
+_:n3-685 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#keyword> .
+_:n3-685 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-685 <http://www.w3.org/ns/shacl#order> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-685 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DatasetGroup> .
+_:n3-684 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-686 .
+_:n3-686 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-687 .
+_:n3-687 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-687 <http://www.w3.org/ns/shacl#name> "Contact point" .
+_:n3-687 <http://www.w3.org/ns/shacl#description> "Main contact point for the dataset" .
+_:n3-687 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#contactPoint> .
+_:n3-687 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-687 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-687 <http://www.w3.org/ns/shacl#order> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-687 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DatasetGroup> .
+_:n3-686 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-688 .
+_:n3-688 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-689 .
+_:n3-689 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-689 <http://www.w3.org/ns/shacl#name> "Landing page" .
+_:n3-689 <http://www.w3.org/ns/shacl#description> "Landing page of the website for the dataset" .
+_:n3-689 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#landingPage> .
+_:n3-689 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-689 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-689 <http://www.w3.org/ns/shacl#order> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-689 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DatasetGroup> .
+_:n3-688 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-690 .
+_:n3-690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-691 .
+_:n3-691 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-691 <http://www.w3.org/ns/shacl#name> "Distribution" .
+_:n3-691 <http://www.w3.org/ns/shacl#description> "Distribution metadata contained by the dataset" .
+_:n3-691 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#distribution> .
+_:n3-691 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-691 <http://www.w3.org/ns/shacl#order> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-691 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DatasetGroup> .
+_:n3-690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://example.com/metadata#Dataset> <http://www.w3.org/ns/shacl#and> _:n3-681 .
+<http://example.com/metadata#DatasetGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://example.com/metadata#DatasetGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset metadata" .
+<http://example.com/metadata#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/metadata#Distribution> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Distribution> .
+_:n3-812 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.com/metadata#Metadata> .
+_:n3-812 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-813 .
+_:n3-813 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-814 .
+_:n3-814 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-816 .
+_:n3-816 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL> .
+_:n3-816 <http://www.w3.org/ns/shacl#name> "Access URL" .
+_:n3-816 <http://www.w3.org/ns/shacl#description> "URL for the landing page of the distribution" .
+_:n3-815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-817 .
+_:n3-817 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-818 .
+_:n3-818 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL> .
+_:n3-818 <http://www.w3.org/ns/shacl#name> "Download URL" .
+_:n3-818 <http://www.w3.org/ns/shacl#description> "URL for the download location of the binary distribution" .
+_:n3-817 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-814 <http://www.w3.org/ns/shacl#or> _:n3-815 .
+_:n3-814 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-814 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-814 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-814 <http://www.w3.org/ns/shacl#order> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-814 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DistributionGroup> .
+_:n3-813 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-819 .
+_:n3-819 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-820 .
+_:n3-820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-820 <http://www.w3.org/ns/shacl#name> "Media type" .
+_:n3-820 <http://www.w3.org/ns/shacl#description> "The media type of the distribution" .
+_:n3-820 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType> .
+_:n3-820 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-820 <http://www.w3.org/ns/shacl#pattern> "\\S+?\\/(?:\\S+|\\*)" .
+_:n3-820 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-820 <http://www.w3.org/ns/shacl#MaxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-820 <http://www.w3.org/ns/shacl#order> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-820 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DistributionGroup> .
+_:n3-819 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-821 .
+_:n3-821 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-822 .
+_:n3-822 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-822 <http://www.w3.org/ns/shacl#name> "Format" .
+_:n3-822 <http://www.w3.org/ns/shacl#description> "The file format of the distribution" .
+_:n3-822 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#format> .
+_:n3-822 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-822 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-822 <http://www.w3.org/ns/shacl#order> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-822 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DistributionGroup> .
+_:n3-821 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-823 .
+_:n3-823 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-824 .
+_:n3-824 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-824 <http://www.w3.org/ns/shacl#name> "Byte size" .
+_:n3-824 <http://www.w3.org/ns/shacl#description> "Size of the distribution in bytes" .
+_:n3-824 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#byteSize> .
+_:n3-824 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:n3-824 <http://www.w3.org/ns/shacl#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-824 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-824 <http://www.w3.org/ns/shacl#order> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-824 <http://www.w3.org/ns/shacl#group> <http://example.com/metadata#DistributionGroup> .
+_:n3-823 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://example.com/metadata#Distribution> <http://www.w3.org/ns/shacl#and> _:n3-812 .
+<http://example.com/metadata#DistributionGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://example.com/metadata#DistributionGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution metadata" .
+<http://example.com/metadata#Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-969 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-969 <http://www.w3.org/ns/shacl#name> "Title" .
+_:n3-969 <http://www.w3.org/ns/shacl#description> "Human readable title for the metadata" .
+_:n3-969 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+_:n3-969 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-969 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-969 <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-969 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-969 .
+_:n3-970 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-970 <http://www.w3.org/ns/shacl#name> "Issued" .
+_:n3-970 <http://www.w3.org/ns/shacl#description> "Timestamp for the initial creation date" .
+_:n3-970 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued> .
+_:n3-970 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:n3-970 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-970 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-970 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-970 .
+_:n3-971 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-971 <http://www.w3.org/ns/shacl#name> "Modified" .
+_:n3-971 <http://www.w3.org/ns/shacl#description> "Timestamp for the last modification date" .
+_:n3-971 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/modified> .
+_:n3-971 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:n3-971 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-971 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-971 <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-971 .
+_:n3-972 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-972 <http://www.w3.org/ns/shacl#name> "Version" .
+_:n3-972 <http://www.w3.org/ns/shacl#description> "Version string" .
+_:n3-972 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/version> .
+_:n3-972 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-972 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-972 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-972 <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-972 .
+_:n3-973 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-973 <http://www.w3.org/ns/shacl#name> "Description" .
+_:n3-973 <http://www.w3.org/ns/shacl#description> "Human readable description of the metadata" .
+_:n3-973 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description> .
+_:n3-973 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-973 <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-973 <http://www.w3.org/ns/shacl#order> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-973 .
+_:n3-974 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-974 <http://www.w3.org/ns/shacl#name> "Publisher" .
+_:n3-974 <http://www.w3.org/ns/shacl#description> "Entity responsible for the publising of the metadata" .
+_:n3-974 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher> .
+_:n3-974 <http://www.w3.org/ns/shacl#node> <http://example.com/metadata#Publisher> .
+_:n3-974 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-974 <http://www.w3.org/ns/shacl#order> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-974 .
+_:n3-975 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-975 <http://www.w3.org/ns/shacl#name> "Language" .
+_:n3-975 <http://www.w3.org/ns/shacl#description> "Language of the metadata content" .
+_:n3-975 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language> .
+_:n3-975 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-975 <http://www.w3.org/ns/shacl#order> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-975 .
+_:n3-976 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-976 <http://www.w3.org/ns/shacl#name> "License" .
+_:n3-976 <http://www.w3.org/ns/shacl#description> "License document of the metadata" .
+_:n3-976 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license> .
+_:n3-976 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-976 <http://www.w3.org/ns/shacl#order> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Metadata> <http://www.w3.org/ns/shacl#property> _:n3-976 .
+<http://example.com/metadata#Publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/metadata#Publisher> <http://www.w3.org/ns/shacl#targetClass> <http://xmlns.com/foaf/0.1/Agent> .
+_:n3-977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-977 <http://www.w3.org/ns/shacl#name> "Publisher name" .
+_:n3-977 <http://www.w3.org/ns/shacl#description> "Name of the publishing agent" .
+_:n3-977 <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/name> .
+_:n3-977 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-977 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/metadata#Publisher> <http://www.w3.org/ns/shacl#property> _:n3-977 .

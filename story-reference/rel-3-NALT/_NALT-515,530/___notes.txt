@@ -1,0 +1,17 @@
+
+total
+515,530
+
+subset:
+index__v4-subset
+
+uses:
+
+.extracted-content table {
+  border-collapse:collapse;
+  overflow-x:auto;
+  display:block;
+  font-size: 0.9em;
+  font-family: "Fira Mono";
+}
+

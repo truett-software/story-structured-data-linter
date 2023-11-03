@@ -1,0 +1,11 @@
+[
+
+  {
+    "url": "http://datashapes.org/schema.ttl",
+    "title": "SHACL version of schema.org",
+    "description": "Schema.org (converted to SHACL by TopQuadrant)",
+    "type": "file-url",
+    "file-type": "turtle",
+    "prefix": "schemash"
+  }
+]

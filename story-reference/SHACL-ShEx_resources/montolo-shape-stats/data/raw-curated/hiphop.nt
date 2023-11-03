@@ -1,0 +1,1798 @@
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <file:///bibliotek-o_shapes_audio/target-ontologies-renamed-for-TopBraid/dcterms.2012-06-14.rdf> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <file:///bibliotek-o_shapes_audio/target-ontologies-renamed-for-TopBraid/foaf-0.1.rdf> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <file:///bibliotek-o_shapes_audio/target-ontologies-renamed-for-TopBraid/oa.2016-11-12.rdf> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <file:///bibliotek-o_shapes_audio/target-ontologies-renamed-for-TopBraid/schema.rdf> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes_audio/target-ontologies-renamed-for-TopBraid/dcelements.2012-06-04.ttl> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes_audio/target-ontologies-renamed-for-TopBraid/dcmitype.2012-06-14.ttl> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://bibliotek-o.org/ontology/> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://id.loc.gov/ontologies/bibframe/> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://rdaregistry.info/Elements/u/> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://vivoweb.org/ontology/core> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://www.lingvoj.org/ontology> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/shacl#> .
+<http://bibliotek-o.org/shapes/audio/> <http://www.w3.org/2002/07/owl#versionInfo> "Created with TopBraid Composer" .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/2000/01/rdf-schema#label> "Audio form" .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-176 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/genreForm> .
+_:n3-176 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-176 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> .
+_:n3-176 <http://www.w3.org/ns/shacl#name> "Form Genre" .
+_:n3-176 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-176 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-176 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-176 .
+_:n3-177 <http://www.w3.org/ns/shacl#path> <bf:genreForm/madsrdf:isMemberOfMADSScheme> .
+_:n3-177 <http://www.w3.org/ns/shacl#hasValue> <http://id.loc.gov/authorities/genreForms> .
+_:n3-177 <http://www.w3.org/ns/shacl#description> "Values for form genre terms" .
+_:n3-177 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> .
+_:n3-177 <http://www.w3.org/ns/shacl#name> "LCGFT Form Genre Terms" .
+_:n3-177 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-177 <http://www.w3.org/2004/02/skos/core#editorialNote> "Use look up service; LCGFT is too big to load directly into an RDF editor, and more importantly we don't want to create MADSAuthorities, only link to them." .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-177 .
+_:n3-178 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasPreferredTitle> .
+_:n3-178 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-178 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> .
+_:n3-178 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-178 <http://www.w3.org/ns/shacl#description> "For audio works there can be only one preferred title per language." .
+_:n3-178 <http://www.w3.org/ns/shacl#name> "Preferred title" .
+_:n3-178 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-178 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-178 .
+_:n3-179 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/title> .
+_:n3-179 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-179 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-179 <http://www.w3.org/ns/shacl#description> "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." .
+_:n3-179 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> .
+_:n3-179 <http://www.w3.org/ns/shacl#name> "Other title" .
+_:n3-179 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-179 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-179 .
+_:n3-180 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasActivity> .
+_:n3-180 <http://www.w3.org/ns/shacl#name> "Agent activity or role" .
+_:n3-180 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-180 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkActivityPropertyGroup> .
+_:n3-180 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-180 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/Activity> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-180 .
+_:n3-181 <http://www.w3.org/ns/shacl#path> <http://schema.org/recordedAt> .
+_:n3-181 <http://www.w3.org/ns/shacl#description> "An event (a performance, concert, audition, etc.) wholly or partially captured by the work." .
+_:n3-181 <http://www.w3.org/ns/shacl#name> "Recorded Event" .
+_:n3-181 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-181 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkActivityPropertyGroup> .
+_:n3-181 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+_:n3-181 <http://www.w3.org/2004/02/skos/core#editorialNote> "Use look up service; though FAST has some events, catalogers will have to create most events because libraries traditionally haven't created many Event authorities." .
+_:n3-181 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Event> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-181 .
+_:n3-182 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/subject> .
+_:n3-182 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> .
+_:n3-182 <http://www.w3.org/ns/shacl#name> "Subject" .
+_:n3-182 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-184 .
+_:n3-184 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-185 .
+_:n3-185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-186 .
+_:n3-186 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Instance> .
+_:n3-185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-187 .
+_:n3-187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-188 .
+_:n3-188 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Item> .
+_:n3-187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-189 .
+_:n3-189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-190 .
+_:n3-190 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Temporal> .
+_:n3-189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-191 .
+_:n3-191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-192 .
+_:n3-192 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+_:n3-191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-193 .
+_:n3-193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-194 .
+_:n3-194 <http://www.w3.org/ns/shacl#class> <http://www.lingvoj.org/ontology/Lingvo> .
+_:n3-193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-195 .
+_:n3-195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-196 .
+_:n3-196 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-197 .
+_:n3-197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-198 .
+_:n3-198 <http://www.w3.org/ns/shacl#class> <http://www.geonames.org/ontology/Feature> .
+_:n3-197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-199 .
+_:n3-199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-200 .
+_:n3-200 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Event> .
+_:n3-199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-182 <http://www.w3.org/ns/shacl#or> _:n3-183 .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-182 .
+_:n3-201 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/covers> .
+_:n3-201 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Temporal> .
+_:n3-201 <http://www.w3.org/ns/shacl#description> "Specifies a time period covered in the content of this resource, e.g. the decade a dataset covers, a map depicts boundaries from a given period." .
+_:n3-201 <http://www.w3.org/ns/shacl#name> "Time period covered" .
+_:n3-201 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> .
+_:n3-201 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-201 .
+_:n3-202 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/covers> .
+_:n3-202 <http://www.w3.org/ns/shacl#class> <http://www.geonames.org/ontology/Feature> .
+_:n3-202 <http://www.w3.org/ns/shacl#description> "Specifies a location covered in the content of this resource, e.g. the geographic region a dataset covers, a map depicts a specific location." .
+_:n3-202 <http://www.w3.org/ns/shacl#name> "Location covered" .
+_:n3-202 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> .
+_:n3-202 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-202 .
+_:n3-203 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isSubjectOf> .
+_:n3-203 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-203 <http://www.w3.org/ns/shacl#description> "Specifies other works that this work is the subject of" .
+_:n3-203 <http://www.w3.org/ns/shacl#name> "Is subject of" .
+_:n3-203 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> .
+_:n3-203 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-203 .
+_:n3-204 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60242> .
+_:n3-204 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-204 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkToWorkPropertyGroup> .
+_:n3-204 <http://www.w3.org/ns/shacl#name> "Is arrangement of" .
+_:n3-204 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-204 .
+_:n3-205 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60274> .
+_:n3-205 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-205 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkToWorkPropertyGroup> .
+_:n3-205 <http://www.w3.org/ns/shacl#name> "Is arranged as" .
+_:n3-205 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-205 .
+_:n3-206 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/hasPart> .
+_:n3-206 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-206 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-206 <http://www.w3.org/ns/shacl#name> "Content listing (track listing)" .
+_:n3-206 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-206 .
+_:n3-207 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/isPartOf> .
+_:n3-207 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-207 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-207 <http://www.w3.org/ns/shacl#name> "Is part of" .
+_:n3-207 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-207 .
+_:n3-208 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/hasExpression> .
+_:n3-208 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-208 <http://www.w3.org/ns/shacl#description> "Work that is an expression of a described Work. For use to relate Works under FRBR/RDA rules." .
+_:n3-208 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-208 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-208 .
+_:n3-209 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/referencedBy> .
+_:n3-209 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-209 <http://www.w3.org/ns/shacl#description> "Resource that references the described resource" .
+_:n3-209 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-209 <http://www.w3.org/ns/shacl#name> "Referenced by" .
+_:n3-209 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-209 .
+_:n3-210 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/references> .
+_:n3-210 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-210 <http://www.w3.org/ns/shacl#description> "Resource that is referenced by the described resource." .
+_:n3-210 <http://www.w3.org/ns/shacl#name> "References" .
+_:n3-210 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-210 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-210 .
+_:n3-211 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60088> .
+_:n3-211 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-211 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-211 <http://www.w3.org/ns/shacl#name> "Is dramatized as" .
+_:n3-211 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-211 .
+_:n3-212 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60102> .
+_:n3-212 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-212 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-212 <http://www.w3.org/ns/shacl#name> "Is sequel" .
+_:n3-212 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-212 .
+_:n3-213 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60104> .
+_:n3-213 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-213 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-213 <http://www.w3.org/ns/shacl#name> "Is replaced by" .
+_:n3-213 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-213 .
+_:n3-214 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60106> .
+_:n3-214 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Text> .
+_:n3-214 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-214 <http://www.w3.org/ns/shacl#name> "Is adapted in verse as" .
+_:n3-214 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-214 .
+_:n3-215 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60110> .
+_:n3-215 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/MovingImage> .
+_:n3-215 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-215 <http://www.w3.org/ns/shacl#name> "Is adapted as motion picture" .
+_:n3-215 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-215 .
+_:n3-216 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60138> .
+_:n3-216 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Text> .
+_:n3-216 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-216 <http://www.w3.org/ns/shacl#name> "Is adapted as novel" .
+_:n3-216 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-216 .
+_:n3-217 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60177> .
+_:n3-217 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-217 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-217 <http://www.w3.org/ns/shacl#name> "Is abstracted in" .
+_:n3-217 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-217 .
+_:n3-218 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60178> .
+_:n3-218 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Text> .
+_:n3-218 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-218 <http://www.w3.org/ns/shacl#name> "Is indexed in" .
+_:n3-218 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-218 .
+_:n3-219 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60180> .
+_:n3-219 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/NotetatedMovement> .
+_:n3-219 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-219 <http://www.w3.org/ns/shacl#name> "Is adapted as choreography" .
+_:n3-219 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-219 .
+_:n3-220 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60185> .
+_:n3-220 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Text> .
+_:n3-220 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-220 <http://www.w3.org/ns/shacl#name> "Is adapted as screenplay" .
+_:n3-220 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-220 .
+_:n3-221 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60188> .
+_:n3-221 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Text> .
+_:n3-221 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-221 <http://www.w3.org/ns/shacl#name> "Is adapted as radio script" .
+_:n3-221 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-221 .
+_:n3-222 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60189> .
+_:n3-222 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-222 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-222 <http://www.w3.org/ns/shacl#name> "Is freely translated as" .
+_:n3-222 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-222 .
+_:n3-223 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60199> .
+_:n3-223 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-223 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-223 <http://www.w3.org/ns/shacl#name> "Is continued in part by" .
+_:n3-223 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-223 .
+_:n3-224 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60203> .
+_:n3-224 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-224 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-224 <http://www.w3.org/ns/shacl#name> "Is abstracted as" .
+_:n3-224 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-224 .
+_:n3-225 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60205> .
+_:n3-225 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-225 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-225 <http://www.w3.org/ns/shacl#name> "Is summarized as" .
+_:n3-225 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-225 .
+_:n3-226 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60214> .
+_:n3-226 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-226 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-226 <http://www.w3.org/ns/shacl#name> "Is imitated as" .
+_:n3-226 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-226 .
+_:n3-227 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60216> .
+_:n3-227 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-227 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-227 <http://www.w3.org/ns/shacl#name> "Is expanded as" .
+_:n3-227 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-227 .
+_:n3-228 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60220> .
+_:n3-228 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-228 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-228 <http://www.w3.org/ns/shacl#name> "Has prequel" .
+_:n3-228 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-228 .
+_:n3-229 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60224> .
+_:n3-229 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-229 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-229 <http://www.w3.org/ns/shacl#name> "Is abstract of" .
+_:n3-229 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-229 .
+_:n3-230 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60225> .
+_:n3-230 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-230 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-230 <http://www.w3.org/ns/shacl#name> "Is dramatization of" .
+_:n3-230 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-230 .
+_:n3-231 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60238> .
+_:n3-231 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-231 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-231 <http://www.w3.org/ns/shacl#name> "Is digest of" .
+_:n3-231 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-231 .
+_:n3-232 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60241> .
+_:n3-232 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-232 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-232 <http://www.w3.org/ns/shacl#name> "Is adaptation of" .
+_:n3-232 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-232 .
+_:n3-233 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60243> .
+_:n3-233 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-233 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-233 <http://www.w3.org/ns/shacl#name> "Is free translation of" .
+_:n3-233 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-233 .
+_:n3-234 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60244> .
+_:n3-234 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-234 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-234 <http://www.w3.org/ns/shacl#name> "Is translation of" .
+_:n3-234 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-234 .
+_:n3-235 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60245> .
+_:n3-235 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-235 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-235 <http://www.w3.org/ns/shacl#name> "Is revised as" .
+_:n3-235 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-235 .
+_:n3-236 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60246> .
+_:n3-236 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-236 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-236 <http://www.w3.org/ns/shacl#name> "Is parodied as" .
+_:n3-236 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-236 .
+_:n3-237 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60247> .
+_:n3-237 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-237 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-237 <http://www.w3.org/ns/shacl#name> "Is absorbed by" .
+_:n3-237 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-237 .
+_:n3-238 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60248> .
+_:n3-238 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-238 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-238 <http://www.w3.org/ns/shacl#name> "Is absorbed in part by" .
+_:n3-238 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-238 .
+_:n3-239 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60250> .
+_:n3-239 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-239 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-239 <http://www.w3.org/ns/shacl#name> "Is derivative" .
+_:n3-239 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-239 .
+_:n3-240 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60260> .
+_:n3-240 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-240 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-240 <http://www.w3.org/ns/shacl#name> "Is adapted as" .
+_:n3-240 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-240 .
+_:n3-241 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60275> .
+_:n3-241 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-241 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-241 <http://www.w3.org/ns/shacl#name> "Is abridged as" .
+_:n3-241 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-241 .
+_:n3-242 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60276> .
+_:n3-242 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-242 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-242 <http://www.w3.org/ns/shacl#name> "Is continuation in part of" .
+_:n3-242 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-242 .
+_:n3-243 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60277> .
+_:n3-243 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-243 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-243 <http://www.w3.org/ns/shacl#name> "Is separated from" .
+_:n3-243 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-243 .
+_:n3-244 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60278> .
+_:n3-244 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-244 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-244 <http://www.w3.org/ns/shacl#name> "Is succeeded by" .
+_:n3-244 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-244 .
+_:n3-245 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60279> .
+_:n3-245 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-245 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-245 <http://www.w3.org/ns/shacl#name> "Is digested as" .
+_:n3-245 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-245 .
+_:n3-246 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60280> .
+_:n3-246 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-246 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-246 <http://www.w3.org/ns/shacl#name> "Is translated as" .
+_:n3-246 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-246 .
+_:n3-247 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60289> .
+_:n3-247 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-247 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-247 <http://www.w3.org/ns/shacl#name> "Is summary of" .
+_:n3-247 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-247 .
+_:n3-248 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60293> .
+_:n3-248 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/NotatedMovement> .
+_:n3-248 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-248 <http://www.w3.org/ns/shacl#name> "Is choreographic adaptation of" .
+_:n3-248 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-248 .
+_:n3-249 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60295> .
+_:n3-249 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-249 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-249 <http://www.w3.org/ns/shacl#name> "Is remake of" .
+_:n3-249 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-249 .
+_:n3-250 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60296> .
+_:n3-250 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-250 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-250 <http://www.w3.org/ns/shacl#name> "Is paraphrase of" .
+_:n3-250 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-250 .
+_:n3-251 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60303> .
+_:n3-251 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-251 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-251 <http://www.w3.org/ns/shacl#name> "Is revision of" .
+_:n3-251 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-251 .
+_:n3-252 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60305> .
+_:n3-252 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-252 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-252 <http://www.w3.org/ns/shacl#name> "Is based on" .
+_:n3-252 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-252 .
+_:n3-253 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60306> .
+_:n3-253 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-253 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-253 <http://www.w3.org/ns/shacl#name> "Is continued by" .
+_:n3-253 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-253 .
+_:n3-254 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60308> .
+_:n3-254 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-254 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-254 <http://www.w3.org/ns/shacl#name> "Is abstracts for" .
+_:n3-254 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-254 .
+_:n3-255 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60309> .
+_:n3-255 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-255 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-255 <http://www.w3.org/ns/shacl#name> "Is indexing for" .
+_:n3-255 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-255 .
+_:n3-256 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60310> .
+_:n3-256 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-256 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-256 <http://www.w3.org/ns/shacl#name> "Is prequel to" .
+_:n3-256 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-256 .
+_:n3-257 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60311> .
+_:n3-257 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-257 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-257 <http://www.w3.org/ns/shacl#name> "Is imitation of" .
+_:n3-257 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-257 .
+_:n3-258 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60312> .
+_:n3-258 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-258 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-258 <http://www.w3.org/ns/shacl#name> "Is parody of" .
+_:n3-258 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-258 .
+_:n3-259 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60354> .
+_:n3-259 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/MovingImage> .
+_:n3-259 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-259 <http://www.w3.org/ns/shacl#name> "Is adapted as television program" .
+_:n3-259 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-259 .
+_:n3-260 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60361> .
+_:n3-260 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/MovingImage> .
+_:n3-260 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-260 <http://www.w3.org/ns/shacl#name> "Is adapted as video" .
+_:n3-260 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-260 .
+_:n3-261 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60480> .
+_:n3-261 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-261 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-261 <http://www.w3.org/ns/shacl#name> "Is replacement of" .
+_:n3-261 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-261 .
+_:n3-262 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60503> .
+_:n3-262 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-262 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-262 <http://www.w3.org/ns/shacl#name> "Is split into" .
+_:n3-262 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-262 .
+_:n3-263 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60504> .
+_:n3-263 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-263 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-263 <http://www.w3.org/ns/shacl#name> "Iss merged to form" .
+_:n3-263 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-263 .
+_:n3-264 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60505> .
+_:n3-264 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-264 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-264 <http://www.w3.org/ns/shacl#name> "Is merger of" .
+_:n3-264 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-264 .
+_:n3-265 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60574> .
+_:n3-265 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-265 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-265 <http://www.w3.org/ns/shacl#name> "Is absorption of" .
+_:n3-265 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-265 .
+_:n3-266 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60575> .
+_:n3-266 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-266 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-266 <http://www.w3.org/ns/shacl#name> "Is absorption in part of" .
+_:n3-266 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-266 .
+_:n3-267 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60576> .
+_:n3-267 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-267 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-267 <http://www.w3.org/ns/shacl#name> "Is continuation of" .
+_:n3-267 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-267 .
+_:n3-268 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60577> .
+_:n3-268 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-268 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-268 <http://www.w3.org/ns/shacl#name> "Is sequel to" .
+_:n3-268 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-268 .
+_:n3-269 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60743> .
+_:n3-269 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-269 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-269 <http://www.w3.org/ns/shacl#name> "Is graphic novelization of" .
+_:n3-269 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-269 .
+_:n3-270 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60831> .
+_:n3-270 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/NotatedMusic> .
+_:n3-270 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-270 <http://www.w3.org/ns/shacl#name> "Is adapted as oratorio" .
+_:n3-270 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-270 .
+_:n3-271 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60832> .
+_:n3-271 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-271 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-271 <http://www.w3.org/ns/shacl#name> "Is inspired by" .
+_:n3-271 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-271 .
+_:n3-272 <http://www.w3.org/ns/shacl#path> <http://rdaregistry.info/Elements/u/P60833> .
+_:n3-272 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-272 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-272 <http://www.w3.org/ns/shacl#name> "Is inspiration for" .
+_:n3-272 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-272 .
+_:n3-273 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/dataSource> .
+_:n3-273 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Dataset> .
+_:n3-273 <http://www.w3.org/ns/shacl#description> "Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures." .
+_:n3-273 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-273 <http://www.w3.org/ns/shacl#name> "Data source" .
+_:n3-273 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-273 .
+_:n3-274 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/hasInstance> .
+_:n3-274 <http://www.w3.org/ns/shacl#name> "Physical Instance or Manifestation" .
+_:n3-274 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-274 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToInstancePropertyGroup> .
+_:n3-274 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-276 .
+_:n3-276 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudioDisc> .
+_:n3-275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-277 .
+_:n3-277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-278 .
+_:n3-278 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudioRoll> .
+_:n3-277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-279 .
+_:n3-279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-280 .
+_:n3-280 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudioCassette> .
+_:n3-279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-281 .
+_:n3-281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-282 .
+_:n3-282 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudioBelt> .
+_:n3-281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-283 .
+_:n3-283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-284 .
+_:n3-284 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudioCylinder> .
+_:n3-283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-285 .
+_:n3-285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-286 .
+_:n3-286 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudioWireReel> .
+_:n3-285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-287 .
+_:n3-287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-288 .
+_:n3-288 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/AudiotapeReel> .
+_:n3-287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-289 .
+_:n3-289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-290 .
+_:n3-290 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/Cassette> .
+_:n3-289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-291 .
+_:n3-291 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-292 .
+_:n3-292 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/SoundTrackReel> .
+_:n3-291 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-293 .
+_:n3-293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-294 .
+_:n3-294 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/ComputerTapeReel> .
+_:n3-293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-295 .
+_:n3-295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-296 .
+_:n3-296 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/Disc> .
+_:n3-295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-297 .
+_:n3-297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-298 .
+_:n3-298 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/Reel> .
+_:n3-297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-274 <http://www.w3.org/ns/shacl#or> _:n3-275 .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-274 .
+_:n3-299 <http://www.w3.org/ns/shacl#path> <http://schema.org/duration> .
+_:n3-299 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+_:n3-299 <http://www.w3.org/ns/shacl#name> "Duration of audio work" .
+_:n3-299 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-299 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-299 <http://www.w3.org/2004/02/skos/core#editorialNote> "The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format." .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-299 .
+_:n3-300 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/accompaniedBy> .
+_:n3-300 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-300 <http://www.w3.org/ns/shacl#description> "Resource that accompanies the described resource." .
+_:n3-300 <http://www.w3.org/ns/shacl#name> "Accompanied by" .
+_:n3-300 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+_:n3-300 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-300 .
+_:n3-301 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/accompanies> .
+_:n3-301 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:n3-301 <http://www.w3.org/ns/shacl#description> "Resource that adds to or is issued with the described resource." .
+_:n3-301 <http://www.w3.org/ns/shacl#name> "Accompanies" .
+_:n3-301 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+_:n3-301 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-301 .
+_:n3-302 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/awards> .
+_:n3-302 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-302 <http://www.w3.org/ns/shacl#description> "Information on awards associated with the described resource." .
+_:n3-302 <http://www.w3.org/ns/shacl#name> "awards" .
+_:n3-302 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-302 .
+_:n3-303 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/contentAccessibility> .
+_:n3-303 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/ContentAccessibility> .
+_:n3-303 <http://www.w3.org/ns/shacl#description> "Information that assists those with a sensory impairment for greater understanding of content, e.g., captions." .
+_:n3-303 <http://www.w3.org/ns/shacl#name> "Content accessibility" .
+_:n3-303 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-303 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-303 .
+_:n3-304 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/note> .
+_:n3-304 <http://www.w3.org/ns/shacl#description> "Work related notes for when more granualar information isn't captured." .
+_:n3-304 <http://www.w3.org/ns/shacl#name> "Work notes" .
+_:n3-304 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-304 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+_:n3-305 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-306 .
+_:n3-306 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/ContentsNote> .
+_:n3-305 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-307 .
+_:n3-307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-308 .
+_:n3-308 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SummaryNote> .
+_:n3-307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-309 .
+_:n3-309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-310 .
+_:n3-310 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SupplementaryContentNote> .
+_:n3-309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-311 .
+_:n3-311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-312 .
+_:n3-312 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/ReviewNote> .
+_:n3-311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-313 .
+_:n3-313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-314 .
+_:n3-314 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/PurposeNote> .
+_:n3-313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-304 <http://www.w3.org/ns/shacl#or> _:n3-305 .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-304 .
+_:n3-315 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/firstIssue> .
+_:n3-315 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-315 <http://www.w3.org/ns/shacl#description> "Beginning date of a resource and/or the sequential designations." .
+_:n3-315 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-315 <http://www.w3.org/ns/shacl#name> "first issue" .
+_:n3-315 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-315 .
+_:n3-316 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/lastIssue> .
+_:n3-316 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-316 <http://www.w3.org/ns/shacl#description> "Ending date of a resource and/or the sequential designations." .
+_:n3-316 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-316 <http://www.w3.org/ns/shacl#name> "last issue" .
+_:n3-316 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-316 .
+_:n3-317 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/identifiedBy> .
+_:n3-317 <http://www.w3.org/ns/shacl#description> "Record identifier string value and type of identifier" .
+_:n3-317 <http://www.w3.org/ns/shacl#name> "Identified by" .
+_:n3-317 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> .
+_:n3-318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-319 .
+_:n3-319 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/AudioTake> .
+_:n3-318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-320 .
+_:n3-320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-321 .
+_:n3-321 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Isan> .
+_:n3-320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-322 .
+_:n3-322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-323 .
+_:n3-323 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Isrc> .
+_:n3-322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-324 .
+_:n3-324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-325 .
+_:n3-325 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Issn> .
+_:n3-324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-326 .
+_:n3-326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-327 .
+_:n3-327 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Lccn> .
+_:n3-326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-317 <http://www.w3.org/ns/shacl#or> _:n3-318 .
+<http://bibliotek-o.org/shapes/audio/AudioWorkForm> <http://www.w3.org/ns/shacl#property> _:n3-317 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/2000/01/rdf-schema#label> "Instance of Audio form" .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Instance> .
+_:n3-328 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-328 <http://www.w3.org/ns/shacl#name> "Type of Instance" .
+_:n3-328 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-328 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> .
+_:n3-329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudioDisc> .
+_:n3-329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-330 .
+_:n3-330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudioRoll> .
+_:n3-330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-331 .
+_:n3-331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudioCassette> .
+_:n3-331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-332 .
+_:n3-332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudioBelt> .
+_:n3-332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-333 .
+_:n3-333 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudioCylinder> .
+_:n3-333 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-334 .
+_:n3-334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudioWireReel> .
+_:n3-334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-335 .
+_:n3-335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AudiotapeReel> .
+_:n3-335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-336 .
+_:n3-336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/Cassette> .
+_:n3-336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-337 .
+_:n3-337 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/SoundTrackReel> .
+_:n3-337 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-338 .
+_:n3-338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ComputerTapeReel> .
+_:n3-338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-339 .
+_:n3-339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/Disc> .
+_:n3-339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-340 .
+_:n3-340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/Reel> .
+_:n3-340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-328 <http://www.w3.org/ns/shacl#in> _:n3-329 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-328 .
+_:n3-341 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasPreferredTitle> .
+_:n3-341 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-341 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> .
+_:n3-341 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-341 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-341 <http://www.w3.org/ns/shacl#name> "Preferred title" .
+_:n3-341 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-341 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-341 .
+_:n3-342 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/title> .
+_:n3-342 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-342 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-342 <http://www.w3.org/ns/shacl#description> "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." .
+_:n3-342 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> .
+_:n3-342 <http://www.w3.org/ns/shacl#name> "Other title" .
+_:n3-342 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-342 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-342 .
+_:n3-343 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasActivity> .
+_:n3-343 <http://www.w3.org/ns/shacl#name> "Agent activity or role" .
+_:n3-343 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-343 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/Activity> .
+_:n3-344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-345 .
+_:n3-345 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/PublisherActivity> .
+_:n3-344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-346 .
+_:n3-346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-347 .
+_:n3-347 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/DistributorActivity> .
+_:n3-346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-348 .
+_:n3-348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-349 .
+_:n3-349 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/ManufacturerActivity> .
+_:n3-348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-343 <http://www.w3.org/ns/shacl#or> _:n3-344 .
+_:n3-343 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstanceActivityPropertyGroup> .
+_:n3-343 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-343 .
+_:n3-350 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/provisionActivityStatement> .
+_:n3-350 <http://www.w3.org/ns/shacl#name> "Provider statement" .
+_:n3-350 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-350 <http://www.w3.org/ns/shacl#description> "Statement relating to providers of a resource; usually transcribed." .
+_:n3-350 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-350 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstanceActivityPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-350 .
+_:n3-351 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasActivity> .
+_:n3-351 <http://www.w3.org/ns/shacl#name> "Copyright date" .
+_:n3-351 <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-351 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/CopyrightHolderActivity> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-351 .
+_:n3-352 <http://www.w3.org/ns/shacl#path> <http://measurement.bibliotek-o.org/hasMeasurementGroup> .
+_:n3-352 <http://www.w3.org/ns/shacl#class> <http://measurement.bibliotek-o.org/MeasurementGroup> .
+_:n3-352 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/MeasurementPropertyGroup> .
+_:n3-352 <http://www.w3.org/ns/shacl#name> "Measurement information" .
+_:n3-352 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-352 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-352 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-352 .
+_:n3-353 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/instanceOf> .
+_:n3-353 <http://www.w3.org/ns/shacl#name> "Relates this Instance to the Work it is the Instance of" .
+_:n3-353 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-353 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstancetoWorkPropertyGroup> .
+_:n3-353 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-353 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-353 .
+_:n3-354 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/editionStatement> .
+_:n3-354 <http://www.w3.org/ns/shacl#name> "Edition statement or version of the resource" .
+_:n3-354 <http://www.w3.org/ns/shacl#description:> "Edition or version of the resource and associated statements of responsibility for the edition; usually transcribed." .
+_:n3-354 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-354 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstancetoWorkPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-354 .
+_:n3-355 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-355 <http://www.w3.org/ns/shacl#description> "Speed at which an audio carrier must be operated to produce the sound intended, e.g., 78 rpm, 19 cm/s." .
+_:n3-355 <http://www.w3.org/ns/shacl#name> "Playing speed" .
+_:n3-355 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-355 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/PlayingSpeed> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-355 .
+_:n3-356 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-356 <http://www.w3.org/ns/shacl#description> "A number of sound channels used to make a recording." .
+_:n3-356 <http://www.w3.org/ns/shacl#name> "Configuration of playback channels" .
+_:n3-356 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-356 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-356 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/NumberOfPlaybackChannelsConcept> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-356 .
+_:n3-357 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-357 <http://www.w3.org/ns/shacl#description> "A groove width of an analog disc." .
+_:n3-357 <http://www.w3.org/ns/shacl#name> "Groove width of an analog disc" .
+_:n3-357 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-357 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-357 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/GrooveWidthofDiscConcept> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-357 .
+_:n3-358 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-358 <http://www.w3.org/ns/shacl#description> "A groove pitch of an analog cylinder." .
+_:n3-358 <http://www.w3.org/ns/shacl#name> "Groove pitch of an analog cylinder" .
+_:n3-358 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-358 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-358 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/GroovePitchOfCylinderConcept> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-358 .
+_:n3-359 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-359 <http://www.w3.org/ns/shacl#description> "An equalization system, noise reduction system, etc., used in making an audio recording." .
+_:n3-359 <http://www.w3.org/ns/shacl#name> "Special playback characteristic" .
+_:n3-359 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-359 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-359 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SpecialPlaybackConcept> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-359 .
+_:n3-360 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-360 <http://www.w3.org/ns/shacl#description> "A relationship between an original carrier and the carrier of a reproduction made from the original." .
+_:n3-360 <http://www.w3.org/ns/shacl#name> "Kind of disc, cylinder or tape in relation to original carrier" .
+_:n3-360 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-360 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-360 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SoundRecordingGenerationConcept> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-360 .
+_:n3-361 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-361 <http://www.w3.org/ns/shacl#description> "A method used to encode audio content for playback.." .
+_:n3-361 <http://www.w3.org/ns/shacl#name> "Type of recording" .
+_:n3-361 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-361 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-361 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/TypeOfRecordingConcept> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-361 .
+_:n3-362 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-362 <http://www.w3.org/ns/shacl#description> "Number of tracks on an audiotape, e.g., 12 track." .
+_:n3-362 <http://www.w3.org/ns/shacl#name> "Tape configuration" .
+_:n3-362 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-362 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/TapeConfig> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-362 .
+_:n3-363 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-363 <http://www.w3.org/ns/shacl#description> "Recording process in which a stylus cuts a vertical or lateral groove into an audio disc." .
+_:n3-363 <http://www.w3.org/ns/shacl#name> "Disc cutting" .
+_:n3-363 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-363 <http://www.w3.org/ns/shacl#class> <http://performedmusicontology.org/ontology/DiscCutting> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-363 .
+_:n3-364 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic> .
+_:n3-364 <http://www.w3.org/ns/shacl#description> "The type of equipment used in making the recording, as opposed to the type of equipment required for playback." .
+_:n3-364 <http://www.w3.org/ns/shacl#name> "Capture and storage technique" .
+_:n3-364 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-364 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/CaptureAndStorageTechnique> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-364 .
+_:n3-365 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/soundCharacteristic/skos:inScheme> .
+_:n3-365 <http://www.w3.org/ns/shacl#description> "Terms for sound characteristics should be taken from RDA Values List or individuals from Performed Music Ontology" .
+_:n3-365 <http://www.w3.org/ns/shacl#name> "Sound Characteristics" .
+_:n3-365 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> .
+_:n3-365 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-367 .
+_:n3-367 <http://www.w3.org/ns/shacl#hasValue> <http://rdaregistry.info/termList/configPlayback> .
+_:n3-366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-368 .
+_:n3-368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-369 .
+_:n3-369 <http://www.w3.org/ns/shacl#hasValue> <http://rdaregistry.info/termList/groovePitch> .
+_:n3-368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-370 .
+_:n3-370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-371 .
+_:n3-371 <http://www.w3.org/ns/shacl#hasValue> <http://rdaregistry.info/termList/grooveWidth> .
+_:n3-370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-372 .
+_:n3-372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-373 .
+_:n3-373 <http://www.w3.org/ns/shacl#hasValue> <http://rdaregistry.info/termList/specPlayback> .
+_:n3-372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-374 .
+_:n3-374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-375 .
+_:n3-375 <http://www.w3.org/ns/shacl#hasValue> <http://rdaregistry.info/termList/RDAGeneration> .
+_:n3-374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-376 .
+_:n3-376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-377 .
+_:n3-377 <http://www.w3.org/ns/shacl#hasValue> <http://rdaregistry.info/termList/typeRec> .
+_:n3-376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-365 <http://www.w3.org/ns/shacl#or> _:n3-366 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-365 .
+_:n3-378 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/identifiedBy> .
+_:n3-378 <http://www.w3.org/ns/shacl#description> "Record identifier string value and type of identifier" .
+_:n3-378 <http://www.w3.org/ns/shacl#name> "Identified by" .
+_:n3-378 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstanceMiscellaneousPropertyGroup> .
+_:n3-379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-380 .
+_:n3-380 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Identifier> .
+_:n3-379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-381 .
+_:n3-381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-382 .
+_:n3-382 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Barcode> .
+_:n3-381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-383 .
+_:n3-383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-384 .
+_:n3-384 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Doi> .
+_:n3-383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-385 .
+_:n3-385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-386 .
+_:n3-386 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Ean> .
+_:n3-385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-387 .
+_:n3-387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-388 .
+_:n3-388 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Gtin14Number> .
+_:n3-387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-389 .
+_:n3-389 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-390 .
+_:n3-390 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Hdl> .
+_:n3-389 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-391 .
+_:n3-391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-392 .
+_:n3-392 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Ismn> .
+_:n3-391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-393 .
+_:n3-393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-394 .
+_:n3-394 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Isan> .
+_:n3-393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-395 .
+_:n3-395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-396 .
+_:n3-396 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Isbn> .
+_:n3-395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-397 .
+_:n3-397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-398 .
+_:n3-398 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Isni> .
+_:n3-397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-399 .
+_:n3-399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-400 .
+_:n3-400 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Issn> .
+_:n3-399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-401 .
+_:n3-401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-402 .
+_:n3-402 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/LcOverseasAcq> .
+_:n3-401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-403 .
+_:n3-403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-404 .
+_:n3-404 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Lccn> .
+_:n3-403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-405 .
+_:n3-405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-406 .
+_:n3-406 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:n3-405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-407 .
+_:n3-407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-408 .
+_:n3-408 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/MusicDistributorNumber> .
+_:n3-407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-409 .
+_:n3-409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-410 .
+_:n3-410 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/PublisherNumber> .
+_:n3-409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-411 .
+_:n3-411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-412 .
+_:n3-412 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/StockNumber> .
+_:n3-411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-413 .
+_:n3-413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-414 .
+_:n3-414 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Upc> .
+_:n3-413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-415 .
+_:n3-415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-416 .
+_:n3-416 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/StudyNumber> .
+_:n3-415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-417 .
+_:n3-417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-418 .
+_:n3-418 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Urn> .
+_:n3-417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-419 .
+_:n3-419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-420 .
+_:n3-420 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/1.1/ontology/OclcIdentifier> .
+_:n3-419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-378 <http://www.w3.org/ns/shacl#or> _:n3-379 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-378 .
+_:n3-421 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/note> .
+_:n3-421 <http://www.w3.org/ns/shacl#description> "Instance related note for when more granualar information isn't captured." .
+_:n3-421 <http://www.w3.org/ns/shacl#name> "Instance note" .
+_:n3-421 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-421 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstanceMiscellaneousPropertyGroup> .
+_:n3-422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-423 .
+_:n3-423 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/ContentsNote> .
+_:n3-422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-424 .
+_:n3-424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-425 .
+_:n3-425 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SummaryNote> .
+_:n3-424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-426 .
+_:n3-426 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-427 .
+_:n3-427 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SupplementaryContentNote> .
+_:n3-426 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-428 .
+_:n3-428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-429 .
+_:n3-429 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/ReviewNote> .
+_:n3-428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-430 .
+_:n3-430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-431 .
+_:n3-431 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/PurposeNote> .
+_:n3-430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-421 <http://www.w3.org/ns/shacl#or> _:n3-422 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-421 .
+_:n3-432 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/hasPart> .
+_:n3-432 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-432 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> .
+_:n3-432 <http://www.w3.org/ns/shacl#name> "Content listing (track listing)" .
+_:n3-432 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-432 .
+_:n3-433 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/hasItem> .
+_:n3-433 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Item> .
+_:n3-433 <http://www.w3.org/ns/shacl#description> "Item which is an example of the described Instance." .
+_:n3-433 <http://www.w3.org/ns/shacl#name> "Has item" .
+_:n3-433 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-433 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/InstancetToItemPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceForm> <http://www.w3.org/ns/shacl#property> _:n3-433 .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/2000/01/rdf-schema#label> "Audio Item form" .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Item> .
+_:n3-434 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasPreferredTitle> .
+_:n3-434 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-434 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> .
+_:n3-434 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-434 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-434 <http://www.w3.org/ns/shacl#name> "Preferred title" .
+_:n3-434 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-434 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-434 .
+_:n3-435 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/title> .
+_:n3-435 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-435 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-435 <http://www.w3.org/ns/shacl#description> "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." .
+_:n3-435 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> .
+_:n3-435 <http://www.w3.org/ns/shacl#name> "Other title" .
+_:n3-435 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-435 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-435 .
+_:n3-436 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasActivity> .
+_:n3-436 <http://www.w3.org/ns/shacl#name> "Agent activity or role" .
+_:n3-436 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-436 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-436 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/Activity> .
+_:n3-436 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/ItemActivityPropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-436 .
+_:n3-437 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/itemOf> .
+_:n3-437 <http://www.w3.org/ns/shacl#name> "Item of a Particular Instance" .
+_:n3-437 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-437 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Instance> .
+_:n3-437 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/ItemToInstancePropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-437 .
+_:n3-438 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/isPartOf> .
+_:n3-438 <http://www.w3.org/ns/shacl#name> "Part of collection" .
+_:n3-438 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-438 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Collection> .
+_:n3-438 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/ItemProvenanceGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-438 .
+_:n3-439 <http://www.w3.org/ns/shacl#path> <http://performedmusicontology.org/ontology/associatedWith> .
+_:n3-439 <http://www.w3.org/ns/shacl#description> "To link an item to an event, e.g. concert, or event series, e.g. a tour, in which the item was used or associated" .
+_:n3-439 <http://www.w3.org/ns/shacl#name> "Associated with an event" .
+_:n3-439 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/ItemProvenanceGroup> .
+_:n3-439 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-439 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-439 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+_:n3-439 <http://www.w3.org/2004/02/skos/core#editorialNote> "Use look up service; though FAST has some events, catalogers will have to create most events because libraries traditionally haven't created many Event authorities." .
+_:n3-439 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Event> .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-439 .
+_:n3-440 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/note> .
+_:n3-440 <http://www.w3.org/ns/shacl#description> "Copy specific notes. These note types apply specifically to the Cornell Hip Hop Collection" .
+_:n3-440 <http://www.w3.org/ns/shacl#name> "Copy specific notes" .
+_:n3-440 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-440 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioItemMiscellaneousPropertyGroup> .
+_:n3-441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-442 .
+_:n3-442 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/WritingOnAlbumNote> .
+_:n3-441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-443 .
+_:n3-443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-444 .
+_:n3-444 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/NumberedSRJacketNote> .
+_:n3-443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-445 .
+_:n3-445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-446 .
+_:n3-446 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/InitialsOrNumberOnLabelNote> .
+_:n3-445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-447 .
+_:n3-447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-448 .
+_:n3-448 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/PostItNoteNote> .
+_:n3-447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-449 .
+_:n3-449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-450 .
+_:n3-450 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SignatureNote> .
+_:n3-449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-451 .
+_:n3-451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-452 .
+_:n3-452 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/CuePointMarkerNote> .
+_:n3-451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-453 .
+_:n3-453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-454 .
+_:n3-454 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/TracksOfInterestNote> .
+_:n3-453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-455 .
+_:n3-455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-456 .
+_:n3-456 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/TapeOnLPDiscLabelOrCoverNote> .
+_:n3-455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-457 .
+_:n3-457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-458 .
+_:n3-458 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/NotInOriginalJacketNote> .
+_:n3-457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-459 .
+_:n3-459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-460 .
+_:n3-460 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/TwoCopiesInSameSleeveNote> .
+_:n3-459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-461 .
+_:n3-461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-462 .
+_:n3-462 <http://www.w3.org/ns/shacl#class> <http://audio.bibliotek-o.org/SummaryNote> .
+_:n3-461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-440 <http://www.w3.org/ns/shacl#or> _:n3-441 .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-440 .
+_:n3-463 <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/identifiedBy> .
+_:n3-463 <http://www.w3.org/ns/shacl#description> "Record identifier string value and type of identifier" .
+_:n3-463 <http://www.w3.org/ns/shacl#name> "Identified by" .
+_:n3-463 <http://www.w3.org/ns/shacl#group> <http://bibliotek-o.org/shapes/audio/AudioItemMiscellaneousPropertyGroup> .
+_:n3-464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-465 .
+_:n3-465 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Barcode> .
+_:n3-464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-466 .
+_:n3-466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-467 .
+_:n3-467 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:n3-466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-468 .
+_:n3-468 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-469 .
+_:n3-469 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/ShelfMarkDdc> .
+_:n3-468 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-470 .
+_:n3-470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-471 .
+_:n3-471 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc> .
+_:n3-470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-472 .
+_:n3-472 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-473 .
+_:n3-473 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/ShelfMarkNlm> .
+_:n3-472 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-474 .
+_:n3-474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-475 .
+_:n3-475 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/ShelfMarkUdc> .
+_:n3-474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-476 .
+_:n3-476 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-477 .
+_:n3-477 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/ShelfMark> .
+_:n3-476 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-463 <http://www.w3.org/ns/shacl#or> _:n3-464 .
+<http://bibliotek-o.org/shapes/audio/AudioItemForm> <http://www.w3.org/ns/shacl#property> _:n3-463 .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/2000/01/rdf-schema#label> "Title form" .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-478 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-478 <http://www.w3.org/ns/shacl#name> "Type of Title" .
+_:n3-479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AbbreviatedTitle> .
+_:n3-479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-480 .
+_:n3-480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ConciseTitle> .
+_:n3-480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-481 .
+_:n3-481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/DistinctiveTitle> .
+_:n3-481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-482 .
+_:n3-482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/KeyTitle> .
+_:n3-482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-483 .
+_:n3-483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ParallelTitle> .
+_:n3-483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-478 <http://www.w3.org/ns/shacl#in> _:n3-479 .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-478 .
+_:n3-484 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-484 <http://www.w3.org/ns/shacl#description> "Textual value of the title" .
+_:n3-484 <http://www.w3.org/ns/shacl#name> "Title" .
+_:n3-484 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-484 .
+_:n3-485 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/hasPart> .
+_:n3-485 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/TitleElement> .
+_:n3-485 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-485 <http://www.w3.org/ns/shacl#description> "Has title part" .
+_:n3-485 <http://www.w3.org/ns/shacl#name> "has part" .
+_:n3-485 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-485 .
+_:n3-486 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isTitleOf> .
+_:n3-486 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-486 <http://www.w3.org/ns/shacl#description> "Links this Title to an Audio" .
+_:n3-486 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/WorkTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-486 .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/2000/01/rdf-schema#label> "Instance title form" .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-487 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-487 <http://www.w3.org/ns/shacl#name> "Type of Title" .
+_:n3-488 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AbbreviatedTitle> .
+_:n3-488 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-489 .
+_:n3-489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ConciseTitle> .
+_:n3-489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-490 .
+_:n3-490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/DistinctiveTitle> .
+_:n3-490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-491 .
+_:n3-491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/KeyTitle> .
+_:n3-491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-492 .
+_:n3-492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ParallelTitle> .
+_:n3-492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-487 <http://www.w3.org/ns/shacl#in> _:n3-488 .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-487 .
+_:n3-493 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-493 <http://www.w3.org/ns/shacl#description> "Textual value of the title" .
+_:n3-493 <http://www.w3.org/ns/shacl#name> "Title" .
+_:n3-493 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-493 .
+_:n3-494 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasOrigin> .
+_:n3-494 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/1.1/ontology/Origin> .
+_:n3-494 <http://www.w3.org/ns/shacl#description> "Describe the origin of the title, for example spine or cover" .
+_:n3-494 <http://www.w3.org/ns/shacl#name> "Title origin" .
+_:n3-494 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-494 .
+_:n3-495 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/hasPart> .
+_:n3-495 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/TitleElement> .
+_:n3-495 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-495 <http://www.w3.org/ns/shacl#description> "Has title part" .
+_:n3-495 <http://www.w3.org/ns/shacl#name> "has part" .
+_:n3-495 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-495 .
+_:n3-496 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isTitleOf> .
+_:n3-496 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Instance> .
+_:n3-496 <http://www.w3.org/ns/shacl#description> "Links this Title to an Instance" .
+_:n3-496 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/InstanceTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-496 .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/2000/01/rdf-schema#label> "Item title form" .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:n3-497 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-497 <http://www.w3.org/ns/shacl#name> "Type of Title" .
+_:n3-498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/AbbreviatedTitle> .
+_:n3-498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-499 .
+_:n3-499 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ConciseTitle> .
+_:n3-499 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-500 .
+_:n3-500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/DistinctiveTitle> .
+_:n3-500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-501 .
+_:n3-501 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/KeyTitle> .
+_:n3-501 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-502 .
+_:n3-502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ParallelTitle> .
+_:n3-502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-497 <http://www.w3.org/ns/shacl#in> _:n3-498 .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-497 .
+_:n3-503 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-503 <http://www.w3.org/ns/shacl#description> "Textual value of the title" .
+_:n3-503 <http://www.w3.org/ns/shacl#name> "Title" .
+_:n3-503 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-503 .
+_:n3-504 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasOrigin> .
+_:n3-504 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/1.1/ontology/Origin> .
+_:n3-504 <http://www.w3.org/ns/shacl#description> "Describe the origin of the title, for example spine or cover" .
+_:n3-504 <http://www.w3.org/ns/shacl#name> "Title origin" .
+_:n3-504 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-504 .
+_:n3-505 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/hasPart> .
+_:n3-505 <http://www.w3.org/ns/shacl#class> <http://bibliotek-o.org/ontology/TitleElement> .
+_:n3-505 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+_:n3-505 <http://www.w3.org/ns/shacl#description> "Has title part" .
+_:n3-505 <http://www.w3.org/ns/shacl#name> "has part" .
+_:n3-505 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-505 .
+_:n3-506 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isTitleOf> .
+_:n3-506 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Item> .
+_:n3-506 <http://www.w3.org/ns/shacl#description> "Links this Title to an Item" .
+_:n3-506 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/ItemTitleForm> <http://www.w3.org/ns/shacl#property> _:n3-506 .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/2000/01/rdf-schema#label> "Title element form" .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-507 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-507 <http://www.w3.org/ns/shacl#name> "Type of Title Element" .
+_:n3-507 <http://www.w3.org/ns/shacl#minCount> "1" .
+_:n3-507 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-508 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/NonSortElement> .
+_:n3-508 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-509 .
+_:n3-509 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/MainTitleElement> .
+_:n3-509 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-510 .
+_:n3-510 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/SubtitleElement> .
+_:n3-510 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-511 .
+_:n3-511 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/PartNameElement> .
+_:n3-511 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-512 .
+_:n3-512 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/PartNumberElement> .
+_:n3-512 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-507 <http://www.w3.org/ns/shacl#in> _:n3-508 .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/ns/shacl#property> _:n3-507 .
+_:n3-513 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-513 <http://www.w3.org/ns/shacl#minCount> "1" .
+_:n3-513 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-513 <http://www.w3.org/ns/shacl#description> "String value for the title element" .
+_:n3-513 <http://www.w3.org/ns/shacl#name> "Title element value" .
+_:n3-513 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/ns/shacl#property> _:n3-513 .
+_:n3-514 <http://www.w3.org/ns/shacl#path> <http://vivoweb.org/ontology/core#rank> .
+_:n3-514 <http://www.w3.org/ns/shacl#description> "String value for the title element" .
+_:n3-514 <http://www.w3.org/ns/shacl#name> "Title element value" .
+_:n3-514 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-514 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-514 <http://www.w3.org/ns/shacl#minCount> "1" .
+_:n3-514 <http://www.w3.org/ns/shacl#maxCount> "1" .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/ns/shacl#property> _:n3-514 .
+<http://bibliotek-o.org/shapes/audio/TitleElementForm> <http://www.w3.org/ns/shacl#targetClass> <http://bibliotek-o.org/ontology/TitleElement> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Activity" .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/ns/shacl#targetClass> <http://bibliotek-o.org/ontology/Activity> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-515 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-515 <http://www.w3.org/ns/shacl#order> "0" .
+_:n3-515 <http://www.w3.org/ns/shacl#description> "Agent role or activity type" .
+_:n3-515 <http://www.w3.org/ns/shacl#name> "Agent role" .
+_:n3-516 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ComposerActivity> .
+_:n3-516 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-517 .
+_:n3-517 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ArrangerActivity> .
+_:n3-517 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-518 .
+_:n3-518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/LibrettistActivity> .
+_:n3-518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-519 .
+_:n3-519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/LyricistActivity> .
+_:n3-519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-520 .
+_:n3-520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/PerformerActivity> .
+_:n3-520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-521 .
+_:n3-521 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ConductorActivity> .
+_:n3-521 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-522 .
+_:n3-522 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/MusicianActivity> .
+_:n3-522 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-523 .
+_:n3-523 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/SingerActivity> .
+_:n3-523 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-524 .
+_:n3-524 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/InstrumentalistActivity> .
+_:n3-524 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-525 .
+_:n3-525 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/NarratorActivity> .
+_:n3-525 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-526 .
+_:n3-526 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/CommentatorActivity> .
+_:n3-526 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-527 .
+_:n3-527 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ProducerActivity> .
+_:n3-527 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-528 .
+_:n3-528 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/MusicalDirectorActivity> .
+_:n3-528 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-529 .
+_:n3-529 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/SoundDesignerActivity> .
+_:n3-529 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-530 .
+_:n3-530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/RecordistActivity> .
+_:n3-530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-531 .
+_:n3-531 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/BroadcasterActivity> .
+_:n3-531 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-515 <http://www.w3.org/ns/shacl#in> _:n3-516 .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-515 .
+_:n3-532 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasAgent> .
+_:n3-532 <http://www.w3.org/ns/shacl#order> "1" .
+_:n3-532 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-532 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+_:n3-532 <http://www.w3.org/ns/shacl#description> "Agent" .
+_:n3-532 <http://www.w3.org/ns/shacl#name> "Agent" .
+_:n3-532 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-532 .
+_:n3-533 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/date> .
+_:n3-533 <http://www.w3.org/ns/shacl#order> "2" .
+_:n3-533 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-533 <http://www.w3.org/ns/shacl#description> "Date of the activity" .
+_:n3-533 <http://www.w3.org/ns/shacl#name> "Date" .
+_:n3-533 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-533 .
+_:n3-534 <http://www.w3.org/ns/shacl#path> <http://schema.org/location> .
+_:n3-534 <http://www.w3.org/ns/shacl#order> "3" .
+_:n3-534 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-534 <http://www.w3.org/ns/shacl#description> "Location of the activity" .
+_:n3-534 <http://www.w3.org/ns/shacl#name> "Location" .
+_:n3-534 <http://www.w3.org/ns/shacl#class> <http://www.geonames.org/ontology/Feature> .
+_:n3-534 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-534 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-534 .
+_:n3-535 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isActivityOf> .
+_:n3-535 <http://www.w3.org/ns/shacl#order> "4" .
+_:n3-535 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-535 <http://www.w3.org/ns/shacl#description> "Links this particular Activity form to Audio Works" .
+_:n3-535 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-535 <http://www.w3.org/ns/shacl#name> "Activity of an Audio Work" .
+<http://bibliotek-o.org/shapes/audio/AudioWorkActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-535 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Activity" .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/ns/shacl#targetClass> <http://bibliotek-o.org/ontology/Activity> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-536 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-536 <http://www.w3.org/ns/shacl#order> "0" .
+_:n3-536 <http://www.w3.org/ns/shacl#description> "Agent role or activity type" .
+_:n3-536 <http://www.w3.org/ns/shacl#name> "Agent role" .
+_:n3-537 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/PublisherActivity> .
+_:n3-537 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-538 .
+_:n3-538 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/DistributorActivity> .
+_:n3-538 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-539 .
+_:n3-539 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/ManufacturerActivity> .
+_:n3-539 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-540 .
+_:n3-540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/CopyrightHolderActivity> .
+_:n3-540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-536 <http://www.w3.org/ns/shacl#in> _:n3-537 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-536 .
+_:n3-541 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasAgent> .
+_:n3-541 <http://www.w3.org/ns/shacl#order> "1" .
+_:n3-541 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-541 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+_:n3-541 <http://www.w3.org/ns/shacl#description> "Agent" .
+_:n3-541 <http://www.w3.org/ns/shacl#name> "Agent" .
+_:n3-541 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-541 .
+_:n3-542 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/date> .
+_:n3-542 <http://www.w3.org/ns/shacl#order> "2" .
+_:n3-542 <http://www.w3.org/ns/shacl#description> "Date of the activity" .
+_:n3-542 <http://www.w3.org/ns/shacl#name> "Date" .
+_:n3-542 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-542 .
+_:n3-543 <http://www.w3.org/ns/shacl#path> <http://schema.org/location> .
+_:n3-543 <http://www.w3.org/ns/shacl#order> "3" .
+_:n3-543 <http://www.w3.org/ns/shacl#description> "Location of the activity" .
+_:n3-543 <http://www.w3.org/ns/shacl#name> "Location" .
+_:n3-543 <http://www.w3.org/ns/shacl#class> <http://www.geonames.org/ontology/Feature> .
+_:n3-543 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-543 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-543 .
+_:n3-544 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isActivityOf> .
+_:n3-544 <http://www.w3.org/ns/shacl#order> "4" .
+_:n3-544 <http://www.w3.org/ns/shacl#description> "Links this particular Activity form to Instances" .
+_:n3-544 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Instance> .
+_:n3-544 <http://www.w3.org/ns/shacl#name> "Activity of an Instance" .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-544 .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/2000/01/rdf-schema#label> "Copyright date" .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/ns/shacl#targetClass> <http://bibliotek-o.org/ontology/CopyrightHolderActivity> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/ns/shacl#description> " Copyright date off from a copyright holder activity. Typically libraries only record the copyright date as it appears on the instance, not the agent and location for copyright ownership" .
+_:n3-545 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/date> .
+_:n3-545 <http://www.w3.org/ns/shacl#order> "1" .
+_:n3-545 <http://www.w3.org/ns/shacl#description> "Date of the activity" .
+_:n3-545 <http://www.w3.org/ns/shacl#name> "Date" .
+_:n3-545 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/ns/shacl#property> _:n3-545 .
+_:n3-546 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isActivityOf> .
+_:n3-546 <http://www.w3.org/ns/shacl#order> "2" .
+_:n3-546 <http://www.w3.org/ns/shacl#description> "Links this particular Activity form to Instances" .
+_:n3-546 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Instance> .
+_:n3-546 <http://www.w3.org/ns/shacl#name> "Activity of an Instance" .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCopyrightDateForm> <http://www.w3.org/ns/shacl#property> _:n3-546 .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Activity" .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/ns/shacl#targetClass> <http://bibliotek-o.org/ontology/Activity> .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-547 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-547 <http://www.w3.org/ns/shacl#order> "0" .
+_:n3-547 <http://www.w3.org/ns/shacl#description> "Agent role or activity type" .
+_:n3-547 <http://www.w3.org/ns/shacl#name> "Agent role" .
+_:n3-548 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/ontology/DonorActivity> .
+_:n3-548 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-549 .
+_:n3-549 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bibliotek-o.org/1.1/ontology/AcquisitionActivity> .
+_:n3-549 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-547 <http://www.w3.org/ns/shacl#in> _:n3-548 .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-547 .
+_:n3-550 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/hasAgent> .
+_:n3-550 <http://www.w3.org/ns/shacl#order> "1" .
+_:n3-550 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-550 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent> .
+_:n3-550 <http://www.w3.org/ns/shacl#description> "Agent" .
+_:n3-550 <http://www.w3.org/ns/shacl#name> "Agent" .
+_:n3-550 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-550 .
+_:n3-551 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/date> .
+_:n3-551 <http://www.w3.org/ns/shacl#order> "2" .
+_:n3-551 <http://www.w3.org/ns/shacl#description> "Date of the activity" .
+_:n3-551 <http://www.w3.org/ns/shacl#name> "Date" .
+_:n3-551 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-551 .
+_:n3-552 <http://www.w3.org/ns/shacl#path> <http://schema.org/location> .
+_:n3-552 <http://www.w3.org/ns/shacl#order> "3" .
+_:n3-552 <http://www.w3.org/ns/shacl#description> "Location of the activity" .
+_:n3-552 <http://www.w3.org/ns/shacl#name> "Location" .
+_:n3-552 <http://www.w3.org/ns/shacl#class> <http://www.geonames.org/ontology/Feature> .
+_:n3-552 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-552 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-552 .
+_:n3-553 <http://www.w3.org/ns/shacl#path> <http://bibliotek-o.org/ontology/isActivityOf> .
+_:n3-553 <http://www.w3.org/ns/shacl#order> "4" .
+_:n3-553 <http://www.w3.org/ns/shacl#description> "Links this particular Activity form to Items" .
+_:n3-553 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Item> .
+_:n3-553 <http://www.w3.org/ns/shacl#name> "Activity of an Item" .
+<http://bibliotek-o.org/shapes/audio/AudioItemActivityForm> <http://www.w3.org/ns/shacl#property> _:n3-553 .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier Form" .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/ns/shacl#description> "General identifer form" .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Identifier> .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-554 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-554 <http://www.w3.org/ns/shacl#description> "Record the string value of the identifier" .
+_:n3-554 <http://www.w3.org/ns/shacl#name> "Identifier value" .
+_:n3-554 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-554 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/ns/shacl#property> _:n3-554 .
+_:n3-555 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-555 <http://www.w3.org/ns/shacl#description> "Record the type of identifier, e.g. ISBN, ISSN, OCLC." .
+_:n3-555 <http://www.w3.org/ns/shacl#name> "Type of identifier" .
+_:n3-555 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-555 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-556 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Ansi> .
+_:n3-556 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-557 .
+_:n3-557 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/AudioIssueNumber> .
+_:n3-557 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-558 .
+_:n3-558 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/AudioTake> .
+_:n3-558 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-559 .
+_:n3-559 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Barcode> .
+_:n3-559 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-560 .
+_:n3-560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Coden> .
+_:n3-560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-561 .
+_:n3-561 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/CopyrightNumber> .
+_:n3-561 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-562 .
+_:n3-562 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/DissertationIdentifier> .
+_:n3-562 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-563 .
+_:n3-563 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Doi> .
+_:n3-563 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-564 .
+_:n3-564 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Ean> .
+_:n3-564 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-565 .
+_:n3-565 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Fingerprint> .
+_:n3-565 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-566 .
+_:n3-566 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Gtin14Number> .
+_:n3-566 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-567 .
+_:n3-567 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Hdl> .
+_:n3-567 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-568 .
+_:n3-568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Isan> .
+_:n3-568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-569 .
+_:n3-569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Isbn> .
+_:n3-569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-570 .
+_:n3-570 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Ismn> .
+_:n3-570 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-571 .
+_:n3-571 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Isni> .
+_:n3-571 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-572 .
+_:n3-572 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Iso> .
+_:n3-572 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-573 .
+_:n3-573 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Isrc> .
+_:n3-573 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-574 .
+_:n3-574 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Issn> .
+_:n3-574 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-575 .
+_:n3-575 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/IssnL> .
+_:n3-575 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-576 .
+_:n3-576 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Istc> .
+_:n3-576 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-577 .
+_:n3-577 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Iswc> .
+_:n3-577 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-578 .
+_:n3-578 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/LcOverseasAcq> .
+_:n3-578 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-579 .
+_:n3-579 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Lccn> .
+_:n3-579 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-580 .
+_:n3-580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:n3-580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-581 .
+_:n3-581 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/MatrixNumber> .
+_:n3-581 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-582 .
+_:n3-582 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/MusicDistributorNumber> .
+_:n3-582 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-583 .
+_:n3-583 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/MusicPlate> .
+_:n3-583 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-584 .
+_:n3-584 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/MusicPublisherNumber> .
+_:n3-584 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-585 .
+_:n3-585 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Nbn> .
+_:n3-585 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-586 .
+_:n3-586 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/PostalRegistration> .
+_:n3-586 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-587 .
+_:n3-587 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/PublisherNumber> .
+_:n3-587 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-588 .
+_:n3-588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/ReportNumber> .
+_:n3-588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-589 .
+_:n3-589 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Sici> .
+_:n3-589 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-590 .
+_:n3-590 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/StockNumber> .
+_:n3-590 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-591 .
+_:n3-591 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Strn> .
+_:n3-591 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-592 .
+_:n3-592 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/StudyNumber> .
+_:n3-592 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-593 .
+_:n3-593 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Upc> .
+_:n3-593 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-594 .
+_:n3-594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/Urn> .
+_:n3-594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-595 .
+_:n3-595 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://id.loc.gov/ontologies/bibframe/VideoRecordingNumber> .
+_:n3-595 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-555 <http://www.w3.org/ns/shacl#in> _:n3-556 .
+<http://bibliotek-o.org/shapes/audio/bfIdentifier> <http://www.w3.org/ns/shacl#property> _:n3-555 .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement Group Form" .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/ns/shacl#description> "A group of measurements, e.g. length, width, height measuring the size of a resource would be one measurement group" .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/ns/shacl#targetClass> <http://measurement.bibliotek-o.org/MeasurementGroup> .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-596 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description> .
+_:n3-596 <http://www.w3.org/ns/shacl#description> "Record any qualifying information about the measurement, e.g. 'approximate', 'or smaller', 'in container', 'with handle' " .
+_:n3-596 <http://www.w3.org/ns/shacl#name> "Qualifying information about the measurement" .
+_:n3-596 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-596 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/ns/shacl#property> _:n3-596 .
+_:n3-597 <http://www.w3.org/ns/shacl#path> <http://measurement.bibliotek-o.org/hasMeasurement> .
+_:n3-597 <http://www.w3.org/ns/shacl#class> <http://measurement.bibliotek-o.org/Measurement> .
+_:n3-597 <http://www.w3.org/ns/shacl#description> "The measurement of a single aspect of a resource, including value, units, and the dimension measured. For example, a book may have a height (aspect) of 10 (value) centimeters (units). Each such measurement is attached to a MeasurementGroup." .
+_:n3-597 <http://www.w3.org/ns/shacl#name> "Single measurement" .
+_:n3-597 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-597 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-597 <http://topbraid.org/tosh#editWidget> <http://topbraid.org/swa#NestedObjectEditor> .
+<http://bibliotek-o.org/shapes/audio/MeasurementGroupForm> <http://www.w3.org/ns/shacl#property> _:n3-597 .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Event> .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-598 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-598 <http://www.w3.org/ns/shacl#order> "0" .
+_:n3-598 <http://www.w3.org/ns/shacl#description> "Type of event" .
+_:n3-598 <http://www.w3.org/ns/shacl#name> "Event type" .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#property> _:n3-598 .
+_:n3-599 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:n3-599 <http://www.w3.org/ns/shacl#order> "1" .
+_:n3-599 <http://www.w3.org/ns/shacl#description> "Human readable label/description of the Event" .
+_:n3-599 <http://www.w3.org/ns/shacl#name> "Event label" .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#property> _:n3-599 .
+_:n3-600 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/date> .
+_:n3-600 <http://www.w3.org/ns/shacl#order> "2" .
+_:n3-600 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-600 <http://www.w3.org/ns/shacl#description> "Date of the event" .
+_:n3-600 <http://www.w3.org/ns/shacl#name> "Date" .
+_:n3-600 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#property> _:n3-600 .
+_:n3-601 <http://www.w3.org/ns/shacl#path> <http://schema.org/location> .
+_:n3-601 <http://www.w3.org/ns/shacl#order> "3" .
+_:n3-601 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-601 <http://www.w3.org/ns/shacl#description> "Location of the event" .
+_:n3-601 <http://www.w3.org/ns/shacl#name> "Location" .
+_:n3-601 <http://www.w3.org/ns/shacl#class> <http://www.geonames.org/ontology/Feature> .
+_:n3-601 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-601 <http://bibliotek-o.org/shapes/audio/lookup> <http://bibliotek-o.org/shapes/audio/LD4LookupService> .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#property> _:n3-601 .
+_:n3-602 <http://www.w3.org/ns/shacl#path> <http://schema.org/recordedIn> .
+_:n3-602 <http://www.w3.org/ns/shacl#order> "4" .
+_:n3-602 <http://www.w3.org/ns/shacl#description> "Links this particular Event to a Audio Work recording of the event" .
+_:n3-602 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Audio> .
+_:n3-602 <http://www.w3.org/ns/shacl#name> "Activity of an Audio Work" .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#property> _:n3-602 .
+_:n3-603 <http://www.w3.org/ns/shacl#path> <http://performedmusicontology.org/ontology/associatedWith> .
+_:n3-603 <http://www.w3.org/ns/shacl#order> "5" .
+_:n3-603 <http://www.w3.org/ns/shacl#description> "To link an event e.g. concert, or event series, e.g. a tour, to an item in which the item was used or associated" .
+_:n3-603 <http://www.w3.org/ns/shacl#class> <http://id.loc.gov/ontologies/bibframe/Item> .
+_:n3-603 <http://www.w3.org/ns/shacl#name> "Associated Item" .
+<http://bibliotek-o.org/shapes/audio/EventForm> <http://www.w3.org/ns/shacl#property> _:n3-603 .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/2000/01/rdf-schema#label> "Note form" .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Note> .
+_:n3-604 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-604 <http://www.w3.org/ns/shacl#name> "Type of Note" .
+_:n3-604 <http://www.w3.org/ns/shacl#minCount> "1" .
+_:n3-604 <http://www.w3.org/ns/shacl#maxCount> "1" .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/ns/shacl#property> _:n3-604 .
+_:n3-605 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-605 <http://www.w3.org/ns/shacl#minCount> "1" .
+_:n3-605 <http://www.w3.org/ns/shacl#maxCount> "1" .
+_:n3-605 <http://www.w3.org/ns/shacl#description> "String value for the note" .
+_:n3-605 <http://www.w3.org/ns/shacl#name> "Note value" .
+_:n3-605 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://bibliotek-o.org/shapes/audio/NoteForm> <http://www.w3.org/ns/shacl#property> _:n3-605 .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement form" .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/ns/shacl#targetClass> <http://measurement.bibliotek-o.org/Measurement> .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:n3-606 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n3-606 <http://www.w3.org/ns/shacl#description> "Numeric value for the measurement" .
+_:n3-606 <http://www.w3.org/ns/shacl#name> "Numeric value" .
+_:n3-606 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-606 <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/ns/shacl#property> _:n3-606 .
+_:n3-607 <http://www.w3.org/ns/shacl#path> <http://measurement.bibliotek-o.org/hasUnit> .
+_:n3-607 <http://www.w3.org/ns/shacl#description> "Unit used to express the measurement" .
+_:n3-607 <http://www.w3.org/ns/shacl#name> "Unit" .
+_:n3-607 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-607 <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-608 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-609 .
+_:n3-609 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Centimeter> .
+_:n3-608 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-610 .
+_:n3-610 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-611 .
+_:n3-611 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Foot> .
+_:n3-610 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-612 .
+_:n3-612 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-613 .
+_:n3-613 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Gram> .
+_:n3-612 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-614 .
+_:n3-614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-615 .
+_:n3-615 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Inch> .
+_:n3-614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-616 .
+_:n3-616 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-617 .
+_:n3-617 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Kilogram> .
+_:n3-616 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-618 .
+_:n3-618 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-619 .
+_:n3-619 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Kilometer> .
+_:n3-618 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-620 .
+_:n3-620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-621 .
+_:n3-621 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Meter> .
+_:n3-620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-622 .
+_:n3-622 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-623 .
+_:n3-623 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#MileUSStatute> .
+_:n3-622 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-624 .
+_:n3-624 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-625 .
+_:n3-625 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#Millimeter> .
+_:n3-624 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-626 .
+_:n3-626 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-627 .
+_:n3-627 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#MetricTon> .
+_:n3-626 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-628 .
+_:n3-628 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-629 .
+_:n3-629 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#OunceMass> .
+_:n3-628 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-630 .
+_:n3-630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-631 .
+_:n3-631 <http://www.w3.org/ns/shacl#hasValue> <http://qudt.org/vocab/unit#PoundMass> .
+_:n3-630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-607 <http://www.w3.org/ns/shacl#or> _:n3-608 .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/ns/shacl#property> _:n3-607 .
+_:n3-632 <http://www.w3.org/ns/shacl#path> <http://measurement.bibliotek-o.org/measures> .
+_:n3-632 <http://www.w3.org/ns/shacl#description> "Dimension or other aspect of a resource that is measured by this Measurement. For example, a Measurement may specify the length, height, weight, file size, etc. of a resource." .
+_:n3-632 <http://www.w3.org/ns/shacl#name> "Dimension or other aspect" .
+_:n3-632 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-632 <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:n3-633 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-634 .
+_:n3-634 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055621> .
+_:n3-633 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-635 .
+_:n3-635 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-636 .
+_:n3-636 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055623> .
+_:n3-635 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-637 .
+_:n3-637 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-638 .
+_:n3-638 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055624> .
+_:n3-637 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-639 .
+_:n3-639 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-640 .
+_:n3-640 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055644> .
+_:n3-639 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-641 .
+_:n3-641 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-642 .
+_:n3-642 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055645> .
+_:n3-641 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-643 .
+_:n3-643 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-644 .
+_:n3-644 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055646> .
+_:n3-643 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-645 .
+_:n3-645 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-646 .
+_:n3-646 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055647> .
+_:n3-645 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-647 .
+_:n3-647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-648 .
+_:n3-648 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300055649> .
+_:n3-647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-649 .
+_:n3-649 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-650 .
+_:n3-650 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300056240> .
+_:n3-649 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-651 .
+_:n3-651 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-652 .
+_:n3-652 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300072633> .
+_:n3-651 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-653 .
+_:n3-653 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-654 .
+_:n3-654 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300312044> .
+_:n3-653 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-655 .
+_:n3-655 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-656 .
+_:n3-656 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404162> .
+_:n3-655 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-657 .
+_:n3-657 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-658 .
+_:n3-658 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404164> .
+_:n3-657 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-659 .
+_:n3-659 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-660 .
+_:n3-660 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404403> .
+_:n3-659 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-661 .
+_:n3-661 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-662 .
+_:n3-662 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404430> .
+_:n3-661 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-663 .
+_:n3-663 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-664 .
+_:n3-664 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404431> .
+_:n3-663 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-665 .
+_:n3-665 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-666 .
+_:n3-666 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404432> .
+_:n3-665 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-667 .
+_:n3-667 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-668 .
+_:n3-668 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404433> .
+_:n3-667 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-669 .
+_:n3-669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-670 .
+_:n3-670 <http://www.w3.org/ns/shacl#hasValue> <http://vocab.getty.edu/aat/300404437> .
+_:n3-669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-632 <http://www.w3.org/ns/shacl#or> _:n3-633 .
+<http://bibliotek-o.org/shapes/audio/MeasurementForm> <http://www.w3.org/ns/shacl#property> _:n3-632 .
+<http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Titles" .
+<http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> <http://www.w3.org/ns/shacl#description> "To group title information for the resource." .
+<http://bibliotek-o.org/shapes/audio/TitlePropertyGroup> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/WorkActivityPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/WorkActivityPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Work Agent and Capture Information" .
+<http://bibliotek-o.org/shapes/audio/WorkActivityPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group Agent role information for the resource." .
+<http://bibliotek-o.org/shapes/audio/WorkActivityPropertyGroup> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Genre" .
+<http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group type, Genre, and Form information for the resource." .
+<http://bibliotek-o.org/shapes/audio/TypeGenreFormPropertyGroup> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Subjects" .
+<http://bibliotek-o.org/shapes/audio/SubjectAndCoveragePropertyGroup> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkToWorkPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkToWorkPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Related Audio Works" .
+<http://bibliotek-o.org/shapes/audio/AudioWorkToWorkPropertyGroup> <http://www.w3.org/ns/shacl#order> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Related Works" .
+<http://bibliotek-o.org/shapes/audio/WorkToWorkPropertyGroup> <http://www.w3.org/ns/shacl#order> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/WorkToInstancePropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/WorkToInstancePropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Related Instances (Manifestations)" .
+<http://bibliotek-o.org/shapes/audio/WorkToInstancePropertyGroup> <http://www.w3.org/ns/shacl#order> "6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Miscellaneous Work Information" .
+<http://bibliotek-o.org/shapes/audio/AudioWorkMiscellaneousPropertyGroup> <http://www.w3.org/ns/shacl#order> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/InstanceActivityPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/InstanceActivityPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Instance Agent Information" .
+<http://bibliotek-o.org/shapes/audio/InstanceActivityPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group Agent role information for the resource." .
+<http://bibliotek-o.org/shapes/audio/InstanceActivityPropertyGroup> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/MeasurementPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/MeasurementPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Measurements" .
+<http://bibliotek-o.org/shapes/audio/MeasurementPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group measurement information for the resource." .
+<http://bibliotek-o.org/shapes/audio/MeasurementPropertyGroup> <http://www.w3.org/ns/shacl#order> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/InstancetoWorkPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/InstancetoWorkPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Instance of Work" .
+<http://bibliotek-o.org/shapes/audio/InstancetoWorkPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group Instances of the Same Work, and provide edition information" .
+<http://bibliotek-o.org/shapes/audio/InstancetoWorkPropertyGroup> <http://www.w3.org/ns/shacl#order> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Audio Instance Characteristics" .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group information about the Audio-specific instance characteristics, e.g. playback channel." .
+<http://bibliotek-o.org/shapes/audio/AudioInstanceCharacteristicsPropertyGroup> <http://www.w3.org/ns/shacl#order> "6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/InstanceMiscellaneousPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/InstanceMiscellaneousPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Miscellaneous Work Information" .
+<http://bibliotek-o.org/shapes/audio/InstanceMiscellaneousPropertyGroup> <http://www.w3.org/ns/shacl#order> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/InstanceToItemPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/InstanceToItemPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Related Items (Copies)" .
+<http://bibliotek-o.org/shapes/audio/InstanceToItemPropertyGroup> <http://www.w3.org/ns/shacl#order> "8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/ItemActivityPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/ItemActivityPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Item Agent Information" .
+<http://bibliotek-o.org/shapes/audio/ItemActivityPropertyGroup> <http://www.w3.org/ns/shacl#description> "To group Agent role information for the resource." .
+<http://bibliotek-o.org/shapes/audio/ItemActivityPropertyGroup> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/ItemToInstancePropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/ItemToInstancePropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Related Items (Copies)" .
+<http://bibliotek-o.org/shapes/audio/ItemToInstancePropertyGroup> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/ItemProvenanceGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/ItemProvenanceGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Item Provenance" .
+<http://bibliotek-o.org/shapes/audio/ItemProvenanceGroup> <http://www.w3.org/ns/shacl#description> "To group item provenance information for the resource." .
+<http://bibliotek-o.org/shapes/audio/ItemProvenanceGroup> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://bibliotek-o.org/shapes/audio/AudioItemMiscellaneousPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://bibliotek-o.org/shapes/audio/AudioItemMiscellaneousPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Miscellaneous Item Information" .
+<http://bibliotek-o.org/shapes/audio/AudioItemMiscellaneousPropertyGroup> <http://www.w3.org/ns/shacl#order> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .

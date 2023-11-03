@@ -1,0 +1,204 @@
+<http://www.egc.org/ont/data#VectorShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://www.egc.org/ont/data#VectorShape> <http://www.w3.org/ns/shacl#description> "All instances of data:VectorData will be checked"@en .
+<http://www.egc.org/ont/data#VectorShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.egc.org/ont/data#VectorData> .
+<http://www.egc.org/ont/process/saga#FlowAccumulationTopDownShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-802 <http://www.w3.org/ns/shacl#message> "Must has at most one input value with identifier ‘method’ for option ‘Method’ of tool ‘Flow Accumulation (Top-Down)’"@en .
+_:n3-802 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/gis/process#hasInputData> .
+_:n3-802 <http://www.w3.org/ns/shacl#qualifiedMaxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-802 <http://www.w3.org/ns/shacl#qualifiedMinCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-803 <http://www.w3.org/ns/shacl#hasValue> "method" .
+_:n3-803 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/identifier> .
+_:n3-802 <http://www.w3.org/ns/shacl#qualifiedValueShape> _:n3-803 .
+_:n3-802 <http://www.w3.org/ns/shacl#qualifiedValueShapesDisjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.egc.org/ont/process/saga#FlowAccumulationTopDownShape> <http://www.w3.org/ns/shacl#property> _:n3-802 .
+<http://www.egc.org/ont/process/saga#FlowAccumulationTopDownShape> <http://www.w3.org/ns/shacl#targetNode> <http://www.egc.org/ont/process/saga#flow_accumulation_top_down> .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.egc.org/ont/process/saga#SagaOption> .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/ns/shacl#description> "Constraints for SAGA tool Flow Accumulation (Top-Down)"@en .
+_:n3-934 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:n3-934 <http://www.w3.org/ns/shacl#defaultValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-934 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-934 <http://www.w3.org/ns/shacl#maxInclusive> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-934 <http://www.w3.org/ns/shacl#message> " value of option \"method\" for selecting flow direction algorithm  ’"@en .
+_:n3-934 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-934 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-934 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/data#dataContent> .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/ns/shacl#property> _:n3-934 .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/ns/shacl#select> "\nSELECT  $this  ?value\nWHERE {\n\t$this process:isOptionOf/process:usedByTask ?task. \n\t$this data:dataContent ?value. \n\tFILTER(IF((?task a task:HydroParamSpatialPatternCalc) && (3<?value),false,true))}\n" .
+_:n3-935 <http://www.w3.org/ns/shacl#message> "Multiple flow direction (MFD) algorithms are better than single flow direction (SFD) algorithms when calculating the spatial pattern of hydrological parameters such as topo-graphic index."@en .
+_:n3-936 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-937 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/gis/process#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-937 <http://www.w3.org/ns/shacl#prefix> "process" .
+_:n3-936 <http://www.w3.org/ns/shacl#declare> _:n3-937 .
+_:n3-938 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/context/task#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-938 <http://www.w3.org/ns/shacl#prefix> "task" .
+_:n3-936 <http://www.w3.org/ns/shacl#declare> _:n3-938 .
+_:n3-939 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/data#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-939 <http://www.w3.org/ns/shacl#prefix> "data" .
+_:n3-936 <http://www.w3.org/ns/shacl#declare> _:n3-939 .
+_:n3-935 <http://www.w3.org/ns/shacl#prefixes> _:n3-936 .
+_:n3-935 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/ns/shacl#sparql> _:n3-935 .
+<http://www.egc.org/ont/process/saga#option_method> <http://www.w3.org/ns/shacl#targetNode> <http://www.egc.org/ont/data#method_value> .
+<http://www.egc.org/ont/data#CRSExistenceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-990 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-990 <http://www.w3.org/ns/shacl#description> "Checks whether a data set has a CRS."@en .
+_:n3-990 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-990 <http://www.w3.org/ns/shacl#message> "Vector must have a CRS."@en .
+_:n3-990 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-990 <http://www.w3.org/ns/shacl#minLength> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-992 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.egc.org/ont/data#hasCRS> .
+_:n3-992 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-993 .
+_:n3-993 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.egc.org/ont/data#hasEPSG> .
+_:n3-993 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-991 <http://www.w3.org/ns/shacl#alternativePath> _:n3-992 .
+_:n3-990 <http://www.w3.org/ns/shacl#path> _:n3-991 .
+<http://www.egc.org/ont/data#CRSExistenceShape> <http://www.w3.org/ns/shacl#property> _:n3-990 .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#flag> "i" .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#message> "Invalid EPSG code! Must match the pattern ‘urn:ogc:def:crs:EPSG:[version]:[code]’,  ‘http://www.opengis.net/def/crs/EPSG/[version]/[code]’, or ‘EPSG:[code]’"@en .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#minLength> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#pattern> "^(urn:ogc:def:crs:EPSG:[0-9.]{1,7}:[0-9]{4,5})|^(http://www.opengis.net/def/crs/EPSG/[0-9.]{1,7}/[0-9]{4,5})|^(EPSG:[0-9]{4,5})" .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://www.egc.org/ont/data#hasEPSG> .
+<http://www.egc.org/ont/data#CRSExistenceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-1065 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-1065 <http://www.w3.org/ns/shacl#description> "Checks whether a data set has a CRS."@en .
+_:n3-1065 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1065 <http://www.w3.org/ns/shacl#message> "Vector must have a CRS."@en .
+_:n3-1065 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1065 <http://www.w3.org/ns/shacl#minLength> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1067 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.egc.org/ont/data#hasCRS> .
+_:n3-1067 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1068 .
+_:n3-1068 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.egc.org/ont/data#hasEPSG> .
+_:n3-1068 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-1066 <http://www.w3.org/ns/shacl#alternativePath> _:n3-1067 .
+_:n3-1065 <http://www.w3.org/ns/shacl#path> _:n3-1066 .
+<http://www.egc.org/ont/data#CRSExistenceShape> <http://www.w3.org/ns/shacl#property> _:n3-1065 .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-1069 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1069 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1069 <http://www.w3.org/ns/shacl#node> <http://www.egc.org/ont/data#EPSGShape> .
+_:n3-1069 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/data#hasEPSG> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#property> _:n3-1069 .
+_:n3-1070 <http://www.w3.org/ns/shacl#class> <http://www.egc.org/ont/data#VectorFormat> .
+_:n3-1070 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1070 <http://www.w3.org/ns/shacl#message> "Must be vector data format" .
+_:n3-1070 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1070 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/data#dataFormat> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#property> _:n3-1070 .
+_:n3-1071 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/sf#Geometry> .
+_:n3-1071 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1071 <http://www.w3.org/ns/shacl#message> "Vector data must declare a geometry type "@en .
+_:n3-1071 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1071 <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#property> _:n3-1071 .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.egc.org/ont/data#VectorData> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#flag> "i" .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#message> "Invalid EPSG code! Must match the pattern ‘urn:ogc:def:crs:EPSG:[version]:[code]’,  ‘http://www.opengis.net/def/crs/EPSG/[version]/[code]’, or ‘EPSG:[code]’"@en .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#minLength> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#pattern> "^(urn:ogc:def:crs:EPSG:[0-9.]{1,7}:[0-9]{4,5})|^(http://www.opengis.net/def/crs/EPSG/[0-9.]{1,7}/[0-9]{4,5})|^(EPSG:[0-9]{4,5})" .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://www.egc.org/ont/data#hasEPSG> .
+<http://www.egc.org/ont/data#CRSExistenceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-1101 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-1101 <http://www.w3.org/ns/shacl#description> "Checks whether a data set has a CRS."@en .
+_:n3-1101 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1101 <http://www.w3.org/ns/shacl#message> "Vector must have a CRS."@en .
+_:n3-1101 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1101 <http://www.w3.org/ns/shacl#minLength> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.egc.org/ont/data#hasCRS> .
+_:n3-1103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1104 .
+_:n3-1104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.egc.org/ont/data#hasEPSG> .
+_:n3-1104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-1102 <http://www.w3.org/ns/shacl#alternativePath> _:n3-1103 .
+_:n3-1101 <http://www.w3.org/ns/shacl#path> _:n3-1102 .
+<http://www.egc.org/ont/data#CRSExistenceShape> <http://www.w3.org/ns/shacl#property> _:n3-1101 .
+<http://www.egc.org/ont/process/arcgis#ClipAnalysisShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-1105 <http://www.w3.org/ns/shacl#message> "Must have exactly one input value with identifier ‘clip_features’ for parameter ‘clip_features’ of tool ‘Clip_analysis’"@en .
+_:n3-1105 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/process#hasInputData> .
+_:n3-1105 <http://www.w3.org/ns/shacl#qualifiedMaxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1105 <http://www.w3.org/ns/shacl#qualifiedMinCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1106 <http://www.w3.org/ns/shacl#hasValue> "clip_features" .
+_:n3-1106 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/identifier> .
+_:n3-1105 <http://www.w3.org/ns/shacl#qualifiedValueShape> _:n3-1106 .
+_:n3-1105 <http://www.w3.org/ns/shacl#qualifiedValueShapesDisjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.egc.org/ont/process/arcgis#ClipAnalysisShape> <http://www.w3.org/ns/shacl#property> _:n3-1105 .
+_:n3-1107 <http://www.w3.org/ns/shacl#message> "Must have exactly one input with identifier ‘in_features’ for parameter ‘in_features’ of tool ‘Clip_analysis’"@en .
+_:n3-1107 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/process#hasInputData> .
+_:n3-1107 <http://www.w3.org/ns/shacl#qualifiedMaxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1107 <http://www.w3.org/ns/shacl#qualifiedMinCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1108 <http://www.w3.org/ns/shacl#hasValue> "in_features" .
+_:n3-1108 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/identifier> .
+_:n3-1107 <http://www.w3.org/ns/shacl#qualifiedValueShape> _:n3-1108 .
+_:n3-1107 <http://www.w3.org/ns/shacl#qualifiedValueShapesDisjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.egc.org/ont/process/arcgis#ClipAnalysisShape> <http://www.w3.org/ns/shacl#property> _:n3-1107 .
+<http://www.egc.org/ont/process/arcgis#ClipAnalysisShape> <http://www.w3.org/ns/shacl#targetNode> <http://www.egc.org/ont/process/arcgis#clip_analysis> .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.egc.org/ont/process/arcgis#ArcGISInput> .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/ns/shacl#description> "Parameter clip_features: the features to clip input features in ArcGIS Clip analysis"@en .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/ns/shacl#node> <http://www.egc.org/ont/data#VectorDataShape> .
+_:n3-1109 <http://www.w3.org/ns/shacl#message> "Input Features and Clip Features must have the same coordinate system."@en .
+_:n3-1110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-1111 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/data#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-1111 <http://www.w3.org/ns/shacl#prefix> "data" .
+_:n3-1110 <http://www.w3.org/ns/shacl#declare> _:n3-1111 .
+_:n3-1109 <http://www.w3.org/ns/shacl#prefixes> _:n3-1110 .
+_:n3-1109 <http://www.w3.org/ns/shacl#select> "\nSELECT $this (data:hasEPSG AS ?path) (?clip_epsg AS ?value)\n\tWHERE {\n\t\t$this data:hasEPSG ?clip_epsg.\n        data:in_features_data data:hasEPSG ?in_epsg.\n\t\tFILTER (?in_epsg !=?clip_epsg). \n        }\n" .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/ns/shacl#sparql> _:n3-1109 .
+_:n3-1112 <http://www.w3.org/ns/shacl#message> "Clip features cannot be used to clip input features. When the Input Features are polygons, the Clip Features must also be polygons. When the Input Features are lines, the Clip Features can be lines or polygons. When the Input Features are points, the Clip Features can be points, lines, or polygons."@en .
+_:n3-1113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-1114 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/data#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-1114 <http://www.w3.org/ns/shacl#prefix> "data" .
+_:n3-1113 <http://www.w3.org/ns/shacl#declare> _:n3-1114 .
+_:n3-1115 <http://www.w3.org/ns/shacl#namespace> "http://www.opengis.net/ont/sf#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-1115 <http://www.w3.org/ns/shacl#prefix> "sf" .
+_:n3-1113 <http://www.w3.org/ns/shacl#declare> _:n3-1115 .
+_:n3-1116 <http://www.w3.org/ns/shacl#namespace> "http://www.opengis.net/ont/geosparql#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-1116 <http://www.w3.org/ns/shacl#prefix> "geo" .
+_:n3-1113 <http://www.w3.org/ns/shacl#declare> _:n3-1116 .
+_:n3-1112 <http://www.w3.org/ns/shacl#prefixes> _:n3-1113 .
+_:n3-1112 <http://www.w3.org/ns/shacl#select> "\nSELECT $this (geo:hasGeometry AS ?path) (?clip_geom AS ?value)\n\tWHERE {\n\t\t$this geo:hasGeometry ?clip_geom.\n        data:in_features_data geo:hasGeometry ?in_geom.\n\t\tFILTER ( \n\t\t\tIF(EXISTS {?in_geom a sf:Point},false,true)||\n            IF(EXISTS {?in_geom a sf:Line} && NOT EXISTS {?clip_geom a sf:Point},false,true)||\n            IF(EXISTS {?in_geom a sf:Polygon} && EXISTS {?clip_geom a sf:Polygon},false,true)). \n        }\n" .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/ns/shacl#sparql> _:n3-1112 .
+<http://www.egc.org/ont/process/arcgis#clip_features> <http://www.w3.org/ns/shacl#targetNode> <http://www.egc.org/ont/data#clip_features_data> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#flag> "i" .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#message> "Invalid EPSG code! Must match the pattern ‘urn:ogc:def:crs:EPSG:[version]:[code]’,  ‘http://www.opengis.net/def/crs/EPSG/[version]/[code]’, or ‘EPSG:[code]’"@en .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#minLength> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#pattern> "^(urn:ogc:def:crs:EPSG:[0-9.]{1,7}:[0-9]{4,5})|^(http://www.opengis.net/def/crs/EPSG/[0-9.]{1,7}/[0-9]{4,5})|^(EPSG:[0-9]{4,5})" .
+<http://www.egc.org/ont/data#EPSGShape> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://www.egc.org/ont/data#hasEPSG> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-1117 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1117 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1117 <http://www.w3.org/ns/shacl#node> <http://www.egc.org/ont/data#EPSGShape> .
+_:n3-1117 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/data#hasEPSG> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#property> _:n3-1117 .
+_:n3-1118 <http://www.w3.org/ns/shacl#class> <http://www.egc.org/ont/data#VectorFormat> .
+_:n3-1118 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1118 <http://www.w3.org/ns/shacl#message> "Must be vector data format" .
+_:n3-1118 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1118 <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/data#dataFormat> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#property> _:n3-1118 .
+_:n3-1119 <http://www.w3.org/ns/shacl#class> <http://www.opengis.net/ont/sf#Geometry> .
+_:n3-1119 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1119 <http://www.w3.org/ns/shacl#message> "Vector data must declare a geometry type "@en .
+_:n3-1119 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-1119 <http://www.w3.org/ns/shacl#path> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#property> _:n3-1119 .
+<http://www.egc.org/ont/data#VectorDataShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.egc.org/ont/data#VectorData> .
+<http://www.egc.org/ont/process#DataThemeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://www.egc.org/ont/process#DataThemeShape> <http://www.w3.org/ns/shacl#path> <http://www.egc.org/ont/data#dataTheme> .
+_:n3-1157 <http://www.w3.org/ns/shacl#message> "Data theme (e.g., DEM ) of the output and input data of two functionalities that linked via process:preprocessor must be consistent."@en .
+_:n3-1158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-1159 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/process#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-1159 <http://www.w3.org/ns/shacl#prefix> "process" .
+_:n3-1158 <http://www.w3.org/ns/shacl#declare> _:n3-1159 .
+_:n3-1160 <http://www.w3.org/ns/shacl#namespace> "http://www.egc.org/ont/data#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:n3-1160 <http://www.w3.org/ns/shacl#prefix> "data" .
+_:n3-1158 <http://www.w3.org/ns/shacl#declare> _:n3-1160 .
+_:n3-1157 <http://www.w3.org/ns/shacl#prefixes> _:n3-1158 .
+_:n3-1157 <http://www.w3.org/ns/shacl#select> "\n            SELECT $this  (?in_theme AS ?value)\n                WHERE {\n                    $this  process:input/$PATH   ?in_theme.  # data theme of input parameter\n                    $this  process:preprocessor  ?pre_func.   # preceding functionality\n                    ?pre_func process:output/$PATH  ?out_theme.   #  data theme of output parameter\n                    FILTER (  ?in_theme != ?out_theme  ). # is not equal\n                    }\n            " .
+<http://www.egc.org/ont/process#DataThemeShape> <http://www.w3.org/ns/shacl#sparql> _:n3-1157 .
+<http://www.egc.org/ont/process#DataThemeShape> <http://www.w3.org/ns/shacl#targetSubjectsOf> <http://www.egc.org/ont/process#preprocessor> .

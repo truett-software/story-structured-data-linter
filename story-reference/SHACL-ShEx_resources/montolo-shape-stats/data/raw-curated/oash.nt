@@ -1,0 +1,757 @@
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E27_Site soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/2000/01/rdf-schema#label> "E27 Site"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P17> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P19> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P20> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P21> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Site> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E27_Site> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E42_Identifier soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "E42 Identifier (valeurs de P48_has_preferred_identifier)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P112> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/PreferredIdentifier> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de S19_Encounter_Event soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "S19 Encounter Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P25> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P26> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P27> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P28> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P29> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P30> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/EncounterEvent> <http://www.w3.org/ns/shacl#targetClass> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E21_Person soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/2000/01/rdf-schema#label> "E21 Person"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#order> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P32> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P33> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P34> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Person> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E40_Legal_Body soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/2000/01/rdf-schema#label> "E40 Legal Body"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#order> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P39> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P40> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/LegalBody> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de B1_Built_Work soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/2000/01/rdf-schema#label> "B1 Built Work"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#order> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P42> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P44> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P45> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P47> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P49> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P50> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/BuiltWork> <http://www.w3.org/ns/shacl#targetClass> <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E25_Man-Made_Feature soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/2000/01/rdf-schema#label> "E25 Man-Made Feature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#order> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P52> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P56> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P57> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P58> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P59> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P60> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P61> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P63> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P64> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeFeature> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E22_Man-Made_Object soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/2000/01/rdf-schema#label> "E22 Man-Made Object"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#order> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P66> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P67> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P68> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P69> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P70> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P71> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P72> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P73> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P74> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P75> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P77> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P78> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/ManMadeObject> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de A2_Stratigraphic_Volume_Unit soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/2000/01/rdf-schema#label> "A2 Stratigraphic Volume Unit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#order> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P80> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P82> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P83> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P84> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P85> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P86> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P87> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P89> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P90> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/StratigraphicVolumeUnit> <http://www.w3.org/ns/shacl#targetClass> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E52_Time-Span soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/2000/01/rdf-schema#label> "E52 Time-Span (sur un Evènement « historique »)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#order> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P99> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/TimeSpanEvent> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E5_Event soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/2000/01/rdf-schema#label> "E5 Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/ns/shacl#order> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P93> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Event> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E31_Document soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/2000/01/rdf-schema#label> "E31 Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#order> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P101> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P102> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P103> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P105> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/Document> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/2000/01/rdf-schema#comment> "Il est SOUHAITABLE que les instances de E65_Creation soient des IRIs (pas des nœuds anonymes)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/2000/01/rdf-schema#label> "E65 Creation (d'un Document)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#order> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P106> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P107> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P108> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#property> <http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P109> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/DocumentCreation> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> <http://www.w3.org/ns/shacl#description> "Le P48_has_preferred_identifier sur les Sites DOIT apparaitre au maximum 1 fois et être un E42_Identifier"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P48_has_preferred_identifier sur un oash:Site"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P15> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur un Site DOIT être présent et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:Site"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P16> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P17> <http://www.w3.org/ns/shacl#description> "Le P3_has_note sur un Site DOIT apparaitre au maximum 1 fois et être un Literal"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P17> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P17> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P17> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#description> "Les valeurs de P53_has_former_or_current_location des Sites DOIVENT être des URIs Geonames (sans autre précision). La propriété DOIT être présente et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P53_has_former_or_current_location sur un oash:Site"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#pattern> "^http://sws.geonames.org/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P18> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P19> <http://www.w3.org/ns/shacl#description> "Un Site PEUT porter un P8i_witnessed vers un S19 ou un E5_Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P19> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix1990 .
+_:b10_node1ei92sv7ix1990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix1991 .
+_:b10_node1ei92sv7ix1991 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+_:b10_node1ei92sv7ix1990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix1992 .
+_:b10_node1ei92sv7ix1992 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix1993 .
+_:b10_node1ei92sv7ix1993 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E5_event> .
+_:b10_node1ei92sv7ix1992 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P19> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P20> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P20> <http://www.w3.org/ns/shacl#description> "Un Site DOIT être lié à au moins un évènement de découverte S19"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P20> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P20> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix1994 .
+_:b10_node1ei92sv7ix1994 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix1995 .
+_:b10_node1ei92sv7ix1995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+_:b10_node1ei92sv7ix1995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix1996 .
+_:b10_node1ei92sv7ix1996 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix1997 .
+_:b10_node1ei92sv7ix1997 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P8_took_place_on_or_within> .
+_:b10_node1ei92sv7ix1996 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P21> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P21> <http://www.w3.org/ns/shacl#description> "Le P70i_is_documented_in DOIT être un E31_Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P21> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> <http://www.w3.org/ns/shacl#description> "Le P2_has_type sur un évènement de découverte DOIT être unique, et typé avec une et une seule URI des Pactols"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P2_has_type sur un oash:EncounterEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> <http://www.w3.org/ns/shacl#pattern> "^https://ark.frantiq.fr/ark:/26678/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P24> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P25> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P25> <http://www.w3.org/ns/shacl#description> "Le P14_carried_out_by sur un Evenement de découverte DOIT être un E21_Person"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P25> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P14_carried_out_by sur un oash:EncounterEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P25> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P25> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P26> <http://www.w3.org/ns/shacl#description> "Le O19_has_found_object DOIT être soit un B1_Built_Work, E25_Man-Made_Feature, E22_Man-Made_Object ou A2_Stratigraphic_Volume_Unit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P26> <http://www.w3.org/ns/shacl#name> "Contraintes de crmsci:O19_has_found_object sur un oash:EncounterEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P26> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix1998 .
+_:b10_node1ei92sv7ix1998 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix1999 .
+_:b10_node1ei92sv7ix1999 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> .
+_:b10_node1ei92sv7ix1998 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2000 .
+_:b10_node1ei92sv7ix2000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2001 .
+_:b10_node1ei92sv7ix2001 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+_:b10_node1ei92sv7ix2000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2002 .
+_:b10_node1ei92sv7ix2002 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2003 .
+_:b10_node1ei92sv7ix2003 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+_:b10_node1ei92sv7ix2002 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2004 .
+_:b10_node1ei92sv7ix2004 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2005 .
+_:b10_node1ei92sv7ix2005 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+_:b10_node1ei92sv7ix2004 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P26> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMsci/O19_has_found_object> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P26> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P27> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E27_Site> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P27> <http://www.w3.org/ns/shacl#description> "Le P8_took_place_on_or_within DOIT être un Site"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P27> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8_took_place_on_or_within> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P28> <http://www.w3.org/ns/shacl#description> "Le P8_took_place_on_or_within ou son inverse DOIT être unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P28> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P28> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2006 .
+_:b10_node1ei92sv7ix2006 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2007 .
+_:b10_node1ei92sv7ix2007 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P8_took_place_on_or_within> .
+_:b10_node1ei92sv7ix2007 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2008 .
+_:b10_node1ei92sv7ix2008 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2009 .
+_:b10_node1ei92sv7ix2009 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+_:b10_node1ei92sv7ix2008 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P29> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P29> <http://www.w3.org/ns/shacl#description> "Le P48 sur un evènement de découverte doit être unique et être un E42_Identifier"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P29> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P29> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P30> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P30> <http://www.w3.org/ns/shacl#description> "Le P70i_is_documented_in DOIT être un E31_Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P30> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P32> <http://www.w3.org/ns/shacl#description> "Le P14i_performed sur une Personne DOIT être soit un S19_Encoutner_Event soit un E65_Creation"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P32> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P14i_performed sur un oash:Person"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P32> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix2010 .
+_:b10_node1ei92sv7ix2010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2011 .
+_:b10_node1ei92sv7ix2011 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+_:b10_node1ei92sv7ix2010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2012 .
+_:b10_node1ei92sv7ix2012 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2013 .
+_:b10_node1ei92sv7ix2013 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> .
+_:b10_node1ei92sv7ix2012 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P32> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P32> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P33> <http://www.w3.org/ns/shacl#description> "Une Personne DOIT avoir au moins un P14i ou un ^P14"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P33> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P33> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2014 .
+_:b10_node1ei92sv7ix2014 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2015 .
+_:b10_node1ei92sv7ix2015 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed> .
+_:b10_node1ei92sv7ix2015 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2016 .
+_:b10_node1ei92sv7ix2016 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2017 .
+_:b10_node1ei92sv7ix2017 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+_:b10_node1ei92sv7ix2016 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P34> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P34> <http://www.w3.org/ns/shacl#description> "Le P107i_is_current_or_former_member_of DOIT être un E40_Legal_Body"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P34> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P107i_is_current_or_former_member_of sur un oash:Person"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P34> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P34> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur une Personne DOIT être présent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:Person"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P35> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> <http://www.w3.org/ns/shacl#description> "Le P48_has_preferred_identifier sur une Institution DOIT être un E42_Identifier et DOIT être une URL (l’URL de son site web)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P48_has_preferred_identifier sur un oash:LegalBody"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> <http://www.w3.org/ns/shacl#pattern> "^https?://(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P37> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur une Institution DOIT être présent et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:LegalBody"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P38> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P39> <http://www.w3.org/ns/shacl#description> "Un LegalBody DOIT être lié à au moins une Personne"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P39> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P39> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2018 .
+_:b10_node1ei92sv7ix2018 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2019 .
+_:b10_node1ei92sv7ix2019 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> .
+_:b10_node1ei92sv7ix2019 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2020 .
+_:b10_node1ei92sv7ix2020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2021 .
+_:b10_node1ei92sv7ix2021 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> .
+_:b10_node1ei92sv7ix2020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P40> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P40> <http://www.w3.org/ns/shacl#description> "Le P107 DOIT être une Personne"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P40> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P42> <http://www.w3.org/ns/shacl#description> "Le P3_has_note sur un BuiltWork DOIT être une valeur litérale."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P42> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P3_has_note sur un oash:BuiltWork"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P42> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P42> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P42> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#description> "Le P48_has_preferred_identifier sur un BuiltWork DOIT exister, être unique, et être un E42_Identifier"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P48_has_preferred_identifier sur un oash:BuiltWork"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P43> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P44> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P44> <http://www.w3.org/ns/shacl#description> "Le O19i_was_object_found_by sur un BuiltWork PEUT exister"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P44> <http://www.w3.org/ns/shacl#name> "Contraintes de crmsci:O19i_was_object_found_by sur un oash:BuiltWork"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P44> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P44> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P45> <http://www.w3.org/ns/shacl#description> "Un BuiltWork DOIT être lié à un et un seul O19i ou l'inverse de O19"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P45> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P45> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P45> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2022 .
+_:b10_node1ei92sv7ix2022 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2023 .
+_:b10_node1ei92sv7ix2023 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+_:b10_node1ei92sv7ix2023 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2024 .
+_:b10_node1ei92sv7ix2024 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2025 .
+_:b10_node1ei92sv7ix2025 <http://www.w3.org/ns/shacl#inversePath> <http://www.ics.forth.gr/isl/CRMsci/O19_has_found_object> .
+_:b10_node1ei92sv7ix2024 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> <http://www.w3.org/ns/shacl#description> "Le P101_had_as_general_use sur un BuiltWork DOIT être une URI PACTOLS"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P101_had_as_general_use sur un oash:BuiltWork"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P101_had_as_general_use> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> <http://www.w3.org/ns/shacl#pattern> "^https://ark.frantiq.fr/ark:/26678/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P46> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P47> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P47> <http://www.w3.org/ns/shacl#description> "Le P46_is_composed_of ou son inverse sur un BuiltWork DOIT être un E25_Man-Made_Feature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P47> <http://www.w3.org/ns/shacl#name> "Contraintes de [ sh:alternativePath ( crm:P46_is_composed_of [ sh:inversePath crm:P46i_forms_part_of ]) ] sur un oash:BuiltWork"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P47> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2026 .
+_:b10_node1ei92sv7ix2026 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2027 .
+_:b10_node1ei92sv7ix2027 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+_:b10_node1ei92sv7ix2027 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2028 .
+_:b10_node1ei92sv7ix2028 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2029 .
+_:b10_node1ei92sv7ix2029 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+_:b10_node1ei92sv7ix2028 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P47> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur un BuiltWork DOIT être présent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:BuiltWork"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P48> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P49> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P49> <http://www.w3.org/ns/shacl#description> "Le P70i_is_documented_in DOIT être un E31_Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P49> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P50> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P50> <http://www.w3.org/ns/shacl#description> "Un BuiltWork DOIT porter au maximum un P8i_witnessed vers E5_Event (datation)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P50> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P50> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P52> <http://www.w3.org/ns/shacl#description> "Le P3_has_note sur un Man-Made Feature DOIT être une valeur litérale."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P52> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P3_has_note sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P52> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P52> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P52> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#description> "Le P48_has_preferred_identifier sur un Man-Made Feature DOIT être un E42_Identifier et être unique."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P48_has_preferred_identifier sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P53> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> <http://www.w3.org/ns/shacl#description> "Le P101_had_as_general_use sur un Man-Made Feature DOIT être une URI PACTOLS et être unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P101_had_as_general_use sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P101_had_as_general_use> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> <http://www.w3.org/ns/shacl#pattern> "^https://ark.frantiq.fr/ark:/26678/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P54> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#description> "Le P2_has_type sur une Man-Made Feature DOIT être présent, unique et avoir pour valeur soit Feature, Wall ou Burial"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#in> _:b10_node1ei92sv7ix2030 .
+_:b10_node1ei92sv7ix2030 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrtIxHmbVwDYW> .
+_:b10_node1ei92sv7ix2030 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2031 .
+_:b10_node1ei92sv7ix2031 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrt795b632nWw> .
+_:b10_node1ei92sv7ix2031 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2032 .
+_:b10_node1ei92sv7ix2032 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/crtyuEo4S4GyD> .
+_:b10_node1ei92sv7ix2032 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P2_has_type sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P55> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P56> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P56> <http://www.w3.org/ns/shacl#description> "Le O19i_was_object_found_by sur un Man-Made Feature DOIT être un S19_Encoutner_Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P56> <http://www.w3.org/ns/shacl#name> "Contraintes de crmsci:O19i_was_object_found_by sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P56> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P56> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P57> <http://www.w3.org/ns/shacl#description> "Un Man-Made Feature DOIT être lié à un et un seul O19i ou inverse de O19"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P57> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P57> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P57> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2033 .
+_:b10_node1ei92sv7ix2033 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2034 .
+_:b10_node1ei92sv7ix2034 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+_:b10_node1ei92sv7ix2034 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2035 .
+_:b10_node1ei92sv7ix2035 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2036 .
+_:b10_node1ei92sv7ix2036 <http://www.w3.org/ns/shacl#inversePath> <http://www.ics.forth.gr/isl/CRMsci/O19_has_found_object> .
+_:b10_node1ei92sv7ix2035 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P58> <http://www.w3.org/ns/shacl#description> "Un P46i_forms_part_of ou son inverse P46 sur un Man-made Feature DOIT être unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P58> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P58> <http://www.w3.org/ns/shacl#name> "Contraintes de [ sh:alternativePath ( crm:P46i_forms_part_of [ sh:inversePath crm:P46_is_composed_of ]) ] sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P58> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2037 .
+_:b10_node1ei92sv7ix2037 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2038 .
+_:b10_node1ei92sv7ix2038 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+_:b10_node1ei92sv7ix2038 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2039 .
+_:b10_node1ei92sv7ix2039 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2040 .
+_:b10_node1ei92sv7ix2040 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+_:b10_node1ei92sv7ix2039 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P58> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P59> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P59> <http://www.w3.org/ns/shacl#description> "Un P46i_forms_part_of sur un Man-made-Feature DOIT être un B1_Built_Work"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P59> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P60> <http://www.w3.org/ns/shacl#description> "Un P46_is_composed_of sur un Man-Made Feature DOIT être soit un A2_Stratigraphic_Volume_Unit ou un E22_Man-Made_Object"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P60> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P46_is_composed_of sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P60> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix2041 .
+_:b10_node1ei92sv7ix2041 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2042 .
+_:b10_node1ei92sv7ix2042 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+_:b10_node1ei92sv7ix2041 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2043 .
+_:b10_node1ei92sv7ix2043 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2044 .
+_:b10_node1ei92sv7ix2044 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+_:b10_node1ei92sv7ix2043 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P60> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P60> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P61> <http://www.w3.org/ns/shacl#description> "Un P46_is_composed_of ou son inverse P46i sur un Man-Made Feature DOIT être soit un A2_Stratigraphic_Volume_Unit ou un E22_Man-Made_Object"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P61> <http://www.w3.org/ns/shacl#name> "Contraintes de [ sh:alternativePath ( crm:P46_is_composed_of [ sh:inversePath crm:P46i_forms_part_of ]) ] sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P61> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix2049 .
+_:b10_node1ei92sv7ix2049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2050 .
+_:b10_node1ei92sv7ix2050 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+_:b10_node1ei92sv7ix2049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2051 .
+_:b10_node1ei92sv7ix2051 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2052 .
+_:b10_node1ei92sv7ix2052 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+_:b10_node1ei92sv7ix2051 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P61> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2045 .
+_:b10_node1ei92sv7ix2045 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2046 .
+_:b10_node1ei92sv7ix2046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+_:b10_node1ei92sv7ix2046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2047 .
+_:b10_node1ei92sv7ix2047 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2048 .
+_:b10_node1ei92sv7ix2048 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+_:b10_node1ei92sv7ix2047 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P61> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur une Man-Made Feature DOIT être présent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:ManMadeFeature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P62> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P63> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P63> <http://www.w3.org/ns/shacl#description> "Le P70i_is_documented_in DOIT être un E31_Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P63> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P64> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P64> <http://www.w3.org/ns/shacl#description> "Un ManMadeFeature DOIT porter au maximum un P8i_witnessed vers E5_Event (datation)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P64> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P64> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P66> <http://www.w3.org/ns/shacl#description> "Le P3_has_note sur un Man-Made Object DOIT être une valeur litérale."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P66> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P3_has_note sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P66> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P66> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P66> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P67> <http://www.w3.org/ns/shacl#description> "Le P101_had_as_general_use sur un Man-Made Object DOIT être une URI PACTOLS"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P67> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P101_had_as_general_use sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P67> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P101_had_as_general_use> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P67> <http://www.w3.org/ns/shacl#pattern> "^https://ark.frantiq.fr/ark:/26678/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P67> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P68> <http://www.w3.org/ns/shacl#description> "Le P45_consists_of sur un Man-Made Object DOIT être une URI des PACTOLS"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P68> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P45_consists_of sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P68> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P45_consists_of> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P68> <http://www.w3.org/ns/shacl#pattern> "^https://ark.frantiq.fr/ark:/26678/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P68> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P69> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P69> <http://www.w3.org/ns/shacl#description> "Le P48_has_preferred_identifier sur un Man-Made Object DOIT être un E42_Identifier"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P69> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P48_has_preferred_identifier sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P69> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P69> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P70> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P70> <http://www.w3.org/ns/shacl#description> "Le O19i_was_object_found_by sur un Man-Made Object DOIT être un S19_Encoutner_Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P70> <http://www.w3.org/ns/shacl#name> "Contraintes de crmsci:O19i_was_object_found_by sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P70> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P70> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P71> <http://www.w3.org/ns/shacl#description> "Un Man-Made Object DOIT être lié à un seul O19i ou inverse de O19"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P71> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P71> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2053 .
+_:b10_node1ei92sv7ix2053 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2054 .
+_:b10_node1ei92sv7ix2054 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+_:b10_node1ei92sv7ix2054 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2055 .
+_:b10_node1ei92sv7ix2055 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2056 .
+_:b10_node1ei92sv7ix2056 <http://www.w3.org/ns/shacl#inversePath> <http://www.ics.forth.gr/isl/CRMsci/O19_has_found_object> .
+_:b10_node1ei92sv7ix2055 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P72> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P72> <http://www.w3.org/ns/shacl#description> "Le AP21i_is_contained_in sur un Man-Made Object DOIT être une A2_Stratigraphic_Volume_Unit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P72> <http://www.w3.org/ns/shacl#name> "Contraintes de crmarch:AP21i_is_contained_in sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P72> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMarchaeo/AP21i_is_contained_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P72> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P73> <http://www.w3.org/ns/shacl#description> "Un Man-Made Object DOIT être lié à au maximum 1 AP21i ou inverse de AP21"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P73> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P73> <http://www.w3.org/ns/shacl#name> "Contraintes de [ sh:alternativePath ( crmarch:AP21i_is_contained_in [ sh:inversePath crmarch:AP21_contains ]) ] sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P73> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2057 .
+_:b10_node1ei92sv7ix2057 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2058 .
+_:b10_node1ei92sv7ix2058 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ics.forth.gr/isl/CRMarchaeo/AP21i_is_contained_in> .
+_:b10_node1ei92sv7ix2058 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2059 .
+_:b10_node1ei92sv7ix2059 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2060 .
+_:b10_node1ei92sv7ix2060 <http://www.w3.org/ns/shacl#inversePath> <http://www.ics.forth.gr/isl/CRMarchaeo/AP21_contains> .
+_:b10_node1ei92sv7ix2059 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P73> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P74> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P74> <http://www.w3.org/ns/shacl#description> "Le P46i_forms_part_of sur un Man-Made Object DOIT être un E25_Man-Made_Feature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P74> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P75> <http://www.w3.org/ns/shacl#description> "Un Man-Made Object DOIT être lié à au maximum 1 P46i ou inverse de P46"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P75> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P75> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2061 .
+_:b10_node1ei92sv7ix2061 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2062 .
+_:b10_node1ei92sv7ix2062 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+_:b10_node1ei92sv7ix2062 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2063 .
+_:b10_node1ei92sv7ix2063 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2064 .
+_:b10_node1ei92sv7ix2064 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+_:b10_node1ei92sv7ix2063 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur un Man-Made Object DOIT être présent et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:ManMadeObject"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P76> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P77> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P77> <http://www.w3.org/ns/shacl#description> "Le P70i_is_documented_in DOIT être un E31_Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P77> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P78> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P78> <http://www.w3.org/ns/shacl#description> "Un ManMadeObject DOIT porter au maximum un P8i_witnessed vers E5_Event (datation)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P78> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P78> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P80> <http://www.w3.org/ns/shacl#description> "Le P3_has_note sur une US DOIT être une valeur litérale."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P80> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P3_has_note sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P80> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P80> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P80> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> <http://www.w3.org/ns/shacl#description> "Le P48_has_preferred_identifier sur une US DOIT être un E42_Identifier et être unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P48_has_preferred_identifier sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P81> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P82> <http://www.w3.org/ns/shacl#description> "Le P101_had_as_general_use sur une US DOIT être une valeur PACTOLS connue (Construction, Occupation, Destruction, Abandon, Remblais)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P82> <http://www.w3.org/ns/shacl#in> _:b10_node1ei92sv7ix2065 .
+_:b10_node1ei92sv7ix2065 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrtM9HMWQTGJV> .
+_:b10_node1ei92sv7ix2065 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2066 .
+_:b10_node1ei92sv7ix2066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrtUu5zfknZ1x> .
+_:b10_node1ei92sv7ix2066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2067 .
+_:b10_node1ei92sv7ix2067 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrtcWtmlzv64Z> .
+_:b10_node1ei92sv7ix2067 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2068 .
+_:b10_node1ei92sv7ix2068 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrt9Xvh4RiNS5> .
+_:b10_node1ei92sv7ix2068 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2069 .
+_:b10_node1ei92sv7ix2069 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ark.frantiq.fr/ark:/26678/pcrt9M0SrAITut> .
+_:b10_node1ei92sv7ix2069 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P82> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P101_had_as_general_use sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P82> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P101_had_as_general_use> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P82> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P83> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P83> <http://www.w3.org/ns/shacl#description> "le AP21_contains sur une US DOIT être un E22_Man-Made_Object"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P83> <http://www.w3.org/ns/shacl#name> "Contraintes de crmarch:AP21_contains sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P83> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMarchaeo/AP21_contains> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P83> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P84> <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P84> <http://www.w3.org/ns/shacl#description> "Le O19i_was_object_found_by sur une US DOIT être un S19_Encoutner_Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P84> <http://www.w3.org/ns/shacl#name> "Contraintes de crmsci:O19i_was_object_found_by sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P84> <http://www.w3.org/ns/shacl#path> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P84> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P85> <http://www.w3.org/ns/shacl#description> "Une US DOIT être lié à un et un seul O19i ou inverse de O19 maximum"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P85> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P85> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P85> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2070 .
+_:b10_node1ei92sv7ix2070 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2071 .
+_:b10_node1ei92sv7ix2071 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ics.forth.gr/isl/CRMsci/O19i_was_object_found_by> .
+_:b10_node1ei92sv7ix2071 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2072 .
+_:b10_node1ei92sv7ix2072 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2073 .
+_:b10_node1ei92sv7ix2073 <http://www.w3.org/ns/shacl#inversePath> <http://www.ics.forth.gr/isl/CRMsci/O19_has_found_object> .
+_:b10_node1ei92sv7ix2072 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P86> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P86> <http://www.w3.org/ns/shacl#description> "Le P46i_forms_part_of sur une US DOIT être un E25_Man-Made_Feature"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P86> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P46i_forms_part_of sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P86> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P86> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P87> <http://www.w3.org/ns/shacl#description> "Le P46i_forms_part_of ou son inverse sur une US DOIT être unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P87> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P87> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2074 .
+_:b10_node1ei92sv7ix2074 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2075 .
+_:b10_node1ei92sv7ix2075 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+_:b10_node1ei92sv7ix2075 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2076 .
+_:b10_node1ei92sv7ix2076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2077 .
+_:b10_node1ei92sv7ix2077 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+_:b10_node1ei92sv7ix2076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur une US Object DOIT être présent et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:StratigraphicVolumeUnit"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P88> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P89> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P89> <http://www.w3.org/ns/shacl#description> "Le P70i_is_documented_in DOIT être un E31_Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P89> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P90> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P90> <http://www.w3.org/ns/shacl#description> "Une US DOIT porter au maximum un P8i_witnessed vers E5_Event (datation)"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P90> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P90> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> <http://www.w3.org/ns/shacl#description> "Le P8_took_place_on_or_within ou son inverse P8i_witnessed sur un Event DOIT être présent."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> <http://www.w3.org/ns/shacl#name> "Contraintes de [ sh:alternativePath (crm:P8_took_place_on_or_within [ sh:inversePath crm:P8i_witnessed ]) ] sur un oash:Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2078 .
+_:b10_node1ei92sv7ix2078 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2079 .
+_:b10_node1ei92sv7ix2079 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P8_took_place_on_or_within> .
+_:b10_node1ei92sv7ix2079 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2080 .
+_:b10_node1ei92sv7ix2080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2081 .
+_:b10_node1ei92sv7ix2081 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P8i_witnessed> .
+_:b10_node1ei92sv7ix2080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P92> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P93> <http://www.w3.org/ns/shacl#description> "Le P8_took_place_on_or_within sur un Event DOIT être soit un Site Built Work, Man-Made Feature, Stratigraphical Volume Unit ou Man-Made Object"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P93> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix2082 .
+_:b10_node1ei92sv7ix2082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2083 .
+_:b10_node1ei92sv7ix2083 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E27_Site> .
+_:b10_node1ei92sv7ix2082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2084 .
+_:b10_node1ei92sv7ix2084 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2085 .
+_:b10_node1ei92sv7ix2085 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> .
+_:b10_node1ei92sv7ix2084 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2086 .
+_:b10_node1ei92sv7ix2086 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2087 .
+_:b10_node1ei92sv7ix2087 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+_:b10_node1ei92sv7ix2086 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2088 .
+_:b10_node1ei92sv7ix2088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2089 .
+_:b10_node1ei92sv7ix2089 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+_:b10_node1ei92sv7ix2088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2090 .
+_:b10_node1ei92sv7ix2090 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2091 .
+_:b10_node1ei92sv7ix2091 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+_:b10_node1ei92sv7ix2090 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P93> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P8_took_place_on_or_within> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#description> "Le P4_has_time-span sur un Event DOIT être présent, unique et être un E52_Time-Span."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P4_has_time-span sur un oash:Event"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P94> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> <http://www.w3.org/ns/shacl#description> "Le P4_has_time-span sur un EncoutnerEvent DOIT être unique, mais pas obligatoire et être un E52_Time-Span."@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P4_has_time-span sur un oash:EncounterEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P95> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#description> "Le P82a_begin_of_the_begin sur un TimeSpan DOIT être unique et avoir le datatype xsd:dateTime"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P82a_begin_of_the_begin sur un oash:TimeSpanEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P96> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#description> "Le P82b_end_of_the_end sur un TimeSpan DOIT être unique et avoir le datatype xsd:dateTime"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P82b_end_of_the_end sur un oash:TimeSpanEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P97> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur un TimeSpan DOIT être présent et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:TimeSpanEvent"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P98> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P99> <http://www.w3.org/ns/shacl#description> "Un TimeSpan DOIT avoir au moins un P82a_begin_of_the_begin OU un P82b_end_of_the_end"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P99> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P99> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2092 .
+_:b10_node1ei92sv7ix2092 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2093 .
+_:b10_node1ei92sv7ix2093 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> .
+_:b10_node1ei92sv7ix2093 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2094 .
+_:b10_node1ei92sv7ix2094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> .
+_:b10_node1ei92sv7ix2094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P101> <http://www.w3.org/ns/shacl#description> "Le P2_has_type sur un Document DOIT être une URI PACTOLS"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P101> <http://www.w3.org/ns/shacl#name> "Contraintes de crm:P2_has_type sur un oash:Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P101> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P101> <http://www.w3.org/ns/shacl#pattern> "^https://ark.frantiq.fr/ark:/26678/(.*)" .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P101> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P102> <http://www.w3.org/ns/shacl#description> "Le P70_documents sur un Document DOIT être soit un Encounter_Event, soit un Site, soit un Built_Work, soit un Man-Made_Feature, soit une Stratigraphic Volume Unit, soit un Man-Made_Object"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P102> <http://www.w3.org/ns/shacl#or> _:b10_node1ei92sv7ix2095 .
+_:b10_node1ei92sv7ix2095 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2096 .
+_:b10_node1ei92sv7ix2096 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMsci/S19_Encounter_Event> .
+_:b10_node1ei92sv7ix2095 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2097 .
+_:b10_node1ei92sv7ix2097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2098 .
+_:b10_node1ei92sv7ix2098 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E27_Site> .
+_:b10_node1ei92sv7ix2097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2099 .
+_:b10_node1ei92sv7ix2099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2100 .
+_:b10_node1ei92sv7ix2100 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> .
+_:b10_node1ei92sv7ix2099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2101 .
+_:b10_node1ei92sv7ix2101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2102 .
+_:b10_node1ei92sv7ix2102 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature> .
+_:b10_node1ei92sv7ix2101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2103 .
+_:b10_node1ei92sv7ix2103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2104 .
+_:b10_node1ei92sv7ix2104 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> .
+_:b10_node1ei92sv7ix2103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2105 .
+_:b10_node1ei92sv7ix2105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2106 .
+_:b10_node1ei92sv7ix2106 <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMarchaeo/A2_Stratigraphic_Volume_Unit> .
+_:b10_node1ei92sv7ix2105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P102> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P70_documents> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P103> <http://www.w3.org/ns/shacl#description> "Un Document DOIT documenter au moins un objet, soit par un P70 soit par l'inverse P70i"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P103> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P103> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2107 .
+_:b10_node1ei92sv7ix2107 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2108 .
+_:b10_node1ei92sv7ix2108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P70_documents> .
+_:b10_node1ei92sv7ix2108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2109 .
+_:b10_node1ei92sv7ix2109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2110 .
+_:b10_node1ei92sv7ix2110 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> .
+_:b10_node1ei92sv7ix2109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> <http://www.w3.org/ns/shacl#description> "Le skos:prefLabel sur un Document DOIT être présent et unique"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> <http://www.w3.org/ns/shacl#name> "Contraintes de skos:prefLabel sur un oash:Document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P104> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P105> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P105> <http://www.w3.org/ns/shacl#description> "Un P94i_was_created_by sur un Document doit être un E65_Creation"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P105> <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P106> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P106> <http://www.w3.org/ns/shacl#description> "Une création de document DOIT avoir créé au moins 1 document"@fr .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P106> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P106> <http://www.w3.org/ns/shacl#path> _:b10_node1ei92sv7ix2111 .
+_:b10_node1ei92sv7ix2111 <http://www.w3.org/ns/shacl#alternativePath> _:b10_node1ei92sv7ix2112 .
+_:b10_node1ei92sv7ix2112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/P94_has_created> .
+_:b10_node1ei92sv7ix2112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10_node1ei92sv7ix2113 .
+_:b10_node1ei92sv7ix2113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b10_node1ei92sv7ix2114 .
+_:b10_node1ei92sv7ix2114 <http://www.w3.org/ns/shacl#inversePath> <http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by> .
+_:b10_node1ei92sv7ix2113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://openarchaeo.huma-num.fr/federation/shapes/openarchaeo-shapes/P107> <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E31_Document> .

@@ -1,0 +1,26 @@
+
+Anatomical Part:
+	Part of Plant
+		Root, Stem, Leaf or Flower
+			Plant Above Surface, Excluding Fruit and Seed
+				Head (Plant)
+
+PO:0025131 plant anatomical entity
+	PO:0009011 plant structure
+		PO:0025496 multi-tissue plant structure
+			PO:0025498 cardinal part of multi-tissue plant structure
+				PO:0025001 cardinal organ part
+					PO:0030076 archegonium head
+
+
+Taxonomic Classification of Organisms	127293
+	Plantae	858
+		Viridiplantae	277202
+			Tracheophyta	204174
+				Spermatophytina	199766
+					Angiospermae	133097
+						Magnoliopsida	869
+							Brassicales	138712
+								Brassicaceae	6585
+									Brassica	19293
+										Brassica oleracea	19320

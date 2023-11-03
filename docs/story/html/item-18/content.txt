@@ -1,0 +1,9 @@
+
+data-linked.json is @Language
+@Class 33 items
+@DefinedTerms 3 items
+
+href="https://validator.schema.org/#url=https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-18/data-linked.json"
+
+see
+\structured-data-linter\__story-sdl\rel-1-language

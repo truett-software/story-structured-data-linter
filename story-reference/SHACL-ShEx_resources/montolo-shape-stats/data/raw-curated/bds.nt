@@ -1,0 +1,1118 @@
+<http://purl.bdrc.io/shapes/adm/AdminShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/adm/AdminShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints core admin shapes" .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape> <http://www.w3.org/2000/01/rdf-schema#label> "Admin Entity shape"@en .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Entity> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/IgnoreShape> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/admin/logEntry> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/admin/LogEntry> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/ns/shacl#description> "must have one or more adm:logEntry of value adm:LogEntry"@en .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/ns/shacl#name> "log entry"@en .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-logEntry> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/admin/status> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/admin/Status> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#description> "must be exactly one adm:status of value adm:StatusType"@en .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#name> "status"@en .
+<http://purl.bdrc.io/ontology/shapes/adm/AdmEntityShape-status> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/shapes/core/BaseShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/BaseShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Buda extension to shacl vocabulary" .
+<http://purl.bdrc.io/ontology/shapes/core/RDF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-797 <http://www.w3.org/ns/shacl#prefix> "rdf" .
+_:n3-797 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+<http://purl.bdrc.io/ontology/shapes/core/RDF> <http://www.w3.org/ns/shacl#declare> _:n3-797 .
+<http://purl.bdrc.io/ontology/shapes/core/RDFS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-798 <http://www.w3.org/ns/shacl#prefix> "rdfs" .
+_:n3-798 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2000/01/rdf-schema#" .
+<http://purl.bdrc.io/ontology/shapes/core/RDFS> <http://www.w3.org/ns/shacl#declare> _:n3-798 .
+<http://purl.bdrc.io/ontology/shapes/core/ADM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-799 <http://www.w3.org/ns/shacl#prefix> "adm" .
+_:n3-799 <http://www.w3.org/ns/shacl#namespace> "http://purl.bdrc.io/ontology/admin/" .
+<http://purl.bdrc.io/ontology/shapes/core/ADM> <http://www.w3.org/ns/shacl#declare> _:n3-799 .
+<http://purl.bdrc.io/ontology/shapes/core/BDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-800 <http://www.w3.org/ns/shacl#prefix> "bdo" .
+_:n3-800 <http://www.w3.org/ns/shacl#namespace> "http://purl.bdrc.io/ontology/core/" .
+<http://purl.bdrc.io/ontology/shapes/core/BDO> <http://www.w3.org/ns/shacl#declare> _:n3-800 .
+<http://purl.bdrc.io/ontology/shapes/core/BDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PrefixDeclaration> .
+_:n3-801 <http://www.w3.org/ns/shacl#prefix> "bdr" .
+_:n3-801 <http://www.w3.org/ns/shacl#namespace> "http://purl.bdrc.io/resource/" .
+<http://purl.bdrc.io/ontology/shapes/core/BDR> <http://www.w3.org/ns/shacl#declare> _:n3-801 .
+<http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> <http://www.w3.org/2000/01/rdf-schema#label> "prefix for resource id"@en .
+<http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> <http://www.w3.org/2004/02/skos/core#definition> "prefix to use when generating identifier for a resource"@en .
+<http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://www.w3.org/2000/01/rdf-schema#label> "node shape type"@en .
+<http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.bdrc.io/ontology/shapes/core/ShapeType> .
+<http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://www.w3.org/2004/02/skos/core#definition> "type of a node shape to discriminate among fact shapes, internal shapes, and so on"@en .
+<http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://www.w3.org/2000/01/rdf-schema#label> "node shape type"@en .
+<http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.bdrc.io/ontology/shapes/core/ShapeType> .
+<http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://www.w3.org/2004/02/skos/core#definition> "type of a node shape to discriminate among fact shapes, internal shapes, and so on"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ShapeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bdrc.io/ontology/shapes/core/ExternalShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bdrc.io/ontology/shapes/core/ShapeType> .
+<http://purl.bdrc.io/ontology/shapes/core/ExternalShape> <http://www.w3.org/2000/01/rdf-schema#label> "node shape refers to resource external to focus node graph"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ExternalShape> <http://www.w3.org/2004/02/skos/core#definition> "this shape indicates external resource that is not contained in the focus node graph"@en .
+<http://purl.bdrc.io/ontology/shapes/core/FacetShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bdrc.io/ontology/shapes/core/ShapeType> .
+<http://purl.bdrc.io/ontology/shapes/core/FacetShape> <http://www.w3.org/2000/01/rdf-schema#label> "node shape is a facet"@en .
+<http://purl.bdrc.io/ontology/shapes/core/FacetShape> <http://www.w3.org/2004/02/skos/core#definition> "this shape applies to a resource contained in the graph of root Resource that is a facet of the containing resource"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IgnoreShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bdrc.io/ontology/shapes/core/ShapeType> .
+<http://purl.bdrc.io/ontology/shapes/core/IgnoreShape> <http://www.w3.org/2000/01/rdf-schema#label> "node shape is ignored for editing"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IgnoreShape> <http://www.w3.org/2004/02/skos/core#definition> "this shape indicates internal resource that is not editable"@en .
+<http://purl.bdrc.io/ontology/shapes/core/InternalShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bdrc.io/ontology/shapes/core/ShapeType> .
+<http://purl.bdrc.io/ontology/shapes/core/InternalShape> <http://www.w3.org/2000/01/rdf-schema#label> "node shape is internal"@en .
+<http://purl.bdrc.io/ontology/shapes/core/InternalShape> <http://www.w3.org/2004/02/skos/core#definition> "this shape applies to internal resources such as Volumes in an Imagegroup"@en .
+<http://purl.bdrc.io/ontology/shapes/core/increment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/increment> <http://www.w3.org/2000/01/rdf-schema#label> "increment by"@en .
+<http://purl.bdrc.io/ontology/shapes/core/increment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/increment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/increment> <http://www.w3.org/2004/02/skos/core#definition> "an amount to increment the value of the sh:path property by"@en .
+<http://purl.bdrc.io/ontology/shapes/core/sortRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/sortRank> <http://www.w3.org/2000/01/rdf-schema#label> "sort rank"@en .
+<http://purl.bdrc.io/ontology/shapes/core/sortRank> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/sortRank> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/sortRank> <http://www.w3.org/2004/02/skos/core#definition> "values of the sh:path property are used to sort results before higher ranked properties."@en .
+<http://purl.bdrc.io/ontology/shapes/core/sortDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjecttypeProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/sortDirection> <http://www.w3.org/2000/01/rdf-schema#label> "sort direction"@en .
+<http://purl.bdrc.io/ontology/shapes/core/sortDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/sortDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.bdrc.io/ontology/shapes/core/SortDirection> .
+<http://purl.bdrc.io/ontology/shapes/core/sortDirection> <http://www.w3.org/2004/02/skos/core#definition> "values of the sh:path property are sorted in the specified direction."@en .
+<http://purl.bdrc.io/ontology/shapes/core/SortDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bdrc.io/ontology/shapes/core/SortAscending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bdrc.io/ontology/shapes/core/SortDirection> .
+<http://purl.bdrc.io/ontology/shapes/core/SortAscending> <http://www.w3.org/2000/01/rdf-schema#label> "sort ascending"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SortAscending> <http://www.w3.org/2004/02/skos/core#definition> "items should be sorted in ascending order"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SortDescending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.bdrc.io/ontology/shapes/core/SortDirection> .
+<http://purl.bdrc.io/ontology/shapes/core/SortDescending> <http://www.w3.org/2000/01/rdf-schema#label> "sort descending"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SortDescending> <http://www.w3.org/2004/02/skos/core#definition> "items should be sorted in descending order"@en .
+<http://purl.bdrc.io/ontology/shapes/core/localShapeGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/localShapeGraph> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.bdrc.io/ontology/core/Entity> .
+<http://purl.bdrc.io/ontology/shapes/core/localShapeGraph> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.bdrc.io/ontology/shapes/core/topShapeGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/topShapeGraph> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.bdrc.io/ontology/core/Entity> .
+<http://purl.bdrc.io/ontology/shapes/core/topShapeGraph> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.bdrc.io/ontology/shapes/core/uiShapeGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.bdrc.io/ontology/shapes/core/uiShapeGraph> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.bdrc.io/ontology/core/Entity> .
+<http://purl.bdrc.io/ontology/shapes/core/uiShapeGraph> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.bdrc.io/shapes/core/CorporationShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/CorporationShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/CorporationShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Corporations and their members" .
+<http://purl.bdrc.io/ontology/core/Corporation> <http://purl.bdrc.io/ontology/shapes/core/rootShape> <http://purl.bdrc.io/ontology/shapes/core/CorporationShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape> <http://www.w3.org/2000/01/rdf-schema#label> "CorporationMember shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/memberOf> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Corporation> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/ns/shacl#description> "this respource may be a member of a Corporation"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/ns/shacl#name> "member of"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationMemberShape-memberOf> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape> <http://purl.bdrc.io/ontology/shapes/core/identifierShape> "C" .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape> <http://www.w3.org/2000/01/rdf-schema#label> "Corporation shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Corporation> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasMember> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/CorporationMember> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/ns/shacl#description> "this Corporation may have zero or more members"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/ns/shacl#name> "has member"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CorporationShape-hasMember> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/shapes/core/EventLocalShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/EventLocalShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootLocalShapes/> .
+<http://purl.bdrc.io/shapes/core/EventLocalShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Events and its subclasses" .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> "EV" .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/2000/01/rdf-schema#label> "Event Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Event> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://www.w3.org/ns/shacl#message> ":eventText must be an rdf:langString"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/eventText> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> <http://www.w3.org/ns/shacl#message> "there must be at most one :notAfter, and it must be an xsd:gYear"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/notAfter> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> <http://www.w3.org/ns/shacl#message> "there must be at most one :notBefore, and it must be an xsd:gYear"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/notBefore> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://www.w3.org/ns/shacl#message> "there must be at most one :onDate, and it must be an xsd:date"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/onDate> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/ns/shacl#message> "there must be at most one :onOrAbout, and it must be an xsd:string"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/onOrAbout> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> <http://www.w3.org/ns/shacl#message> "there must be at most one :onYear, and it must be an xsd:gYear"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/onYear> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/shapes/core/EventShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/EventShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/EventLocalShapes/> .
+<http://purl.bdrc.io/shapes/core/EventShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/EventShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Events and its subclasses" .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShapeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/eventWhere> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Place> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShapeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/eventWho> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/AgentInRole> .
+<http://purl.bdrc.io/shapes/core/EventUIShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/EventUIShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/EventShapes/> .
+<http://purl.bdrc.io/shapes/core/EventUIShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootUIShapes/> .
+<http://purl.bdrc.io/shapes/core/EventUIShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Events and its subclasses" .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#TextAreaWithLangEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://datashapes.org/dash#singleLine> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventText> <http://www.w3.org/ns/shacl#name> "event text"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWhere> <http://www.w3.org/ns/shacl#name> "where event occurred"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-eventWho> <http://www.w3.org/ns/shacl#name> "who was involved in the event"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notAfter> <http://www.w3.org/ns/shacl#name> "event occurred not before"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-notBefore> <http://www.w3.org/ns/shacl#name> "event occurred not before"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#DatePickerEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onDate> <http://www.w3.org/ns/shacl#name> "event occurred on"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/ns/shacl#description> "this property should not be used. Use on of the other 4 forms instead."@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onOrAbout> <http://www.w3.org/ns/shacl#name> "event occurred on or about"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventShape-onYear> <http://www.w3.org/ns/shacl#name> "event occurred during the year"@en .
+<http://purl.bdrc.io/shapes/core/IdentifierShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/IdentifierShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/IdentifierShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Identifiers such as ISBN and such" .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/2000/01/rdf-schema#label> "ISBN shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.isbn-international.org/sites/default/files/ISBN%20Manual%202012%20-corr.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Isbn> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape> <http://www.w3.org/2004/02/skos/core#editorialNote> "The regex is does not take into account opitional blank, ' ', or dash, '-', chars separating the various groups. Also there is no spec for calculating the check digit"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#description> "this ISBN should conform to the pattern"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#name> "ISBN shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IsbnShape-rdf_value> <http://www.w3.org/ns/shacl#pattern> "^(97(8|9))?\\d{9}(\\d|X)$" .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/2000/01/rdf-schema#label> "LCCN shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.loc.gov/marc/lccn-namespace.html> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape> <http://www.w3.org/ns/shacl#targetClass> <http://id.loc.gov/ontologies/bibframe/Lccn> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#description> "this LCCN should conform to the pattern"@en .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#name> "LCCN shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/LccnShape-rdf_value> <http://www.w3.org/ns/shacl#pattern> "[[a-z]|[[a-z][a-z]|dd]|[a-z][[a-z][a-z]|dd]|[a-z][a-z]dd]dddddddd" .
+<http://purl.bdrc.io/shapes/core/InstanceShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/InstanceShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/InstanceShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Instance and its subclasses" .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape> <http://www.w3.org/2000/01/rdf-schema#label> "Instance Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/InstanceShape-bf_identifiedBy> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Instance> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/creator> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/AgentAsCreator> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> <http://www.w3.org/ns/shacl#description> "this Instance may have zero or more creators."@en .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-creator> <http://www.w3.org/ns/shacl#name> "instance has translation"@en .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/instanceOf> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Work> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> <http://www.w3.org/ns/shacl#description> "this Instance is an instance of at least one Work"@en .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-instanceOf> <http://www.w3.org/ns/shacl#name> "instance of"@en .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-bf_identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/identifiedBy> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/InstanceIdentifier> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/InstanceShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#name> "identifies instance shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape> <http://www.w3.org/2000/01/rdf-schema#label> "PhysicalInstance Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/PhysicalInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/binding> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Binding> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/ns/shacl#description> "this PhysicalInstance may have a single Binding"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-binding> <http://www.w3.org/ns/shacl#name> "instance binding"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/printMethod> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/PrintMethod> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/ns/shacl#description> "this PhysicalInstance may have a single PrintMethod"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PhysicalInstanceShape-printMethod> <http://www.w3.org/ns/shacl#name> "instance print method"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape> <http://www.w3.org/2000/01/rdf-schema#label> "SerialInstance Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/SerialInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/instanceOf> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/SerialMember> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> <http://www.w3.org/ns/shacl#description> "this is an instance of a SerialMember"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialInstanceShape-instanceOf> <http://www.w3.org/ns/shacl#name> "instance of serial"@en .
+<http://purl.bdrc.io/shapes/core/ItemShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/ItemShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/ItemShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Item and its subclasses" .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/2000/01/rdf-schema#label> "Item Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_heldBy> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_identifiedBy> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-heldAt> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/ItemPhysicalAsset> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_heldBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_heldBy> <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/heldBy> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_heldBy> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Agent> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_heldBy> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_heldBy> <http://www.w3.org/ns/shacl#name> "held by"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/identifiedBy> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/ItemIdentifier> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#name> "identified by"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-heldAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-heldAt> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/heldAt> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-heldAt> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/ItemIdentifier> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-heldAt> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-heldAt> <http://www.w3.org/ns/shacl#name> "is held at"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/notAfter> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notAfter> <http://www.w3.org/ns/shacl#name> "acquired not after"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/notBefore> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-notBefore> <http://www.w3.org/ns/shacl#name> "acquired not before"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/onDate> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onDate> <http://www.w3.org/ns/shacl#name> "acquired on"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/onOrAbout> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ItemPhysicalAssetShape-onOrAbout> <http://www.w3.org/ns/shacl#name> "acquired on or about"@en .
+<http://purl.bdrc.io/ontology/core/Person> <http://purl.bdrc.io/ontology/shapes/core/localShapeGraph> <http://purl.bdrc.io/graph/PersonLocalShapes> .
+<http://purl.bdrc.io/shapes/core/PersonLocalShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/PersonLocalShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/EventLocalShapes/> .
+<http://purl.bdrc.io/shapes/core/PersonLocalShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "SHACL constraints for a internal elements of a Person graph" .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> "P" .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/2000/01/rdf-schema#label> "Person Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check Person Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/admin/adminAbout> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonClass> <http://www.w3.org/ns/shacl#message> "focusNode must be a bdo:Person" .
+_:n3-1238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1238 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1238 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/ADM> .
+_:n3-1238 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1238 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            ?s adm:adminAbout $this ;\n               bdo:isRoot true .\n            filter not exists { $this rdf:type bdo:Person . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1238 .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonNameClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonNameClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check PersonName Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonNameClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/core/personName> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonNameClass> <http://www.w3.org/ns/shacl#message> ":personName object must be subClassOf* bdo:PersonName" .
+_:n3-1239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1239 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1239 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDFS> .
+_:n3-1239 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1239 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            filter not exists { $this rdf:type/rdfs:subClassOf* bdo:PersonName . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonNameClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1239 .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personName> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#message> "There must be at least one :personName object and each must be an IRI - no blank nodes"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape> <http://www.w3.org/2000/01/rdf-schema#label> "Person Name Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/PersonName> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#message> "A PersonName must have exactly one rdfs:label"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonEventClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonEventClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check PersonEvent Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonEventClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/core/personEvent> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonEventClass> <http://www.w3.org/ns/shacl#message> ":personEvent object must be subClassOf* bdo:PersonEvent" .
+_:n3-1240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1240 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1240 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDFS> .
+_:n3-1240 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1240 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            filter not exists { $this rdf:type/rdfs:subClassOf* bdo:PersonEvent . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckPersonEventClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1240 .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personEvent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#message> ":personEvent object must be an IRI - no blank nodes"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape> <http://www.w3.org/2000/01/rdf-schema#label> "Person Event Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/PersonEvent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personEventRole> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> <http://www.w3.org/ns/shacl#message> "At most one :personEventRole allowed"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckRoleClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckRoleClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check Role Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckRoleClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/core/personEventRole> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckRoleClass> <http://www.w3.org/ns/shacl#message> ":personEventRole object must be subClassOf* bdo:Role" .
+_:n3-1241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1241 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1241 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDFS> .
+_:n3-1241 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1241 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            filter not exists { $this rdf:type/rdfs:subClassOf* bdo:Role . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckRoleClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1241 .
+<http://purl.bdrc.io/ontology/shapes/core/CheckGenderClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckGenderClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check Gender Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckGenderClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/core/personGender> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckGenderClass> <http://www.w3.org/ns/shacl#message> ":personGender object must be instance of bdo:Gender" .
+_:n3-1242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1242 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1242 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDFS> .
+_:n3-1242 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1242 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            filter not exists { $this rdf:type bdo:Gender . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckGenderClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1242 .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personGender> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#message> "At most one bdo:personGender allowed"@en .
+<http://purl.bdrc.io/ontology/core/Person> <http://purl.bdrc.io/ontology/shapes/core/topShapeGraph> <http://purl.bdrc.io/graph/PersonShapes> .
+<http://purl.bdrc.io/shapes/core/PersonShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/PersonShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/EventShapes/> .
+<http://purl.bdrc.io/shapes/core/PersonShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/PersonLocalShapes/> .
+<http://purl.bdrc.io/shapes/core/PersonShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "SHACL constraints for Person" .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personGender> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> <http://www.w3.org/ns/shacl#hasValue> <http://purl.bdrc.io/resource/GenderFemale> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personGender> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> <http://www.w3.org/ns/shacl#hasValue> <http://purl.bdrc.io/resource/GenderMale> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/FemaleShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/FemaleShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/IgnoreShape> .
+<http://purl.bdrc.io/ontology/shapes/core/FemaleShape> <http://www.w3.org/2000/01/rdf-schema#label> "Female Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/FemaleShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> .
+<http://purl.bdrc.io/ontology/shapes/core/MaleShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/MaleShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/IgnoreShape> .
+<http://purl.bdrc.io/ontology/shapes/core/MaleShape> <http://www.w3.org/2000/01/rdf-schema#label> "Male Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/MaleShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShapeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personEventCorporation> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Corporation> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasBrother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#message> "A brother must be a Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasCousin> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasDaughter> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#message> "A daughter must be a Female"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasFather> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#message> "A father must be a Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasGrandChild> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasGrandParent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#message> "A person may have at most 4 grandparents"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#maxCount> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasGranddaughter> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasGrandfather> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#maxCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#message> "A person may have at most 2 Male grandfathers"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasGrandmother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#maxCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#message> "A person may have at most 2 Female grandmothers"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasGrandson> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#message> "A grandson must be Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasHusband> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#message> "A husband must be Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasMother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#message> "A mother must be Female. There is at most one mother"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasOlderBrother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#message> "An older brother must be Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasOlderSister> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#message> "An older sister must be Female"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasParent> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#maxCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#message> "A person may have at most 2 parents"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasSibling> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasSister> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#message> "A sister must be Female"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasSon> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#message> "A son must be Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasSpouse> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#message> "A person may have at most one spouse"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasWife> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#message> "A wife must be Female. There is at most one wife"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasYoungerBrother> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#message> "A younger brother must be Male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/MaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasYoungerSister> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#message> "A younger sister must be Female"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#node> <http://purl.bdrc.io/ontology/shapes/core/FemaleShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/kinWith> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personStudentOf> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/ExternalShape> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/personTeacherOf> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Person> .
+<http://purl.bdrc.io/ontology/core/Person> <http://purl.bdrc.io/ontology/shapes/core/uiShapeGraph> <http://purl.bdrc.io/graph/PersonUIShapes> .
+<http://purl.bdrc.io/shapes/core/PersonUIShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/PersonUIShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/EventUIShapes/> .
+<http://purl.bdrc.io/shapes/core/PersonUIShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/PersonShapes/> .
+<http://purl.bdrc.io/shapes/core/PersonUIShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "SHACL UI templates for Person" .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape> <http://purl.bdrc.io/ontology/shapes/core/isUIhape> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.bdrc.io/ontology/shapes/core/AssociatedPersonsPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/AssociatedPersonsPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Kinshp relations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/AssociatedPersonsPropertyGroup> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/IdentityPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/IdentityPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Identity relations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/IdentityPropertyGroup> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/EventPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/EventPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Event relations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EventPropertyGroup> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Kinshp relations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/AssociatedPersonsPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNamePropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNamePropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Name relations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/StudentTeacherPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/StudentTeacherPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Student/Teacher relations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/StudentTeacherPropertyGroup> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/AssociatedPersonsPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/StudentTeacherPropertyGroup> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#description> "may have at most one :personGender or none if not known."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/IdentityPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#name> "has gender"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personGender> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderFemale> <http://www.w3.org/ns/shacl#name> "female"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-genderMale> <http://www.w3.org/ns/shacl#name> "male"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more events like birth, death, ordination."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/EventPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#name> "has event"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personEvent> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventCorporation> <http://www.w3.org/ns/shacl#name> "corporation associated with the event"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonEventShape-personEventRole> <http://www.w3.org/ns/shacl#name> "role associated with the event"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://datashapes.org/dash#viewer> <http://datashapes.org/dash#DetailsViewer> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#description> "this Person may have one or more names."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#name> "person name"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personName> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#TextAreaWithLangEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://datashapes.org/dash#singleLine> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#description> "this Person has a name given by the label."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/PersonNamePropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#name> "name label"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonNameShape-personNameLabel> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#description> "This Person may have zero or more brothers."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#name> "has brother"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasBrother> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more cousins."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://www.w3.org/ns/shacl#name> "has cousin"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasCousin> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more daughters."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#name> "has daughter"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasDaughter> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#description> "this Person may have a father."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#name> "has father"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasFather> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more grandchildren."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#name> "has grandchild"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandChild> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#description> "this Person may have zero upto 4 grandparents."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#name> "has grandparent"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandParent> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more granddaughters."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/ns/shacl#name> "has granddaughter"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGranddaughter> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#description> "this Person may have at most two Grandfathers."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#name> "has grandfather"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandfather> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#description> "this Person may have at most two Grandmothers."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#name> "has grandmother"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandmother> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more grandsons."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#name> "has grandson"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasGrandson> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#description> "this Person may have a husband."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#name> "has husband"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasHusband> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#description> "this Person may have at most one mother."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#name> "has mother"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasMother> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more older brothers."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#name> "has older brother"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderBrother> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more older sisters."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#name> "has older sister"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasOlderSister> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#description> "this Person may have at most two parents."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#name> "has parent"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasParent> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more siblings."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/ns/shacl#name> "has sibling"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSibling> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more sisters."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#name> "has sister"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSister> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more sons."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#name> "has son"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSon> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#description> "this Person may have at most one spouse."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#name> "has spouse"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasSpouse> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#description> "this Person may have at most one wife."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#name> "has wife"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasWife> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more younger brothers."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#name> "has younger brother"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerBrother> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more younger sisters."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#name> "has younger sister"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-hasYoungerSister> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more kin."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/KinshipPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-kinWith> <http://www.w3.org/ns/shacl#name> "has kin"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more teachers."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/StudentTeacherPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/ns/shacl#name> "student of"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personStudentOf> <http://www.w3.org/ns/shacl#order> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://datashapes.org/dash#editor> <http://datashapes.org/dash#InstancesSelectEditor> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/ns/shacl#description> "this Person may have zero or more students."@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/ns/shacl#group> <http://purl.bdrc.io/ontology/shapes/core/StudentTeacherPropertyGroup> .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/ns/shacl#name> "teacher of"@en .
+<http://purl.bdrc.io/ontology/shapes/core/PersonShape-personTeacherOf> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/shapes/core/RootLocalShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/RootLocalShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/BaseShapes/> .
+<http://purl.bdrc.io/shapes/core/RootLocalShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints" .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Entity> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckNoteClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckNoteClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check Note Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckNoteClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/core/note> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckNoteClass> <http://www.w3.org/ns/shacl#message> "focusNode must be a bdo:Note" .
+_:n3-1243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1243 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1243 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDFS> .
+_:n3-1243 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1243 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            filter not exists { $this rdf:type/rdfs:subClassOf* bdo:Note . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckNoteClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1243 .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://purl.bdrc.io/ontology/shapes/core/propertyShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://www.w3.org/ns/shacl#message> "a note must be an IRI, no blank nodes"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/note> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> "NT" .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://purl.bdrc.io/ontology/shapes/core/nodeShapeType> <http://purl.bdrc.io/ontology/shapes/core/FacetShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocation> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteText> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteType> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Note> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationStatement Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> <http://www.w3.org/ns/shacl#message> "a note may have at most one :contentLocationStatement"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationStatement> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatement> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationStatementCBETA Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> <http://www.w3.org/ns/shacl#message> "a note may have at most one :contentLocationStatementCBETA"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationStatementCBETA> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocationStatementCBETA> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocation> <http://www.w3.org/ns/shacl#message> "a note may have at most one :contentLocation"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocation> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocation> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocation> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/ContentLocation> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-contentLocation> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteText> <http://www.w3.org/ns/shacl#message> "a note may have at most one :noteText"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteText> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/noteText> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteText> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteText> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteType> <http://www.w3.org/ns/shacl#message> "a note may have at most one :noteType"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteType> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/noteType> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteType> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#message> "each Entity resource must have at least one skos:prefLabel and each must be a unique language"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+_:n3-1244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "en" .
+_:n3-1244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1245 .
+_:n3-1245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "zh" .
+_:n3-1245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1246 .
+_:n3-1246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bo" .
+_:n3-1246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1247 .
+_:n3-1247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bo-x-ewts" .
+_:n3-1247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1248 .
+_:n3-1248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "km-x-femc" .
+_:n3-1248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1249 .
+_:n3-1249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "km" .
+_:n3-1249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1250 .
+_:n3-1250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "fr" .
+_:n3-1250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1251 .
+_:n3-1251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "km-x-bdrc" .
+_:n3-1251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#languageIn> _:n3-1244 .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#uniqueLang> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape> <http://www.w3.org/2000/01/rdf-schema#label> "Label Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Label> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> <http://www.w3.org/ns/shacl#message> "a label may refer to other :Labels that are translations of this label"@en .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasTranslation> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Label> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckContentLocationClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckContentLocationClass> <http://www.w3.org/2000/01/rdf-schema#label> "Check ContentLocation Class Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/CheckContentLocationClass> <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.bdrc.io/ontology/core/contentLocation> .
+<http://purl.bdrc.io/ontology/shapes/core/CheckContentLocationClass> <http://www.w3.org/ns/shacl#message> "object if :contentLocation must be a bdo:ContentLocation" .
+_:n3-1252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+_:n3-1252 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDF> .
+_:n3-1252 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/RDFS> .
+_:n3-1252 <http://www.w3.org/ns/shacl#prefixes> <http://purl.bdrc.io/ontology/shapes/core/BDO> .
+_:n3-1252 <http://www.w3.org/ns/shacl#select> "\n        select distinct $this\n        where {\n            filter not exists { $this rdf:type/rdfs:subClassOf* bdo:ContentLocation . } .\n        }\t  \n      " .
+<http://purl.bdrc.io/ontology/shapes/core/CheckContentLocationClass> <http://www.w3.org/ns/shacl#sparql> _:n3-1252 .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://purl.bdrc.io/ontology/shapes/core/identifierPrefix> "CL" .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/2000/01/rdf-schema#label> "ContentLocation Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/ContentLocation> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationByFolio Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most once, that units are folios. The default is pages."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationByFolio> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationByFolio> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationEndLine Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, ending line."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationEndLine> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndLine> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationEndPage Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, ending page."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationEndPage> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPage> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationEndPhrase Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, ending phrase number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationEndPhrase> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndPhrase> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/2000/01/rdf-schema#comment> "should include constraint that only makes sense when contentLocationByFolio true"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationEndSide Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, ending side."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationEndSide> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndSide> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationEndVolume Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, ending volume number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationEndVolume> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolume> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationEndVolumeName Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, ending volume name."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationEndVolumeName> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationEndVolumeName> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationLine Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, starting line number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationLine> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationLine> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationPage Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, starting page number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationPage> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPage> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationPhrase Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, starting phrase number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationPhrase> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationPhrase> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationSeqNum Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, sequence number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationSeqNum> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSeqNum> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/2000/01/rdf-schema#comment> "should include constraint that only makes sense when contentLocationByFolio true"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationSide Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, starting side of a folio."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationSide> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationSide> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationVolume Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, starting volume number."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationVolume> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolume> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationVolumeName Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, starting volume name."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationVolumeName> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationVolumeName> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> <http://www.w3.org/2000/01/rdf-schema#label> "contentPagination Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may indicate, at most one, pagination type."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentPagination> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/PaginationType> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentPagination> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/shapes/core/RootShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/RootShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootLocalShapes/> .
+<http://purl.bdrc.io/shapes/core/RootShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints" .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteSource> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteSource> <http://www.w3.org/ns/shacl#message> "a :noteSource must be an :Instance or other :BiblioEntity, for now"@en .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteSource> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/noteSource> .
+<http://purl.bdrc.io/ontology/shapes/core/NoteShape-noteSource> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/BiblioEntity> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocationInstance Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> <http://www.w3.org/ns/shacl#message> "a :ContentLocation may refer to, at most one, bdo:Instance as the source of the content."@en .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/contentLocationInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Instance> .
+<http://purl.bdrc.io/ontology/shapes/core/ContentLocationShape-contentLocationInstance> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/shapes/core/RootUIShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/RootUIShapes/> <http://www.w3.org/2002/07/owl#imports> <http://datashapes.org/dash> .
+<http://purl.bdrc.io/shapes/core/RootUIShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/RootUIShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints" .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape> <http://www.w3.org/ns/shacl#name> "Entity shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://www.w3.org/ns/shacl#description> "Zero or more notes may be associated with an entity"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-note> <http://www.w3.org/ns/shacl#name> "note"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#description> "require unique language from among the listed choices"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#name> "pref label"@en .
+<http://purl.bdrc.io/ontology/shapes/core/EntityShape-skos_prefLabel> <http://www.w3.org/ns/shacl#order> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> <http://www.w3.org/ns/shacl#description> "this Label may have zero or more tanslations"@en .
+<http://purl.bdrc.io/ontology/shapes/core/LabelShape-hasTranslation> <http://www.w3.org/ns/shacl#name> "label has translation"@en .
+<http://purl.bdrc.io/shapes/core/WorkShapes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.bdrc.io/shapes/core/WorkShapes/> <http://www.w3.org/2002/07/owl#imports> <http://purl.bdrc.io/shapes/core/RootShapes/> .
+<http://purl.bdrc.io/shapes/core/WorkShapes/> <http://www.w3.org/2002/07/owl#versionInfo> "Initial SHACL constraints for Works" .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape> <http://www.w3.org/2000/01/rdf-schema#label> "SerialMember Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/SerialMember> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Instance> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/ns/shacl#description> "this SerialMember may have a SerialInstance"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-hasInstance> <http://www.w3.org/ns/shacl#name> "has serial instance"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/memberOf> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/SerialWork> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/ns/shacl#description> "this SerialMember is a series member of a SerialWork"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialMemberShape-memberOf> <http://www.w3.org/ns/shacl#name> "series member"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape> <http://www.w3.org/2000/01/rdf-schema#label> "SerialWork Shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/SerialWork> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasMember> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/SerialMember> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> <http://www.w3.org/ns/shacl#description> "this SerialWork has zero or more SerialMembers"@en .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/SerialWorkShape-hasMember> <http://www.w3.org/ns/shacl#name> "has series member"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/2000/01/rdf-schema#label> "Work shape"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#property> <http://purl.bdrc.io/ontology/shapes/core/WorkShape-bf_identifiedBy> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape> <http://www.w3.org/ns/shacl#targetClass> <http://purl.bdrc.io/ontology/core/Work> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/creator> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/AgentAsCreator> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#description> "this Work may have zero or more creators"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#name> "creator"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-creator> <http://www.w3.org/ns/shacl#order> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasInstance> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Instance> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> <http://www.w3.org/ns/shacl#description> "this Work may have zero or more Instances"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasInstance> <http://www.w3.org/ns/shacl#name> "has instance"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/hasTranslation> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/Work> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> <http://www.w3.org/ns/shacl#description> "this Work may have zero or more tanslations" .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-hasTranslation> <http://www.w3.org/ns/shacl#name> "work has translation"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/workTitle> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/WorkBibliographicalTitle> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#description> "there must be a single bibliographic title for a work"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#name> "title"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle> <http://www.w3.org/ns/shacl#order> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#path> <http://purl.bdrc.io/ontology/core/workTitle> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/WorkTitle> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#description> "there can be 0 or more bdo:WorkTitle other than bdo:WorkBibliographicTitle"@en .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#name> "title"@en .
+_:n3-1382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-1382 <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/WorkBibliographicalTitle> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#not> _:n3-1382 .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-workTitle2> <http://www.w3.org/ns/shacl#order> "2.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-bf_identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#path> <http://id.loc.gov/ontologies/bibframe/identifiedBy> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#class> <http://purl.bdrc.io/ontology/core/WorkIdentifier> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#minCount> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.bdrc.io/ontology/shapes/core/WorkShape-bf_identifiedBy> <http://www.w3.org/ns/shacl#name> "identifies Work shape"@en .
