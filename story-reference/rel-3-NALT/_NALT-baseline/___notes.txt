@@ -1,0 +1,17 @@
+
+too big for GSDTT
+_Rural_agricultural_sociology_-_JSON-LD-avec-mEOP_.json
+19.8 MB
+
+runs on GSDTT but not interesting
+_Animal_science_MASTER_-_JSON-LD-sans-mEOP_.json
+
+---
+
+where is the source file for
+index___v5-subset.html
+<td>Economics, Business and Industry</td>
+
+where is source file for
+index__v4-Taxonomic-Classification-Organisms.html
+<td>Taxonomic Classification of Organisms</td>

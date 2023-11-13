@@ -1,0 +1,10 @@
+[{
+  "url": "https://github.com/Informatievlaanderen/OSLO-Generated.git",
+  "title": "OSLO-Generated",
+  "description": "SHACL shapes generated from UML diagrams of the Open Standard for Linked Organizations (OSLO) in Belgium",
+  "type": "git",
+  "folder": ["shacl"],
+  "file-type": ["turtle"],
+  "ref": "circleci",
+  "prefix": "oslo"
+}]

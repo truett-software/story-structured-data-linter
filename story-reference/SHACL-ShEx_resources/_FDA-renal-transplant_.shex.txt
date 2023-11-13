@@ -1,0 +1,83 @@
+PREFIX : <http://www.w3.org/2013/12/FDA-TA/tests/RenalTransplantation/subject-amy#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+PREFIX ucum: <http://unitsofmeasure.org/ucum-essence.xml#>
+PREFIX core: <http://www.w3.org/2013/12/FDA-TA/core#>
+PREFIX data: <http://www.w3.org/2013/12/FDA-TA/datatypes#>
+PREFIX RenalX: <http://www.w3.org/2013/12/FDA-TA/RenalTransplantation#>
+
+start = @<subject>
+
+<observation> {
+    a rdf:Resource ?;
+    core:hasObservationTime xsd:dateTime
+}
+
+<renalFunctionObservation> & <observation> {}
+
+<gfrFlowRateObs> & <renalFunctionObservation> {
+    RenalX:gfrFlowRate { data:value xsd:decimal ; data:units [ucum:mL-per-minute] }
+}
+<serumCreatinineObs> & <renalFunctionObservation> {
+     RenalX:serumCreatinine { data:value xsd:decimal ; data:units [ucum:mg_dL] }
+}
+<urineVolume24hourObs> & <renalFunctionObservation> {
+     RenalX:urineVolume24hour { data:value xsd:decimal ; data:units [ucum:L] }
+}
+<coreTemperatureObs> & <renalFunctionObservation> {
+     RenalX:coreTemperature { data:value xsd:decimal ; data:units [ucum:C] }
+}
+<siteTendernessObs> & <renalFunctionObservation> {
+     RenalX:siteTenderness { data:value ["1+" "2+" "3+" "4+"] ; data:units [data:subjectiveScale1_4] }
+}
+<isSupportedByObs> & <renalFunctionObservation> {
+     core:isSupportedBy @<observation>+ # @@ Diagnosis needs some sort of value.
+}
+<isJustifiedByObs> & <renalFunctionObservation> {
+     core:isJustifiedBy @<observation>+ ; core:hasLabReport @<LabReport>
+}
+<hasPathologyFindingObs> & <renalFunctionObservation> {
+     core:hasPathologyFinding [ RenalX:BanffI RenalX:BanffII RenalX:BanffIII ]
+}
+
+<LabReport> & <observation> {}
+
+<hasPathologyFindingObs> & <LabReport> {
+    a rdf:Resource [ RenalX:RenalBiopsyReport ];
+    core:hasPathologyFinding [ RenalX:BanffI RenalX:BanffII RenalX:BanffIII ]
+}
+
+<intervention> {
+    (  core:administrationTime xsd:dateTime ;
+       core:medication rdf:Resource ;
+       core:hasDosagePlan @<DosagePlan>
+     | a [RenalX:RenalTransplantProcedure] ;
+       core:hasInterventionTime xsd:dateTime )
+}
+
+<DosagePlan> {
+    core:hasMedicationQuantity { data:value xsd:decimal ; data:units [ucum:mg] } ;
+    core:hasMedicationSchedule { core:hasMedicationFrequency xsd:integer ; core:hasMedicationDuration xsd:decimal ; core:hasMedicationUnits xsd:string }
+}
+
+<hasOutcomeAssessment> {
+    a [RenalX:KidneyGraftOutcomeAssessment]? ;
+    core:hasObservationTime xsd:dateTime ;
+    core:beforeIntervention  @<observation>+ ;
+    core:hasIntervention @<intervention>+ ;
+    core:afterIntervention @<observation>+ ;
+    core:hasOutcomeValue [ xplant:NormalFunctioningGraft xplant:NonFunctioningGraft ]
+}
+
+<subject> {
+    foaf:name xsd:string ;
+
+    core:observation @<observation>* ;
+    core:hasIntervention @<intervention>* ;
+    core:hasOutcomeAssessment @<hasOutcomeAssessment>
+}
+

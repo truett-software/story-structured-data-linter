@@ -1,0 +1,11 @@
+
+AWS Lambda times-out
+
+
+@Corporation 1 item
+@Class 5 items
+@DefinedTerm 4 items
+@DefinedTermSet 1 item
+
+see
+\story\structured-data-linter\__story-sdl\rel-1-corporation

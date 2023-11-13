@@ -1,0 +1,293 @@
+# FILE: SHACL-PlantSubject.TTL
+# Assumes use of ontology file: Plant-study.TTL
+
+@prefix study: <https://afdsi.org/shapes/study#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#>  .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix 19323: <https://example.org/19323#> .
+@prefix 19320: <https://example.org/19320#> .
+
+#------------------------------------------------------------------------------
+# SHAPE: study:PlantSubjectShape
+# DESCR: Plant Subject PARENT Shape
+# RULEC: None.
+# NOTES: Optional. 
+# VIOLATIONS: None.
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+study:PlantSubjectShape
+  a              sh:NodeShape ;
+  sh:targetClass study:PlantSubject ;
+  sh:property    study:hasMin1Max1Shape-USubjID ;        # Rule AFD0083
+  sh:property    study:isUniqueShape-USubjID ;           # Rule AFD0083
+  sh:property    study:hasMin1Max1Shape-SubjID ;         # Rule AFD1001
+  sh:property    study:isUniqueShape-SubjID ;            # Rule AFD1001
+  sh:property    study:hasTypeXsdDateShape-Date ;        # Rule AFD1002
+  sh:property    study:hasMin1Max1Shape-Interval ;       # Rule AFD1002
+  sh:property    study:hasMin1Max1Shape-StartEndDates ;  # Rule AFD1002
+  sh:property    study:hasStartLEEndShape-Interval ;     # Rule AFD1002
+  sh:property    study:hasMinInclusive0Shape-Age ;       # Rule AFD0084
+.
+
+#--- USUBJID ------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasMin1Max1Shape-USubjID 
+# DESCR: Subject has one Unique Subject ID (USUBJID). [AFD0083]
+# RULEC: USUBJID Rule Component 1,2
+# NOTES:
+# VIOLATIONS:
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+
+study:hasMin1Max1Shape-USubjID a  sh:PropertyShape ; 
+  sh:targetClass study:Subject ;        # Ontology 
+  #sh:targetClass study:PlantSubject ;  # No Ontology
+  sh:name        "minmaxUniqueSubjid" ;
+  sh:description "A single, exclusive USUBJID must be assigned to a Subject." ;
+  sh:message     "Subject --> USUBJID violation [AFD0083]" ;
+  sh:path        study:hasUniqueSubjectID ;
+  sh:minCount    1 ;
+  sh:maxCount    1 .
+
+
+#------------------------------------------------------------------------------
+# SHAPE: study:isUniqueShape-USubjID
+# DESCR: A USUBJID must only be assigned to one Subject.
+#        Two methods presented, one commented out.
+#        Method 1: Identifies the USUBJID  (commented out)
+#        Method 2: Identifies Subjects (active)
+# RULEC: USUBJID Rule Component 3
+# NOTES:
+# VIOLATIONS:
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+
+#  Method 1 : Identifies the SUBJID
+#  Identify USUBJID values assigned to more than one Subject.
+#    *** METHOD NOT USED *** 
+#study:isUniqueShape-USubjID a sh:PropertyShape ; 
+#  sh:targetObjectsOf study:hasUniqueSubjectID ;
+#  sh:name            "uniqueUSubjid" ;
+#  sh:description     "A USUBJID must only be assigned to one Subject." ;
+#  sh:message         "USUBJID assigned to more than one Subject." ;
+#  sh:property [
+#    sh:path [sh:inversePath study:hasUniqueSubjectID]  ;
+#    sh:maxCount 1
+#  ] .
+
+#  Method 2 : Identifies the Subjects that are assigned the same USUBJID.[AFD0083]
+study:isUniqueShape-USubjID a sh:PropertyShape ; 
+  sh:targetClass study:Subject ;        # Ontology 
+  #sh:targetClass study:PlantSubject ;  # No Ontology
+  sh:property [
+    sh:name            "uniqueUSubjid" ;
+    sh:description     "A USUBJID must only be assigned to one Subject." ;
+    sh:message         "USUBJID assigned to more than one Subject. [AFD0083]" ;
+    sh:path (study:hasUniqueSubjectID [sh:inversePath study:hasUniqueSubjectID]) ;
+    sh:maxCount 1
+  ] .
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasMin1Max1Shape-SubjID
+# DESCR: Subject has one Subject ID (SUBJID). [AFD1001]
+# RULEC: SUBJID Rule Component 1,2
+# NOTES:
+# VIOLATIONS:
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+study:hasMin1Max1Shape-SubjID
+  a              sh:NodeShape ;
+  sh:targetClass study:Subject ;        # Ontology 
+  #sh:targetClass study:PlantSubject ;  # No Ontology
+  sh:name        "minMaxSubjid" ;
+  sh:description "A single, exclusive SUBJID must be assigned to a Subject." ;
+  sh:message     "Subject --> USUBJID violation. [AFD1001]" ;
+  sh:path (study:hasSubjectID [sh:inversePath study:hasSubjectID]) ;
+  sh:minCount  1 ;
+  sh:maxCount  1 
+.
+
+#------------------------------------------------------------------------------
+# SHAPE: study:isUniqueShape-SubjID
+# DESCR: A SUBJID must only be assigned to one Subject.
+# RULEC: SUBJID Rule Component 3
+# NOTES:
+# VIOLATIONS:
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+study:isUniqueShape-SubjID a sh:PropertyShape ; 
+  sh:targetClass study:Subject ;        # Ontology 
+  #sh:targetClass study:PlantSubject ;  # No Ontology
+  sh:property [
+    sh:name            "uniqueSubjid" ;
+    sh:description     "A SUBJID must only be assigned to one Subject." ;
+    sh:message         "SUBJID assigned to more than one Subject. [AFD1001]" ;
+    sh:path (study:hasSubjectID [sh:inversePath study:hasSubjectID]) ;
+    sh:maxCount 1
+  ] .
+  
+#------------------------------------------------------------------------------
+#--- Reference Interval 
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasTypeXsdDateShape-Date
+# DESCR: Targets of predicates that refer to dates must be in xsd:date format.
+# RULEC: Reference Interval Rule Component 1
+# NOTES: Dates are associated with :hasBeginning or :hasEnd, other predicates
+#        can be added for additional dates attached to different IRIs.
+# VIOLATIONS:
+#   99T4  rfendtc as string
+#   99T10 rfstdtc as string
+# STATUS: Passed 2020-08-01
+#------------------------------------------------------------------------------
+study:hasTypeXsdDateShape-Date a sh:NodeShape ;
+  sh:targetObjectsOf time:hasBeginning ;
+  sh:targetObjectsOf time:hasEnd ;
+  sh:or (
+    [ sh:class study:ReferenceBegin ]
+    [ sh:class study:ReferenceEnd ]
+  ) ;  
+  sh:property [
+    sh:path        time:inXSDDate ;  
+    sh:datatype    xsd:date ;
+    sh:name        "xsd:date format";
+    sh:description "Date format as xsd:date.";
+    sh:message     "Date not in xsd:date format. [AFD1002] "
+  ] .  
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasMin1Max1Shape-Interval
+# DESCR: Plant Subject has one reference interval 
+# RULEC: Reference Interval Rule Component 2
+# NOTES: 
+# VIOLATIONS:
+#   99T11 No reference interval
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+study:hasMin1Max1Shape-Interval a sh:NodeShape ;
+  sh:targetClass study:Subject ;        # Ontology
+  # sh:targetClass study:PlantSubject ; # No ontology
+  sh:path study:hasReferenceInterval ;
+  sh:name        "reference interval present";
+  sh:description "Plant Subject must have one and only one reference interval IRI.";
+  sh:message     "Plant Subject does not have one Reference Interval IRI.  [AFD1002]" ;
+  sh:minCount    1 ;
+  sh:maxCount    1 .
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasMin1Max1Shape-StartEndDates
+# DESCR: Reference Interval has one Start Date and one End Date
+# RULEC: Reference Interval Rule Component 3
+# NOTES:
+# VIOLATIONS:  
+#   99T5 missing rfendtc
+#   99T9 missing rfstdtc
+#   99T8 missing both rfendtc, rfstdtc
+#   99T2 >1 rfstdtc, >1 rfendtc  
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+study:hasMin1Max1Shape-StartEndDates a sh:NodeShape ;
+  sh:targetClass study:EntityInterval ;      # Ontology
+  # sh:targetClass study:ReferenceInterval ; # No ontology
+  sh:name        "eintervalDateCount" ;
+  sh:description "Interval has One and only one start and end date." ;
+  sh:message "Problem with Interval date.  [AFD1002]" ;
+  sh:and (
+    [ sh:path time:hasBeginning ;
+      sh:minCount 1;
+      sh:maxCount 1
+    ]
+    [
+      sh:path time:hasEnd ;
+      sh:minCount 1;
+      sh:maxCount 1
+    ]
+ )
+.
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasStartLEEndShape-Interval
+# DESCR: Start Date on or before End Date
+# RULEC: Reference Interval Rule Component 4  
+# NOTES:
+# VIOLATIONS:
+#  99T1  start is after end
+#  99T2  multiple start/end values, one start is before one end value
+#  99T10 String value for rfstdtc strips violation in comparision with rfendtc
+# STATUS: Passed 2020-08-04
+#------------------------------------------------------------------------------
+study:hasStartLEEndShape-Interval a sh:NodeShape ;
+  sh:targetClass study:EntityInterval ;      # Ontology
+  # sh:targetClass study:ReferenceInterval ; # No ontology
+ sh:sparql [
+  a              sh:SPARQLConstraint ;
+  sh:name        "intervalStartLEEnd" ;
+  sh:description "Interval start date on or before end date." ;
+  sh:message     "Interval Start Date on or before End Date. [AFD1002]";
+  sh:prefixes [
+    sh:declare [ sh:prefix "time" ;
+      sh:namespace "http://www.w3.org/2006/time#"^^xsd:anyURI ;
+    ],
+    [ sh:prefix "study" ;
+      sh:namespace "https://w3id.org/phuse/study#"^^xsd:anyURI ;
+    ]  
+  ] ;
+ sh:select
+  """SELECT $this (?beginDate AS ?intervalStart) (?endDate AS ?intervalEnd)
+    WHERE {
+      $this     time:hasBeginning  ?beginIRI ;
+                time:hasEnd        ?endIRI .
+      ?beginIRI time:inXSDDate     ?beginDate .
+      ?endIRI   time:inXSDDate     ?endDate .
+      FILTER  (! (?endDate >= ?beginDate ))
+    }""" ;
+] .
+
+
+#------------------------------------------------------------------------------
+#--- Age 
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# SHAPE: study:hasminInclusive0Shape-Age
+# DESCR: Targets values that must be >= 0 (no negative numbers)
+# RULEC: Age AFD0084 Rule Component 1
+# NOTES: 
+#        
+# VIOLATIONS:
+#   99T1  age = -10 
+#  
+# STATUS: 
+#------------------------------------------------------------------------------
+study:hasminInclusive0Shape-Age a sh:NodeShape ;
+  sh:targetClass study:Age ;
+  sh:name        "agGTE0" ;
+  sh:description "Age must be greater than or equal to 0." ;
+  sh:message "Negative value for AGE.  [AFD0084]" ;
+  sh:property [
+    sh:path time:numericDuration ;
+            sh:minInclusive 0 ;
+  ] .
+
+
+#--------------------------------------------------------------------
+#--- Activate / Deactivate
+#--------------------------------------------------------------------
+
+#--- USUBJID
+study:hasMin1Max1Shape-USubjID sh:deactivated false . 
+study:isUniqueShape-USubjID    sh:deactivated true .  
+
+#--- SUBJID
+study:hasMin1Max1Shape-SubjID  sh:deactivated true . 
+study:isUniqueShape-SubjID     sh:deactivated true .
+
+#--- Reference Interval
+study:hasTypeXsdDateShape-Date       sh:deactivated true . # RefInterval RC 1
+study:hasMin1Max1Shape-Interval      sh:deactivated true . # RefInterval RC 2
+study:hasMin1Max1Shape-StartEndDates sh:deactivated true . # RefInterval RC 3
+study:hasStartLEEndShape-Interval    sh:deactivated true . # RefInterval RC 4
+study:hasminInclusive0Shape-Age      sh:deactivated true . # Age AFD0084 RC 1

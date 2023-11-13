@@ -1,0 +1,18 @@
+
+shacl workflow
+
+1	play site
+
+https://shacl-play.sparna.fr/play/
+https://shacl-play.sparna.fr/play/view
+
+to graph input
+
+2	playground
+
+https://shacl.org/playground/
+
+#1 will show simple ER
+
+#2 shows comprehensive report
+

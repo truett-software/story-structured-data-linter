@@ -1,0 +1,6 @@
+
+implements AMP
+
+check source; SDL generates
+<td>http://example.org/#C530(10)</td>
+

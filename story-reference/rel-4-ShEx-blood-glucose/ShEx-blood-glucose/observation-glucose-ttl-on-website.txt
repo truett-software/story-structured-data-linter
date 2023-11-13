@@ -1,0 +1,92 @@
+#
+# web page: http://hl7.org/fhir/observation-example-f001-glucose.ttl.html
+#
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/Observation/f001> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "f001"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 6323 (OFFICIAL)</p><p/><p><b>code</b>: <span>Glucose [Moles/volume] in Blood</span></p><p><b>subject</b>: <a>P. van de Heuvel. Generated Summary: id: 738472983 (USUAL), id: ?ngen-9? (USUAL); active; Pieter van de Heuvel ; Phone: 0648352638, p.heuvel@gmail.com; gender: male; birthDate: 1944-11-17; <span>Getrouwd</span>; multipleBirth</a></p><p><b>effective</b>: Apr 2, 2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: Apr 3, 2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld. Generated Summary: id: 118265112 (OFFICIAL), id: 191REW8WE916 (USUAL); Langeveld Anne (OFFICIAL); Phone: 0205563847, a.langeveld@bmc.nl, Fax: 0205668916; gender: female; birthDate: 1959-03-11; <span>France</span></a></p><p><b>value</b>: 6.3 mmol/l</p><p><b>interpretation</b>: <span>High</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l</td><td>6.2 mmol/l</td></tr></table></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://www.bmc.nl/zorgportal/identifiers/observations" ];
+     fhir:Identifier.value [ fhir:value "6323" ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:15074-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "15074-8" ];
+       fhir:Coding.display [ fhir:value "Glucose [Moles/volume] in Blood" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.org/fhir/Patient/f001>;
+     fhir:Reference.reference [ fhir:value "Patient/f001" ];
+     fhir:Reference.display [ fhir:value "P. van de Heuvel" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2013-04-02T09:30:10+01:00"^^xsd:dateTime ]
+  ];
+  fhir:Observation.issued [ fhir:value "2013-04-03T15:30:10+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/Practitioner/f005>;
+     fhir:Reference.reference [ fhir:value "Practitioner/f005" ];
+     fhir:Reference.display [ fhir:value "A. Langeveld" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "6.3"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mmol/l" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mmol/L" ]
+  ];
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "H" ];
+       fhir:Coding.display [ fhir:value "High" ]
+     ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "3.1"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmol/l" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mmol/L" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "6.2"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmol/l" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mmol/L" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/Patient/f001> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/f005> a fhir:Practitioner .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/Observation/f001.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/Observation/f001.ttl> .
+
+# -------------------------------------------------------------------------------------
+

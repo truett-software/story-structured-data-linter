@@ -1,0 +1,616 @@
+<html lang="en">
+<head>
+<style type="text/css">
+body{margin-left:1vw;margine-right:1vw;}
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structured Data Linter testing</title>
+
+<link rel="stylesheet" href="application.css">
+<link rel="stylesheet" href="snippet.css">
+</head>
+<body class="linter" about="/" typeof="schema:SoftwareApplication cc:Work" data-new-gr-c-s-check-loaded="8.867.0">
+<nav class="navbar">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://5hw2bg5kz3.execute-api.us-east-1.amazonaws.com/Prod/">Structured Data Linter</a>
+</div>
+</div>
+</nav>
+<div class="container-fluid" role="main">
+<div ng-controller="LinterController" class="ng-scope">
+
+
+<div class="lighter">
+<form id="linter_input" class="ng-pristine ng-valid">
+<fieldset class="input-group" ng-show="fieldset === 'url'">
+<legend>Page URL</legend>
+<input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" type="text" size="80" ng-model="url" value="http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html">
+<input type="submit" ng-click="lintUrl(url)" value="Submit" ng-disabled="fieldset !== 'url'">
+<fieldset>
+<legend>Options</legend>
+<label for="verify-ssl">Verify SSL</label>
+<input id="verify-ssl" type="checkbox" ng-model="verifySSL" class="ng-pristine ng-untouched ng-valid ng-not-empty" checked="checked">
+</fieldset>
+<br>
+</fieldset>
+
+<fieldset class="input-group ng-hide" ng-show="fieldset === 'upload'">
+<legend>File Upload</legend>
+<table class="table">
+<thead>
+<tr>
+<th style="width='50%'">Name</th>
+<th>Size</th>
+<th>Progress</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<input type="file" nv-file-select="" uploader="uploader">
+</fieldset>
+
+<fieldset class="input-group ng-hide" ng-show="fieldset === 'input'">
+<legend>Markup</legend>
+<textarea class="input form-control ng-pristine ng-untouched ng-valid ng-empty" cols="120" rows="15" ng-model="input"></textarea>
+<input type="submit" ng-click="lintInput(input)" value="Submit" ng-disabled="fieldset !== 'input'" disabled="disabled">
+</fieldset>
+</form>
+</div>
+
+
+    
+
+
+<div class="snippet" ng-show="result">
+<h2>Enhanced search result preview</h2>
+<p ng-show="!result.snippet" class="ng-hide">The data did not match any templates on file.
+      Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
+      to request support for additional templates.</p>
+<div ng-bind-html="result.snippet" class="ng-binding"><div class="results-content">
+<div class="snippet-content">
+<h3 class="r">
+<a class="fakelink">
+
+</a>
+</h3>
+<div class="s">
+<div class="f">
+<cite>linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html</cite>
+</div>
+</div>
+<div class="s primary_content">
+<div class="f">
+
+</div>
+<div>
+an <strong>actual</strong> search result <strong>may</strong> display other content <strong>relating</strong> to your search terms here.
+</div>
+<br>
+
+</div>
+<div class="other">
+<p>Content not used in snippet generation:</p>
+<span>2012</span>
+<span>
+<span>Cataloging &amp; Classification Quarterly</span>
+
+</span>
+<span class="other">
+</span>
+
+<span>5</span>
+<span>5</span>
+
+</div>
+</div>
+
+<div class="snippet-content">
+<h3 class="r">
+<a class="fakelink">
+<span>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</span>
+
+</a>
+</h3>
+<div class="s">
+<div class="f">
+<cite>linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html</cite>
+</div>
+</div>
+<div class="s primary_content">
+<div class="f">
+
+</div>
+<div>
+an <strong>actual</strong> search result <strong>may</strong> display other content <strong>relating</strong> to your search terms here.
+</div>
+<br>
+<span>The library catalog as a catalog of works was an infectious idea, 
+which together with research led to reconceptualization in the form of 
+the FRBR conceptual model. Two categories of lacunae emerge--the 
+expression entity, and gaps in the model such as aggregates and dynamic 
+documents. Evidence needed to extend the FRBR model is available in 
+contemporary research on instantiation. The challenge for the 
+bibliographic community is to begin to think of FRBR as a form of 
+knowledge organization system, adding a final dimension to 
+classification. The articles in the present special issue offer a 
+compendium of the promise of the FRBR model.</span>
+
+</div>
+<div class="other">
+<p>Content not used in snippet generation:</p>
+<span>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</span>
+, 
+<span>Smiraglia, Richard P.</span>
+<span>#issue</span>
+<span>368</span>
+<span>360</span>
+<span></span>
+
+</div>
+</div>
+
+<div class="snippet-content">
+<h3 class="r">
+<a class="fakelink">
+<span>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</span>
+
+</a>
+</h3>
+<div class="s">
+<div class="f">
+<cite>linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html</cite>
+</div>
+</div>
+<div class="s primary_content">
+<div class="f">
+
+</div>
+<div>
+an <strong>actual</strong> search result <strong>may</strong> display other content <strong>relating</strong> to your search terms here.
+</div>
+<br>
+<span>The library catalog as a catalog of works was an infectious idea, 
+which together with research led to reconceptualization in the form of 
+the FRBR conceptual model. Two categories of lacunae emerge--the 
+expression entity, and gaps in the model such as aggregates and dynamic 
+documents. Evidence needed to extend the FRBR model is available in 
+contemporary research on instantiation. The challenge for the 
+bibliographic community is to begin to think of FRBR as a form of 
+knowledge organization system, adding a final dimension to 
+classification. The articles in the present special issue offer a 
+compendium of the promise of the FRBR model.</span>
+
+</div>
+<div class="other">
+<p>Content not used in snippet generation:</p>
+<span>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</span>
+, 
+<span>Smiraglia, Richard P.</span>
+<span>#issue</span>
+<span>368</span>
+<span>360</span>
+<span></span>
+
+</div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="results" ng-show="result">
+<h2>Raw structured data extracted from the page:</h2>
+<p ng-show="!result.html" class="ng-hide">No structured data detected.</p>
+<div ng-bind-html="result.html" class="ng-binding"><div class="extracted-content">
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/Periodical(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/PublicationIssue(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/PublicationVolume(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/ScholarlyArticle(2)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html#issue(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:PublicationIssue rdfs:Resource schema:CreativeWork</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:datePublished
+</td>
+<td>2012</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:isPartOf
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html#periodical(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Intangible schema:Thing schema:CreativeWork rdfs:Resource 
+schema:Series schema:PublicationVolume schema:Periodical 
+schema:CreativeWorkSeries</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Cataloging &amp; Classification Quarterly</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:identifier
+</td>
+<td>
+<ul>
+<li>1544-4554</li>
+<li>0163-9374</li>
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:issn
+</td>
+<td>
+<ul>
+<li>1544-4554</li>
+<li>0163-9374</li>
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Cataloging &amp; Classification Quarterly</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:position
+</td>
+<td>50</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:publisher
+</td>
+<td>Taylor &amp; Francis Group</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:volumeNumber
+</td>
+<td>50</td>
+</tr>
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:issueNumber
+</td>
+<td>5</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:position
+</td>
+<td>5</td>
+</tr>
+
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:CreativeWork rdfs:Resource schema:ScholarlyArticle schema:Article</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:about
+</td>
+<td>
+<ul>
+<li>Catalog</li>
+<li>Works</li>
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:author
+</td>
+<td>Smiraglia, Richard P.</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:description
+</td>
+<td>The library catalog as a catalog of works was an infectious idea, 
+which together with research led to reconceptualization in the form of 
+the FRBR conceptual model. Two categories of lacunae emerge--the 
+expression entity, and gaps in the model such as aggregates and dynamic 
+documents. Evidence needed to extend the FRBR model is available in 
+contemporary research on instantiation. The challenge for the 
+bibliographic community is to begin to think of FRBR as a form of 
+knowledge organization system, adding a final dimension to 
+classification. The articles in the present special issue offer a 
+compendium of the promise of the FRBR model.</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:isPartOf
+</td>
+<td>#issue</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:pageEnd
+</td>
+<td>368</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:pageStart
+</td>
+<td>360</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<a href="https://doi.org/10.1080/01639374.2012.682254">https://doi.org/10.1080/01639374.2012.682254</a>
+</td>
+</tr>
+
+</tbody></table>
+</div>
+
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:CreativeWork rdfs:Resource schema:ScholarlyArticle schema:Article</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:about
+</td>
+<td>
+<ul>
+<li>Catalog</li>
+<li>Works</li>
+</ul>
+</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:author
+</td>
+<td>Smiraglia, Richard P.</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:description
+</td>
+<td>The library catalog as a catalog of works was an infectious idea, 
+which together with research led to reconceptualization in the form of 
+the FRBR conceptual model. Two categories of lacunae emerge--the 
+expression entity, and gaps in the model such as aggregates and dynamic 
+documents. Evidence needed to extend the FRBR model is available in 
+contemporary research on instantiation. The challenge for the 
+bibliographic community is to begin to think of FRBR as a form of 
+knowledge organization system, adding a final dimension to 
+classification. The articles in the present special issue offer a 
+compendium of the promise of the FRBR model.</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:isPartOf
+</td>
+<td>#issue</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Be Careful What You Wish For: FRBR, Some Lacunae, A Review</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:pageEnd
+</td>
+<td>368</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:pageStart
+</td>
+<td>360</td>
+</tr>
+
+<tr class="property">
+<td class="label">
+schema:sameAs
+</td>
+<td>
+<a href="https://doi.org/10.1080/01639374.2012.682254">https://doi.org/10.1080/01639374.2012.682254</a>
+</td>
+</tr>
+
+</tbody></table>
+</div>
+
+</div>
+</div>
+</div>
+
+<div ng-show="result.statistics" class="">
+<h2>Parser statistics</h2>
+<table class="stats table table-condensed">
+<tbody>
+<tr><td>Reader</td><td class="ng-binding">RDF::RDFa::Reader</td></tr>
+<tr><td>Statements</td><td class="ng-binding">59</td></tr>
+<tr>
+<td>Templates</td>
+<td><div ng-repeat="template in result.statistics.templates" class="ng-binding ng-scope">schema:CreativeWork</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div ng-show="result.messages" class="">
+<h2>Linter Messages</h2>
+<p ng-repeat="message in result.messages" class="ng-binding ng-scope">
+      validation http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html: Errors found during processing
+</p><p ng-repeat="message in result.messages" class="ng-binding ng-scope">
+      validation 
+http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html:
+ ERROR 
+&lt;http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html&gt;:
+ 1:1: ERROR: Expected a doctype token
+&lt;script type="application/ld+json"&gt;
+^
+</p>
+</div>
+
+<div ng-show="result.debug" class="">
+<h2>Debug Information</h2>
+<textarea rows="20" cols="120" class="ng-binding">    ERROR 
+&lt;http://linter.structured-data.org/examples/schema.org/eg-0399-jsonld.html&gt;:
+ 1:1: ERROR: Expected a doctype token
+&lt;script type="application/ld+json"&gt;
+^
+</textarea>
+</div>
+</div>
+
+</div>
+
+</body></html>

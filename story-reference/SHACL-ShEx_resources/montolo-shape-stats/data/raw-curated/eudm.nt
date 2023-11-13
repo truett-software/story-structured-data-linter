@@ -1,0 +1,201 @@
+<http://linked.data.gov.au/def/eudm-dataset-constraints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints> <http://www.w3.org/2002/07/owl#imports> <http://datashapes.org/dash> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints> <http://www.w3.org/2002/07/owl#imports> <http://linked.data.gov.au/def/eudm-dataset> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints> <http://www.w3.org/2002/07/owl#versionInfo> "Created with TopBraid Composer" .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DatasetShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DatasetShape> <http://www.w3.org/2000/01/rdf-schema#label> "An EUDM dataset" .
+_:n3-102 <http://www.w3.org/ns/shacl#path> <http://linked.data.gov.au/def/eudm-dataset#hasEUDMcategory> .
+_:n3-102 <http://www.w3.org/ns/shacl#class> <http://linked.data.gov.au/def/eudm-dataset#EUDMcategory> .
+_:n3-102 <http://www.w3.org/ns/shacl#description> "Must be classified/tagged with at least one EUDM category" .
+_:n3-102 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-102 <http://www.w3.org/ns/shacl#name> "has EUDM category" .
+_:n3-102 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DatasetShape> <http://www.w3.org/ns/shacl#property> _:n3-102 .
+_:n3-103 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+_:n3-103 <http://www.w3.org/ns/shacl#description> "Must have a title" .
+_:n3-103 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-103 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-103 <http://www.w3.org/ns/shacl#name> "title" .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DatasetShape> <http://www.w3.org/ns/shacl#property> _:n3-103 .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DatasetShape> <http://www.w3.org/ns/shacl#targetClass> <http://linked.data.gov.au/def/eudm-dataset#Dataset> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DistributionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DistributionShape> <http://www.w3.org/2000/01/rdf-schema#label> "An EUDM dataset distribution" .
+_:n3-104 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/hasPolicy> .
+_:n3-104 <http://www.w3.org/ns/shacl#class> <http://test.linked.data.gov.au/license/AU-license> .
+_:n3-104 <http://www.w3.org/ns/shacl#description> "at least one policy" .
+_:n3-104 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-104 <http://www.w3.org/ns/shacl#name> "has policy" .
+_:n3-104 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DistributionShape> <http://www.w3.org/ns/shacl#property> _:n3-104 .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#DistributionShape> <http://www.w3.org/ns/shacl#targetClass> <http://linked.data.gov.au/def/eudm-dataset#Distribution> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#PolicyShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#PolicyShape> <http://www.w3.org/2000/01/rdf-schema#label> "An EUDM policy" .
+_:n3-105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-106 .
+_:n3-106 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/obligation> .
+_:n3-106 <http://www.w3.org/ns/shacl#description> "at least one obligation" .
+_:n3-106 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-107 .
+_:n3-107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-108 .
+_:n3-108 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/permission> .
+_:n3-108 <http://www.w3.org/ns/shacl#description> "at least one permission" .
+_:n3-108 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-109 .
+_:n3-109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-110 .
+_:n3-110 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/prohibition> .
+_:n3-110 <http://www.w3.org/ns/shacl#description> "at least one prohibition" .
+_:n3-110 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#PolicyShape> <http://www.w3.org/ns/shacl#or> _:n3-105 .
+_:n3-111 <http://www.w3.org/ns/shacl#path> <http://purl.org/linked-data/registry#register> .
+_:n3-111 <http://www.w3.org/ns/shacl#description> "Must be a member of the AU License register" .
+_:n3-111 <http://www.w3.org/ns/shacl#hasValue> <http://test/linked.data.gov.au/license/> .
+_:n3-111 <http://www.w3.org/ns/shacl#name> "register" .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#PolicyShape> <http://www.w3.org/ns/shacl#property> _:n3-111 .
+_:n3-112 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/permission> .
+_:n3-112 <http://www.w3.org/ns/shacl#class> <http://test.linked.data.gov.au/license/AU-permission> .
+_:n3-112 <http://www.w3.org/ns/shacl#description> "Must have an AU-government permission" .
+_:n3-112 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-112 <http://www.w3.org/ns/shacl#name> "permission" .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#PolicyShape> <http://www.w3.org/ns/shacl#property> _:n3-112 .
+<http://linked.data.gov.au/def/eudm-dataset-constraints#PolicyShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/odrl/2/Policy> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-bibliographicCitation> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-conformsTo> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-creator> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-description> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-distribution> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-hasEUDMcategory> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-identifier> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-owner> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-page> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-relation> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-spatial> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-subName> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-temporal> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-theme> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-title> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Dataset-type> .
+_:n3-692 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/temporal> .
+_:n3-692 <http://www.w3.org/ns/shacl#qualifiedMaxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-692 <http://www.w3.org/ns/shacl#qualifiedMinCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-693 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2006/time#ProperInterval> .
+_:n3-692 <http://www.w3.org/ns/shacl#qualifiedValueShape> _:n3-693 .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset> <http://www.w3.org/ns/shacl#property> _:n3-692 .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-bibliographicCitation> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/bibliographicCitation> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-bibliographicCitation> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-bibliographicCitation> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-conformsTo> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/conformsTo> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-conformsTo> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-conformsTo> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-creator> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-creator> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-creator> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-description> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-description> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-description> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-distribution> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#distribution> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-distribution> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-hasEUDMcategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-hasEUDMcategory> <http://www.w3.org/ns/shacl#path> <http://linked.data.gov.au/def/eudm-dataset#hasEUDMcategory> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-hasEUDMcategory> <http://www.w3.org/ns/shacl#class> <http://linked.data.gov.au/def/eudm-dataset#EUDMcategory> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-hasEUDMcategory> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-identifier> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/identifier> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-identifier> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-identifier> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-owner> <http://www.w3.org/ns/shacl#path> <http://linked.data.gov.au/def/eudm-dataset#owner> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-owner> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-owner> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-page> <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/page> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-page> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-page> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-relation> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/relation> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-relation> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#Dataset> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-spatial> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/spatial> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-spatial> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-spatial> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-subName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-subName> <http://www.w3.org/ns/shacl#path> <http://linked.data.gov.au/def/eudm-dataset#subName> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-subName> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-temporal> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/temporal> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-theme> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#theme> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-theme> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-theme> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-title> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-title> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-title> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-type> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/type> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-type> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Dataset-type> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Distribution-downloadURL> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution> <http://www.w3.org/ns/shacl#property> <http://linked.data.gov.au/def/eudm-dataset#Distribution-hasPolicy> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution-downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution-downloadURL> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution-downloadURL> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution-hasPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution-hasPolicy> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/hasPolicy> .
+<http://linked.data.gov.au/def/eudm-dataset#Distribution-hasPolicy> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.data.gov.au/def/eudm-dataset.shapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.data.gov.au/def/eudm-dataset.shapes> <http://www.w3.org/2002/07/owl#imports> <http://datashapes.org/dash> .
+<http://linked.data.gov.au/def/eudm-dataset.shapes> <http://www.w3.org/2002/07/owl#imports> <http://linked.data.gov.au/def/eudm-dataset> .
+<http://test.linked.data.gov.au/license/AU-license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://test.linked.data.gov.au/license/AU-license> <http://www.w3.org/ns/shacl#property> <http://test.linked.data.gov.au/license/AU-license-permission> .
+<http://test.linked.data.gov.au/license/AU-license> <http://www.w3.org/ns/shacl#property> <http://test.linked.data.gov.au/license/AU-license-register> .
+_:n3-694 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/permission> .
+_:n3-694 <http://www.w3.org/ns/shacl#qualifiedMinCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-695 <http://www.w3.org/ns/shacl#class> <http://test.linked.data.gov.au/license/AU-permission> .
+_:n3-694 <http://www.w3.org/ns/shacl#qualifiedValueShape> _:n3-695 .
+<http://test.linked.data.gov.au/license/AU-license> <http://www.w3.org/ns/shacl#property> _:n3-694 .
+<http://test.linked.data.gov.au/license/AU-license-permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://test.linked.data.gov.au/license/AU-license-permission> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/permission> .
+<http://test.linked.data.gov.au/license/AU-license-register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://test.linked.data.gov.au/license/AU-license-register> <http://www.w3.org/ns/shacl#path> <http://purl.org/linked-data/registry#register> .
+<http://test.linked.data.gov.au/license/AU-license-register> <http://www.w3.org/ns/shacl#hasValue> <http://test.linked.data.gov.au/license/> .
+<http://test.linked.data.gov.au/license/AU-permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://test.linked.data.gov.au/license/AU-permission> <http://www.w3.org/ns/shacl#property> <http://test.linked.data.gov.au/license/AU-permission-register> .
+<http://test.linked.data.gov.au/license/AU-permission-register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://test.linked.data.gov.au/license/AU-permission-register> <http://www.w3.org/ns/shacl#path> <http://purl.org/linked-data/registry#register> .
+<http://test.linked.data.gov.au/license/AU-permission-register> <http://www.w3.org/ns/shacl#hasValue> <http://test/linked.data.gov.au/permission/> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-696 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-697 .
+_:n3-697 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/obligation> .
+_:n3-697 <http://www.w3.org/ns/shacl#description> "at least one obligation" .
+_:n3-697 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-696 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-698 .
+_:n3-698 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-699 .
+_:n3-699 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/permission> .
+_:n3-699 <http://www.w3.org/ns/shacl#description> "at least one permission" .
+_:n3-699 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-698 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-700 .
+_:n3-700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3-701 .
+_:n3-701 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/prohibition> .
+_:n3-701 <http://www.w3.org/ns/shacl#description> "at least one prohibition" .
+_:n3-701 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/ns/shacl#or> _:n3-696 .
+_:n3-702 <http://www.w3.org/ns/shacl#path> <http://purl.org/linked-data/registry#register> .
+_:n3-702 <http://www.w3.org/ns/shacl#description> "Must be a member of the AU License register" .
+_:n3-702 <http://www.w3.org/ns/shacl#hasValue> <http://test/linked.data.gov.au/license/> .
+_:n3-702 <http://www.w3.org/ns/shacl#name> "register" .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/ns/shacl#property> _:n3-702 .
+_:n3-703 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/odrl/2/permission> .
+_:n3-703 <http://www.w3.org/ns/shacl#class> <http://test.linked.data.gov.au/license/AU-permission> .
+_:n3-703 <http://www.w3.org/ns/shacl#description> "Must have an AU-government permission" .
+_:n3-703 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-703 <http://www.w3.org/ns/shacl#name> "permission" .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/ns/shacl#property> _:n3-703 .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2004/02/skos/core#note> "In this version we enforce that at least one rule must be present" .

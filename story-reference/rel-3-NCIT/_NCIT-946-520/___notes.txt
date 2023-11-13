@@ -1,0 +1,5 @@
+
+items sans relationships have been removed
+
+total
+946,520

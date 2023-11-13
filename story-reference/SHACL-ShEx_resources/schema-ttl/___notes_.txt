@@ -1,0 +1,5 @@
+
+Error java.lang.NullPointerException : null
+
+schemashacl.shapes.ttl
+

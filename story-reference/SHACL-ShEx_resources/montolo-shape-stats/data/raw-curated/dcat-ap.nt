@@ -1,0 +1,393 @@
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/alternative> "DCAT-AP"@en .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/conformsTo> <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> .
+_:n3-156 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://eugeniu.costezki.ro#me> .
+_:n3-156 <http://www.w3.org/ns/org#memberOf> <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+_:n3-156 <http://xmlns.com/foaf/0.1/homepage> <http://costezki.ro> .
+_:n3-156 <http://xmlns.com/foaf/0.1/name> "Eugeniu Costetchi" .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/creator> _:n3-156 .
+_:n3-157 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://makxdekkers.com/#me> .
+_:n3-157 <http://www.w3.org/ns/org#memberOf> <http://ami-consult.com/#id> .
+_:n3-157 <http://xmlns.com/foaf/0.1/homepage> <http://makxdekkers.com/> .
+_:n3-157 <http://xmlns.com/foaf/0.1/name> "Makx Dekkers" .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/creator> _:n3-157 .
+_:n3-158 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://nikosloutas.com/> .
+_:n3-158 <http://www.w3.org/ns/org#memberOf> <http://www.pwc.com/gx/en/eu-institutions-services> .
+_:n3-158 <http://xmlns.com/foaf/0.1/homepage> <http://nikosloutas.com/> .
+_:n3-158 <http://xmlns.com/foaf/0.1/name> "Nikolaos Loutas" .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/creator> _:n3-158 .
+_:n3-159 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.deri.ie/users/vassilios-peristeras/> .
+_:n3-159 <http://www.w3.org/ns/org#memberOf> <http://publications.europa.eu/resource/authority/corporate-body/COM> .
+_:n3-159 <http://xmlns.com/foaf/0.1/homepage> <http://www.deri.ie/users/vassilios-peristeras/> .
+_:n3-159 <http://xmlns.com/foaf/0.1/name> "Vassilios Peristeras" .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/creator> _:n3-159 .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/license> <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/modified> "2017-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/publisher> <http://publications.europa.eu/resource/authority/corporate-body/COM> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/relation> <https://joinup.ec.europa.eu/node/69559> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/rightsHolder> <http://publications.europa.eu/resource/authority/corporate-body/EURUN> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://purl.org/dc/terms/title> "DCAT Application Profile for Data Portals in Europe"@en .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2000/01/rdf-schema#comment> "This document specifies mandatory classe constraints from Application (DCAT-AP)."@en .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2000/01/rdf-schema#label> "Mandatory Class Constraints of DCAT Application Profile for Data Portals in Europe"@en .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://datashapes.org/dash> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/dc/terms/> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/vcard/ns> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2008/05/skos-xl> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/adms> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://www.w3.org/2002/07/owl#versionInfo> "1.2" .
+<http://data.europa.eu/r5r/mandatory-classes> <http://xmlns.com/foaf/0.1/depiction> <https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://xmlns.com/foaf/0.1/homepage> <https://joinup.ec.europa.eu/node/69559> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://xmlns.com/foaf/0.1/logo> <https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png> .
+_:n3-160 <http://xmlns.com/foaf/0.1/mbox> <mailto:dcat_application_profile@joinup.ec.europa.eu> .
+_:n3-160 <http://xmlns.com/foaf/0.1/name> "DCAT-AP Working Group" .
+_:n3-160 <http://xmlns.com/foaf/0.1/page> <https://joinup.ec.europa.eu/node/63580> .
+<http://data.europa.eu/r5r/mandatory-classes> <http://xmlns.com/foaf/0.1/maker> _:n3-160 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Mandatory agent " .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Mandatory agent" .
+_:n3-161 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-162 <http://www.w3.org/ns/shacl#inversePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-161 <http://www.w3.org/ns/shacl#path> _:n3-162 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryAgent> <http://www.w3.org/ns/shacl#property> _:n3-161 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryAgent> <http://www.w3.org/ns/shacl#targetNode> <http://xmlns.com/foaf/0.1/Agent> .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryCatalog> <http://www.w3.org/2000/01/rdf-schema#comment> "Mandatory catalog" .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryCatalog> <http://www.w3.org/2000/01/rdf-schema#label> "Mandatory catalog" .
+_:n3-163 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-164 <http://www.w3.org/ns/shacl#inversePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-163 <http://www.w3.org/ns/shacl#path> _:n3-164 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryCatalog> <http://www.w3.org/ns/shacl#property> _:n3-163 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryCatalog> <http://www.w3.org/ns/shacl#targetNode> <http://www.w3.org/ns/dcat#Catalog> .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Mandatory dataset " .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryDataset> <http://www.w3.org/2000/01/rdf-schema#label> "Mandatory dataset" .
+_:n3-165 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-166 <http://www.w3.org/ns/shacl#inversePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-165 <http://www.w3.org/ns/shacl#path> _:n3-166 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryDataset> <http://www.w3.org/ns/shacl#property> _:n3-165 .
+<http://data.europa.eu/r5r/mandatory-classes#MandatoryDataset> <http://www.w3.org/ns/shacl#targetNode> <http://www.w3.org/ns/dcat#Dataset> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/conformsTo> <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> .
+_:n3-747 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://eugeniu.costezki.ro#me> .
+_:n3-747 <http://www.w3.org/ns/org#memberOf> <http://publications.europa.eu/resource/authority/corporate-body/PUBL> .
+_:n3-747 <http://xmlns.com/foaf/0.1/homepage> <http://costezki.ro> .
+_:n3-747 <http://xmlns.com/foaf/0.1/name> "Eugeniu Costetchi" .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/creator> _:n3-747 .
+_:n3-748 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://makxdekkers.com/#me> .
+_:n3-748 <http://www.w3.org/ns/org#memberOf> <http://ami-consult.com/#id> .
+_:n3-748 <http://xmlns.com/foaf/0.1/homepage> <http://makxdekkers.com/> .
+_:n3-748 <http://xmlns.com/foaf/0.1/name> "Makx Dekkers" .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/creator> _:n3-748 .
+_:n3-749 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://nikosloutas.com/> .
+_:n3-749 <http://www.w3.org/ns/org#memberOf> <http://www.pwc.com/gx/en/eu-institutions-services> .
+_:n3-749 <http://xmlns.com/foaf/0.1/homepage> <http://nikosloutas.com/> .
+_:n3-749 <http://xmlns.com/foaf/0.1/name> "Nikolaos Loutas" .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/creator> _:n3-749 .
+_:n3-750 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.deri.ie/users/vassilios-peristeras/> .
+_:n3-750 <http://www.w3.org/ns/org#memberOf> <http://publications.europa.eu/resource/authority/corporate-body/COM> .
+_:n3-750 <http://xmlns.com/foaf/0.1/homepage> <http://www.deri.ie/users/vassilios-peristeras/> .
+_:n3-750 <http://xmlns.com/foaf/0.1/name> "Vassilios Peristeras" .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/creator> _:n3-750 .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/license> <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/modified> "2017-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/publisher> <http://publications.europa.eu/resource/authority/corporate-body/COM> .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/relation> <https://joinup.ec.europa.eu/node/69559> .
+<http://data.europa.eu/r5r/mdrcv> <http://purl.org/dc/terms/rightsHolder> <http://publications.europa.eu/resource/authority/corporate-body/EURUN> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2000/01/rdf-schema#comment> "This document specifies controlled vocabulary constraints on properties used in the DCAT Application (DCAT-AP)."@en .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2000/01/rdf-schema#label> "Controlled Vocabulary Constraints of DCAT Application Profile for Data Portals in Europe"@en .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://creativecommons.org/ns> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://datashapes.org/dash> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/dc/terms/> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://topbraid.org/schema/> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://vocab.deri.ie/void> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/vcard/ns> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2008/05/skos-xl> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/adms> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
+<http://data.europa.eu/r5r/mdrcv> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://data.europa.eu/r5r/mdrcv> <http://xmlns.com/foaf/0.1/depiction> <https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp> .
+<http://data.europa.eu/r5r/mdrcv> <http://xmlns.com/foaf/0.1/homepage> <https://joinup.ec.europa.eu/node/69559> .
+<http://data.europa.eu/r5r/mdrcv> <http://xmlns.com/foaf/0.1/logo> <https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png> .
+_:n3-751 <http://xmlns.com/foaf/0.1/mbox> <mailto:dcat_application_profile@joinup.ec.europa.eu> .
+_:n3-751 <http://xmlns.com/foaf/0.1/name> "DCAT-AP Working Group" .
+_:n3-751 <http://xmlns.com/foaf/0.1/page> <https://joinup.ec.europa.eu/node/63580> .
+<http://data.europa.eu/r5r/mdrcv> <http://xmlns.com/foaf/0.1/maker> _:n3-751 .
+<http://data.europa.eu/r5r/mdrcv#ContinentRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#ContinentRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Continent restriction" .
+<http://data.europa.eu/r5r/mdrcv#ContinentRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Continent restriction" .
+<http://data.europa.eu/r5r/mdrcv#ContinentRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#ContinentRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-752 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-752 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-752 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/continent> .
+_:n3-752 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-752 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#ContinentRestriction> <http://www.w3.org/ns/shacl#property> _:n3-752 .
+<http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Corporate Body Restriction" .
+<http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Corporate Body Restriction" .
+<http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-753 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-753 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-753 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/corporate-body> .
+_:n3-753 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-753 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> <http://www.w3.org/ns/shacl#property> _:n3-753 .
+<http://data.europa.eu/r5r/mdrcv#CountryRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#CountryRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Country restriction" .
+<http://data.europa.eu/r5r/mdrcv#CountryRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Country restriction" .
+<http://data.europa.eu/r5r/mdrcv#CountryRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#CountryRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-754 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-754 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-754 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/country> .
+_:n3-754 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-754 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#CountryRestriction> <http://www.w3.org/ns/shacl#property> _:n3-754 .
+<http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Data Theme Restriction" .
+<http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Data Theme Restriction" .
+<http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-755 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-755 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-755 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/data-theme> .
+_:n3-755 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-755 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> <http://www.w3.org/ns/shacl#property> _:n3-755 .
+<http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "File Type Restriction" .
+<http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "File Type Restriction" .
+<http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-756 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-756 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-756 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/file-type> .
+_:n3-756 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-756 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> <http://www.w3.org/ns/shacl#property> _:n3-756 .
+<http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency Restriction" .
+<http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency Restriction" .
+<http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-757 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-757 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-757 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/frequency> .
+_:n3-757 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-757 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> <http://www.w3.org/ns/shacl#property> _:n3-757 .
+<http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Geo names restriction" .
+<http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Geo names restriction" .
+<http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-758 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-758 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-758 <http://www.w3.org/ns/shacl#hasValue> <http://sws.geonames.org> .
+_:n3-758 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-758 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> <http://www.w3.org/ns/shacl#property> _:n3-758 .
+<http://data.europa.eu/r5r/mdrcv#LanguageRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#LanguageRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Language Restriction" .
+<http://data.europa.eu/r5r/mdrcv#LanguageRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Language Restriction" .
+<http://data.europa.eu/r5r/mdrcv#LanguageRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#LanguageRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-759 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-759 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-759 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/language> .
+_:n3-759 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-759 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#LanguageRestriction> <http://www.w3.org/ns/shacl#property> _:n3-759 .
+<http://data.europa.eu/r5r/mdrcv#LicenceTypeRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#LicenceTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Licence type restriction" .
+<http://data.europa.eu/r5r/mdrcv#LicenceTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Licence type restriction" .
+<http://data.europa.eu/r5r/mdrcv#LicenceTypeRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-760 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-760 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-760 <http://www.w3.org/ns/shacl#hasValue> <http://purl.org/adms/licencetype/1.0> .
+_:n3-760 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-760 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#LicenceTypeRestriction> <http://www.w3.org/ns/shacl#property> _:n3-760 .
+<http://data.europa.eu/r5r/mdrcv#PlaceRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#PlaceRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Place restriction" .
+<http://data.europa.eu/r5r/mdrcv#PlaceRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Place restriction" .
+<http://data.europa.eu/r5r/mdrcv#PlaceRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/r5r/mdrcv#PlaceRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-761 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-761 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-761 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/place> .
+_:n3-761 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-761 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#PlaceRestriction> <http://www.w3.org/ns/shacl#property> _:n3-761 .
+<http://data.europa.eu/r5r/mdrcv#PublisherTypeRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#PublisherTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Publisher type restriction" .
+<http://data.europa.eu/r5r/mdrcv#PublisherTypeRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher type restriction" .
+<http://data.europa.eu/r5r/mdrcv#PublisherTypeRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-762 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-762 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-762 <http://www.w3.org/ns/shacl#hasValue> <http://purl.org/adms/publishertype/1.0> .
+_:n3-762 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-762 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#PublisherTypeRestriction> <http://www.w3.org/ns/shacl#property> _:n3-762 .
+<http://data.europa.eu/r5r/mdrcv#StatusRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://data.europa.eu/r5r/mdrcv#StatusRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Status restriction" .
+<http://data.europa.eu/r5r/mdrcv#StatusRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "Status restriction" .
+<http://data.europa.eu/r5r/mdrcv#StatusRestriction> <http://www.w3.org/2002/07/owl#versionInfo> "1" .
+_:n3-763 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:n3-763 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-763 <http://www.w3.org/ns/shacl#hasValue> <http://purl.org/adms/status/1.0> .
+_:n3-763 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-763 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://data.europa.eu/r5r/mdrcv#StatusRestriction> <http://www.w3.org/ns/shacl#property> _:n3-763 .
+<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-764 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/type> .
+_:n3-764 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-764 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-764 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#LicenceTypeRestriction> .
+<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/ns/shacl#property> _:n3-764 .
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-765 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language> .
+_:n3-765 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-765 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-765 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#LanguageRestriction> .
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/ns/shacl#property> _:n3-765 .
+_:n3-766 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher> .
+_:n3-766 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-766 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-766 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> .
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/ns/shacl#property> _:n3-766 .
+_:n3-767 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/spatial> .
+_:n3-767 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-767 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-768 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-769 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#CountryRestriction> .
+_:n3-769 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-770 .
+_:n3-770 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#PlaceRestriction> .
+_:n3-770 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-771 .
+_:n3-771 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#ContinentRestriction> .
+_:n3-771 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-772 .
+_:n3-772 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> .
+_:n3-772 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-768 <http://www.w3.org/ns/shacl#or> _:n3-769 .
+_:n3-767 <http://www.w3.org/ns/shacl#node> _:n3-768 .
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/ns/shacl#property> _:n3-767 .
+_:n3-773 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#themeTaxonomy> .
+_:n3-773 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+_:n3-773 <http://www.w3.org/ns/shacl#hasValue> <http://publications.europa.eu/resource/authority/data-theme> .
+_:n3-773 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/ns/shacl#property> _:n3-773 .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-774 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/accrualPeriodicity> .
+_:n3-774 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-774 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-774 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#FrequencyRestriction> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/ns/shacl#property> _:n3-774 .
+_:n3-775 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language> .
+_:n3-775 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-775 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-775 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#LanguageRestriction> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/ns/shacl#property> _:n3-775 .
+_:n3-776 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher> .
+_:n3-776 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-776 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-776 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#CorporateBodyRestriction> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/ns/shacl#property> _:n3-776 .
+_:n3-777 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/spatial> .
+_:n3-777 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-777 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-778 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-779 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#CountryRestriction> .
+_:n3-779 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-780 .
+_:n3-780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#PlaceRestriction> .
+_:n3-780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-781 .
+_:n3-781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#ContinentRestriction> .
+_:n3-781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-782 .
+_:n3-782 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/r5r/mdrcv#GeoNamesRestriction> .
+_:n3-782 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3-778 <http://www.w3.org/ns/shacl#or> _:n3-779 .
+_:n3-777 <http://www.w3.org/ns/shacl#node> _:n3-778 .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/ns/shacl#property> _:n3-777 .
+_:n3-783 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#theme> .
+_:n3-783 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-783 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-783 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#DataThemeRestriction> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/ns/shacl#property> _:n3-783 .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-784 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/format> .
+_:n3-784 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-784 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-784 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#FileTypeRestriction> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/ns/shacl#property> _:n3-784 .
+_:n3-785 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/adms#status> .
+_:n3-785 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-785 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-785 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#StatusRestriction> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/ns/shacl#property> _:n3-785 .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-786 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/type> .
+_:n3-786 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-786 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-786 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-786 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#PublisherTypeRestriction> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/ns/shacl#property> _:n3-786 .
+_:n3-787 <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/name> .
+_:n3-787 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-787 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-787 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/ns/shacl#property> _:n3-787 .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-788 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#notation> .
+_:n3-788 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-788 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-788 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/ns/shacl#property> _:n3-788 .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-789 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+_:n3-789 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-789 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-789 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/ns/shacl#property> _:n3-789 .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-790 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+_:n3-790 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-790 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-790 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/ns/shacl#property> _:n3-790 .
+<http://spdx.org/rdf/terms#Checksum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-791 <http://www.w3.org/ns/shacl#path> <http://spdx.org/rdf/terms#algorithm> .
+_:n3-791 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-791 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-791 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-791 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://spdx.org/rdf/terms#Checksum> <http://www.w3.org/ns/shacl#property> _:n3-791 .
+_:n3-792 <http://www.w3.org/ns/shacl#path> <http://spdx.org/rdf/terms#checksumValue> .
+_:n3-792 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-792 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-792 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:n3-792 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://spdx.org/rdf/terms#Checksum> <http://www.w3.org/ns/shacl#property> _:n3-792 .
+<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-793 <http://www.w3.org/ns/shacl#path> <http://schema.org/endDate> .
+_:n3-793 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-793 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+_:n3-793 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#DateOrDateTimeDataType> .
+<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/ns/shacl#property> _:n3-793 .
+_:n3-794 <http://www.w3.org/ns/shacl#path> <http://schema.org/startDate> .
+_:n3-794 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-794 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+_:n3-794 <http://www.w3.org/ns/shacl#node> <http://data.europa.eu/r5r/mdrcv#DateOrDateTimeDataType> .
+<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/ns/shacl#property> _:n3-794 .
+<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n3-795 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/type> .
+_:n3-795 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n3-795 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n3-795 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:n3-795 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation> .
+<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/ns/shacl#property> _:n3-795 .

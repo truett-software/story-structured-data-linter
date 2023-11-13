@@ -1,0 +1,595 @@
+<http://n2t.net/ark:/99152/p0v#submitted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Role> .
+<http://n2t.net/ark:/99152/p0v#submitted> <http://www.w3.org/2000/01/rdf-schema#comment> "The role played by the agent responsible for submitting a patch."@en .
+<http://n2t.net/ark:/99152/p0v#submitted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://n2t.net/ark:/99152/p0v> .
+<http://n2t.net/ark:/99152/p0v#submitted> <http://www.w3.org/2000/01/rdf-schema#label> "submitted"@en .
+<http://n2t.net/ark:/99152/p0v#updated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Role> .
+<http://n2t.net/ark:/99152/p0v#updated> <http://www.w3.org/2000/01/rdf-schema#comment> "The role played by the agent responsible for updating a patch."@en .
+<http://n2t.net/ark:/99152/p0v#updated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://n2t.net/ark:/99152/p0v> .
+<http://n2t.net/ark:/99152/p0v#updated> <http://www.w3.org/2000/01/rdf-schema#label> "updated"@en .
+<http://n2t.net/ark:/99152/p0v#merged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Role> .
+<http://n2t.net/ark:/99152/p0v#merged> <http://www.w3.org/2000/01/rdf-schema#comment> "The role played by the agent responsible for merging a patch."@en .
+<http://n2t.net/ark:/99152/p0v#merged> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://n2t.net/ark:/99152/p0v> .
+<http://n2t.net/ark:/99152/p0v#merged> <http://www.w3.org/2000/01/rdf-schema#label> "merged"@en .
+<http://n2t.net/ark:/99152/p0v#spatialCoverageDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://n2t.net/ark:/99152/p0v#spatialCoverageDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Free-text description of the spatial coverage of a resource."@en .
+<http://n2t.net/ark:/99152/p0v#spatialCoverageDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://n2t.net/ark:/99152/p0v> .
+<http://n2t.net/ark:/99152/p0v#spatialCoverageDescription> <http://www.w3.org/2000/01/rdf-schema#label> "spatial coverage description"@en .
+<http://n2t.net/ark:/99152/p0v#spatialCoverageDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#earliestYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://n2t.net/ark:/99152/p0v#earliestYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The earliest Gregorian year referred to in the description of a temporal interval."@en .
+<http://n2t.net/ark:/99152/p0v#earliestYear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://n2t.net/ark:/99152/p0v> .
+<http://n2t.net/ark:/99152/p0v#earliestYear> <http://www.w3.org/2000/01/rdf-schema#label> "earliest year"@en .
+<http://n2t.net/ark:/99152/p0v#earliestYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#DateTimeDescription> .
+<http://n2t.net/ark:/99152/p0v#earliestYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://n2t.net/ark:/99152/p0v#latestYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://n2t.net/ark:/99152/p0v#latestYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The latest Gregorian year referred to in the description of a temporal interval."@en .
+<http://n2t.net/ark:/99152/p0v#latestYear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://n2t.net/ark:/99152/p0v> .
+<http://n2t.net/ark:/99152/p0v#latestYear> <http://www.w3.org/2000/01/rdf-schema#label> "latest year"@en .
+<http://n2t.net/ark:/99152/p0v#latestYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#DateTimeDescription> .
+<http://n2t.net/ark:/99152/p0v#latestYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+_:n3-1409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3-1409 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:n3-1409 <http://www.w3.org/2002/07/owl#onProperty> <http://n2t.net/ark:/99152/p0v#earliestYear> .
+<http://www.w3.org/2006/time#DateTimeDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3-1409 .
+_:n3-1410 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3-1410 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:n3-1410 <http://www.w3.org/2002/07/owl#onProperty> <http://n2t.net/ark:/99152/p0v#latestYear> .
+<http://www.w3.org/2006/time#DateTimeDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3-1410 .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/2000/01/rdf-schema#label> "Period shape" .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-1411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-1411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:n3-1411 .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#pattern> "^http://n2t.net/ark:/99152/p0[a-z0-9]{9}" .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodNoteShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodSourceShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodStartShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodStopShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodURLShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#PeriodScriptShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#name> "preferred label" .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#description> "Name of the period as given in the source" .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodPreferredLabelShape> <http://www.w3.org/ns/shacl#message> "Problem with period preferred label" .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#altLabel> .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#name> "localized label" .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#description> "Language-specific name for the period" .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+_:n3-1412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "af" .
+_:n3-1412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1413 .
+_:n3-1413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ar" .
+_:n3-1413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1414 .
+_:n3-1414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bg" .
+_:n3-1414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1415 .
+_:n3-1415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ca" .
+_:n3-1415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1416 .
+_:n3-1416 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cmn-Hans" .
+_:n3-1416 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1417 .
+_:n3-1417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cmn-Hant" .
+_:n3-1417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1418 .
+_:n3-1418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cmn-Latn" .
+_:n3-1418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1419 .
+_:n3-1419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cs" .
+_:n3-1419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1420 .
+_:n3-1420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "da" .
+_:n3-1420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1421 .
+_:n3-1421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "de" .
+_:n3-1421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1422 .
+_:n3-1422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "el" .
+_:n3-1422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1423 .
+_:n3-1423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "en" .
+_:n3-1423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1424 .
+_:n3-1424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "es" .
+_:n3-1424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1425 .
+_:n3-1425 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "fr" .
+_:n3-1425 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1426 .
+_:n3-1426 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "hu" .
+_:n3-1426 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1427 .
+_:n3-1427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "it" .
+_:n3-1427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1428 .
+_:n3-1428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ja-Latn" .
+_:n3-1428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1429 .
+_:n3-1429 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ko-Latn" .
+_:n3-1429 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1430 .
+_:n3-1430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "la" .
+_:n3-1430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1431 .
+_:n3-1431 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "mi-Latn" .
+_:n3-1431 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1432 .
+_:n3-1432 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "mk" .
+_:n3-1432 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1433 .
+_:n3-1433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "nl" .
+_:n3-1433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1434 .
+_:n3-1434 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:n3-1434 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1435 .
+_:n3-1435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ota-Arab" .
+_:n3-1435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1436 .
+_:n3-1436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "pt" .
+_:n3-1436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1437 .
+_:n3-1437 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ro" .
+_:n3-1437 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1438 .
+_:n3-1438 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ru" .
+_:n3-1438 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1439 .
+_:n3-1439 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "scn" .
+_:n3-1439 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1440 .
+_:n3-1440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sl" .
+_:n3-1440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1441 .
+_:n3-1441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sq" .
+_:n3-1441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1442 .
+_:n3-1442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sr-Cyrl" .
+_:n3-1442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1443 .
+_:n3-1443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sv" .
+_:n3-1443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1444 .
+_:n3-1444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "tr" .
+_:n3-1444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1445 .
+_:n3-1445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "uk" .
+_:n3-1445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1446 .
+_:n3-1446 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "vi" .
+_:n3-1446 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1447 .
+_:n3-1447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "zh-Latn" .
+_:n3-1447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#languageIn> _:n3-1412 .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodLocalizedLabelShape> <http://www.w3.org/ns/shacl#message> "Problem with period localized label" .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#note> .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/ns/shacl#name> "note" .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/ns/shacl#description> "Notes about the period taken from the source" .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodNoteShape> <http://www.w3.org/ns/shacl#message> "Problem with period note" .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#editorialNote> .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/ns/shacl#name> "editorial note" .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/ns/shacl#description> "Administrative or editorial notes from PeriodO curators" .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodEditorialNoteShape> <http://www.w3.org/ns/shacl#message> "Problem with period editorial note" .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#name> "authority" .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#description> "Authority to which this period belongs" .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#pattern> "^http://n2t.net/ark:/99152/p0[a-z0-9]{5}" .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodAuthorityShape> <http://www.w3.org/ns/shacl#message> "Problem with period link to authority" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/source> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#name> "source" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#description> "Bibliographic information specific to this period" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNode> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#node> <http://n2t.net/ark:/99152/p0v#SourceShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceShape> <http://www.w3.org/ns/shacl#message> "Problem with period source" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-1448 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/dc/terms/source> .
+_:n3-1448 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1449 .
+_:n3-1449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/dc/terms/isPartOf> .
+_:n3-1449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> <http://www.w3.org/ns/shacl#path> _:n3-1448 .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> <http://www.w3.org/ns/shacl#name> "source is part of" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceIsPartOfShape> <http://www.w3.org/ns/shacl#message> "Problem with period source (is part of)" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+_:n3-1450 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/dc/terms/source> .
+_:n3-1450 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1451 .
+_:n3-1451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bibo/locator> .
+_:n3-1451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> <http://www.w3.org/ns/shacl#path> _:n3-1450 .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> <http://www.w3.org/ns/shacl#name> "source locator" .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodSourceLocatorShape> <http://www.w3.org/ns/shacl#message> "Problem with period source (locator)" .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/time#intervalStartedBy> .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#name> "start" .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#description> "Start interval for the period" .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNode> .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#node> <http://n2t.net/ark:/99152/p0v#StartIntervalShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodStartShape> <http://www.w3.org/ns/shacl#message> "Problem with period start interval" .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/time#intervalFinishedBy> .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#name> "stop" .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#description> "Stop interval for the period" .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNode> .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#node> <http://n2t.net/ark:/99152/p0v#StopIntervalShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodStopShape> <http://www.w3.org/ns/shacl#message> "Problem with period stop interval" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/ns/shacl#path> <http://n2t.net/ark:/99152/p0v#spatialCoverageDescription> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/ns/shacl#name> "spatial coverage description" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/ns/shacl#description> "Spatial extent of the period as described in the source" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageDescriptionShape> <http://www.w3.org/ns/shacl#message> "Problem with period spatial coverage description" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/spatial> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#name> "spatial coverage" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#description> "Place (partially) within spatial extent of the period" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#pattern> "^http://www.wikidata.org/entity/Q[0-9]+" .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodSpatialCoverageShape> <http://www.w3.org/ns/shacl#message> "Problem with period spatial coverage" .
+<http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> <http://www.w3.org/ns/shacl#name> "same as" .
+<http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> <http://www.w3.org/ns/shacl#description> "Alternative URI for this period" .
+<http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodSameAsShape> <http://www.w3.org/ns/shacl#message> "Problem with period alternative URI (sameAs)" .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/ns/shacl#name> "was derived from" .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/ns/shacl#description> "Another period from which this one was derived" .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/ns/shacl#pattern> "^http://n2t.net/ark:/99152/p0[a-z0-9]{9}" .
+<http://n2t.net/ark:/99152/p0v#PeriodDerivedFromShape> <http://www.w3.org/ns/shacl#message> "Problem with derived from" .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#broader> .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#name> "see broader period" .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#description> "Another period that encompasses this one" .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#pattern> "^http://n2t.net/ark:/99152/p0[a-z0-9]{9}" .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodBroaderShape> <http://www.w3.org/ns/shacl#message> "Problem with period broader" .
+<http://n2t.net/ark:/99152/p0v#PeriodURLShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodURLShape> <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/page> .
+<http://n2t.net/ark:/99152/p0v#PeriodURLShape> <http://www.w3.org/ns/shacl#name> "url" .
+<http://n2t.net/ark:/99152/p0v#PeriodURLShape> <http://www.w3.org/ns/shacl#description> "Web resource with information about this period" .
+<http://n2t.net/ark:/99152/p0v#PeriodURLShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodURLShape> <http://www.w3.org/ns/shacl#message> "Problem with period URL" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/elements/1.1/language> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#name> "language tag" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#description> "Language tag of the preferred label for this period" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n3-1452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "af" .
+_:n3-1452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1453 .
+_:n3-1453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ar" .
+_:n3-1453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1454 .
+_:n3-1454 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bg" .
+_:n3-1454 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1455 .
+_:n3-1455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ca" .
+_:n3-1455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1456 .
+_:n3-1456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cs" .
+_:n3-1456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1457 .
+_:n3-1457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cmn-Hans" .
+_:n3-1457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1458 .
+_:n3-1458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cmn-Hant" .
+_:n3-1458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1459 .
+_:n3-1459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cmn-Latn" .
+_:n3-1459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1460 .
+_:n3-1460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "da" .
+_:n3-1460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1461 .
+_:n3-1461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "de" .
+_:n3-1461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1462 .
+_:n3-1462 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "el" .
+_:n3-1462 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1463 .
+_:n3-1463 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "en" .
+_:n3-1463 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1464 .
+_:n3-1464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "es" .
+_:n3-1464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1465 .
+_:n3-1465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "fr" .
+_:n3-1465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1466 .
+_:n3-1466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "hu" .
+_:n3-1466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1467 .
+_:n3-1467 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "it" .
+_:n3-1467 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1468 .
+_:n3-1468 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ja-Latn" .
+_:n3-1468 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1469 .
+_:n3-1469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ko-Latn" .
+_:n3-1469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1470 .
+_:n3-1470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "la" .
+_:n3-1470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1471 .
+_:n3-1471 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "mi-Latn" .
+_:n3-1471 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1472 .
+_:n3-1472 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "mk" .
+_:n3-1472 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1473 .
+_:n3-1473 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "nl" .
+_:n3-1473 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1474 .
+_:n3-1474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:n3-1474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1475 .
+_:n3-1475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ota-Arab" .
+_:n3-1475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1476 .
+_:n3-1476 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "pt" .
+_:n3-1476 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1477 .
+_:n3-1477 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ro" .
+_:n3-1477 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1478 .
+_:n3-1478 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ru" .
+_:n3-1478 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1479 .
+_:n3-1479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "scn" .
+_:n3-1479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1480 .
+_:n3-1480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sl" .
+_:n3-1480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1481 .
+_:n3-1481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sq" .
+_:n3-1481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1482 .
+_:n3-1482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sr-Cyrl" .
+_:n3-1482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1483 .
+_:n3-1483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sv" .
+_:n3-1483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1484 .
+_:n3-1484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "tr" .
+_:n3-1484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1485 .
+_:n3-1485 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "uk" .
+_:n3-1485 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1486 .
+_:n3-1486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "vi" .
+_:n3-1486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-1487 .
+_:n3-1487 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "zh-Latn" .
+_:n3-1487 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#in> _:n3-1452 .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageTagShape> <http://www.w3.org/ns/shacl#message> "Problem with period language tag" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#name> "language" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#description> "Language of the preferred label for this period" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#pattern> "^http://lexvo.org/id/iso639-[13]/[a-z]{2,3}" .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodLanguageShape> <http://www.w3.org/ns/shacl#message> "Problem with period language" .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#path> <http://lexvo.org/ontology#inScript> .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#name> "script" .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#description> "Script of the preferred label for this period" .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#pattern> "^http://lexvo.org/id/script/[A-Z][a-z]{3}" .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#PeriodScriptShape> <http://www.w3.org/ns/shacl#message> "Problem with period script" .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/2000/01/rdf-schema#label> "Source shape" .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-1488 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-1488 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:n3-1488 .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceIsPartOfShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceTitleShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceIssuedShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceDateShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceCreatorShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceContributorShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceAbstractShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceLocatorShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceSameAsShape> .
+<http://n2t.net/ark:/99152/p0v#SourceShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#SourceURLShape> .
+<http://n2t.net/ark:/99152/p0v#SourceIsPartOfShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceIsPartOfShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/isPartOf> .
+<http://n2t.net/ark:/99152/p0v#SourceIsPartOfShape> <http://www.w3.org/ns/shacl#name> "is part of" .
+<http://n2t.net/ark:/99152/p0v#SourceIsPartOfShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<http://n2t.net/ark:/99152/p0v#SourceIsPartOfShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceTitleShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceTitleShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title> .
+<http://n2t.net/ark:/99152/p0v#SourceTitleShape> <http://www.w3.org/ns/shacl#name> "title" .
+<http://n2t.net/ark:/99152/p0v#SourceTitleShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#SourceTitleShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceIssuedShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceIssuedShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued> .
+<http://n2t.net/ark:/99152/p0v#SourceIssuedShape> <http://www.w3.org/ns/shacl#name> "issued" .
+<http://n2t.net/ark:/99152/p0v#SourceIssuedShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#SourceIssuedShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceDateShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceDateShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/date> .
+<http://n2t.net/ark:/99152/p0v#SourceDateShape> <http://www.w3.org/ns/shacl#name> "date" .
+<http://n2t.net/ark:/99152/p0v#SourceDateShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date> .
+<http://n2t.net/ark:/99152/p0v#SourceDateShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceCreatorShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceCreatorShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator> .
+<http://n2t.net/ark:/99152/p0v#SourceCreatorShape> <http://www.w3.org/ns/shacl#name> "creator" .
+<http://n2t.net/ark:/99152/p0v#SourceCreatorShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<http://n2t.net/ark:/99152/p0v#SourceContributorShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceContributorShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/contributor> .
+<http://n2t.net/ark:/99152/p0v#SourceContributorShape> <http://www.w3.org/ns/shacl#name> "contributor" .
+<http://n2t.net/ark:/99152/p0v#SourceContributorShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<http://n2t.net/ark:/99152/p0v#SourceAbstractShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceAbstractShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/abstract> .
+<http://n2t.net/ark:/99152/p0v#SourceAbstractShape> <http://www.w3.org/ns/shacl#name> "abstract" .
+<http://n2t.net/ark:/99152/p0v#SourceAbstractShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#SourceAbstractShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceLocatorShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceLocatorShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/ontology/bibo/locator> .
+<http://n2t.net/ark:/99152/p0v#SourceLocatorShape> <http://www.w3.org/ns/shacl#name> "locator" .
+<http://n2t.net/ark:/99152/p0v#SourceLocatorShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#SourceLocatorShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#editorialNote> .
+<http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> <http://www.w3.org/ns/shacl#name> "editorial note" .
+<http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> <http://www.w3.org/ns/shacl#description> "Administrative or editorial notes from PeriodO curators" .
+<http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#SourceEditorialNoteShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#SourceSameAsShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceSameAsShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://n2t.net/ark:/99152/p0v#SourceSameAsShape> <http://www.w3.org/ns/shacl#name> "same as" .
+<http://n2t.net/ark:/99152/p0v#SourceSameAsShape> <http://www.w3.org/ns/shacl#description> "External URI for this source" .
+<http://n2t.net/ark:/99152/p0v#SourceSameAsShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#SourceURLShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#SourceURLShape> <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/page> .
+<http://n2t.net/ark:/99152/p0v#SourceURLShape> <http://www.w3.org/ns/shacl#name> "url" .
+<http://n2t.net/ark:/99152/p0v#SourceURLShape> <http://www.w3.org/ns/shacl#description> "Web resource with information about this source" .
+<http://n2t.net/ark:/99152/p0v#SourceURLShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/2000/01/rdf-schema#label> "Period authority shape" .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-1489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-1489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:n3-1489 .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#pattern> "^http://n2t.net/ark:/99152/p0[a-z0-9]{5}" .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> .
+<http://n2t.net/ark:/99152/p0v#AuthorityShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/source> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#name> "source" .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#description> "Bibliographic description of the source" .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#node> <http://n2t.net/ark:/99152/p0v#SourceShape> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySourceShape> <http://www.w3.org/ns/shacl#message> "Problem with authority source" .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#editorialNote> .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#name> "editorial note" .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#description> "Administrative or editorial notes from PeriodO curators" .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#AuthorityEditorialNoteShape> <http://www.w3.org/ns/shacl#message> "Problem with authority editorial note" .
+<http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> <http://www.w3.org/ns/shacl#name> "same as" .
+<http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> <http://www.w3.org/ns/shacl#description> "Alternative URI for this authority" .
+<http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#AuthoritySameAsShape> <http://www.w3.org/ns/shacl#message> "Problem with authority alternative URI (sameAs)" .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/2000/01/rdf-schema#label> "PeriodO dataset shape" .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/ns/shacl#targetNode> <http://n2t.net/ark:/99152/p0d/#authorities> .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#DatasetTypeShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#DatasetMemberShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#name> "type" .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#description> "RDF type of this dataset" .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DatasetTypeShape> <http://www.w3.org/ns/shacl#message> "Problem with dataset type" .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#member> .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#name> "member" .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#description> "A period authority in this dataset" .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#pattern> "^http://n2t.net/ark:/99152/p0[a-z0-9]{5}" .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://n2t.net/ark:/99152/p0v#DatasetMemberShape> <http://www.w3.org/ns/shacl#message> "Problem with dataset member" .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#name> "is primary topic of" .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#description> "Link to JSON representation of this dataset" .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#hasValue> <http://n2t.net/ark:/99152/p0d.json> .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DatasetIsPrimaryTopicOfShape> <http://www.w3.org/ns/shacl#message> "Problem with dataset link to JSON representation" .
+<http://n2t.net/ark:/99152/p0v#StartIntervalShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalShape> <http://www.w3.org/2000/01/rdf-schema#label> "Interval shape" .
+<http://n2t.net/ark:/99152/p0v#StartIntervalShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-1490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-1490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:n3-1490 .
+<http://n2t.net/ark:/99152/p0v#StartIntervalShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalShape> <http://www.w3.org/2000/01/rdf-schema#label> "Interval shape" .
+<http://n2t.net/ark:/99152/p0v#StopIntervalShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-1491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-1491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:n3-1491 .
+<http://n2t.net/ark:/99152/p0v#StopIntervalShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#prefLabel> .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/ns/shacl#name> "preferred label" .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/ns/shacl#description> "Description of the interval as given in the source" .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#IntervalPreferredLabelShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/time#hasDateTimeDescription> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#name> "date-time description" .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#description> "Bibliographic description of the source" .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNode> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#node> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#StartIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/time#hasDateTimeDescription> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#name> "date-time description" .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#description> "Bibliographic description of the source" .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNode> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#node> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> .
+<http://n2t.net/ark:/99152/p0v#StopIntervalDateTimeDescriptionShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/2000/01/rdf-schema#label> "Date-time description shape" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n3-1492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:n3-1492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:n3-1492 .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#property> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#sparql> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionMustHaveYearOrEarliestYear> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#sparql> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionCannotHaveBothYearAandEarliestYear> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionShape> <http://www.w3.org/ns/shacl#sparql> <http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearMustBeLessThanLatestYear> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/time#year> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/ns/shacl#name> "year" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/ns/shacl#description> "Gregorian calendar year" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/ns/shacl#pattern> "^-?([1-9][0-9]{3,}|0[0-9]{3})$" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionYearShape> <http://www.w3.org/ns/shacl#message> "At most 1 valid gYear" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/ns/shacl#path> <http://n2t.net/ark:/99152/p0v#earliestYear> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/ns/shacl#name> "earliest year" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/ns/shacl#description> "earliest Gregorian calendar year" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/ns/shacl#pattern> "^-?([1-9][0-9]{3,}|0[0-9]{3})$" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearShape> <http://www.w3.org/ns/shacl#message> "At most 1 valid gYear" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/ns/shacl#path> <http://n2t.net/ark:/99152/p0v#latestYear> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/ns/shacl#name> "latest year" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/ns/shacl#description> "latest Gregorian calendar year" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/ns/shacl#pattern> "^-?([1-9][0-9]{3,}|0[0-9]{3})$" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionLatestYearShape> <http://www.w3.org/ns/shacl#message> "At most 1 valid gYear" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionMustHaveYearOrEarliestYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionMustHaveYearOrEarliestYear> <http://www.w3.org/ns/shacl#message> "Must have either a year or an earliestYear" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionMustHaveYearOrEarliestYear> <http://www.w3.org/ns/shacl#prefixes> <http://n2t.net/ark:/99152/> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionMustHaveYearOrEarliestYear> <http://www.w3.org/ns/shacl#select> "\nSELECT $this ($this AS ?path) ?value\nWHERE {\n  ?interval time:hasDateTimeDescription $this .\n  ?interval skos:prefLabel ?value .\n  FILTER NOT EXISTS {\n    { $this time:year ?year }\n    UNION\n    { $this periodo:earliestYear ?earliestYear }\n  }\n}\n" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionCannotHaveBothYearAandEarliestYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionCannotHaveBothYearAandEarliestYear> <http://www.w3.org/ns/shacl#message> "Cannot have both a year and an earliestYear" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionCannotHaveBothYearAandEarliestYear> <http://www.w3.org/ns/shacl#prefixes> <http://n2t.net/ark:/99152/> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionCannotHaveBothYearAandEarliestYear> <http://www.w3.org/ns/shacl#select> "\nSELECT $this ($this AS ?path) ?value\nWHERE {\n  ?interval time:hasDateTimeDescription $this .\n  ?interval skos:prefLabel ?value .\n  $this time:year ?year .\n  $this periodo:earliestYear ?earliestYear\n}\n" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearMustBeLessThanLatestYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#SPARQLConstraint> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearMustBeLessThanLatestYear> <http://www.w3.org/ns/shacl#message> "earliestYear must be less than latestYear" .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearMustBeLessThanLatestYear> <http://www.w3.org/ns/shacl#prefixes> <http://n2t.net/ark:/99152/> .
+<http://n2t.net/ark:/99152/p0v#DateTimeDescriptionEarliestYearMustBeLessThanLatestYear> <http://www.w3.org/ns/shacl#select> "\nSELECT $this ($this AS ?path) ?value\nWHERE {\n  ?interval time:hasDateTimeDescription $this .\n  ?interval skos:prefLabel ?value .\n  $this periodo:earliestYear ?earliestYear .\n  $this periodo:latestYear ?latestYear .\n  FILTER (xsd:long(?earliestYear) >= xsd:long(?latestYear))\n}\n" .
+_:n3-1493 <http://www.w3.org/ns/shacl#prefix> "periodo" .
+_:n3-1493 <http://www.w3.org/ns/shacl#namespace> "http://n2t.net/ark:/99152/p0v#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://n2t.net/ark:/99152/> <http://www.w3.org/ns/shacl#declare> _:n3-1493 .
+_:n3-1494 <http://www.w3.org/ns/shacl#prefix> "time" .
+_:n3-1494 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2006/time#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://n2t.net/ark:/99152/> <http://www.w3.org/ns/shacl#declare> _:n3-1494 .
+_:n3-1495 <http://www.w3.org/ns/shacl#prefix> "skos" .
+_:n3-1495 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2004/02/skos/core#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://n2t.net/ark:/99152/> <http://www.w3.org/ns/shacl#declare> _:n3-1495 .
+_:n3-1496 <http://www.w3.org/ns/shacl#prefix> "xsd" .
+_:n3-1496 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2001/XMLSchema#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://n2t.net/ark:/99152/> <http://www.w3.org/ns/shacl#declare> _:n3-1496 .

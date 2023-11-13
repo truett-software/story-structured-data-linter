@@ -1,0 +1,127 @@
+<!doctype html><html lang="en-us"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+
+<title property="https://schema.org/name">
+Sunburst: NALT full
+</title>
+
+<link rel="canonical" property="https://schema.org/url" href="https://ontomatica.io/DIR/canonical.html"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/onto_symb_w421_h421.png">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+/* Chrome and Safari; no -moz support */
+::-webkit-scrollbar {width:12px}
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3)}
+::-webkit-scrollbar-thumb {background:#BCC9F4; -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5)}
+::-webkit-scrollbar-thumb:window-inactive {background:#F9B361}
+
+.onto-logo {background-image:url("https://ontomatica.io/static/image/onto_logo_w325_h60.svg"); width:325px; height:60px; background-repeat:no-repeat;background-size:90%;}
+body {margin:0; padding:0; font-family:Roboto; font-size:18px; line-height:1.8; }
+header {text-align: left; padding:10px 0px 10px 10px}
+article header {background:#0379C4; text-align:left; color:#fff}
+.article-body {padding:0px 0px 20px 10px; }
+h1,.my-container {max-width:98%; margin:0 auto}
+h2 {padding-left:10px; font-weight:700; color:#0379C4; }
+h3 {padding-left:10px; font-weight:400; font-size:14px; }
+h4 {padding-left:10px; font-weight:normal; font-size:18px; }
+
+/*
+.my-container {max-width:98%; margin:0 auto}
+*/
+
+.my-container:after {content:""; display:table; clear:both}
+main {display:block; padding:0}
+main div.noh2 {margin-top:3em}
+.row {margin:0 1% 1em 0; padding:1em; background-color:#fff; font-size:1.2em; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; box-shadow:2px 2px 11px -2px rgba(0,0,0,.6); -webkit-box-shadow:2px 2px 11px -2px rgba(0,0,0,.6); -moz-box-shadow:2px 2px 11px -2px rgba(0,0,0,.6); overflow:auto}
+.row:after {content:""; display:table; clear:both}
+
+footer {display:block; width:100%; position:fixed; bottom:0; padding:0 0 0 0; color:#999; z-index:9999}
+footer div.my-container {max-width:100%}
+
+/*
+@media screen and (min-device-width:320px) and (max-device-width:359px) {h1 {display:inline-block; max-width:70%; font-size:1em; padding:1.8em 0 0 .2em}
+header {height:70px; padding:6px 0} html {font-size:75%} main div.noh2 {margin-top:1em} main {margin:87px auto 5em auto; padding-top:1em; max-width:100%; line-height:1.3em} p {line-height:1.3em}}
+
+@media screen and (min-device-width:360px) and (max-device-width:768px) {h1 {display:inline-block; max-width:70%; font-size:1em; padding:1.8em 0 0 .2em}
+header {height:70px; padding:6px 0} html {font-size:75%} main div.noh2 {margin-top:1em} main {margin:87px auto 5em auto; padding-top:1em; max-width:100%; line-height:1.3em} p {line-height:1.3em}}
+*/
+
+@media screen and (min-device-width:769px) and (max-device-width:1680px) {html {font-size:75%}}
+.brand-bar {background-color: #0379C4; line-height: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 0.3125rem; padding-right: 0.3125rem;}
+.brand-bar_item-action, .brand-bar_item-action:focus {margin: 0; cursor: pointer; color: #fff; display: inline-block; vertical-align: middle; text-decoration: none; line-height: 2.25rem;}
+.brand-bar_item { height: 2.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; font-size: 1.1rem;}
+.rounded-icon { display: inline-block; vertical-align: middle; position: relative; -webkit-border-radius: 62.5rem; border-radius: 62.5rem;}
+.inline-icon {fill: #ffffff}
+.control_info { display: inline-block; height: 1.875rem; line-height: 2.25rem; margin-left: 0.625rem; max-width: 8.75rem; vertical-align: top; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; float: left; text-align: left;}
+.control_icon-wrapper { border: 0.0625rem solid rgba(255, 255, 255, 0.3); float: left; height: 2.125rem; width: 2.125rem; text-align: center;}
+
+.legendItem {fill:#fff; font-size:13px}
+</style>
+</head>
+<body>
+
+<script type="application/ld+json" id="">
+</script>
+
+<!-- <header><div class="onto-logo"></div></header> -->
+
+<main role="main">
+<article>
+<div class="content-container">
+
+<header>
+<h1 itemprop="headline">
+Sunburst
+</h1>
+</header>
+
+<div class="article-body" itemprop="articleBody">
+<div>
+<h2>
+National Agricultural Library Thesaurus &#x2014; without Taxa
+</h2>
+
+<!-- <h3> -->
+<!-- <amp-list width="auto" height="20" layout="fixed-height" src="https://afdsi.org/static/data/date/current_1.json"> -->
+<!-- <template type="amp-mustache" id="amp-template-id"> -->
+<!-- <time itemprop="dateModified">Last updated:&#x00A0;{{date}}</time> -->
+<!-- </template> -->
+<!-- </amp-list> -->
+<!-- </h3> -->
+
+<h3>
+Mouse&#45;over layers to see terms by number and by percent distribution.
+</h3>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</div>
+</div>
+</article>
+</main>
+
+<!-- <footer> -->
+<!-- <div class="my-container"> -->
+<!-- <div class="brand-bar"> -->
+<!-- <a class="brand-bar_item brand-bar_item-action" data-link-name="back to top" href="#top"> -->
+<!-- <span class="rounded-icon control_icon-wrapper"> -->
+<!-- <span class="inline-icon"> -->
+<!-- <svg width="24" height="18" viewBox="0 0 24 18"><path d="M.4 15.3l10.5-8.4L12 6l1.1.9 10.5 8.4-.5.7L12 9.7.9 16l-.5-.7z"/></svg> -->
+<!-- </span> -->
+<!-- </span> -->
+<!-- <span class="control_info">back to top</span> -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </footer> -->
+
+</body></html>

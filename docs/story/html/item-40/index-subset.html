@@ -1,0 +1,1016 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<title>
+US NIH NCI Thesaurus subset
+</title>
+<link rel="canonical" href="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-40/index-subset.html"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<style amp-custom>
+@font-face{font-family:"Noto Sans";font-style:normal;font-weight:400;font-display:swap;src:local("Noto Sans"),local("NotoSans"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff) format("woff")}
+@font-face{font-family:"Noto Sans";font-style:normal;font-weight:700;font-display:swap;src:local("Noto Sans Bold"),local("NotoSans-Bold"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff) format("woff")}
+@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:local("Poppins Bold"),local("Poppins-Bold"),url(https://amp.dev/static/fonts/poppins-v5-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/poppins-v5-latin-700.woff) format("woff")}
+@font-face{font-family:"Fira Mono";font-style:normal;font-weight:400;font-display:swap;src:local("Fira Mono"),local("FiraMono"),url(https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff2) format("woff2"),url(https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff) format("woff")}
+
+@font-face {
+    font-family: 'Carter One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/carter-one/carter-one-v12-latin-regular.woff2")
+        format("woff2");
+}
+
+/* Chrome and Safari; no -moz support */
+::-webkit-scrollbar {width:12px}
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3)}
+::-webkit-scrollbar-thumb {background:#BCC9F4; -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5)}
+::-webkit-scrollbar-thumb:window-inactive {background:#F9B361}
+
+body {margin:0; padding:0; line-height:1.8}
+header {text-align: left; padding:10px 0px 10px 10px}
+article header {background:linear-gradient(to right, #1c79c0, #0389ff, #0dd3ff); text-align:left; color:#fff}
+.article-body {padding:0px 0px 20px 10px}
+
+h1 {max-width:98%; margin:0 auto;font-family:"Noto Sans",sans-serif;font-size: 1.5em;}
+h2 {padding-left:10px; font-weight:700; color:#0379C4;font-family:"Noto Sans",sans-serif;font-size: 1.5em;}
+h3 {padding-left:10px; font-weight:700; color:#0379C4;font-family:"Noto Sans",sans-serif;font-size: 1.1em;}
+
+p{
+  font-family: Poppins, sans-serif;
+  font-size: 0.9em;
+}
+.extracted-content .label {
+  font-size: 0.9em;
+  color: black;
+  text-align: left;
+}
+.extracted-content table {
+  border-collapse:collapse;
+  overflow-x:auto;
+  display:block;
+  font-size: 0.9em;
+  font-family: "Fira Mono";
+}
+.extracted-content table td {
+  vertical-align: baseline;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+table.ts td {
+  font-size: 0.8em;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+.custom-loader .amp-active {
+  max-width: 10%;
+  max-height: 50%;
+  width: 2em;
+  height: 2em;
+  background-color: #333;
+  margin: -1em auto;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@keyframes sk-rotateplane {
+  0% { transform: perspective(120px); }
+  50% { transform: perspective(120px) rotateX(-180deg); }
+  100% { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+}
+
+  /* Hide the three default dots */
+.custom-loader .amp-active > div {
+    display: none;
+}
+</style>
+</head>
+
+<body class="custom-loader" typeof="schema:SoftwareApplication">
+<header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 97" width="314" height="49">
+<style>
+@font-face {
+    font-family: 'Carter One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/carter-one/carter-one-v12-latin-regular.woff2")
+        format("woff2");
+}
+</style>
+<text y="460.847" x="187.654" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="187.654"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#cd00cd" dy="0" dx="0">i</tspan></tspan></text>
+<text y="460.847" x="158.479" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="158.479"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:red" dy="0" dx="0">s</tspan></tspan></text>
+<text y="460.847" x="43.669" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="43.669"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#0087ff" dy="0" dx="0">a</tspan></tspan></text>
+<text y="460.847" x="85.492" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="85.492"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#00ad66" dy="0" dx="0">f</tspan></tspan></text>
+<text y="460.847" x="110.839" style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;line-height:125%;font-family:'Carter One';text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="110.839"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:85.29597473px;font-family:'Carter One';fill:#ffc800" dy="0" dx="0">d</tspan></tspan></text>
+<text y="426.729" x="228.829" style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;line-height:125%;font-family:Cambria;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="426.729" x="228.829"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;font-family:Cambria;fill:#000" dy="0" dx="0">American Food Data </tspan></tspan></text>
+<text y="460.847" x="228.829" style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;line-height:125%;font-family:Cambria;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000;fill-opacity:1;stroke:none" xml:space="preserve" transform="translate(-38 -382.835)"><tspan y="460.847" x="228.829"><tspan style="font-style:normal;font-variant:normal;font-weight:400;font-size:42.64798737px;font-family:Cambria;fill:#000" dy="0" dx="0">Systems Institute</tspan></tspan></text>
+</svg>
+</header>
+
+<main>
+<article>
+<header>
+<h1 itemprop="headline">
+US NIH National Cancer Institute Thesaurus defined by <em>&nbsp;schema.org&nbsp;&nbsp;</em>ontology
+</h1>
+</header>
+<div class="article-body" itemprop="articleBody">
+<h2>
+Generated by Structured Data Linter
+</h2>
+<div class="">
+<h3>Parser statistics</h3>
+<table class="stats table table-condensed">
+<tbody>
+<tr><td>Reader</td><td class="">RDF::RDFa::Reader</td></tr>
+<tr><td>Statements&nbsp;</td><td class="">&nbsp;946,520</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="results" ng-show="result">
+<div ng-bind-html="result.html" class="ng-binding">
+<div class="extracted-content">
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://schema.org/Class(135217)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>rdfs:Class</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C1000(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Recombinant Amphiregulin</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Recombinant Amphiregulin</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C1504(4)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Recombinant Epidermal Growth Factor</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Recombinant Epidermal Growth Factor</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C530(10)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Recombinant Growth Factor</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Recombinant Growth Factor</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C307(45)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Biological Agent</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Biological Agent</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C1909(31)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Pharmacologic Substance</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Pharmacologic Substance</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C1908(12)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Drug, Food, Chemical or Biomedical Material</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Drug, Food, Chemical or Biomedical Material</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/0">http://example.org/0</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C100000(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Percutaneous Coronary Intervention for ST Elevation Myocardial Infarction-Stable-Over 12 Hours From Symptom Onset</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Percutaneous Coronary Intervention for ST Elevation Myocardial Infarction-Stable-Over 12 Hours From Symptom Onset</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C49803(16)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Cardiovascular Surgical Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Cardiovascular Surgical Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C49163(14)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Surgical Procedure by Site or System</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Surgical Procedure by Site or System</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C15329(25)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Surgical Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Surgical Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C25218(16)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Intervention or Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Intervention or Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C16203(4)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Clinical or Research Activity</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Clinical or Research Activity</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C43431(7)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Activity</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Activity</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/0">http://example.org/0</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C100001(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Percutaneous Coronary Intervention for ST Elevation Myocardial Infarction-Stable After Successful Full-Dose Thrombolytic Therapy</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Percutaneous Coronary Intervention for ST Elevation Myocardial Infarction-Stable After Successful Full-Dose Thrombolytic Therapy</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/#C49803">http://example.org/#C49803</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C100002(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Percutaneous Coronary Intervention for ST Elevation Myocardial Infarction-Unstable-Over 12 Hours From Symptom Onset</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Percutaneous Coronary Intervention for ST Elevation Myocardial Infarction-Unstable-Over 12 Hours From Symptom Onset</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/#C49803">http://example.org/#C49803</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C100003(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Percutaneous Mitral Valve Repair</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Percutaneous Mitral Valve Repair</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C80449(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Mitral Valve Repair</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Mitral Valve Repair</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C50818(2)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Heart Valve Repair</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Heart Valve Repair</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C99546(9)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Cardiac Valve Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Cardiac Valve Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C80430(24)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Cardiac Therapeutic Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Cardiac Therapeutic Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C49236(142)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Therapeutic Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Therapeutic Procedure</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/#C25218">http://example.org/#C25218</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C100004(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Pericardial Stripping</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Pericardial Stripping</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/#C80430">http://example.org/#C80430</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C100005(0)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Post-Cardiac Transplant Evaluation</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Post-Cardiac Transplant Evaluation</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C15839(3)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Prevention and Treatment Evaluation</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Prevention and Treatment Evaluation</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C15857(1)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Therapy Evaluation</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Therapy Evaluation</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C15791(7)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Clinical Testing</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Clinical Testing</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C15336(9)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Testing</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Testing</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td><div>
+<table class="properties">
+<tbody><tr>
+<td class="label">@id</td>
+<td>http://example.org/#C15429(68)</td>
+</tr>
+<tr>
+<td class="label">rdf:type</td>
+<td>schema:Thing schema:Intangible rdfs:Resource schema:Class</td>
+</tr>
+<tr class="property">
+<td class="label">
+rdfs:label
+</td>
+<td>Research Activity</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:name
+</td>
+<td>Research Activity</td>
+</tr>
+<tr class="property">
+<td class="label">
+schema:supersededBy
+</td>
+<td>
+<a href="http://example.org/#C16203">http://example.org/#C16203</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
