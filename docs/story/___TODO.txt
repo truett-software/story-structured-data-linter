@@ -1,0 +1,31 @@
+
+iframe: keep even though non-standard AMP
+
+reference links
+  https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg
+
+toggle
+  data-item-label="background-network-black" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+
+  data-item-label="background-network-gray"  src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+
+fails
+  .amp-comment-button {
+    display: none;
+  }
+
+https://twitter.com/Gkellogg/status/104617719307055104
+https://twitter.com/Gkellogg/status/1325211019640152066
+
+
+12/08/2023
+UPDATE
+    publisher="Ontomatica"
+    publisher-logo-src="https://place-hold.it/260x58?text=Ontomatica-logo&bold&fontsize=23"
+    poster-portrait-src="https://place-hold.it/300x400?text=Structured Data Linter&bold&fontsize=23"
+    poster-square-src="https://place-hold.it/300x300?text=Structured Data Linter&bold&fontsize=23"
+    poster-landscape-src="https://place-hold.it/400x300?text=Structured Data Linter&bold&fontsize=23"
+
+
+Localize background
+
