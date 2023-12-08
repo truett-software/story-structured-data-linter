@@ -1,5 +1,7 @@
 <!--
-amp invalid - using iframe
+update
+  ht-590
+using spacers
 -->
 <!doctype html>
 <html amp lang="en">
@@ -25,9 +27,11 @@ Structured Data Linter project
     src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
 <script async custom-element="amp-google-document-embed"
     src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
-
 <script async custom-element="amp-iframe"
     src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+<link crossorigin rel="preload" as="font" type="font/ttf"
+  href="https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.ttf"/>
 
 <link crossorigin rel="preload" as="font" type="font/ttf" 
   href="https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf"/>
@@ -106,47 +110,28 @@ Structured Data Linter project
 <link crossorigin rel="preload" as="font" type="font/ttf" 
   href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ThinItalic.ttf"/>
 
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Light.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-LightItalic.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Italic.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Medium.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-MediumItalic.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-SemiBold.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Bold.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/ttf" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-BoldItalic.ttf"/>
+
 <style amp-custom>
 
 /** @format */
 
-/* gist height*/
-.ht-590 {
-  height: 590px;
-}
-/* added from sphinx template */
+/**
+ *  Cluster 1
+ *  COLOR
+ */
+
 :root {
-  --space-unit-v: 1rem;
-  --space-xxxxs: calc(0.125 * var(--space-unit-v));
-  --space-xxxs: calc(0.25 * var(--space-unit-v));
-  --space-xxs: calc(0.375 * var(--space-unit-v));
-  --space-xs: calc(0.5 * var(--space-unit-v));
-  --space-sm: calc(0.75 * var(--space-unit-v));
-  --space-md: calc(1.25 * var(--space-unit-v));
-  --space-lg: calc(2 * var(--space-unit-v));
-  --space-xl: calc(3.25 * var(--space-unit-v));
-  --space-xxl: calc(5.25 * var(--space-unit-v));
-  --space-xxxl: calc(8.5 * var(--space-unit-v));
-  --space-xxxxl: calc(13.75 * var(--space-unit-v));
-
-  --space-unit-h: 1rem;
-  --space-05: calc(0.5 * var(--space-unit-h)); /*  8px */
-  --space-10: calc(1 * var(--space-unit-h)); /* 16px */
-  --space-15: calc(1.5 * var(--space-unit-h)); /* 24px */
-  --space-20: calc(2 * var(--space-unit-h)); /* 32px */
-
-  --margin-10: 1em;
-  --margin-12: 1.2em;
-  --margin-20: 2em;
-
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-
   --on-595775: #595775;
-
   --on-000000: #000000;
   --on-0000ff: #0000ff;
   --on-0003ff: #0003ff;
@@ -244,11 +229,133 @@ Structured Data Linter project
   --on-ffffff: #ffffff;
 }
 
-/* added from sphinx template */
+/**
+ * legacy
+ * from sequence 10 - 58
+ * E:_rosetta-unified-data-table+color.xlsx
+ * E:_color-palette__2.xlsx
+ */
+
+.c-c0334d {background-color: #c0334d;}.c-f3d480 {background-color: #f3d480;}.c-f1931b {background-color: #f1931b;}.c-8f715b {background-color: #8f715b;}.c-78d68c {background-color: #78d68c;}.c-720017 {background-color: #720017;}.c-d8d583 {background-color: #d8d583;}.c-d98c2a {background-color: #d98c2a;}.c-36688d {background-color: #36688d;}.c-a3586d {background-color: #a3586d;}.c-aba6bf {background-color: #aba6bf;}.c-595775 {background-color: #595775;}.c-84a45a {background-color: #84a45a;}.c-583e2e {background-color: #583e2e;}.c-bf988f {background-color: #bf988f;}.c-a7414a {background-color: #a7414a;}.c-6a8a82 {background-color: #6a8a82;}.c-a37c27 {background-color: #a37c27;}.c-4fd993 {background-color: #4fd993;}.c-704404 {background-color: #704404;}.c-4e7ba7 {background-color: #4e7ba7;}.c-d28f1b {background-color: #d28f1b;}.c-1ecfd6 {background-color: #1ecfd6;}.c-edd179 {background-color: #edd179;}.c-c05640 {background-color: #c05640;}.c-728ca3 {background-color: #728ca3;}.c-73c0f4 {background-color: #73c0f4;}.c-f3e46c {background-color: #f3e46c;}.c-582a20 {background-color: #582a20;}.c-9499a6 {background-color: #9499a6;}.c-c59cdb {background-color: #c59cdb;}.c-a67b04 {background-color: #a67b04;}.c-525b56 {background-color: #525b56;}.c-93a806 {background-color: #93a806;}.c-f08b33 {background-color: #f08b33;}.c-d75404 {background-color: #d75404;}.c-8a2c02 {background-color: #8a2c02;}.c-d75b66 {background-color: #d75b66;}.c-23345c {background-color: #23345c;}.c-bfafa0 {background-color: #bfafa0;}.c-515b51 {background-color: #515b51;}.c-8c7547 {background-color: #8c7547;}.c-efa747 {background-color: #efa747;}.c-52733b {background-color: #52733b;}.c-bda728 {background-color: #bda728;}.c-704307 {background-color: #704307;}.c-f7b178 {background-color: #f7b178;}.c-253f5b {background-color: #253f5b;}.c-4f728e {background-color: #4f728e;}
+
 
 /**
- * Font: Recursive Variable
+ * background and text color, text shadow
  */
+
+/* for background, dark */
+.hcolor-light {
+  color: var(--on-ffffff);
+}
+
+/* for background, light */
+.hcolor-dark {
+  color: var(--on-595775);
+}
+
+/* constellation original */
+.shadow-text {
+  text-shadow: 0px 4px 4px rgb(0 0 0 / 0.95);
+}
+
+/* for background, light: shadow-text-back-light - stbl */
+.stbl {
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+/* for background, dark: shadow-text-back-dark - stbd */
+.stbd {
+  text-shadow:
+    2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/**
+ *  Cluster 2
+ *  SPACING
+ */
+
+:root {
+  --space-unit-v: 1rem;
+  --space-xxxxs: calc(0.125 * var(--space-unit-v));
+  --space-xxxs: calc(0.25 * var(--space-unit-v));
+  --space-xxs: calc(0.375 * var(--space-unit-v));
+  --space-xs: calc(0.5 * var(--space-unit-v));
+  --space-sm: calc(0.75 * var(--space-unit-v));
+  --space-md: calc(1.25 * var(--space-unit-v));
+  --space-lg: calc(2 * var(--space-unit-v));
+  --space-xl: calc(3.25 * var(--space-unit-v));
+  --space-xxl: calc(5.25 * var(--space-unit-v));
+  --space-xxxl: calc(8.5 * var(--space-unit-v));
+  --space-xxxxl: calc(13.75 * var(--space-unit-v));
+
+  --space-unit-h: 1rem;
+  --space-05: calc(0.5 * var(--space-unit-h)); /*  8px */
+  --space-10: calc(1 * var(--space-unit-h));   /* 16px */
+  --space-15: calc(1.5 * var(--space-unit-h)); /* 24px */
+  --space-20: calc(2 * var(--space-unit-h));   /* 32px */
+
+  --margin-10: 1em;
+  --margin-12: 1.2em;
+  --margin-20: 2em;
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+.sph-10 {height: var(--space-xxxxs)}
+.sph-11 {height: var(--space-xxxs)}
+.sph-12 {height: var(--space-xxs)}
+.sph-13 {height: var(--space-xs)}
+.sph-14 {height: var(--space-sm)}
+.sph-15 {height: var(--space-md)}
+.sph-16 {height: var(--space-lg)}
+.sph-17 {height: var(--space-xl)}
+.sph-18 {height: var(--space-xxl)}
+.sph-19 {height: var(--space-xxxl)}
+.sph-20 {height: var(--space-xxxx)}
+
+.spw-05 {width: var(--space-05)}
+.spw-10 {width: var(--space-10)}
+.spw-15 {width: var(--space-15)}
+.spw-20 {width: var(--space-20)}
+
+.mr-10 {margin-left: var(--margin-10)}
+.mr-12 {margin-left: var(--margin-12)}
+.mr-20 {margin-left: var(--margin-20)}
+
+.br-xs {height: var(--breakpoint-xs)}
+.br-sm {height: var(--breakpoint-sm)}
+.br-md {height: var(--breakpoint-md)}
+.br-lg {height: var(--breakpoint-lg)}
+.br-xl {height: var(--breakpoint-xl)}
+
+
+/**
+ *  Cluster 3
+ *  FONTS - font-face, font class, font-size, line-height
+ */
+
+/* World of Water font-face (logo font) */
+
+@font-face {
+  font-family: world-of-water;
+  src: url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* World of Water classes */
+/* missing */
+
+
+/* Recursive font-face */
 
    @font-face {
      font-family: Recursive;
@@ -309,7 +416,7 @@ Structured Data Linter project
        var(--rc-pnum), var(--rc-ss01), var(--rc-ss02), var(--rc-ss03), var(--rc-ss04), var(--rc-ss05), var(--rc-ss06), var(--rc-ss07), var(--rc-ss08), var(--rc-ss09), var(--rc-ss10), var(--rc-ss11), var(--rc-ss20);
    }
 
-/* Recursive COMBO */
+/* Recursive classes */
    .recursive-mono-300-casual-light-regular {
      font-family: Recursive;
      font-variation-settings:
@@ -887,9 +994,7 @@ Structured Data Linter project
        "ital" 1;
    }
 
-/* added from sphinx template */
-
-/* Poppins */
+/* Poppins font-face */
    @font-face {
      font-family: Poppins-100-Normal;
      src: url("https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Thin.ttf")
@@ -1052,6 +1157,8 @@ Structured Data Linter project
      font-display: swap;
    }
 
+/* Poppins classes */
+
    .Poppins-Thin-100 {
      font-family: Poppins-Thin-100, sans-serif;
      font-style: normal;
@@ -1143,11 +1250,7 @@ Structured Data Linter project
      font-weight: 900;
    }
 
-/* added from sphinx template */
-
-/**
- * Font: Zilla Slab
- */
+/* Zilla Slab font-face */
 
    @font-face {
      font-family: ZillaSlab-Light-300;
@@ -1230,11 +1333,21 @@ Structured Data Linter project
      font-display: swap;
    }
 
-/* added from sphinx template */
+/* Zilla Slab classes */
 
-/**
- * Font: Noto Serif
- */
+.ZillaSlab-Light-300{font-family:ZillaSlab-Light-300,sans-serif;font-style:normal;font-weight:300;}
+.ZillaSlab-LightItalic-300{font-family:ZillaSlab-LightItalic-300,sans-serif;font-style:italic;font-weight:300;}
+.ZillaSlab-Regular-400{font-family:ZillaSlab-Regular-400,sans-serif;font-style:normal;font-weight:400;}
+.ZillaSlab-Italic-400{font-family:ZillaSlab-Italic-400,sans-serif;font-style:italic;font-weight:400;}
+.ZillaSlab-Medium-500{font-family:ZillaSlab-Medium-500,sans-serif;font-style:normal;font-weight:500;}
+.ZillaSlab-MediumItalic-500{font-family:ZillaSlab-MediumItalic-500,sans-serif;font-style:italic;font-weight:500;}
+.ZillaSlab-SemiBold-600{font-family:ZillaSlab-SemiBold-600,sans-serif;font-style:normal;font-weight:600;}
+.ZillaSlab-SemiBoldItalic-600{font-family:ZillaSlab-SemiBoldItalic-600,sans-serif;font-style:italic;font-weight:600;}
+.ZillaSlab-Bold-700{font-family:ZillaSlab-Bold-700,sans-serif;font-style:normal;font-weight:700;}
+.ZillaSlab-BoldItalic-700{font-family:ZillaSlab-BoldItalic-700,sans-serif;font-style:italic;font-weight:700;}
+
+
+/* Noto Serif font-face */
    @font-face {
      font-family: NotoSerif-Thin-100;
      font-style: normal;
@@ -1380,6 +1493,8 @@ Structured Data Linter project
      font-display: swap;
    }
 
+/* Noto Serif classes */
+
    .NotoSerif-Thin-100 {
      font-family: NotoSerif-Thin-100;
      font-style: normal;
@@ -1471,24 +1586,7 @@ Structured Data Linter project
      font-weight: 900;
    }
 
-/**
- * Font: World of Water
- */
-
-@font-face {
-  font-family: world-of-water;
-  src: url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.woff2")
-    format("woff2");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-}
-
-/* added from sphinx template */
-
-/**
- * Font: Noto Sans
- */
+/* Noto Sans font-face */
 
    @font-face {
      font-family: NotoSans-Thin-100;
@@ -1635,6 +1733,8 @@ Structured Data Linter project
      font-display: swap;
    }
 
+/* Noto Sans classes */
+
    .NotoSans-Thin-100 {
      font-family: NotoSans-Thin-100, sans-serif;
      font-style: normal;
@@ -1726,12 +1826,7 @@ Structured Data Linter project
      font-weight: 900;
    }
 
-
-/* added from sphinx template */
-
-/**
- * font size
- */
+/* font size */
 
    .fs-10 {
      font-size: calc(1 * var(--story-page-vw));
@@ -1917,12 +2012,7 @@ Structured Data Linter project
      font-size: calc(7 * var(--story-page-vw));
    }
 
-
-/* added from sphinx template */
-
-/**
- * line-height
- */
+/* line-height */
 
    .lh-06 {
      line-height: calc(0.6rem + 0.1rem);
@@ -1970,38 +2060,6 @@ Structured Data Linter project
      line-height: calc(3.4rem + 0.7rem);
    }
 
-/* added from sphinx template */
-
-/**
- * background and text color, text shadow
- */
-
-   /* for background, dark */
-   .hcolor-light {
-     color: var(--on-ffffff);
-   }
-   
-   /* for background, light */
-   .hcolor-dark {
-     color: var(--on-595775);
-   }
-   
-   /* constellation original */
-   .shadow-text {
-     text-shadow: 0px 4px 4px rgb(0 0 0 / 0.95);
-   }
-   
-   /* for background, light: shadow-text-back-light - stbl */
-   .stbl {
-     text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
-   }
-   
-   /* for background, dark: shadow-text-back-dark - stbd */
-   .stbd {
-     text-shadow:
-       2px 7px 5px rgba(0, 0, 0, 0.3),
-       0px -4px 10px rgba(255, 255, 255, 0.3);
-   }
 
 h2,
 h3,
@@ -2025,7 +2083,8 @@ h5 {
     "ss08" on;
 }
 
-/* added from sphinx template */
+/* END Cluster 3 - FONTS */
+
 
 /**
  * cover page
@@ -2102,6 +2161,9 @@ h5 {
      border-left: 24px solid var(--on-ff0000);
    }
 
+/**
+ *  UNCERTAIN
+ */
 
 a {
   text-decoration: none;
@@ -2141,7 +2203,8 @@ a {
 
 
 /**
- * for attachment DL DT DD
+ *  for attachment DL DT DD
+ *  update to use CSS variables
  */
 
 .bg-w {
@@ -2189,7 +2252,6 @@ a {
  *  update to use CSS variables
  */
 
-
 .section {
   display: none;
   padding: 20px 0 0;
@@ -2229,23 +2291,15 @@ blockquote {
 }
 
 /**
- * from sequence 10 - 58
- * E:_rosetta-unified-data-table+color.xlsx
- * E:_color-palette__2.xlsx
- */
-.c-c0334d {background-color: #c0334d;}.c-f3d480 {background-color: #f3d480;}.c-f1931b {background-color: #f1931b;}.c-8f715b {background-color: #8f715b;}.c-78d68c {background-color: #78d68c;}.c-720017 {background-color: #720017;}.c-d8d583 {background-color: #d8d583;}.c-d98c2a {background-color: #d98c2a;}.c-36688d {background-color: #36688d;}.c-a3586d {background-color: #a3586d;}.c-aba6bf {background-color: #aba6bf;}.c-595775 {background-color: #595775;}.c-84a45a {background-color: #84a45a;}.c-583e2e {background-color: #583e2e;}.c-bf988f {background-color: #bf988f;}.c-a7414a {background-color: #a7414a;}.c-6a8a82 {background-color: #6a8a82;}.c-a37c27 {background-color: #a37c27;}.c-4fd993 {background-color: #4fd993;}.c-704404 {background-color: #704404;}.c-4e7ba7 {background-color: #4e7ba7;}.c-d28f1b {background-color: #d28f1b;}.c-1ecfd6 {background-color: #1ecfd6;}.c-edd179 {background-color: #edd179;}.c-c05640 {background-color: #c05640;}.c-728ca3 {background-color: #728ca3;}.c-73c0f4 {background-color: #73c0f4;}.c-f3e46c {background-color: #f3e46c;}.c-582a20 {background-color: #582a20;}.c-9499a6 {background-color: #9499a6;}.c-c59cdb {background-color: #c59cdb;}.c-a67b04 {background-color: #a67b04;}.c-525b56 {background-color: #525b56;}.c-93a806 {background-color: #93a806;}.c-f08b33 {background-color: #f08b33;}.c-d75404 {background-color: #d75404;}.c-8a2c02 {background-color: #8a2c02;}.c-d75b66 {background-color: #d75b66;}.c-23345c {background-color: #23345c;}.c-bfafa0 {background-color: #bfafa0;}.c-515b51 {background-color: #515b51;}.c-8c7547 {background-color: #8c7547;}.c-efa747 {background-color: #efa747;}.c-52733b {background-color: #52733b;}.c-bda728 {background-color: #bda728;}.c-704307 {background-color: #704307;}.c-f7b178 {background-color: #f7b178;}.c-253f5b {background-color: #253f5b;}.c-4f728e {background-color: #4f728e;}
-
-/**
- * google document viewer
+ * Google document viewer
  */
 
 amp-google-document-embed {
   margin: 0 2vw;
 }
 
-
 /**
- * iframe additions below
+ * iframe
  */
 
 .ap-o-sampler-iframe {
@@ -2399,20 +2453,18 @@ amp-google-document-embed {
   transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-
+/* replace */
 .spr-4 {
   line-height: 4em;
 }
+
 .opacity2 {
   opacity: 0.6;
-
 }
 .opacity3 {
   opacity: 0.3;
 }
 
-
-/* added from sphinx template */
 
 /**
  * grid
@@ -2464,6 +2516,16 @@ amp-google-document-embed {
   visibility: hidden;
 }
 
+
+/**
+ * gist height
+ */
+
+.ht-590 {
+  height: 590px;
+}
+
+
 /**
  * Ken Burns effect
  */
@@ -2473,7 +2535,6 @@ amp-google-document-embed {
   width: 0px;
   height: 0px;
 }
-
 .ht-590 {
   height: 590px;
 }
@@ -2482,7 +2543,9 @@ amp-google-document-embed {
 }
 
 </style>
+
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
 </head>
 
 <body>
@@ -2510,22 +2573,23 @@ amp-google-document-embed {
         ></amp-img>
       </amp-story-grid-layer>
 
-      <amp-story-grid-layer class="noedge c-bottom mb" template="vertical">
-        <div class="paper co-s bg-w cover-70 d-flex">
-          <div class="flex-fill pt pb">
-            <hgroup class="ml-s">
-              <div class="Poppins-Regular-400 fs-14 co-p">
-                Project to enhance
-              </div>
-              <h1 class="Poppins-ExtraBoldItalic-800 fs-20 co-h1">
-                Structured Data Linter
-              </h1>
-            </hgroup>
-            <div class="Poppins-Medium-500 fs-16 w-80 mx-a">by Ankita Dhandha</div>
-          </div>
-          <div class="sep-v"></div>
-        </div>
-      </amp-story-grid-layer>
+   <amp-story-grid-layer class="noedge c-bottom mb" template="vertical">
+     <div class="paper co-s bg-w cover-70 d-flex">
+       <div class="flex-fill pt pb">
+         <hgroup class="ml-s">
+           <div class="Poppins-Regular-400 fs-14 co-p">
+             Project to enhance
+           </div>
+           <h1 class="ZillaSlab-Bold-700 fs-32 co-h1">
+             Structured Data Linter
+           </h1>
+         </hgroup>
+         <div class="Poppins-Medium-500 fs-16 w-80 mx-a">by Ankita Dhandha</div>
+       </div>
+       <div class="sep-v"></div>
+     </div>
+   </amp-story-grid-layer>
+
     </amp-story-page>
     <amp-story-page id="item-12" data-item-label="Presentation Notes">
       <amp-story-grid-layer template="fill">
@@ -2602,8 +2666,8 @@ amp-google-document-embed {
       <amp-story-grid-layer template="fill" style="background-color:#ffffff;"></amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2 class="Poppins-Bold-700 fs-70 hcolor-dark stbd lh-32">
-          SDL Announcements
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-dark stbl">
+            SDL Announcements
           </h2>
         </div>
 
@@ -2613,28 +2677,30 @@ amp-google-document-embed {
             animate-in-duration="4s"
             animate-in-delay="1s"
           >
-            <div>
+            <h4 class="hcolor-dark recursive-sans-600-casual-semibold-regular fs-24 lh-34">
+              2011
+            </h4>
               <amp-img
-                src="./img/sdl-twitter-2011-08-11-w1050-h389.webp"
+                src="./img/item-13/2011-08-11-w1050-h389.webp"
                 width="1050"
                 height="398"
                 layout="responsive"
               ></amp-img>
-            </div>
           </div>
           <div
             animate-in="fade-in"
             animate-in-duration="4s"
             animate-in-delay="4s"
           >
-            <div>
+            <h4 class="hcolor-dark recursive-sans-600-casual-semibold-regular fs-24 lh-34">
+              2020
+            </h4>
               <amp-img
-                src="./img/sdl-twitter-2020-11-07-w1060-h491.webp"
+                src="./img/item-13/2020-11-07-w1060-h491.webp"
                 width="1060"
                 height="491"
                 layout="responsive"
               ></amp-img>
-            </div>
           </div>
         </div>
 
@@ -2699,13 +2765,17 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 1.0 Design Goals</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">
+            Release 1.0 Design Goals
+          </h2>
         </div>
       </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" aspect-ratio="4:3">
+      <amp-story-grid-layer template="vertical" aspect-ratio="9:6">
         <p class="spr-4">&nbsp;</p>
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-30">Implement SDL on AWS/Lambda</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-30">
+            Implement SDL on AWS/Lambda
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-20">
             Learn Lambda application limits to configure SDL as a Lambda
             application
@@ -2732,7 +2802,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+          src="./background/background-network-000000-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -2749,9 +2819,9 @@ amp-google-document-embed {
                 data-item-role=""
                 data-item-type=""
                 data-item-label="schema"
-                src="https://truett-software.github.io/webp-images/schema-w1185-h852.webp"
-                width="1185"
-                height="852"
+                src="./img/item-16/img-w2560-h1228.webp"
+                width="2560"
+                height="1228"
                 layout="responsive">
         </amp-img>
         </div>
@@ -2763,22 +2833,28 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-21</h2>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-21
+          </h2>
+          <div class="sph-14"></div>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-14">
             Define a simple
             &#x004A;&#x0053;&#x004F;&#x004E;&#x2013;&#x004C;&#x0044;
             &#x0040;Graph
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
+          <div class="sph-14"></div>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-14">
             Test simple &#x0040;Graph on Schema.org Markup Validator (SMV)
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
+          <div class="sph-14"></div>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-14">
             Use A/B Testing: compare SMV and SDL reports using identical
             &#x0040;Graph (SMV/Graph
             <em>sameAs</em>
             SDL/Graph)&#x0020;(&#x2261;)
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-26">
+          <div class="sph-14"></div>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-14">
             On SMV report, click an &#x0040;Type (PublicationIssue and/or
             ScholarlyArticle) to see report detail
           </h4>
@@ -2805,7 +2881,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+          src="./background/background-network-1F2022-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -2822,9 +2898,9 @@ amp-google-document-embed {
           data-item-role=""
           data-item-type=""
           data-item-label="Structured-Data-Linter-testing"
-          src="https://truett-software.github.io/webp-images/Structured-Data-Linter-testing-w1467-h900.webp"
-          width="1467"
-          height="900"
+          src="./img/item-17/img-w1162-w1201.webp"
+          width="1162"
+          height="1201"
           layout="responsive"
         ></amp-img>
         </div>
@@ -2836,7 +2912,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-22</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-22
+          </h2>
           <div>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-28">
             <span>begin A/B testing</span>
@@ -2862,7 +2940,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://klpuiljexh.execute-api.us-east-1.amazonaws.com/Prod/?url=http:%2F%2Flinter.structured-data.org%2Fexamples%2Fschema.org%2Feg-0399-jsonld.html"
@@ -2878,7 +2956,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+          src="./background/background-network-000000-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -2890,22 +2968,16 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="1-31 Example: Schema Markup Validator @Language"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-18/index.html"
-            title="@Language JSON-LD test case on SMV"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+          <amp-img
+          id=""
+          data-item-role=""
+          data-item-type=""
+          data-item-label="Structured-Data-Linter-testing"
+          src="./img/item-18/img-w2526-h1173.webp"
+          width="2526"
+          height="1173"
+          layout="responsive"
+        ></amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -2915,7 +2987,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-31</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-31
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-24">
             <span>continuing A/B testing</span>
           </h4>
@@ -2925,7 +2999,9 @@ amp-google-document-embed {
             <em>intelligent devices</em>
             ) in language of their choice
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">&#x0040;Language graph is more complex than previous A/B test</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
+            &#x0040;Language graph is more complex than previous A/B test
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-24">
             Select SMV report about &#x0040;Types
             [&#x0065;&#x002E;&#x0067;&#x002E; Class (33 items)
@@ -2939,7 +3015,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://validator.schema.org/#url=https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-18/data-linked.json"
@@ -2955,7 +3031,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+          src="./background/background-network-1F2022-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -2967,22 +3043,16 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="1-32 Example: SDL AWS/Lambda @Language"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-19/index.html"
-            title="@Language JSON-LD test case on AWS/Lambda"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+          <amp-img
+          id=""
+          data-item-role=""
+          data-item-type=""
+          data-item-label="SDL @Language"
+          src="./img/item-19/img-w1166-1204.webp"
+          width="1166"
+          height="1204"
+          layout="responsive"
+        ></amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -2992,11 +3062,15 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-32</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-32
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-22">
             <span>continuing A/B testing</span>
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">&#x0040;Language graph on AWS/Lambda</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
+            &#x0040;Language graph on AWS/Lambda
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             SDL &#x201C;search results preview&#x201D; is same information in
             SMV but served in human&#x2010;readable format
@@ -3017,7 +3091,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://klpuiljexh.execute-api.us-east-1.amazonaws.com/Prod/?url=https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-19/data-linked.json"
@@ -3033,7 +3107,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+          src="./background/background-network-000000-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -3045,22 +3119,16 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="1-41 Example: Schema Markup Validator @Corporation"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-20/index.html"
-            title="@Corporation JSON-LD test case on SMV"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+          <amp-img
+            id=""
+            data-item-role=""
+            data-item-type=""
+            data-item-label="SDL @Corporation"
+            src="./img/item-20/img-w2522-h1161.webp"
+            width="2522"
+            height="1161"
+            layout="responsive"
+          ></amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -3070,7 +3138,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-41</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-41
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-22">
             <span>continuing A/B testing</span>
           </h4>
@@ -3097,7 +3167,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://validator.schema.org/#url=https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-20/data-linked.json"
@@ -3113,7 +3183,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+          src="./background/background-network-1F2022-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -3125,22 +3195,16 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="1-42 Example: SDL AWS/Lambda @Corporation"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-21/index.html"
-            title="@Language JSON-LD test case on AWS/Lambda"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+          <amp-img
+            id=""
+            data-item-role=""
+            data-item-type=""
+            data-item-label="SDL @Corporation"
+            src="./img/item-21/img-w1162-h1207.webp"
+            width="1162"
+            height="1207"
+            layout="responsive"
+          ></amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -3150,11 +3214,15 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-42</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-42
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-12 lh-28">
             <span>continuing A/B testing</span>
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">&#x0040;Language graph on AWS/Lambda</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
+            &#x0040;Language graph on AWS/Lambda
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-18 lh-22">
             SDL &#x201C;search results preview&#x201D; is same information in
             SMV but served in human&#x2010;readable format
@@ -3175,7 +3243,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://klpuiljexh.execute-api.us-east-1.amazonaws.com/Prod/?url=https:%2F%2Fs3.amazonaws.com%2Fbenetta.net%2Fstory%2Fstructured-data-linter%2Fitem-21%2Fdata-linked.json"
@@ -3185,18 +3253,7 @@ amp-google-document-embed {
       </amp-story-page-outlink>
     </amp-story-page>
     <amp-story-page id="item-22" data-item-label="Vis 3D - @Corporation">
-      <amp-story-grid-layer template="fill">
-        <amp-img
-          id="background-network-black"
-          data-item-role="background"
-          data-item-type="static"
-          data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
-          width="800"
-          height="800"
-          layout="responsive"
-        ></amp-img>
-      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill" style="background-color:#000"></amp-story-grid-layer>
       <amp-story-grid-layer
         class="darken ht-590"
         template="vertical"
@@ -3204,9 +3261,9 @@ amp-google-document-embed {
       >
         <div animate-in="fade-in" animate-in-duration="4s">
           <amp-img
-            src="./img/knowledge-graph-ontomatica-w667-h801.png"
-            width="667"
-            height="801"
+            src="./img/item-22/img-w2074-h1042.webp"
+            width="2074"
+            height="1042"
             layout="responsive"
           ></amp-img>
         </div>
@@ -3218,7 +3275,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="1.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 1-51</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 1-51
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-19 lh-22">
             Force Directed Graph (FDG) of Ontomatica&#x2019;s Knowledge Graph
           </h4>
@@ -3249,7 +3308,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://afdsi.com/_cooper/ontomatica-knowledge-graph-three/index.html"
@@ -3265,18 +3324,18 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+          src="./background/background-network-1F2022-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
         ></amp-img>
       </amp-story-grid-layer>
-      <amp-story-grid-layer class="darken ht-590" template="vertical" position="landscape-half-left">
+      <amp-story-grid-layer class="darken" template="vertical" position="landscape-half-left">
         <div animate-in="fade-in" animate-in-duration="4s" >
           <amp-gist
             data-gistid="17c33c63e803a01612088b1a5b87ce64"
             layout="fixed-height"
-            height="350"
+            height="590"
           ></amp-gist>
         </div>
       </amp-story-grid-layer>
@@ -3287,7 +3346,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-60 lh-40 hcolor-light stbd">Release 1.0 Issues</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-60 lh-40 hcolor-light stbd">
+            Release 1.0 Issues
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             AWS/Lambda &#x201C;duration window&#x201D; limits file size for SDL
             processing
@@ -3313,7 +3374,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://gist.github.com/ankitadhandha/17c33c63e803a01612088b1a5b87ce64"
@@ -3329,7 +3390,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+          src="./background/background-network-000000-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -3337,10 +3398,18 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="titles" animate-in="fade-in" animate-in-duration="4s">
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">Release 2.0 Design Goals</h2>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Use client&#x2013;side methods to add features to SDL reports</h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Use CSS grid to create cells for specific SDL features</h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Use CSS lightbox to preview &#x201C;cell + content&#x201D;</h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-32 hcolor-light stbd">
+            Release 2.0 Design Goals
+          </h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
+            Use client&#x2013;side methods to add features to SDL reports
+          </h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
+            Use CSS grid to create cells for specific SDL features
+          </h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
+            Use CSS lightbox to preview &#x201C;cell + content&#x201D;
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             Upon cell selection, lightbox displays &#x201C;cell +
             content&#x201D; preview in full screen
@@ -3358,7 +3427,7 @@ amp-google-document-embed {
       </amp-story-grid-layer>
       <amp-story-page-attachment
         layout="nodisplay"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
         data-cta-text="What do these terms mean&#x003F;"
         data-title="Description of terms used to define Release-0.2 Design Goals"
       >
@@ -3420,7 +3489,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+          src="./background/background-network-1F2022-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -3432,11 +3501,12 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <br />
-          <br />
-          <br />
-          <br />
+          <div class="sph-18"></div>
           <amp-img
+            id=""
+            data-item-role=""
+            data-item-type=""
+            data-item-label=""
             src="https://user-images.githubusercontent.com/46296/118190080-77045a00-b3f7-11eb-8253-3d66828ef844.jpeg"
             layout="responsive"
             width="1368"
@@ -3451,8 +3521,12 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Release 2.0 Design Notes</h2>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">Jarno van Driel proposed new SDL features</h4>
+          <h2 class="ZillaSlab-SemiBold-600 fs-42 lh-40 hcolor-light stbd">
+            Release 2.0 Design Notes
+          </h2>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
+            Jarno van Driel proposed new SDL features
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-20 lh-28">
             New features are presented
             <small>&#x0026;</small>
@@ -3466,7 +3540,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://docs.google.com/document/d/1ZASsxfTFFZrsLrS71pQxA6eWvdhbi-hWuKJu9kCAPys/edit"
@@ -3482,7 +3556,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-black"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+          src="./background/background-network-000000-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -3494,22 +3568,17 @@ amp-google-document-embed {
         position="landscape-half-left"
       >
         <div animate-in="fade-in" animate-in-duration="4s">
-          <amp-iframe
-            data-iframe-label="Example 2-21 SMV Baseline"
-            height="450px"
-            layout="fixed-height"
-            scrolling="yes"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
-            allow="fullscreen"
-            frameborder="0"
-            src="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-26/index.html"
-            title="Jarno van Driel proposed new SDL features"
-            class="ap-o-sampler-iframe"
-          >
-            <div placeholder="">
-              <div class="ap-o-sampler-iframe-source"></div>
-            </div>
-          </amp-iframe>
+          <div class="sph-18"></div>
+          <amp-img
+            id=""
+            data-item-role=""
+            data-item-type=""
+            data-item-label="SMV Baseline"
+            src="./img/item-26/img-w2202-h1075.webp"
+            width="2202"
+            height="1075"
+            layout="responsive"
+          ></amp-img>
         </div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" position="landscape-half-right">
@@ -3519,7 +3588,9 @@ amp-google-document-embed {
           animate-in-duration="4s"
           animate-in-delay="0.5s"
         >
-          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">Example 2-21</h2>
+          <h2 class="ZillaSlab-SemiBold-600 fs-62 lh-40 hcolor-light stbd">
+            Example 2-21
+          </h2>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Feature SDL table (current example injects sample data from
             Wikidata)
@@ -3532,8 +3603,12 @@ amp-google-document-embed {
             Feature hierachical view of structured data&#x2014;similar to Schema
             Markup Validator
           </h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">Feature parser statistics</h4>
-          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">Feature reasoner analysis (snippets)</h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
+            Feature parser statistics
+          </h4>
+          <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
+            Feature reasoner analysis (snippets)
+          </h4>
           <h4 class="hcolor-light recursive-sans-600-casual-semibold-regular fs-16 lh-20">
             Feature warnings
             <small>&#x0026;</small>
@@ -3546,7 +3621,7 @@ amp-google-document-embed {
         theme="custom"
         cta-accent-color="#1F64FF"
         cta-accent-element="text"
-        cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-image="./logo/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
       >
         <a
           href="https://s3.amazonaws.com/benetta.net/story/structured-data-linter/item-26/index.html"
@@ -3562,7 +3637,7 @@ amp-google-document-embed {
           data-item-role="background"
           data-item-type="static"
           data-item-label="background-network-gray"
-          src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
+          src="./background/background-network-1F2022-w800-h800.svg"
           width="800"
           height="800"
           layout="responsive"
@@ -4456,6 +4531,8 @@ amp-google-document-embed {
         </a>
       </amp-story-page-outlink>
     </amp-story-page>
+
+<!-- ChEMATIC is offline -->
     <amp-story-page id="item-41" data-item-label="Wedge ChEMATIC">
       <amp-story-grid-layer template="fill">
         <amp-img
@@ -5259,6 +5336,8 @@ amp-google-document-embed {
         </a>
       </amp-story-page-outlink>
     </amp-story-page>
+
+<!-- ChEMATIC is offline -->
     <amp-story-page id="item-52" data-item-label="WEDGE Diabetes">
       <amp-story-grid-layer template="fill">
         <amp-img
