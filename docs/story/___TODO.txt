@@ -1,10 +1,4 @@
-
 EARLIER
-
-toggle
-  data-item-label="background-network-black" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
-
-  data-item-label="background-network-gray"  src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg"
 
 fails
   .amp-comment-button {
@@ -13,6 +7,7 @@ fails
 
 
 12/08/2023
+
 UPDATE
     publisher="Ontomatica"
     publisher-logo-src="https://place-hold.it/260x58?text=Ontomatica-logo&bold&fontsize=23"
@@ -20,6 +15,15 @@ UPDATE
     poster-square-src="https://place-hold.it/300x300?text=Structured Data Linter&bold&fontsize=23"
     poster-landscape-src="https://place-hold.it/400x300?text=Structured Data Linter&bold&fontsize=23"
 
+convert backgrounds to WEBP
 
-Localize background
+update: ht-590
+  use spacers
 
+origin ?
+  class="bg-w"
+
+rethink:
+  class="darken"
+
+Truett implement provenance grid
