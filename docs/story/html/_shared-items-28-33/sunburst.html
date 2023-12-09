@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+Sunburst using flare.json
+</title>
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<link rel="preload" href="https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff2" as="font" crossorigin="">
+<link rel="preload" href="https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2"     as="font" crossorigin="">
+<style type="text/css">
+svg { background: #FFF; }
+form { position: absolute; right: 10px; top: 10px; }
+text { text-anchor: middle; fill: #666; }
+.legendItem { fill: #fff; font-size: 13px; }
+
+@font-face{font-family:Noto Sans;font-style:normal;font-weight:400;font-display:swap;src:local("Noto Sans"),local("NotoSans"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff) format("woff")}
+@font-face{font-family:Noto Sans;font-style:normal;font-weight:700;font-display:swap;src:local("Noto Sans Bold"),local("NotoSans-Bold"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff) format("woff")}
+body{font-family: 'Noto Sans', sans-serif;margin: auto; position: relative; width: 960px;}
+</style>
+</head>
+<body>
+<h1>
+Sunburst using flare.json
+</h1>
+<script type="text/javascript">
+
+var width = 960,
+    height = 600,
+    radius = Math.min(width, height) / 2,
+    colors = {
+      'vis': '#E14E5F',
+      'query': '#A87621',
+      'util': '#43943E',
+      'animate': '#AC5CC4',
+      'data': '#2E99A0',
+      'analytics': '#2986EC',
+      'scale': '#E14E5F',
+      'physics': '#A87621',
+      'display': '#43943E',
+      'flex': '#AC5CC4'
+      },
+    colorOpacity = 0.7;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2.1 + ") scale(.95)")
+    .call(d3.behavior.zoom().scaleExtent([1, 12]).on("zoom", zoom))
+  .append("g");
+
+function zoom() {
+  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
+
+var partition = d3.layout.partition()
+    .size([2 * Math.PI, radius * radius])
+    .value(function(d) { return d.size; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx; })
+    .innerRadius(function(d) { return Math.sqrt(d.y); })
+    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
+
+var text = svg.append("text")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("dy", "0.35em");
+
+getColor = function(d) {
+    var flag;
+    if (d.name === "flare") {
+      return '#7E7F7E';
+    } else if (d.name in colors) {
+      return colors[d.name];
+    } else {
+      flag = '#7E7F7E';
+      while (d.parent.name !== "flare") {
+        if (d.parent.name in colors) {
+          flag = colors[d.parent.name];
+          break;
+        } else {
+          d = d.parent;
+        }
+      }
+      return flag;
+    }
+  };
+
+thousand_sep_format = d3.format(',');
+drawLegend();
+
+d3.json("flare.json", function(error, root) {
+  getSize(root);
+  root = {"name": root.name, "size": root.size, "children": [root]};
+  function getSize(d) {
+    if (!d.hasOwnProperty("children")) {
+      d.size = 1;
+      return 1;
+    } else {
+      var sum = 0;
+      d.children.forEach(function(c) {
+        sum += getSize(c);
+      });
+      d.size = sum;
+      return d.size;
+    }
+    return d;
+  }
+
+  var path = svg.datum(root).selectAll("path")
+      .data(partition.nodes)
+    .enter().append("path")
+      .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
+      .attr("d", arc)
+      .style("stroke", "#fff")
+      .style("fill", function(d) { return getColor(d); })
+      .style("opacity", colorOpacity)
+      .on("mouseover", mouseover)
+      .on("mouseout", mouseout);
+
+  function mouseover(d) {
+    var percentage = (100 * d.size / root.size).toPrecision(3);
+    text.html("<tspan style='font-size: 30px' x=0 dy='-20'>" + thousand_sep_format(d.size) + "</tspan><tspan style='font-size: 15px' x=0 dy='25'>" + d.name + "</tspan><tspan style='font-size: 30px' x=0 dy='35'>" + percentage + "%</tspan>");
+    
+    d3.selectAll("path")
+      .filter(function(d1) { return d === d1; })
+      .style("opacity", 0.5);
+  }
+
+  function mouseout(d) {
+    text.html("");
+    
+    d3.selectAll("path")
+      .filter(function(d1) { return d === d1; })
+      .style("opacity", colorOpacity);
+  }
+
+});
+
+d3.select(self.frameElement).style("height", height + "px");
+
+function drawLegend() {
+  var li = {
+    w: 115, h: 30, s: 3, r: 3
+  };
+
+  var legend = svg.append("g")
+      .attr("transform", function(d, i) {
+        return "translate(" + (width/2 - li.w*1.3) + "," + (height/2 - li.h*Object.keys(colors).length*1.2) + ")";
+      });
+
+  var g = legend.selectAll("g")
+      .data(d3.entries(colors))
+      .enter().append("svg:g")
+      .attr("transform", function(d, i) {
+              return "translate(0," + (i * (li.h + li.s)) + ")";
+           });
+
+  g.append("svg:rect")
+      .attr("rx", li.r)
+      .attr("ry", li.r)
+      .attr("width", li.w)
+      .attr("height", li.h)
+      .style("opacity", colorOpacity)  
+      .style("fill", function(d) { return d.value; });
+
+  g.append("svg:text")
+      .attr("x", li.w / 2)
+      .attr("y", li.h / 2)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "middle")
+      .classed("legendItem", true)
+      .text(function(d) { return d.key; });
+}
+</script>
+</body>
+</html>
