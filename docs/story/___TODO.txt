@@ -20,5 +20,8 @@ convert backgrounds to WEBP
 update: ht-590
   use spacers
 
-origin ?
-  class="bg-w"
+TODO
+update some images (NALT sunburst, etc.)
+move onto-KG to DIR (like SHACL)
+add detail about "meaning of term" and update attachment
+make SDL amp-valid
