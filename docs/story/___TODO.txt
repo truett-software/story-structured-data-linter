@@ -22,8 +22,3 @@ update: ht-590
 
 origin ?
   class="bg-w"
-
-rethink:
-  class="darken"
-
-Truett implement provenance grid
