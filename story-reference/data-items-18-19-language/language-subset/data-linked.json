@@ -1,0 +1,382 @@
+{
+ "@context": "http://schema.org/",
+ "@graph": [
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000021199109161",
+   "name": "Natural_number",
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q21199",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q21199.json",
+    "http://dbpedia.org/page/Natural_number"
+   ]
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000712794109161",
+   "name": "36_(number)",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010000021199109161"
+   },
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q712794",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q712794.json",
+    "http://dbpedia.org/page/36_(number)"
+   ]
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/23010000712794102161",
+   "url": "https://ontomatica.io/image/23010000712794102161-w48-h48.png",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010000712794101361",
+   "name": "36 (number) [en-US]",
+   "description": "36 (thirty-six) is the natural number following 35 and preceding 37. [en-US]",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010000712794104161"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   }
+  },
+  {
+   "@type": "QuantitativeValue",
+   "@id": "https://ontomatica.io/identifier/23010000712794104161",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000712794101361"
+   },
+   "value": "36",
+   "sameAs": "https://www.wikidata.org/wiki/Q712794"
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010000712794102461",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000712794104161"
+   },
+   "image": {
+    "@id": "https://ontomatica.io/identifier/23010000712794102161"
+   },
+   "name": "36",
+   "description": "36 (thirty-six) is the natural number following 35 and preceding 37. [en-US]",
+   "termCode": "Q712794"
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000712764109161",
+   "name": "48_(number)",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010000021199109161"
+   },
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q712764",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q712764.json",
+    "http://dbpedia.org/page/48_(number)"
+   ]
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/23010000712764102161",
+   "url": "https://ontomatica.io/image/23010000712764102161-w48-h48.png",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010000712764101361",
+   "name": "48 (number) [en-US]",
+   "description": "48 (forty-eight) is the natural number following 47 and preceding 49. It is one third of a gross, or four dozens. [en-US]",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   }
+  },
+  {
+   "@type": "QuantitativeValue",
+   "@id": "https://ontomatica.io/identifier/23010000712764104161",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000712764101361"
+   },
+   "value": "48",
+   "sameAs": "https://www.wikidata.org/wiki/Q712764"
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010000712764102461",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   },
+   "image": {
+    "@id": "https://ontomatica.io/identifier/23010000712764102161"
+   },
+   "name": "48",
+   "description": "48 (forty-eight) is the natural number following 47 and preceding 49. It is one third of a gross, or four dozens. [en-US]",
+   "termCode": "Q712764"
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000430908109161",
+   "name": "128",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010000021199109161"
+   },
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q430908",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q430908.json",
+    "http://dbpedia.org/page/128"
+   ]
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/23010000430908102161",
+   "url": "https://ontomatica.io/image/23010000430908102161-w48-h48.png",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010000712764104161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010000430908101361",
+   "name": "128 (number) [en-US]",
+   "description": "Name is in the English language [en-US]. See National Language version for a language-specific name and description.",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010000430908104161"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   }
+  },
+  {
+   "@type": "QuantitativeValue",
+   "@id": "https://ontomatica.io/identifier/23010000430908104161",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000430908101361"
+   },
+   "value": "128",
+   "sameAs": "https://www.wikidata.org/wiki/Q430908"
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010000430908102461",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000430908104161"
+   },
+   "image": {
+    "@id": "https://ontomatica.io/identifier/23010000430908102161"
+   },
+   "name": "128",
+   "description": "128 (one hundred [and] twenty-eight) is the natural number following 127 and preceding 129. [en-US]",
+   "termCode": "Q430908"
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010020162172109161",
+   "name": "human language",
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q20162172",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q20162172.json",
+    "http://dbpedia.org/page/Language"
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://ontomatica.io/identifier/23010020162172101161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010020162172101161",
+   "name": "Language [en-US] See specific Natural Language.",
+   "description": "Language is the ability to acquire and use complex systems of communication, particularly the human ability to do so, and a language is any specific example of such a system. [en-US] See specific Natural Language.",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010020162172102461"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010020162172102461",
+   "name": "Language",
+   "description": "Human language is a system that encompasses the development, acquisition, maintenance and use of complex communication systems, and also refers to the human capacity for these processes.",
+   "termCode": "Q20162172"
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000025268109161",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010020162172109161"
+   },
+   "name": "Afro-Asiatic languages",
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q25268",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q25268.json",
+    "http://dbpedia.org/page/Afroasiatic_languages"
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://ontomatica.io/identifier/23010000025268101161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010000025268101161",
+   "name": "Afroasiatic languages [en-US] See specific Natural Language.",
+   "description": "Afroasiatic is a large language family of several hundred related languages and dialects. [en-US] See specific Natural Language.",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010000025268102461"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010000025268102461",
+   "name": "Afroasiatic languages",
+   "description": "Afroasiatic (Afro-Asiatic), also known as Afrasian and traditionally as Hamito-Semitic (Chamito-Semitic), is a large language family of several hundred related languages and dialects. It comprises about 300 or so living languages and dialects, according to the 2009 Ethnologue estimate. It includes languages spoken predominantly in the Middle East, North Africa, the Horn of Africa, and parts of the Sahel. Afroasiatic languages have 350+ million native speakers, the fourth largest number of any language family (after Indo-European, Sino-Tibetan, and Niger-Congo). The phylum has six branches: Berber, Chadic, Cushitic, Egyptian, Omotic and Semitic. The most widely spoken Afroasiatic language is Arabic, including literary Arabic and the spoken colloquial varieties. It has around 200 to 230 million native speakers concentrated primarily in the Middle East, North Africa, the Horn of Africa, and Malta. Tamazight and other Berber varieties are spoken in Morocco, Algeria, Libya, Tunisia, northern Mali, and northern Niger by about 25 to 35 million people. Other widely spoken Afroasiatic languages include: * Hausa, the dominant language of northern Nigeria and southern Niger, spoken as a first language by 25 million people and used as a lingua franca by another 20 million across West Africa and the Sahel * Oromo of Ethiopia and Kenya, with about 33 million speakers total * Amharic of Ethiopia, with over 25 million native speakers in addition to millions of other Ethiopians speaking it as a second language * Somali, spoken by 15.5 million people in Greater Somalia * Modern Hebrew, spoken by around 9 million people worldwide. * Modern Aramaic, spoken by about 550,000 people worldwide. This is not just one language — It includes a number of subdivisions, with Assyrian Neo-Aramaic being the most spoken variety (232,300). In addition to languages spoken today, Afroasiatic includes several important ancient languages, such as Ancient Egyptian, Akkadian, Biblical Hebrew, and Old Aramaic. It is uncertain when or where the original homeland of the Afroasiatic family existed. Proposed locations include North Africa, the Horn of Africa, the Eastern Sahara, and the Levant.",
+   "termCode": "Q25268"
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000013955109161",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010000025268109161"
+   },
+   "name": "Arabic",
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q13955",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q13955.json",
+    "http://dbpedia.org/page/Arabic"
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://ontomatica.io/identifier/23010000013955101131"
+   }
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/23010000013955102131",
+   "url": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f7.svg",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010000712794104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010000712794104161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010000013955101131",
+   "name": "Arabic [en-US] See specific Natural Language.",
+   "description": "Arabic is the Classical Arabic language of the 6th century and its modern descendants, excluding Maltese. [en-US] See specific Natural Language.",
+   "image": {
+    "@id": "https://ontomatica.io/identifier/23010000013955102131"
+   },
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010000013955102431"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000013955104231"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010000013955102431",
+   "name": "العربية",
+   "description": "العربية (العربية: العربية، آل'arabiyyah [ʔalʕarabijːah] أو العربية: عربي'arabiyy [ʕarabijː]) هي اللغة العربية الكلاسيكية من 6th قرن وأحفاد الحديثة، باستثناء المالطية. يتحدث العربية في قوس واسع يمتد عبر غرب آسيا وشمال أفريقيا والقرن الأفريقي. ينتمي العربية إلى فرع سامية من عائلة Afroasiatic. اللغة الأدبية، ودعا اللغة العربية الفصحى الحديثة أو الأدبية العربية، هو الشكل الرسمي الوحيد للغة العربية. يتم استخدامه في أكثر الوثائق المكتوبة وكذلك في مناسبات تحدث الرسمية، مثل المحاضرات ونشرات الأخبار. بعض أصناف تحدث هي غير مفهومة بشكل متبادل، سواء المكتوبة وشفويا، وأصناف ككل تشكل اللغة الاجتماعي اللغوي. وهذا يعني أن على أسس لغوية بحتة أنها من المرجح أن يرى أنها تشكل أكثر من لغة واحدة، ولكن عادة تجميعها معا كلغة واحدة لأسباب سياسية أو دينية (). وإذا اعتبر العربية لغة واحدة، وربما تحدث من قبل ما لا يقل عن 422 مليون المتحدثين (الأصلي وغير الأصلي) في العالم العربي، مما يجعلها واحدة من أكثر اللغات الست في العالم. إذا اعتبر غات مستقلة، فإن متنوعة الأكثر استعمالا، من المرجح أن تكون مصر العربية ب 89 مليون ناطق لا تزال الأصلي أكبر من أي لغة أخرى Afroasiatic. العربية هي أيضا لغة طقسية 1.6 مليار مسلم. انها واحدة من اللغات الرسمية الست للأمم المتحدة. مشتق من اللغة المكتوبة الحديثة (اللغة العربية الفصحى الحديثة) من لغة القرآن (المعروف العربية الكلاسيكية أو القرآنية العربية). تدرس على نطاق واسع في المدارس والجامعات، ويستخدم بدرجات متفاوتة في أماكن العمل، والحكومة، ووسائل الإعلام. يتم تجميع أصناف رسمية الاثنين معا كما الأدبية العربية، والتي هي اللغة الرسمية في 26 ولاية واللغة الليتورجية للإسلام. اللغة العربية الفصحى الحديثة يلي إلى حد كبير المعايير النحوية القرآني العربية ويستخدم الكثير من نفس المفردات. ومع ذلك، فقد تجاهلها بعض الانشاءات النحوية والمفردات التي لم يعد لدينا أي نظيره في أصناف تحدث، وتبنت بعض الإنشاءات الجديدة والمفردات من أصناف تحدث. يستخدم الكثير من المفردات الجديدة للدلالة المفاهيم التي نشأت في حقبة ما بعد القرآني، وخاصة في العصر الحديث. هو مكتوب باللغة العربية مع الأبجدية العربية، وهو السيناريو ابجد ويكتب من اليمين إلى اليسار على الرغم من أن أصناف تحدث مكتوبة أحيانا في ASCII اللاتينية من اليسار إلى اليمين مع عدم وجود استمارات موحدة. أثرت العربية العديد من اللغات في جميع أنحاء العالم طوال تاريخها. بعض اللغات الاكثر تأثرا هي الفارسية والتركية والأردية والكردية والبوسنية، الكازاخية، البنغالية، الهندية والماليزية والمالديف والإندونيسية والبشتو، البنجابية، التاغالوغ، السندية والهوسا وبعض اللغات في أجزاء من أفريقيا. خلال العصور الوسطى، كان الأدبية العربية وسيلة رئيسية للثقافة في أوروبا، وخاصة في العلوم والرياضيات والفلسفة. ونتيجة لذلك، فقد اقترضت العديد من اللغات الأوروبية أيضا العديد من الكلمات منها. تم العثور على العديد من الكلمات من أصل عربي أيضا في اللغات القديمة مثل اللاتينية واليونانية. تأثير اللغة العربية، وخاصة في المفردات، وينظر في اللغات الأوروبية، وذلك أساسا الإسبانية والبرتغالية بسبب كل من القرب من الحضارات العربية الأوروبية والإسلامية المسيحية و 800 سنة من الثقافة العربية واللغة في شبه الجزيرة الايبيرية، المشار إليها في اللغة العربية الأندلس . وقد اكتسبت لغات البلقان، بما في ذلك اليونانية، كما أن عددا كبيرا من المفردات العربية من خلال الاتصال مع التركية العثمانية. اقترضت العربية أيضا كلمات من لغات عديدة، بما في ذلك العبرية والآرامية واليونانية والفارسية والسريانية في القرون الأولى، الكردية في العصور الوسطى واللغات الأوروبية المعاصرة في العصر الحديث، ومعظمهم من الإنجليزية والفرنسية.",
+   "termCode": "Q13955"
+  },
+  {
+   "@type": "Language",
+   "@id": "https://ontomatica.io/identifier/23010000013955104231",
+   "name": "العربية",
+   "identifier": {
+    "@id": "https://ontomatica.io/identifier/23010000013955102531"
+   },
+   "sameAs": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9",
+   "alternateName": "Arabic"
+  },
+  {
+   "@type": "PropertyValue",
+   "@id": "https://ontomatica.io/identifier/23010000013955102531",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/23010000013955104231"
+   },
+   "propertyID": [
+    "ar",
+    "ara "
+   ],
+   "sameAs": [
+    "https://www.loc.gov/standards/iso639-2/php/langcodes_name.php?iso_639_1=ar",
+    "https://www.loc.gov/standards/iso639-2/php/langcodes_name.php?code_ID=22",
+    "https://iso639-3.sil.org/code/ara"
+   ]
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000033199109161",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010020162172109161"
+   },
+   "name": "Austro-Asiatic languages",
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q33199",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q33199.json",
+    "http://dbpedia.org/page/Austroasiatic_languages"
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://ontomatica.io/identifier/23010000033199101161"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/23010000033199101161",
+   "name": "Austroasiatic languages [en-US] See specific Natural Language.",
+   "description": "The Austroasiatic languages are a large language family of continental Southeast Asia, also scattered throughout India, Bangladesh, Nepal and the southern border of China. [en-US] See specific Natural Language.",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/23010000033199102461"
+   },
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/23010000033199102461",
+   "name": "Austroasiatic languages",
+   "description": "The Austroasiatic languages, in recent classifications synonymous with Mon–Khmer, are a large language family of continental Southeast Asia, also scattered throughout India, Bangladesh, Nepal and the southern border of China. The name Austroasiatic comes from the Latin words for \"south\" and \"Asia\", hence \"South Asia\". Of these languages, only Vietnamese, Khmer, and Mon have a long-established recorded history, and only Vietnamese and Khmer have official status as modern national languages (in Vietnam and Cambodia, respectively). In the state level, Khasi has the official status in Meghalaya while Santali and Mundari are the two official languages of Jharkhand. In Myanmar, Wa language is de facto language of Wa State. The rest of the languages are spoken by minority groups and have no official status. Ethnologue identifies 168 Austroasiatic languages. These form thirteen established families (plus perhaps Shompen, which is poorly attested, as a fourteenth), which have traditionally been grouped into two, as Mon–Khmer and Munda. However, one recent classification posits three groups (Munda, Nuclear Mon-Khmer and Khasi–Khmuic) while another has abandoned Mon–Khmer as a taxon altogether, making it synonymous with the larger family. Austroasiatic languages have a disjunct distribution across India, Bangladesh, Nepal and Southeast Asia, separated by regions where other languages are spoken. They appear to be the autochthonous languages of Southeast Asia, with the neighboring Indo-Aryan, Tai–Kadai, Dravidian, Austronesian, and Sino-Tibetan languages being the result of later migrations.",
+   "termCode": "Q33199"
+  },
+  {
+   "@type": "Class",
+   "@id": "https://ontomatica.io/identifier/23010000009205109161",
+   "supersededBy": {
+    "@id": "https://ontomatica.io/identifier/23010000033199109161"
+   },
+   "name": "Khmer",
+   "sameAs": [
+    "https://www.wikidata.org/wiki/Q9205",
+    "https://m.wikidata.org/wiki/Special:EntityData/Q9205.json",
+    "http://dbpedia.org/page/Khmer_language"
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://ontomatica.io/identifier/23010000009205101143"
+   }
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+
+used with Ken Burns effect
+
+generator
+https://rdfshape.weso.es/

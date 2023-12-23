@@ -1,0 +1,6 @@
+.axis path, .axis line {fill: none; stroke: #000; shape-rendering: crispEdges;}
+text {font-family: sans-serif; font-size: 12px;}
+/* crispEdges incompatible with rounded corners */
+rect {shape-rendering: crispEdges;}
+rect:hover {fill: gold;}
+rect.no_readings:hover {fill: white;}

@@ -1,0 +1,27 @@
+EARLIER
+
+fails
+  .amp-comment-button {
+    display: none;
+  }
+
+
+12/08/2023
+
+UPDATE
+    publisher="Ontomatica"
+    publisher-logo-src="https://place-hold.it/260x58?text=Ontomatica-logo&bold&fontsize=23"
+    poster-portrait-src="https://place-hold.it/300x400?text=Structured Data Linter&bold&fontsize=23"
+    poster-square-src="https://place-hold.it/300x300?text=Structured Data Linter&bold&fontsize=23"
+    poster-landscape-src="https://place-hold.it/400x300?text=Structured Data Linter&bold&fontsize=23"
+
+convert backgrounds to WEBP
+
+update: ht-590
+  use spacers
+
+TODO
+update some images (NALT sunburst, etc.)
+move onto-KG to DIR (like SHACL)
+add detail about "meaning of term" and update attachment
+make SDL amp-valid

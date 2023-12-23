@@ -1,3 +1,0 @@
-
-location
-https://s3.amazonaws.com/benetta.net/js-d3/schema-government-service/
