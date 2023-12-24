@@ -1,3 +1,0 @@
-
-05:38 12/9/2020
-repaired wikidata image handling

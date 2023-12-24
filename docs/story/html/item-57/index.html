@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"                 content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta                                 content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta name="google-site-verification" content="loPHnxZ-JSXfURPQz0MZyH1JsjfFzYUjMbORqVaKYEQ">
+<link rel="shortcut icon" itemprop="image" href="https://ontomatica.io/static/image/onto_symb_w421_h421.png"/>
+<title>
+Dexcom Data by Weeks
+</title>
+<script                type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script                type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css"       href="bootstrap.min.css" />
+<script                type="text/javascript" src="bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"       href="styles.css" >
+<!--
+<style                 type="text/css">
+ .axis path, .axis line {fill: none; stroke: #000; shape-rendering: crispEdges; }
+ text {font-family: sans-serif; font-size: 12px;}
+ rect:hover {opacity: 0.5; stroke: gold; stroke-width: 3;}
+ /* crispEdges incompatible with rounded corners */
+ /* rect {shape-rendering: crispEdges;} */
+</style>
+-->
+</head>
+<body>
+<div class="container" id="top">
+<div class="hero-unit" id="main"> <!-- for JS -->
+<p   class="lead">
+Dexcom Data: Week by Week
+</p>
+<div>
+<h4     id="week-of"></h4>
+<div    id="week-buttons"  class="btn-group pull-right">
+<button id="previous-week" class="btn disabled">Previous Week</button>
+<button id="next-week"     class="btn">Next Week</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="histogram.min.js"></script>
+</body>
+</html>

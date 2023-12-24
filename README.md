@@ -1,8 +1,10 @@
 # Story - Structured Data Linter
 
-## Updated 2023-11-02
+## Updated 23-12-10
 
-new directory structure
+Partitioned `/img` `/data` and `/html`
+
+All content is local except content served by 3rd party links (wedge, etc.)
 
 ![Visualization of the codebase](./diagram.svg)
 

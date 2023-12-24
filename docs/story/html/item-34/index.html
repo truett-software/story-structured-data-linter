@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+schema.org Force Directed Graph
+</title>
+
+<link rel="preload" href="https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff2" as="font" crossorigin="">
+<link rel="preload" href="https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2"     as="font" crossorigin="">
+<link rel="preload" href="https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff2"     as="font" crossorigin="">
+
+<style>
+h1,h3{font-family:'Noto Sans',sans-serif}
+
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+
+<h1>Force Directed Graph: schema.org Types &amp; Properties</h1>
+
+<div class="row">
+
+<div id="d-three" class="column left">
+<script>
+
+// Bostock Margin Conventions
+
+var
+//    margin = {top: 20, right: 20, bottom: 20, left: 20},
+//    padding = {top: 60, right: 60, bottom: 60, left: 60},
+    margin = {top: 1, right: 1, bottom: 1, left: 1},
+    padding = {top: 1, right: 1, bottom: 1, left: 1},
+    outerWidth = 1260,
+    outerHeight = 1000,
+    innerWidth = outerWidth - margin.left - margin.right,
+    innerHeight = outerHeight - margin.top - margin.bottom,
+    width = innerWidth - padding.left - padding.right,
+    height = innerHeight - padding.top - padding.bottom;
+
+var svg = d3.select("#d-three").append("svg")
+    .attr("width", outerWidth)
+    .attr("height", outerHeight)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var force = d3.layout.force()
+// RESET   .gravity(.05)
+.gravity(.05)
+// RESET    .distance(100)
+// .distance(150)
+.distance(80)
+.charge(-150)
+//.charge(-150)
+.size([width, height]);
+   
+// d3.json("data.json", function(error, json) {
+ d3.json("data.json", function(error, json) {
+  force
+      .nodes(json.nodes)
+      .links(json.links)
+      .start();
+
+   // add for Arrows - color of arrowhead stuck at gray - how to match the link colour?
+    
+    svg.append("defs").selectAll("marker")
+    .data(["suit", "licensing", "resolved"])
+   .enter()
+  .append("marker")
+    .attr("id", function(d) { return d; })
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 25)
+    .attr("refY", 0)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+  .append("path")
+    .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
+   .style("stroke", "gray");
+
+  var link = svg.selectAll(".link")
+    .data(json.links)
+   .enter().append("line")
+    .attr("class", "link")
+   .style("stroke", function(d) { return d.level; })
+   .style("marker-end", "url(#suit)"); // adds directed arrow
+
+  var node = svg.selectAll(".node")
+      .data(json.nodes)
+     .enter()
+    .append("g")
+      .attr("class", "node")
+      .call(force.drag);
+
+node.append("image")
+      .attr("xlink:href", function(d) { return d.icon; })
+      .attr("x", "-6px")
+      .attr("y", "-6px")
+      .attr("width", "12px")
+      .attr("height", "12px");
+
+  node.append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name });
+      
+ // add for collision detection and repulsion
+ // RESET padding = 1
+ 
+ var padding = 1, // separation between circles
+// RESET    radius=8;
+radius=300;
+function collide(alpha) {
+  var quadtree = d3.geom.quadtree(json.nodes);
+  return function(d) {
+    var rb = 2*radius + padding,
+        nx1 = d.x - rb,
+        nx2 = d.x + rb,
+        ny1 = d.y - rb,
+        ny2 = d.y + rb;
+    quadtree.visit(function(quad, x1, y1, x2, y2) {
+      if (quad.point && (quad.point !== d)) {
+        var x = d.x - quad.point.x,
+            y = d.y - quad.point.y,
+            l = Math.sqrt(x * x + y * y);
+          if (l < rb) {
+          l = (l - rb) / l * alpha;
+          d.x -= x *= l;
+          d.y -= y *= l;
+          quad.point.x += x;
+          quad.point.y += y;
+        }
+      }
+      return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+    });
+  };
+}
+
+// end collision detection     
+
+   force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  });
+  // add for collision detection
+       node.each(collide(0.5)); //Added
+        
+});
+
+</script>
+</div>
+
+<div class="column right">
+<h3>Legend</h3>
+<pre>
+red o   = Property
+red D   = Domain
+red R   = Range (Cycle 1)
+green o = Property
+green R = Range (Cycle 2)
+black   = Property for Range
+
+</pre>
+<!-- <img src="D-o-R Cycle 1.jpg"/> -->
+</div>
+
+</div>
+
+</body>
+</html>

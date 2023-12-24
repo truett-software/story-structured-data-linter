@@ -1,0 +1,30 @@
+/*
+body {
+  font-family: Roboto;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+svg {
+  background: #FFF;
+}
+
+.legendItem {
+  fill: #fff;
+  font-size: 13px;
+}
+*/
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+/* IMPORTANT: controls anchor text */
+text {
+  text-anchor: middle;
+  fill: #666;
+}

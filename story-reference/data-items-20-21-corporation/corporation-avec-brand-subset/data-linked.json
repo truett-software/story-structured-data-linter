@@ -1,0 +1,899 @@
+{
+ "@context": "http://schema.org/",
+ "@graph": [
+  {
+   "@type": "Corporation",
+   "@id": "https://ontomatica.io/identifier/16020000001000011961",
+   "name": "Ontomatica",
+   "description": "Ontomatica applies the technology and discipline of informatics to the fields of nutrition, health, agriculture, biology, chemistry, cosmetics, and textiles. We specify data and build software for health-informatics, agro-informatics, biochem-informatics, and material-informatics. We develop visualization and reasoning tools for data analysis.",
+   "naics": "541511",
+   "url": "https://ontomatica.io",
+   "logo": {
+    "@id": "https://ontomatica.io/identifier/16020000001000012161"
+   },
+   "location": [
+    {
+     "@id": "https://ontomatica.io/identifier/18000000001000011961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/18000000001000051961"
+    }
+   ],
+   "brand": [
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000011961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000021961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000031961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000041961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000051961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000061961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000071961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000081961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000091961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000101961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000111961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000121961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000131961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000141961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000151961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000161961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000171961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000181961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000191961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000201961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000211961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000221961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000231961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000241961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000251961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000261961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000271961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000281961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000291961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000301961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000311961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000321961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000331961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000341961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000351961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000361961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000371961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000381961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000391961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000401961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000411961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000421961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000431961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000441961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000451961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000461961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000471961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000481961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000491961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000501961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000511961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000521961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000531961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000541961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000551961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000561961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000571961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000581961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000591961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000601961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000611961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000621961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000631961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000641961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000651961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000661961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000671961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000681961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000691961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000701961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000711961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000721961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000731961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000741961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000751961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000761961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000771961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000781961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000791961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000801961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000811961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000821961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000831961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000841961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000851961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000861961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000871961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000881961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000891961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000901961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000911961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000921961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000931961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000941961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000951961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000961961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000971961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000981961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001000991961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001001961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001011961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001021961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001031961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001041961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001051961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001061961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001071961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001081961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001091961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001101961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001111961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001121961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001131961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001141961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001151961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001161961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001171961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001181961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001191961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001201961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001211961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001221961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001231961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001241961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001251961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001261961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001271961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001281961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001291961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001301961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001311961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001321961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001331961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001341961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001351961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001361961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001371961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001381961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001391961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001401961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001411961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001421961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001431961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001441961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001451961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001461961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001471961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001481961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001491961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001501961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001511961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001521961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001531961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001541961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001551961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001561961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001571961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001581961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001591961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001601961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001611961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001621961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001631961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001641961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001651961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001661961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001671961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001681961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001691961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001701961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001711961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001721961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001731961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001741961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001751961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001761961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001771961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001781961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001791961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001801961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001811961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001821961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001831961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001841961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001851961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001861961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001871961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001881961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001891961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001901961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001911961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001921961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001931961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001941961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001951961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001961961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001971961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001981961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001001991961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002001961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002011961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002021961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002031961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002041961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002051961"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/14030100001002061961"
+    }
+   ],
+   "employee": [
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000012661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000022661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000032661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000042661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000052661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000062661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000072661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000082661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000092661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000102661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000112661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000122661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000132661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001000202661"
+    },
+    {
+     "@id": "https://ontomatica.io/identifier/17000000001001322661"
+    }
+   ]
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/16020000001000012161",
+   "name": "Ontomatica logo",
+   "url": "https://ontomatica.io/image/17000000009999222161-w400-h400.png",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010001535396104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010001535396104161"
+   },
+   "dateCreated": "2019-03-14",
+   "datePublished": "2019-05-02",
+   "dateModified": "2019-06-10"
+  },
+  {
+   "@type": "GovernmentOrganization",
+   "@id": "https://ontomatica.io/identifier/16040000001000131961",
+   "name": "US Department of Labor (DOL) Bureau of Labor Statistics (BLS)",
+   "naics": "926110",
+   "url": "https://www.dol.gov/",
+   "logo": {
+    "@id": "https://ontomatica.io/identifier/16040000001000132161"
+   },
+   "address": {
+    "@id": "https://ontomatica.io/identifier/14330101001000351961"
+   },
+   "location": {
+    "@id": "https://ontomatica.io/identifier/18000000001000351961"
+   },
+   "brand": {
+    "@id": "https://ontomatica.io/identifier/16040000001000132961"
+   }
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/16040000001000132161",
+   "name": "US Department of Labor (DOL) Bureau of Labor Statistics (BLS) logo",
+   "url": "https://ontomatica.io/image/16040000001000132161/image-w400-h400.svg",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010001535396104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010001535396104161"
+   },
+   "dateCreated": "2020-03-14",
+   "datePublished": "2020-05-10",
+   "dateModified": "2020-06-10"
+  },
+  {
+   "@type": "Brand",
+   "@id": "https://ontomatica.io/identifier/16040000001000132961",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/16040000001000131161"
+   },
+   "name": "See DefinedTerm for US Department of Labor (DOL) Bureau of Labor Statistics (BLS) brand details in the specific Natural Language"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/16040000001000131161",
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   },
+   "name": "Copyright information",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/16040000001000132461"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/16040000001000132461",
+   "name": "US Department of Labor (DOL) Bureau of Labor Statistics (BLS)",
+   "description": "BLS manages the Standard Occupational Classification (SOC) system used to classify workers into occupational categories for the purpose of collecting, calculating, or disseminating data.",
+   "termCode": "",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/16040000001000131161"
+   }
+  },
+  {
+   "@type": "Place",
+   "@id": "https://ontomatica.io/identifier/18000000001000351961",
+   "name": "US Department of Labor",
+   "address": {
+    "@id": "https://ontomatica.io/identifier/14330101001000351961"
+   },
+   "containedInPlace": {
+    "@id": "https://ontomatica.io/identifier/18010100001000041961"
+   },
+   "geo": {
+    "@id": "https://ontomatica.io/identifier/14330400001000351961"
+   }
+  },
+  {
+   "@type": "PostalAddress",
+   "@id": "https://ontomatica.io/identifier/14330101001000351961",
+   "streetAddress": "200 Constitution Ave NW",
+   "postalCode": "20210"
+  },
+  {
+   "@type": "City",
+   "@id": "https://ontomatica.io/identifier/18010100001000041961",
+   "name": "Washington",
+   "containedInPlace": {
+    "@id": "https://ontomatica.io/identifier/18010200001000011961"
+   }
+  },
+  {
+   "@type": "Country",
+   "@id": "https://ontomatica.io/identifier/18010200001000011961",
+   "name": "United States",
+   "identifier": "USA"
+  },
+  {
+   "@type": "NGO",
+   "@id": "https://ontomatica.io/identifier/16060000001000041961",
+   "name": "Wikimedia Foundation",
+   "naics": "",
+   "url": "https://wikimediafoundation.org/wiki/Home",
+   "logo": {
+    "@id": "https://ontomatica.io/identifier/16060000001000042161"
+   },
+   "address": {
+    "@id": "https://ontomatica.io/identifier/14330101001000301961"
+   },
+   "location": {
+    "@id": "https://ontomatica.io/identifier/18000000001000301961"
+   },
+   "brand": {
+    "@id": "https://ontomatica.io/identifier/16060000001000042961"
+   }
+  },
+  {
+   "@type": "ImageObject",
+   "@id": "https://ontomatica.io/identifier/16060000001000042161",
+   "name": "Wikimedia Foundation logo",
+   "url": "https://ontomatica.io/image/17000000009999222161/image-w400-h400.png",
+   "width": {
+    "@id": "https://ontomatica.io/identifier/23010001535396104161"
+   },
+   "height": {
+    "@id": "https://ontomatica.io/identifier/23010001535396104161"
+   },
+   "dateCreated": "2019-03-14",
+   "datePublished": "2019-05-02",
+   "dateModified": "2019-06-10"
+  },
+  {
+   "@type": "Brand",
+   "@id": "https://ontomatica.io/identifier/16060000001000042961",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/16060000001000041161"
+   },
+   "name": "See Wikimedia Foundation brand details in natural language"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://ontomatica.io/identifier/16060000001000041161",
+   "inLanguage": {
+    "@id": "https://ontomatica.io/identifier/23010000007976104261"
+   },
+   "name": "Copyright information",
+   "about": {
+    "@id": "https://ontomatica.io/identifier/16060000001000042461"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://ontomatica.io/identifier/16060000001000042461",
+   "name": "Wikimedia Foundation",
+   "description": "The Wikimedia Foundation, Inc. is an American non-profit and charitable organization headquartered in San Francisco, California. It is mostly known for participating in the Wikimedia movement. It owns the internet domain names of most movement projects and hosts sites like Wikipedia. The foundation was founded in 2003 by Jimmy Wales as a way to fund Wikipedia and its sister projects through non-profit means.",
+   "termCode": "WM",
+   "subjectOf": {
+    "@id": "https://ontomatica.io/identifier/16060000001000041161"
+   }
+  },
+  {
+   "@type": "Place",
+   "@id": "https://ontomatica.io/identifier/18000000001000301961",
+   "name": "Wikimedia",
+   "address": {
+    "@id": "https://ontomatica.io/identifier/14330101001000301961"
+   },
+   "containedInPlace": {
+    "@id": "https://ontomatica.io/identifier/18010100001000161961"
+   }
+  },
+  {
+   "@type": "PostalAddress",
+   "@id": "https://ontomatica.io/identifier/14330101001000301961",
+   "streetAddress": "818 West Seventh Street",
+   "postalCode": "90017"
+  },
+  {
+   "@type": "City",
+   "@id": "https://ontomatica.io/identifier/18010100001000161961",
+   "name": "Los Angeles",
+   "sameAs": [
+    "https://en.wikipedia.org/wiki/Los_Angeles",
+    "http://dbpedia.org/page/Los_Angeles",
+    "https://www.wikidata.org/wiki/Q65"
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://ontomatica.io/identifier/18010100001000161161"
+   },
+   "containedInPlace": {
+    "@id": "https://ontomatica.io/identifier/18010300001000051961"
+   }
+  }
+ ]
+}

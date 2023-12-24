@@ -1,4 +1,0 @@
-
-ontmatica knowledge graph
-stored in
-js-three
