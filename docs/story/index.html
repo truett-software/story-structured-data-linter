@@ -270,7 +270,7 @@ Structured Data Linter project
  *  Cluster 2
  *  SPACING
  */
-
+  
 :root {
   --spacing-xxs: 0.5rem;
   --spacing-xs: 1.0rem;
@@ -278,21 +278,27 @@ Structured Data Linter project
   --spacing-m: 5.0rem;
   --spacing-l: 10rem;
   --spacing-xl: 15rem;
-  @media (min-width: 700px) {
+}
+
+@media (min-width: 700px) {
+  :root {
     --spacing-xxs: 1.0rem;
     --spacing-xs: 1.5rem;
-  	--spacing-s: 2.0rem;
-  	--spacing-m: 6.0rem;
-  	--spacing-l: 12.5rem;
-  	--spacing-xl: 20rem;
+    --spacing-s: 2.0rem;
+    --spacing-m: 6.0rem;
+    --spacing-l: 12.5rem;
+    --spacing-xl: 20rem;
   }
-  @media (min-width: 1400px) {
+}
+
+@media (min-width: 1400px) {
+  :root {
     --spacing-xxs: 1.25rem;
     --spacing-xs: 1.75rem;
-  	--spacing-s: 2.5rem;
-  	--spacing-m: 7.0rem;
-  	--spacing-l: 17.5rem;
-  	--spacing-xl: 25rem;
+    --spacing-s: 2.5rem;
+    --spacing-m: 7.0rem;
+    --spacing-l: 17.5rem;
+    --spacing-xl: 25rem;
   }
 }
 
